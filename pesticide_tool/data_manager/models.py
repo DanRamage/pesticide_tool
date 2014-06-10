@@ -16,7 +16,7 @@ class ActiveIngredient(models.Model):
     row_update_date = models.DateTimeField(blank=True, null=True)
     name = models.CharField(unique=True, max_length=-1)
     cumulative_score = models.FloatField(blank=True, null=True)
-    relative_potential_ecosystem_hazard = models.CharField(max_length=-1, blank=True)
+    relative_potential_ecosystem_hazard = models.CharField(max_length=50, blank=True)
 
     warning = models.ForeignKey('Warning', blank=True, null=True)
 
@@ -25,12 +25,12 @@ class Brand(models.Model):
     row_id = models.IntegerField(primary_key=True)
     row_entry_date = models.DateTimeField(blank=True, null=True)
     row_update_date = models.DateTimeField(blank=True, null=True)
-    name = models.CharField(unique=True, max_length=-1)
-    label_url = models.CharField(max_length=-1, blank=True)
+    name = models.TextField()
+    label_url = models.TextField(blank=True)
 
-    active_ingredients = models.ManyToManyField('ActiveIngredient')
+    active_ingredients = models.ManyToManyField('BrandFormulation')
     application_areas = models.ManyToManyField('ApplicationArea')
-    pests_treated = models.ManyToManyField('ApplicationArea')
+    pests_treated = models.ManyToManyField('Pest')
 
 class BrandFormulation(models.Model):
     row_id = models.IntegerField(primary_key=True)
@@ -45,7 +45,7 @@ class Pest(models.Model):
     row_entry_date = models.DateTimeField(blank=True, null=True)
     row_update_date = models.DateTimeField(blank=True, null=True)
     name = models.CharField(unique=True, max_length=-1)
-    image_url = models.CharField(max_length=-1, blank=True)
+    image_url = models.TextField(blank=True)
 
     pesticides = models.ManyToManyField('ActiveIngredient', blank=True, null=True)
 
@@ -53,7 +53,7 @@ class ActiveIngredientClass(models.Model):
     row_id = models.IntegerField(primary_key=True)
     row_entry_date = models.DateTimeField(blank=True, null=True)
     row_update_date = models.DateTimeField(blank=True, null=True)
-    name = models.CharField(unique=True, max_length=-1)
+    name = models.CharField(unique=True, max_length=50)
 
     active_ingredient = models.ManyToManyField('ActiveIngredient', blank=True, null=True)
 
@@ -61,7 +61,7 @@ class ApplicationArea(models.Model):
     row_id = models.IntegerField(primary_key=True)
     row_entry_date = models.DateTimeField(blank=True, null=True)
     row_update_date = models.DateTimeField(blank=True, null=True)
-    name = models.CharField(unique=True, max_length=-1)
+    name = models.CharField(unique=True, max_length=50)
 
     brand = models.ManyToManyField('Brand', blank=True, null=True)
 
@@ -69,30 +69,30 @@ class Warning(models.Model):
     row_id = models.IntegerField(primary_key=True)
     row_entry_date = models.DateTimeField(blank=True, null=True)
     row_update_date = models.DateTimeField(blank=True, null=True)
-    name = models.CharField(max_length=-1)
-    image_url = models.CharField(max_length=-1, blank=True)
+    name = models.CharField(unique=True, max_length=50)
+    image_url = models.TextField(blank=True)
 
 
 class PestType(models.Model):
     row_id = models.IntegerField(primary_key=True)
     row_entry_date = models.DateTimeField(blank=True, null=True)
     row_update_date = models.DateTimeField(blank=True, null=True)
-    name = models.CharField(unique=True, max_length=-1)
+    name = models.CharField(unique=True, max_length=50)
 
 
 class Category(models.Model):
     row_id = models.IntegerField(primary_key=True)
     row_entry_date = models.DateTimeField(blank=True, null=True)
     row_update_date = models.DateTimeField(blank=True, null=True)
-    name = models.CharField(unique=True, max_length=-1)
-    image_url = models.CharField(max_length=-1, blank=True)
+    name = models.CharField(unique=True, max_length=50)
+    image_url = models.TextField()
 
 class SubCategory(models.Model):
     row_id = models.IntegerField(primary_key=True)
     row_entry_date = models.DateTimeField(blank=True, null=True)
     row_update_date = models.DateTimeField(blank=True, null=True)
-    name = models.CharField(unique=True, max_length=-1)
-    image_url = models.CharField(max_length=-1, blank=True)
+    name = models.CharField(unique=True, max_length=50)
+    image_url = models.TextField(blank=True)
 
     category = models.ForeignKey('Category', null=True)
     pests = models.ForeignKey('Pest', null=True)
