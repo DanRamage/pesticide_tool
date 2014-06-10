@@ -14,7 +14,7 @@ class ActiveIngredient(models.Model):
     row_id = models.IntegerField(primary_key=True)
     row_entry_date = models.DateTimeField(blank=True, null=True)
     row_update_date = models.DateTimeField(blank=True, null=True)
-    name = models.CharField(unique=True, max_length=-1)
+    name = models.CharField(unique=True, max_length=50)
     cumulative_score = models.FloatField(blank=True, null=True)
     relative_potential_ecosystem_hazard = models.CharField(max_length=50, blank=True)
 
@@ -44,7 +44,7 @@ class Pest(models.Model):
     row_id = models.IntegerField(primary_key=True)
     row_entry_date = models.DateTimeField(blank=True, null=True)
     row_update_date = models.DateTimeField(blank=True, null=True)
-    name = models.CharField(unique=True, max_length=-1)
+    name = models.CharField(unique=True, max_length=50)
     image_url = models.TextField(blank=True)
 
     pesticides = models.ManyToManyField('ActiveIngredient', blank=True, null=True)
@@ -63,7 +63,7 @@ class ApplicationArea(models.Model):
     row_update_date = models.DateTimeField(blank=True, null=True)
     name = models.CharField(unique=True, max_length=50)
 
-    brand = models.ManyToManyField('Brand', blank=True, null=True)
+    #brand = models.ManyToManyField('Brand', blank=True, null=True)
 
 class Warning(models.Model):
     row_id = models.IntegerField(primary_key=True)
