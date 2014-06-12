@@ -51,7 +51,7 @@ MIDDLEWARE_CLASSES = (
 
 ROOT_URLCONF = 'pesticide_tool.urls'
 
-WSGI_APPLICATION = 'pesticide_tool.wsgi.application'
+#WSGI_APPLICATION = 'pesticide_tool.wsgi.application'
 
 
 # Database
