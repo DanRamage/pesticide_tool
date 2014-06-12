@@ -3,9 +3,6 @@
         "pk": 1,
         "model": "data_manager.category",
         "fields": {
-            "pesticide_class": [
-                1
-            ],
             "image_url": "http://sccoastalpesticides.org/images/decision_buttons/nusiance_aquatic_species.jpg",
             "name": "Nuisance Aquatic Species",
             "sub_categories": [
@@ -21,9 +18,6 @@
         "pk": 2,
         "model": "data_manager.category",
         "fields": {
-            "pesticide_class": [
-                2
-            ],
             "image_url": "http://sccoastalpesticides.org/images/decision_buttons/turfgrasses_and_weeds.jpg",
             "name": "Turf And Lawn Grasses And Weeds",
             "sub_categories": [
@@ -36,9 +30,6 @@
         "pk": 0,
         "model": "data_manager.category",
         "fields": {
-            "pesticide_class": [
-                0
-            ],
             "image_url": "http://sccoastalpesticides.org/images/decision_buttons/blights_and_diseases.jpg",
             "name": "Blights & Diseases",
             "sub_categories": [
@@ -53,9 +44,6 @@
         "pk": 3,
         "model": "data_manager.category",
         "fields": {
-            "pesticide_class": [
-                3
-            ],
             "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs.jpg",
             "name": "Bugs",
             "sub_categories": [
