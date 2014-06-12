@@ -83,6 +83,8 @@ USE_TZ = True
 STATIC_ROOT = '/home2/sccoasta/django_projects/pesticide_tool/pesticide_tool/media'
 STATIC_URL = '/pesticide_tool/media/'
 
+MEDIA_URL = '/pesticide_tool/pesticide_tool/media'
+
 import logging
 logging.getLogger('django.db.backends').setLevel(logging.ERROR)
 from settings_local import *
