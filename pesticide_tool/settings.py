@@ -84,7 +84,7 @@ STATIC_ROOT = '/home2/sccoasta/django_projects/pesticide_tool/pesticide_tool/med
 STATIC_URL = '/pesticide_tool/media/'
 
 MEDIA_URL = '/pesticide_tool/pesticide_tool/media'
-
+#LOG_FILE = "/home2/sccoasta/django_projects/pesticide_tool/log/app.log"
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,
@@ -94,15 +94,10 @@ LOGGING = {
         }
     },
     'handlers': {
-        'mail_admins': {
-            'level': 'ERROR',
-            'filters': ['require_debug_false'],
-            'class': 'django.utils.log.AdminEmailHandler'
-        },
         'logfile': {
             'level':'DEBUG',
             'class':'logging.handlers.RotatingFileHandler',
-            'filename': SITE_ROOT + "/debug.log",
+            'filename': '/home2/sccoasta/django_projects/pesticide_tool/log/app.log',
             'maxBytes': 50000,
             'backupCount': 2,
             'formatter': 'custom',
