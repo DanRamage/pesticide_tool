@@ -83,7 +83,7 @@ USE_TZ = True
 STATIC_ROOT = '/home2/sccoasta/django_projects/pesticide_tool/pesticide_tool/media'
 STATIC_URL = '/pesticide_tool/media/'
 
-MEDIA_URL = '/pesticide_tool/pesticide_tool/media'
+MEDIA_URL = '/pesticide_tool/pesticide_tool/media/'
 #LOG_FILE = "/home2/sccoasta/django_projects/pesticide_tool/log/app.log"
 LOGGING = {
     'version': 1,
