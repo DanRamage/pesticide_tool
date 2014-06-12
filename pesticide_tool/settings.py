@@ -80,7 +80,7 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
-
+STATIC_ROOT = '/home2/sccoasta/django_projects/pesticide_tool/pesticide_tool/media'
 STATIC_URL = '/pesticide_tool/media/'
 
 import logging
