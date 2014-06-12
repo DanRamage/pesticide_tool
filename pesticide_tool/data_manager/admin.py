@@ -5,6 +5,6 @@ from models import *
 class ActiveIngredientAdmin(admin.ModelAdmin):
     list_display = ('name', 'row_id')
     search_fields = ['name']
-    ordering = ('name')
+    ordering = ('name','row_id')
 
 admin.site.register(ActiveIngredient, ActiveIngredientAdmin)
