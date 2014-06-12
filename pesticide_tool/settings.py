@@ -88,49 +88,34 @@ MEDIA_URL = '/pesticide_tool/pesticide_tool/media'
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,
-    'filters': {
-        'require_debug_false': {
-            '()': 'django.utils.log.RequireDebugFalse'
-        }
-    },
-    'handlers': {
-        'logfile': {
-            'level':'DEBUG',
-            'class':'logging.handlers.RotatingFileHandler',
-            'filename': '/home2/sccoasta/django_projects/pesticide_tool/log/app.log',
-            'maxBytes': 50000,
-            'backupCount': 2,
-            'formatter': 'custom',
-        },
-    },
-    'loggers': {
-        #'django': {
-        #    'handlers':['logfile'],
-        #    'level':'DEBUG',
-        #    'propagate': True,
-        #},
-        #'django.request': {
-        #    'handlers': ['mail_admins', 'logfile'],
-        #    'level': 'DEBUG',
-        #    'propagate': True,
-        #},
-        'nodeshot.core.mailing': {
-            'handlers': ['logfile'],
-            'level': 'DEBUG',
-        },
-    },
     'formatters': {
         'verbose': {
-            'format': '%(levelname)s %(asctime)s %(module)s %(process)d %(thread)d %(message)s'
+            'format' : "[%(asctime)s] %(levelname)s [%(name)s:%(lineno)s] %(message)s",
+            'datefmt' : "%d/%b/%Y %H:%M:%S"
         },
         'simple': {
             'format': '%(levelname)s %(message)s'
         },
-        'custom': {
-            'format': '%(levelname)s %(asctime)s\n%(message)s'
-        }
+    },
+    'handlers': {
+        'file': {
+            'level': 'DEBUG',
+            'class': 'logging.FileHandler',
+            'filename': '/home2/sccoasta/django_projects/pesticide_tool/log/app.log',
+            'formatter': 'verbose'
+        },
+    },
+    'loggers': {
+        'django': {
+            'handlers':['file'],
+            'propagate': True,
+            'level':'DEBUG',
+        },
+        'MYAPP': {
+            'handlers': ['file'],
+            'level': 'DEBUG',
+        },
     }
 }
-
 from settings_local import *
 
