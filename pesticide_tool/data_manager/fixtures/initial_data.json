@@ -1,0 +1,3844 @@
+[
+    {
+        "pk": 1,
+        "model": "data_manager.category",
+        "fields": {
+            "brands": [],
+            "pesticide_class": [
+                1
+            ],
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/nusiance_aquatic_species.jpg",
+            "name": "Nuisance Aquatic Species",
+            "sub_categories": [
+                4,
+                5,
+                6,
+                7,
+                8
+            ]
+        }
+    },
+    {
+        "pk": 2,
+        "model": "data_manager.category",
+        "fields": {
+            "brands": [],
+            "pesticide_class": [
+                2
+            ],
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/turfgrasses_and_weeds.jpg",
+            "name": "Turf And Lawn Grasses And Weeds",
+            "sub_categories": [
+                9,
+                10
+            ]
+        }
+    },
+    {
+        "pk": 0,
+        "model": "data_manager.category",
+        "fields": {
+            "brands": [],
+            "pesticide_class": [
+                0
+            ],
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/blights_and_diseases.jpg",
+            "name": "Blights & Diseases",
+            "sub_categories": [
+                0,
+                1,
+                2,
+                3
+            ]
+        }
+    },
+    {
+        "pk": 3,
+        "model": "data_manager.category",
+        "fields": {
+            "brands": [],
+            "pesticide_class": [
+                3
+            ],
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs.jpg",
+            "name": "Bugs",
+            "sub_categories": [
+                11,
+                12,
+                13,
+                14,
+                15
+            ]
+        }
+    },
+    {
+        "pk": 0,
+        "model": "data_manager.SubCategory",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/blights_diseases/common_fruit_vegetable_diseases/squash_fruit_rot.jpg",
+            "name": "Common Fruit And Vegetable Blights & Diseases",
+            "pests": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20
+            ]
+        }
+    },
+    {
+        "pk": 12,
+        "model": "data_manager.SubCategory",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/stinging_and_biting_bugs/American_dog_tick.jpg",
+            "name": "Stinging And Biting Bugs",
+            "pests": [
+                295,
+                296,
+                297,
+                298,
+                299,
+                300,
+                301,
+                302,
+                303,
+                304,
+                305,
+                306,
+                307,
+                308,
+                309,
+                310,
+                311,
+                312,
+                313,
+                314,
+                315,
+                316,
+                317,
+                318
+            ]
+        }
+    },
+    {
+        "pk": 7,
+        "model": "data_manager.SubCategory",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/algaecides/emergent_plants/cattail.jpg",
+            "name": "Emergent Plants",
+            "pests": [
+                84,
+                85,
+                86,
+                87,
+                88,
+                89,
+                90,
+                91,
+                92,
+                93,
+                94,
+                95,
+                96,
+                97,
+                98,
+                99,
+                100,
+                101
+            ]
+        }
+    },
+    {
+        "pk": 2,
+        "model": "data_manager.SubCategory",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/blights_diseases/shade_and_forest_tree_diseases/eastern_gall_rust_of_pine.jpg",
+            "name": "Shade & Forest Tree Blights & Diseases",
+            "pests": [
+                30,
+                31,
+                32,
+                33,
+                34,
+                35
+            ]
+        }
+    },
+    {
+        "pk": 9,
+        "model": "data_manager.SubCategory",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/grasses/panicum.jpg",
+            "name": "Grasses",
+            "pests": [
+                112,
+                113,
+                114,
+                115,
+                116,
+                117,
+                118,
+                119,
+                120,
+                121,
+                122,
+                123,
+                124,
+                125,
+                126,
+                127,
+                128,
+                129,
+                130,
+                131,
+                132,
+                133,
+                134,
+                135,
+                136,
+                137,
+                138,
+                139,
+                140,
+                141,
+                142,
+                143,
+                144,
+                145,
+                146
+            ]
+        }
+    },
+    {
+        "pk": 11,
+        "model": "data_manager.SubCategory",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/household_pests/oriental_cockroach.jpg",
+            "name": "Household Bugs",
+            "pests": [
+                275,
+                276,
+                277,
+                278,
+                279,
+                280,
+                281,
+                282,
+                283,
+                284,
+                285,
+                286,
+                287,
+                288,
+                289,
+                290,
+                291,
+                292,
+                293,
+                294
+            ]
+        }
+    },
+    {
+        "pk": 5,
+        "model": "data_manager.SubCategory",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/algaecides/floating_plants/waterlettuce.jpg",
+            "name": "Floating Plants",
+            "pests": [
+                63,
+                64,
+                65,
+                66,
+                67,
+                68,
+                69,
+                70,
+                71,
+                72,
+                73
+            ]
+        }
+    },
+    {
+        "pk": 15,
+        "model": "data_manager.SubCategory",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/gypsy_moth.jpg",
+            "name": "General Bug Categories",
+            "pests": [
+                394,
+                395,
+                396,
+                397
+            ]
+        }
+    },
+    {
+        "pk": 3,
+        "model": "data_manager.SubCategory",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/blights_diseases/turf_grasses_and_yards/turfgrass_diseases/pink_snow_mold_turf.jpg",
+            "name": "Turf Grass And Lawn Blights & Diseases",
+            "pests": [
+                36,
+                37,
+                38,
+                39,
+                40,
+                41,
+                42,
+                43,
+                44,
+                45,
+                46,
+                47,
+                48,
+                49,
+                50,
+                51,
+                52,
+                53,
+                54,
+                55,
+                56,
+                57
+            ]
+        }
+    },
+    {
+        "pk": 6,
+        "model": "data_manager.SubCategory",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/algaecides/submersed_plants/elodea.jpg",
+            "name": "Submersed Plants",
+            "pests": [
+                74,
+                75,
+                76,
+                77,
+                78,
+                79,
+                80,
+                81,
+                82,
+                83
+            ]
+        }
+    },
+    {
+        "pk": 1,
+        "model": "data_manager.SubCategory",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/blights_diseases/common_ornamental_diseases/blossom_blight.jpg",
+            "name": "Common Ornamental Blights & Diseases",
+            "pests": [
+                21,
+                22,
+                23,
+                24,
+                25,
+                26,
+                27,
+                28,
+                29
+            ]
+        }
+    },
+    {
+        "pk": 10,
+        "model": "data_manager.SubCategory",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/thistles.jpg",
+            "name": "Weeds",
+            "pests": [
+                147,
+                148,
+                149,
+                150,
+                151,
+                152,
+                153,
+                154,
+                155,
+                156,
+                157,
+                158,
+                159,
+                160,
+                161,
+                162,
+                163,
+                164,
+                165,
+                166,
+                167,
+                168,
+                169,
+                170,
+                171,
+                172,
+                173,
+                174,
+                175,
+                176,
+                177,
+                178,
+                179,
+                180,
+                181,
+                182,
+                183,
+                184,
+                185,
+                186,
+                187,
+                188,
+                189,
+                190,
+                191,
+                192,
+                193,
+                194,
+                195,
+                196,
+                197,
+                198,
+                199,
+                200,
+                201,
+                202,
+                203,
+                204,
+                205,
+                206,
+                207,
+                208,
+                209,
+                210,
+                211,
+                212,
+                213,
+                214,
+                215,
+                216,
+                217,
+                218,
+                219,
+                220,
+                221,
+                222,
+                223,
+                224,
+                225,
+                226,
+                227,
+                228,
+                229,
+                230,
+                231,
+                232,
+                233,
+                234,
+                235,
+                236,
+                237,
+                238,
+                239,
+                240,
+                241,
+                242,
+                243,
+                244,
+                245,
+                246,
+                247,
+                248,
+                249,
+                250,
+                251,
+                252,
+                253,
+                254,
+                255,
+                256,
+                257,
+                258,
+                259,
+                260,
+                261,
+                262,
+                263,
+                264,
+                265,
+                266,
+                267,
+                268,
+                269,
+                270,
+                271,
+                272,
+                273,
+                274
+            ]
+        }
+    },
+    {
+        "pk": 14,
+        "model": "data_manager.SubCategory",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/vegetable_fruit_and_ornamental_bugs/tomato_fruitworm.jpg",
+            "name": "Vegetable, Fruit, Ornamental Plant, And Tree Bugs",
+            "pests": [
+                337,
+                338,
+                339,
+                340,
+                341,
+                342,
+                343,
+                344,
+                345,
+                346,
+                347,
+                348,
+                349,
+                350,
+                351,
+                352,
+                353,
+                354,
+                355,
+                356,
+                357,
+                358,
+                359,
+                360,
+                361,
+                362,
+                363,
+                364,
+                365,
+                366,
+                367,
+                368,
+                369,
+                370,
+                371,
+                372,
+                373,
+                374,
+                375,
+                376,
+                377,
+                378,
+                379,
+                380,
+                381,
+                382,
+                383,
+                384,
+                385,
+                386,
+                387,
+                388,
+                389,
+                390,
+                391,
+                392,
+                393
+            ]
+        }
+    },
+    {
+        "pk": 8,
+        "model": "data_manager.SubCategory",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/algaecides/aquatic_weeds/watershield.jpg",
+            "name": "Aquatic Weeds",
+            "pests": [
+                102,
+                103,
+                104,
+                105,
+                106,
+                107,
+                108,
+                109,
+                110,
+                111
+            ]
+        }
+    },
+    {
+        "pk": 4,
+        "model": "data_manager.SubCategory",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/algaecides/algae/algae_category_button.jpg",
+            "name": "Algae",
+            "pests": [
+                58,
+                59,
+                60,
+                61,
+                62
+            ]
+        }
+    },
+    {
+        "pk": 13,
+        "model": "data_manager.SubCategory",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/turfgrass_and_lawn_bugs/white_grub.jpg",
+            "name": "Turf Grass And Lawn Bugs",
+            "pests": [
+                319,
+                320,
+                321,
+                322,
+                323,
+                324,
+                325,
+                326,
+                327,
+                328,
+                329,
+                330,
+                331,
+                332,
+                333,
+                334,
+                335,
+                336
+            ]
+        }
+    },
+    {
+        "pk": 198,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/lespedeza.jpg",
+            "name": "lespedeza"
+        }
+    },
+    {
+        "pk": 148,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/beggarticks.jpg",
+            "name": "smooth beggartick"
+        }
+    },
+    {
+        "pk": 316,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/stinging_and_biting_bugs/spiders.jpg",
+            "name": "spiders"
+        }
+    },
+    {
+        "pk": 339,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/vegetable_fruit_and_ornamental_bugs/box_elder_bug.jpg",
+            "name": "boxelder bug"
+        }
+    },
+    {
+        "pk": 236,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/Japanese_climbing_fern.jpg",
+            "name": "Japanese climbing fern"
+        }
+    },
+    {
+        "pk": 84,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/algaecides/emergent_plants/alligatorweed.jpg",
+            "name": "alligatorweed"
+        }
+    },
+    {
+        "pk": 76,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/algaecides/submersed_plants/eelgrass.jpg",
+            "name": "eelgrass"
+        }
+    },
+    {
+        "pk": 291,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/household_pests/silverfish.jpg",
+            "name": "silverfish"
+        }
+    },
+    {
+        "pk": 240,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/beach_vitex.jpg",
+            "name": "beach vitex"
+        }
+    },
+    {
+        "pk": 79,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/algaecides/submersed_plants/fanwort.jpg",
+            "name": "fanwort"
+        }
+    },
+    {
+        "pk": 277,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/household_pests/camel_cricket.jpg",
+            "name": "camel cricket"
+        }
+    },
+    {
+        "pk": 141,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/grasses/crowfootgrass.jpg",
+            "name": "crowfootgrass"
+        }
+    },
+    {
+        "pk": 160,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/Chinese_privet.jpg",
+            "name": "Chinese privet"
+        }
+    },
+    {
+        "pk": 55,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/blights_diseases/turf_grasses_and_yards/turfgrass_diseases/zoysia_patch.jpg",
+            "name": "zoysia patch"
+        }
+    },
+    {
+        "pk": 77,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/algaecides/submersed_plants/elodea.jpg",
+            "name": "elodea"
+        }
+    },
+    {
+        "pk": 373,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/vegetable_fruit_and_ornamental_bugs/lace_bug.jpg",
+            "name": "lace bug"
+        }
+    },
+    {
+        "pk": 390,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/vegetable_fruit_and_ornamental_bugs/gypsy_moth_larvae.jpg",
+            "name": "gypsy moth larvae"
+        }
+    },
+    {
+        "pk": 183,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/ground_ivy.jpg",
+            "name": "ground ivy"
+        }
+    },
+    {
+        "pk": 169,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/cudweed.jpg",
+            "name": "cudweed"
+        }
+    },
+    {
+        "pk": 396,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/general_bug/nuisance_caterpillars.jpg",
+            "name": "nuisance caterpillars"
+        }
+    },
+    {
+        "pk": 165,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/common_speedwell.jpg",
+            "name": "common speedwell"
+        }
+    },
+    {
+        "pk": 71,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/algaecides/floating_plants/waterlettuce.jpg",
+            "name": "water lettuce"
+        }
+    },
+    {
+        "pk": 351,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/vegetable_fruit_and_ornamental_bugs/looper.jpg",
+            "name": "looper"
+        }
+    },
+    {
+        "pk": 266,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/lantana.jpg",
+            "name": "lantana"
+        }
+    },
+    {
+        "pk": 192,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/jonny_jumpup_(violet).jpg",
+            "name": "johnny jumpup"
+        }
+    },
+    {
+        "pk": 190,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/horseweed.jpg",
+            "name": "horseweed"
+        }
+    },
+    {
+        "pk": 327,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/turfgrass_and_lawn_bugs/grasshopper.jpg",
+            "name": "grasshopper"
+        }
+    },
+    {
+        "pk": 246,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/dogbane.jpg",
+            "name": "dogbane"
+        }
+    },
+    {
+        "pk": 264,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/millet.jpg",
+            "name": "millet"
+        }
+    },
+    {
+        "pk": 36,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/blights_diseases/turf_grasses_and_yards/turfgrass_diseases/bermudagrass_decline.jpg",
+            "name": "bermudagrass decline"
+        }
+    },
+    {
+        "pk": 122,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/grasses/carpetgrass.jpg",
+            "name": "carpetgrass"
+        }
+    },
+    {
+        "pk": 194,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/kochia.jpg",
+            "name": "kochia"
+        }
+    },
+    {
+        "pk": 32,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/blights_diseases/shade_and_forest_tree_diseases/fruiting_structure_of_heart_rot.jpg",
+            "name": "heart rot"
+        }
+    },
+    {
+        "pk": 121,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/grasses/buffalograss.jpg",
+            "name": "buffalograss"
+        }
+    },
+    {
+        "pk": 384,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/vegetable_fruit_and_ornamental_bugs/katydid.jpg",
+            "name": "katydid"
+        }
+    },
+    {
+        "pk": 273,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/blackeyed_susan.jpg",
+            "name": "blackeyed susan"
+        }
+    },
+    {
+        "pk": 353,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/vegetable_fruit_and_ornamental_bugs/oak_sawfly_larvae.jpg",
+            "name": "sawfly"
+        }
+    },
+    {
+        "pk": 304,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/stinging_and_biting_bugs/io_moth_caterpillar.jpg",
+            "name": "IO moth caterpillar"
+        }
+    },
+    {
+        "pk": 296,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/stinging_and_biting_bugs/American_dog_tick.jpg",
+            "name": "ticks"
+        }
+    },
+    {
+        "pk": 263,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/fiddleneck.jpg",
+            "name": "fiddleneck"
+        }
+    },
+    {
+        "pk": 16,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/blights_diseases/shade_and_forest_tree_diseases/crown_rot.jpg",
+            "name": "phytophthora crown rot"
+        }
+    },
+    {
+        "pk": 186,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/hawkweed.jpg",
+            "name": "hawkweed"
+        }
+    },
+    {
+        "pk": 98,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/algaecides/emergent_plants/pond_edge_annuals.jpg",
+            "name": "pond edge annuals"
+        }
+    },
+    {
+        "pk": 109,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/algaecides/aquatic_weeds/Water_Primrose.jpg",
+            "name": "water primrose"
+        }
+    },
+    {
+        "pk": 203,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/parsley_piert.jpg",
+            "name": "parsley piert"
+        }
+    },
+    {
+        "pk": 347,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/vegetable_fruit_and_ornamental_bugs/harlequin_bug.jpg",
+            "name": "harlequin bug"
+        }
+    },
+    {
+        "pk": 170,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/curly_dock.jpg",
+            "name": "curly dock"
+        }
+    },
+    {
+        "pk": 126,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/grasses/fine_fescue.jpg",
+            "name": "fine fescue"
+        }
+    },
+    {
+        "pk": 279,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/household_pests/carpenter_bee.jpg",
+            "name": "carpenter bee"
+        }
+    },
+    {
+        "pk": 177,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/English_daisy.jpg",
+            "name": "English daisy"
+        }
+    },
+    {
+        "pk": 146,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/grasses/zoysiagrass.jpg",
+            "name": "zoysiagrass"
+        }
+    },
+    {
+        "pk": 275,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/household_pests/american_cockroach_all_stages.jpg",
+            "name": "American cockroach"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/blights_diseases/common_fruit_vegetable_diseases/early_blight_tomato_leaf.jpg",
+            "name": "early blight"
+        }
+    },
+    {
+        "pk": 195,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/kudzu.jpg",
+            "name": "kudzu"
+        }
+    },
+    {
+        "pk": 343,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/vegetable_fruit_and_ornamental_bugs/cotton_cushion_scale.jpg",
+            "name": "scales"
+        }
+    },
+    {
+        "pk": 355,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/vegetable_fruit_and_ornamental_bugs/Pales_Weevil.jpg",
+            "name": "weevil"
+        }
+    },
+    {
+        "pk": 124,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/grasses/dallisgrass.jpg",
+            "name": "dallisgrass"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/blights_diseases/common_fruit_vegetable_diseases/alternaria_blight.jpg",
+            "name": "alternaria blight"
+        }
+    },
+    {
+        "pk": 10,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/blights_diseases/common_fruit_vegetable_diseases/Fire_blight_of_fruit_trees.jpg",
+            "name": "fire blight"
+        }
+    },
+    {
+        "pk": 368,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/vegetable_fruit_and_ornamental_bugs/stink_bug.jpg",
+            "name": "stink bug"
+        }
+    },
+    {
+        "pk": 156,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/carpetweed.jpg",
+            "name": "carpetweed"
+        }
+    },
+    {
+        "pk": 56,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/blights_diseases/turf_grasses_and_yards/turfgrass_diseases/gray_snow_mold.jpg",
+            "name": "grey snow mold"
+        }
+    },
+    {
+        "pk": 17,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/blights_diseases/common_fruit_vegetable_diseases/root_rot_nematode_galls_on_root.jpg",
+            "name": "phytophthora root rot"
+        }
+    },
+    {
+        "pk": 43,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/blights_diseases/turf_grasses_and_yards/turfgrass_diseases/pink_patch.jpg",
+            "name": "pink patch"
+        }
+    },
+    {
+        "pk": 258,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/pennycress.jpg",
+            "name": "pennycress"
+        }
+    },
+    {
+        "pk": 365,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/vegetable_fruit_and_ornamental_bugs/whiteflies.jpg",
+            "name": "whiteflies"
+        }
+    },
+    {
+        "pk": 42,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/blights_diseases/turf_grasses_and_yards/turfgrass_diseases/melting_out(Helminthosporium)_turf.jpg",
+            "name": "melting out"
+        }
+    },
+    {
+        "pk": 117,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/grasses/annual_ryegrass.jpg",
+            "name": "annual ryegrass"
+        }
+    },
+    {
+        "pk": 188,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/henbit.jpg",
+            "name": "henbit"
+        }
+    },
+    {
+        "pk": 238,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/chinese_tallow_tree.jpg",
+            "name": "Chinese tallowtree"
+        }
+    },
+    {
+        "pk": 180,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/florida_betony.jpg",
+            "name": "Florida betony"
+        }
+    },
+    {
+        "pk": 193,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/knawel.jpg",
+            "name": "knawel"
+        }
+    },
+    {
+        "pk": 196,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/lambsquaters.jpg",
+            "name": "lambsquarters"
+        }
+    },
+    {
+        "pk": 171,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/cutleaf_eveningprimrose.jpg",
+            "name": "evening primrose"
+        }
+    },
+    {
+        "pk": 176,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/doveweed.jpg",
+            "name": "doveweed"
+        }
+    },
+    {
+        "pk": 283,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/household_pests/german_cockroach.jpg",
+            "name": "German cockroach"
+        }
+    },
+    {
+        "pk": 374,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/vegetable_fruit_and_ornamental_bugs/leafroller.jpg",
+            "name": "leafroller"
+        }
+    },
+    {
+        "pk": 366,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/vegetable_fruit_and_ornamental_bugs/whitefringed_beetle.jpg",
+            "name": "white-fringed beetle"
+        }
+    },
+    {
+        "pk": 47,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/blights_diseases/turf_grasses_and_yards/turfgrass_diseases/rapid_blight.jpg",
+            "name": "rapid blight"
+        }
+    },
+    {
+        "pk": 85,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/algaecides/emergent_plants/sprangletop.jpg",
+            "name": "sprangletop"
+        }
+    },
+    {
+        "pk": 28,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/blights_diseases/common_ornamental_diseases/leaf_smut.jpg",
+            "name": "leaf smut"
+        }
+    },
+    {
+        "pk": 325,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/turfgrass_and_lawn_bugs/Japanese_beetle_larvae.jpg",
+            "name": "Japanese beetle larvae"
+        }
+    },
+    {
+        "pk": 88,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/algaecides/emergent_plants/bottonbush.jpg",
+            "name": "buttonbush"
+        }
+    },
+    {
+        "pk": 44,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/blights_diseases/turf_grasses_and_yards/turfgrass_diseases/pink_snow_mold_turf.jpg",
+            "name": "pink snow mold"
+        }
+    },
+    {
+        "pk": 155,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/Carolina_geranium.jpg",
+            "name": "Carolina geranium"
+        }
+    },
+    {
+        "pk": 140,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/grasses/broadleaf_signalgrass.jpg",
+            "name": "broadleaf signalgrass"
+        }
+    },
+    {
+        "pk": 213,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/red_sorrel.jpg",
+            "name": "red sorrel"
+        }
+    },
+    {
+        "pk": 346,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/vegetable_fruit_and_ornamental_bugs/galls.jpg",
+            "name": "galls"
+        }
+    },
+    {
+        "pk": 357,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/vegetable_fruit_and_ornamental_bugs/redheaded_pine_sawfly_larvae.jpg",
+            "name": "sawfly larvae"
+        }
+    },
+    {
+        "pk": 51,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/blights_diseases/turf_grasses_and_yards/turfgrass_diseases/spring_dead_spot_turf.jpg",
+            "name": "dead spot"
+        }
+    },
+    {
+        "pk": 189,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/hop_clover.jpg",
+            "name": "hop clover"
+        }
+    },
+    {
+        "pk": 322,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/turfgrass_and_lawn_bugs/chinch_bug_life_stages.jpg",
+            "name": "chinch bug"
+        }
+    },
+    {
+        "pk": 341,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/vegetable_fruit_and_ornamental_bugs/cabbage_worms.jpg",
+            "name": "cabbage worm"
+        }
+    },
+    {
+        "pk": 96,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/algaecides/emergent_plants/maidencane.jpg",
+            "name": "maidencane"
+        }
+    },
+    {
+        "pk": 65,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/algaecides/floating_plants/water_fern.jpg",
+            "name": "water fern"
+        }
+    },
+    {
+        "pk": 336,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/turfgrass_and_lawn_bugs/white_grub.jpg",
+            "name": "white grub"
+        }
+    },
+    {
+        "pk": 64,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/algaecides/floating_plants/giant_salvinia.jpg",
+            "name": "giant salvinia"
+        }
+    },
+    {
+        "pk": 381,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/vegetable_fruit_and_ornamental_bugs/cankerworm.jpg",
+            "name": "cankerworm"
+        }
+    },
+    {
+        "pk": 37,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/blights_diseases/turf_grasses_and_yards/turfgrass_diseases/brown_patch_turf.jpg",
+            "name": "brown patch"
+        }
+    },
+    {
+        "pk": 290,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/household_pests/oriental_cockroach.jpg",
+            "name": "oriental cockroach"
+        }
+    },
+    {
+        "pk": 292,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/household_pests/smoky_brown_cockroach_(palmetto_bug).jpg",
+            "name": "smoky brown cockroach"
+        }
+    },
+    {
+        "pk": 338,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/vegetable_fruit_and_ornamental_bugs/black_cutworm.jpg",
+            "name": "black cutworm"
+        }
+    },
+    {
+        "pk": 1,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/blights_diseases/common_ornamental_diseases/late_blight.jpg",
+            "name": "late blight"
+        }
+    },
+    {
+        "pk": 278,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/household_pests/carpenter_ants.jpg",
+            "name": "carpenter ant"
+        }
+    },
+    {
+        "pk": 15,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/blights_diseases/common_fruit_vegetable_diseases/Rhizoctonia_solani_stem_and_root_rot_bean.jpg",
+            "name": "rhizoctonia stem and root rot"
+        }
+    },
+    {
+        "pk": 95,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/algaecides/emergent_plants/White_Waterlily.jpg",
+            "name": "white water lily"
+        }
+    },
+    {
+        "pk": 380,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/vegetable_fruit_and_ornamental_bugs/European_crane_fly.jpg",
+            "name": "European crane fly"
+        }
+    },
+    {
+        "pk": 320,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/turfgrass_and_lawn_bugs/billbug.jpg",
+            "name": "billbug"
+        }
+    },
+    {
+        "pk": 30,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/blights_diseases/shade_and_forest_tree_diseases/wood_rot_fungi.jpg",
+            "name": "wood rot fungi"
+        }
+    },
+    {
+        "pk": 23,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/blights_diseases/common_ornamental_diseases/blossom_blight.jpg",
+            "name": "blossom blight"
+        }
+    },
+    {
+        "pk": 227,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/Virginia_pepperweed.jpg",
+            "name": "Virginia pepperweed"
+        }
+    },
+    {
+        "pk": 40,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/blights_diseases/turf_grasses_and_yards/turfgrass_diseases/fairy_ring_turf.jpg",
+            "name": "fairy ring"
+        }
+    },
+    {
+        "pk": 326,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/turfgrass_and_lawn_bugs/black_turfgrass_ataenius_beetle_larvae.jpg",
+            "name": "black turfgrass ataenius beetle larvae"
+        }
+    },
+    {
+        "pk": 151,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/broadleaf_plantain_(plantains).jpg",
+            "name": "plantains"
+        }
+    },
+    {
+        "pk": 153,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/buttercups.jpg",
+            "name": "buttercup"
+        }
+    },
+    {
+        "pk": 298,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/stinging_and_biting_bugs/bedbug.jpg",
+            "name": "bedbug"
+        }
+    },
+    {
+        "pk": 68,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/algaecides/floating_plants/duckweed_clsp.jpg",
+            "name": "duckweed"
+        }
+    },
+    {
+        "pk": 364,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/vegetable_fruit_and_ornamental_bugs/wax_scale.jpg",
+            "name": "wax scale"
+        }
+    },
+    {
+        "pk": 200,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/mouse_ear_chickweed.jpg",
+            "name": "mouseear chickweed"
+        }
+    },
+    {
+        "pk": 350,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/vegetable_fruit_and_ornamental_bugs/locust_borer.jpg",
+            "name": "borers"
+        }
+    },
+    {
+        "pk": 254,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/puncturevine.jpg",
+            "name": "puncturevine"
+        }
+    },
+    {
+        "pk": 385,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/vegetable_fruit_and_ornamental_bugs/weevil_larvae.jpg",
+            "name": "weevil larvae"
+        }
+    },
+    {
+        "pk": 234,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/yellow_rocket.jpg",
+            "name": "yellow rocket"
+        }
+    },
+    {
+        "pk": 256,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/sowthistle.jpg",
+            "name": "sowthistle"
+        }
+    },
+    {
+        "pk": 361,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/vegetable_fruit_and_ornamental_bugs/thrips.jpg",
+            "name": "thrip"
+        }
+    },
+    {
+        "pk": 12,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/blights_diseases/common_fruit_vegetable_diseases/gray_leaf_spot_tomato.jpg",
+            "name": "grey leaf spot"
+        }
+    },
+    {
+        "pk": 386,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/vegetable_fruit_and_ornamental_bugs/tomato_pinworm.jpg",
+            "name": "tomato pinworm"
+        }
+    },
+    {
+        "pk": 248,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/goldenrod.jpg",
+            "name": "goldenrod"
+        }
+    },
+    {
+        "pk": 86,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/algaecides/emergent_plants/American_lotus.jpg",
+            "name": "American lotus"
+        }
+    },
+    {
+        "pk": 81,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/algaecides/submersed_plants/naiad.jpg",
+            "name": "naiad"
+        }
+    },
+    {
+        "pk": 262,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/poorjoe.jpg",
+            "name": "poorjoe"
+        }
+    },
+    {
+        "pk": 60,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/algaecides/algae/planktonic_algae.jpg",
+            "name": "planktonic"
+        }
+    },
+    {
+        "pk": 184,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/groundsel.jpg",
+            "name": "groundsel"
+        }
+    },
+    {
+        "pk": 324,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/turfgrass_and_lawn_bugs/nematode.jpg",
+            "name": "nematode"
+        }
+    },
+    {
+        "pk": 392,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/vegetable_fruit_and_ornamental_bugs/sharpshooter.jpg",
+            "name": "sharpshooter"
+        }
+    },
+    {
+        "pk": 135,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/Chinese_silvergrass.jpg",
+            "name": "Chinese silvergrass"
+        }
+    },
+    {
+        "pk": 102,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/algaecides/aquatic_weeds/slender_spikerush.jpg",
+            "name": "slender spikebush"
+        }
+    },
+    {
+        "pk": 63,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/algaecides/floating_plants/salvinia.jpg",
+            "name": "salvinia"
+        }
+    },
+    {
+        "pk": 161,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/Chinese_wisteria.jpg",
+            "name": "Chinese and Japanese wisteria"
+        }
+    },
+    {
+        "pk": 138,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/grasses/panicum.jpg",
+            "name": "panicum"
+        }
+    },
+    {
+        "pk": 222,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/stinging_nettle.jpg",
+            "name": "stinging nettle"
+        }
+    },
+    {
+        "pk": 168,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/crimson_clover.jpg",
+            "name": "clover"
+        }
+    },
+    {
+        "pk": 219,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/smooth_bedstraw.jpg",
+            "name": "smooth bedstraw"
+        }
+    },
+    {
+        "pk": 265,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/dodder.jpg",
+            "name": "dodder"
+        }
+    },
+    {
+        "pk": 66,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/algaecides/floating_plants/bladderwort.jpg",
+            "name": "bladderwort"
+        }
+    },
+    {
+        "pk": 174,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/dog_fennel.jpg",
+            "name": "dogfennel"
+        }
+    },
+    {
+        "pk": 22,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/blights_diseases/common_ornamental_diseases/camellia_flower_blight.jpg",
+            "name": "petal blight"
+        }
+    },
+    {
+        "pk": 331,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/turfgrass_and_lawn_bugs/pill_bug.jpg",
+            "name": "pillbug"
+        }
+    },
+    {
+        "pk": 78,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/algaecides/submersed_plants/eurasian_watermilfoil.jpg",
+            "name": "Eurasian watermilfoil"
+        }
+    },
+    {
+        "pk": 136,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/Japanese_stiltgrass.jpg",
+            "name": "Japanese stiltgrass"
+        }
+    },
+    {
+        "pk": 24,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/blights_diseases/common_ornamental_diseases/botrytis_blight.jpg",
+            "name": "botrytis blight"
+        }
+    },
+    {
+        "pk": 100,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/algaecides/emergent_plants/sedges.jpg",
+            "name": "sedges"
+        }
+    },
+    {
+        "pk": 233,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/yarrow.jpg",
+            "name": "yarrow"
+        }
+    },
+    {
+        "pk": 97,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/algaecides/emergent_plants/pickerel weed.jpg",
+            "name": "pickerel weed"
+        }
+    },
+    {
+        "pk": 163,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/common_purslane_flowering.jpg",
+            "name": "common purslane"
+        }
+    },
+    {
+        "pk": 199,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/moneywort.jpg",
+            "name": "moneywort"
+        }
+    },
+    {
+        "pk": 107,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/algaecides/aquatic_weeds/watershield.jpg",
+            "name": "water shield"
+        }
+    },
+    {
+        "pk": 260,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/downy_brome.jpg",
+            "name": "downy brome"
+        }
+    },
+    {
+        "pk": 382,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/vegetable_fruit_and_ornamental_bugs/adelgid.jpg",
+            "name": "adelgid"
+        }
+    },
+    {
+        "pk": 335,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/turfgrass_and_lawn_bugs/spittlebug.jpg",
+            "name": "spittlebug"
+        }
+    },
+    {
+        "pk": 393,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/vegetable_fruit_and_ornamental_bugs/tomato_hornworm.jpg",
+            "name": "tomato hornworm"
+        }
+    },
+    {
+        "pk": 391,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/vegetable_fruit_and_ornamental_bugs/assassin_bug.jpg",
+            "name": "assassin bug"
+        }
+    },
+    {
+        "pk": 232,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/wild_violet.jpg",
+            "name": "wild violet"
+        }
+    },
+    {
+        "pk": 91,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/algaecides/emergent_plants/liverwort.jpg",
+            "name": "liverwort"
+        }
+    },
+    {
+        "pk": 237,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/multiflora_rose.jpg",
+            "name": "multiflora rose"
+        }
+    },
+    {
+        "pk": 276,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/household_pests/brownbanded_cockroach.jpg",
+            "name": "brown-banded cockroach"
+        }
+    },
+    {
+        "pk": 251,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/pennywort.jpg",
+            "name": "pennywort"
+        }
+    },
+    {
+        "pk": 253,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/prickly_lettuce.jpg",
+            "name": "prickly lettuce"
+        }
+    },
+    {
+        "pk": 281,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/household_pests/firebrat.jpg",
+            "name": "firebrat"
+        }
+    },
+    {
+        "pk": 101,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/algaecides/emergent_plants/phragmites.jpg",
+            "name": "phragmites"
+        }
+    },
+    {
+        "pk": 92,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/algaecides/emergent_plants/knotgrass.jpg",
+            "name": "knotgrass"
+        }
+    },
+    {
+        "pk": 223,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/thistles.jpg",
+            "name": "thistles"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/blights_diseases/common_fruit_vegetable_diseases/downy_mildew_cucumber.jpg",
+            "name": "downy mildew"
+        }
+    },
+    {
+        "pk": 187,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/heal_all.jpg",
+            "name": "healall"
+        }
+    },
+    {
+        "pk": 287,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/household_pests/head_lice.jpg",
+            "name": "lice"
+        }
+    },
+    {
+        "pk": 90,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/algaecides/emergent_plants/loosestrife.jpg",
+            "name": "loosestrife"
+        }
+    },
+    {
+        "pk": 342,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/vegetable_fruit_and_ornamental_bugs/Colorado_potato_beetle(adult_and_larvae).jpg",
+            "name": "Colorado potato beetle"
+        }
+    },
+    {
+        "pk": 108,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/algaecides/aquatic_weeds/water_pennywort.jpg",
+            "name": "water pennywort"
+        }
+    },
+    {
+        "pk": 197,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/lawn_burweed_(spurweed).jpg",
+            "name": "lawn burweed"
+        }
+    },
+    {
+        "pk": 261,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/passion_flower.jpg",
+            "name": "passion flower"
+        }
+    },
+    {
+        "pk": 173,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/dichondra.jpg",
+            "name": "dichondra"
+        }
+    },
+    {
+        "pk": 244,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/morning_glory.jpg",
+            "name": "morning glory"
+        }
+    },
+    {
+        "pk": 120,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/grasses/foxtail.jpg",
+            "name": "foxtail"
+        }
+    },
+    {
+        "pk": 334,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/turfgrass_and_lawn_bugs/sod_webworms_armyworms_and_cutworms.jpg",
+            "name": "sod webworm, armyworm, and cutworm"
+        }
+    },
+    {
+        "pk": 8,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/blights_diseases/common_fruit_vegetable_diseases/phytophthora_brown_rot.jpg",
+            "name": "phytophthora brown rot"
+        }
+    },
+    {
+        "pk": 239,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/chinaberry.jpg",
+            "name": "Chinaberry"
+        }
+    },
+    {
+        "pk": 293,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/household_pests/sugar_ant.jpg",
+            "name": "sugar ant"
+        }
+    },
+    {
+        "pk": 378,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/vegetable_fruit_and_ornamental_bugs/tent_caterpillar.jpg",
+            "name": "tent caterpillar"
+        }
+    },
+    {
+        "pk": 299,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/stinging_and_biting_bugs/black_deer_fly.jpg",
+            "name": "black fly"
+        }
+    },
+    {
+        "pk": 114,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/grasses/bluegrasss_annual.jpg",
+            "name": "annual bluegrass"
+        }
+    },
+    {
+        "pk": 303,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/stinging_and_biting_bugs/horse_fly.jpg",
+            "name": "horsefly"
+        }
+    },
+    {
+        "pk": 305,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/stinging_and_biting_bugs/sand_fly.jpg",
+            "name": "sand fly"
+        }
+    },
+    {
+        "pk": 301,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/stinging_and_biting_bugs/chigger.jpg",
+            "name": "chigger"
+        }
+    },
+    {
+        "pk": 61,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/algaecides/algae/branched_algae_chara.jpg",
+            "name": "chara"
+        }
+    },
+    {
+        "pk": 62,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/algaecides/algae/nitella.jpg",
+            "name": "nitella"
+        }
+    },
+    {
+        "pk": 321,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/turfgrass_and_lawn_bugs/billbug_larvae.jpg",
+            "name": "billbug larvae"
+        }
+    },
+    {
+        "pk": 59,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/blights_diseases/turf_grasses_and_yards/lawn_and_yard_diseases/blue_green_algae.jpg",
+            "name": "blue-green algae"
+        }
+    },
+    {
+        "pk": 147,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/asters.jpg",
+            "name": "asters"
+        }
+    },
+    {
+        "pk": 18,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/blights_diseases/common_fruit_vegetable_diseases/canker.jpg",
+            "name": "canker"
+        }
+    },
+    {
+        "pk": 369,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/vegetable_fruit_and_ornamental_bugs/lygus.jpg",
+            "name": "lygus"
+        }
+    },
+    {
+        "pk": 54,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/blights_diseases/turf_grasses_and_yards/lawn_and_yard_diseases/summer_patch.jpg",
+            "name": "summer patch"
+        }
+    },
+    {
+        "pk": 274,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/box_elder.jpg",
+            "name": "box elder"
+        }
+    },
+    {
+        "pk": 245,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/cocklebur.jpg",
+            "name": "cocklebur"
+        }
+    },
+    {
+        "pk": 11,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/blights_diseases/common_fruit_vegetable_diseases/fusarium_wilt_of_tomatoes.jpg",
+            "name": "fusarium blight"
+        }
+    },
+    {
+        "pk": 288,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/household_pests/house_fly.jpg",
+            "name": "house fly"
+        }
+    },
+    {
+        "pk": 333,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/turfgrass_and_lawn_bugs/slug_and_snail.jpg",
+            "name": "slugs and snails"
+        }
+    },
+    {
+        "pk": 157,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/catsear_dandelion.jpg",
+            "name": "catsear dandelion"
+        }
+    },
+    {
+        "pk": 307,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/stinging_and_biting_bugs/greenhead_fly.jpg",
+            "name": "greenhead fly"
+        }
+    },
+    {
+        "pk": 306,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/stinging_and_biting_bugs/gnat.jpg",
+            "name": "gnat"
+        }
+    },
+    {
+        "pk": 315,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/stinging_and_biting_bugs/scorpion.jpg",
+            "name": "scorpion"
+        }
+    },
+    {
+        "pk": 158,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/chamberbitter.jpg",
+            "name": "chamberbitter"
+        }
+    },
+    {
+        "pk": 360,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/vegetable_fruit_and_ornamental_bugs/tea_scale_adults_underside_of_camellia_leaf.jpg",
+            "name": "tea scale"
+        }
+    },
+    {
+        "pk": 144,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/grasses/tall_fescue.jpg",
+            "name": "tall fescue"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/blights_diseases/common_fruit_vegetable_diseases/gummy_stem_blight.jpg",
+            "name": "gummy stem blight"
+        }
+    },
+    {
+        "pk": 20,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/blights_diseases/common_fruit_vegetable_diseases/squash_fruit_rot.jpg",
+            "name": "fruit rot"
+        }
+    },
+    {
+        "pk": 370,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/vegetable_fruit_and_ornamental_bugs/boll_weevil.jpg",
+            "name": "boll weevil"
+        }
+    },
+    {
+        "pk": 172,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/dandelion.jpg",
+            "name": "dandelion"
+        }
+    },
+    {
+        "pk": 46,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/blights_diseases/turf_grasses_and_yards/turfgrass_diseases/pythium_root_rot.jpg",
+            "name": "pythium root rot"
+        }
+    },
+    {
+        "pk": 247,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/fleabane.jpg",
+            "name": "fleabane"
+        }
+    },
+    {
+        "pk": 207,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/poison_oak.jpg",
+            "name": "poison oak"
+        }
+    },
+    {
+        "pk": 53,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/blights_diseases/turf_grasses_and_yards/turfgrass_diseases/take_all_patch_turf.jpg",
+            "name": "take all patch"
+        }
+    },
+    {
+        "pk": 167,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/creeping_woodsorrel.jpg",
+            "name": "creeping woodsorrel"
+        }
+    },
+    {
+        "pk": 14,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/blights_diseases/common_fruit_vegetable_diseases/powdery_mildew_squash.jpg",
+            "name": "powdery mildew"
+        }
+    },
+    {
+        "pk": 242,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/black_nightshade.jpg",
+            "name": "black nightshade"
+        }
+    },
+    {
+        "pk": 205,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/pineapple_weed.jpg",
+            "name": "pineapple weed"
+        }
+    },
+    {
+        "pk": 118,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/grasses/bahiagrass.jpg",
+            "name": "bahiagrass"
+        }
+    },
+    {
+        "pk": 211,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/purple_deadnettle.jpg",
+            "name": "purple deadnettle"
+        }
+    },
+    {
+        "pk": 285,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/household_pests/fly_larvae.jpg",
+            "name": "fly larvae"
+        }
+    },
+    {
+        "pk": 221,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/spreading_dayflower.jpg",
+            "name": "spreading dayflower"
+        }
+    },
+    {
+        "pk": 137,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/grasses/cogongrass.jpg",
+            "name": "cogongrass"
+        }
+    },
+    {
+        "pk": 45,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/blights_diseases/turf_grasses_and_yards/turfgrass_diseases/pythium_blight_turf.jpg",
+            "name": "pythium blight"
+        }
+    },
+    {
+        "pk": 358,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/vegetable_fruit_and_ornamental_bugs/spider_mite.jpg",
+            "name": "spider mite"
+        }
+    },
+    {
+        "pk": 359,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/vegetable_fruit_and_ornamental_bugs/squash_beetle.jpg",
+            "name": "squash beetle"
+        }
+    },
+    {
+        "pk": 215,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/seashore_mallow.jpg",
+            "name": "mallows"
+        }
+    },
+    {
+        "pk": 125,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/grasses/kentucky_bluegrass.jpg",
+            "name": "Kentucky bluegrass"
+        }
+    },
+    {
+        "pk": 229,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/wild_garlic.jpg",
+            "name": "wild garlic"
+        }
+    },
+    {
+        "pk": 116,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/grasses/sandspur.jpg",
+            "name": "sandspur"
+        }
+    },
+    {
+        "pk": 294,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/household_pests/termite_workers_and_adult.jpg",
+            "name": "termite"
+        }
+    },
+    {
+        "pk": 228,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/wild_carrot.jpg",
+            "name": "wild carrot"
+        }
+    },
+    {
+        "pk": 302,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/stinging_and_biting_bugs/fire_ant_and_typical_mound.jpg",
+            "name": "fire ants"
+        }
+    },
+    {
+        "pk": 314,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/stinging_and_biting_bugs/saddleback_caterpiller.jpg",
+            "name": "saddleback caterpillar"
+        }
+    },
+    {
+        "pk": 209,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/prostrate_knotweed.jpg",
+            "name": "prostrate knotweed"
+        }
+    },
+    {
+        "pk": 330,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/turfgrass_and_lawn_bugs/mole_cricket.jpg",
+            "name": "mole cricket"
+        }
+    },
+    {
+        "pk": 395,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/general_bug/nuisance_caterpillars.jpg",
+            "name": "nuisance beetles"
+        }
+    },
+    {
+        "pk": 119,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/grasses/bentgrass_greens.jpg",
+            "name": "bentgrass"
+        }
+    },
+    {
+        "pk": 48,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/blights_diseases/turf_grasses_and_yards/turfgrass_diseases/red_thread_turf.jpg",
+            "name": "red thread"
+        }
+    },
+    {
+        "pk": 69,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/algaecides/floating_plants/waterhyacinth.jpg",
+            "name": "water hyacinth"
+        }
+    },
+    {
+        "pk": 74,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/algaecides/submersed_plants/watermilfoil.jpg",
+            "name": "watermilfoil"
+        }
+    },
+    {
+        "pk": 106,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/algaecides/aquatic_weeds/torpedograss.jpg",
+            "name": "torpedograss"
+        }
+    },
+    {
+        "pk": 49,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/blights_diseases/turf_grasses_and_yards/turfgrass_diseases/rhizoctonia_leaf_and_shealth_spot.jpg",
+            "name": "rhizoctonia leaf and sheath spot"
+        }
+    },
+    {
+        "pk": 175,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/dollarweed.jpg",
+            "name": "dollarweed"
+        }
+    },
+    {
+        "pk": 250,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/marsh_elder.jpg",
+            "name": "marsh elder"
+        }
+    },
+    {
+        "pk": 318,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/stinging_and_biting_bugs/yellow_jackets_paper_wasps_hornets.jpg",
+            "name": "yellow jackets, paper wasps, and hornets"
+        }
+    },
+    {
+        "pk": 243,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/velvetleaf.jpg",
+            "name": "velvetleaf"
+        }
+    },
+    {
+        "pk": 224,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/thymeleaf_speedwell.jpg",
+            "name": "thymeleaf speedwell"
+        }
+    },
+    {
+        "pk": 372,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/vegetable_fruit_and_ornamental_bugs/rose_chafer.jpg",
+            "name": "rose chafer"
+        }
+    },
+    {
+        "pk": 26,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/blights_diseases/common_ornamental_diseases/shot_hole.jpg",
+            "name": "shot hole fungus"
+        }
+    },
+    {
+        "pk": 21,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/blights_diseases/common_ornamental_diseases/black_spot_of_rose.jpg",
+            "name": "black spot"
+        }
+    },
+    {
+        "pk": 345,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/vegetable_fruit_and_ornamental_bugs/flatid_planthopper_nynph.jpg",
+            "name": "planthopper"
+        }
+    },
+    {
+        "pk": 130,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/grasses/seashore_paspalum.jpg",
+            "name": "seashore paspalum"
+        }
+    },
+    {
+        "pk": 216,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/shepherd's_purse.jpg",
+            "name": "shepherd's purse"
+        }
+    },
+    {
+        "pk": 217,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/Sida_species.jpg",
+            "name": "sida species"
+        }
+    },
+    {
+        "pk": 375,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/vegetable_fruit_and_ornamental_bugs/psyllid.jpg",
+            "name": "psyllid"
+        }
+    },
+    {
+        "pk": 52,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/blights_diseases/turf_grasses_and_yards/turfgrass_diseases/striped_smut_turf.jpg",
+            "name": "striped smut"
+        }
+    },
+    {
+        "pk": 185,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/hairy_bittercress.jpg",
+            "name": "hairy bittercress"
+        }
+    },
+    {
+        "pk": 201,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/mugwort.jpg",
+            "name": "mugwort"
+        }
+    },
+    {
+        "pk": 295,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/stinging_and_biting_bugs/adult_mosquito.jpg",
+            "name": "adult mosquito"
+        }
+    },
+    {
+        "pk": 152,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/burclover.jpg",
+            "name": "burclover"
+        }
+    },
+    {
+        "pk": 0,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/blights_diseases/common_fruit_vegetable_diseases/bacterial_wilt_of_tomato.jpg",
+            "name": "bacterial wilt"
+        }
+    },
+    {
+        "pk": 206,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/poison_ivy.jpg",
+            "name": "poison ivy"
+        }
+    },
+    {
+        "pk": 58,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/algaecides/algae/filamentous_algae.jpg",
+            "name": "filamentous"
+        }
+    },
+    {
+        "pk": 34,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/blights_diseases/shade_and_forest_tree_diseases/needle_cast.jpg",
+            "name": "needle cast"
+        }
+    },
+    {
+        "pk": 241,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/yellow_woodsorrel.jpg",
+            "name": "yellow woodsorrel"
+        }
+    },
+    {
+        "pk": 397,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/general_bug/nuisance_worms.jpg",
+            "name": "nuisance worms"
+        }
+    },
+    {
+        "pk": 328,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/turfgrass_and_lawn_bugs/leafhopper.jpg",
+            "name": "leafhopper"
+        }
+    },
+    {
+        "pk": 93,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/algaecides/emergent_plants/common_reed.jpg",
+            "name": "common reed"
+        }
+    },
+    {
+        "pk": 352,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/vegetable_fruit_and_ornamental_bugs/nantucket_pine_tip_moth_and_pupa.jpg",
+            "name": "Nantucket pinetip moth"
+        }
+    },
+    {
+        "pk": 208,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/poison_sumac.jpg",
+            "name": "poison sumac"
+        }
+    },
+    {
+        "pk": 363,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/vegetable_fruit_and_ornamental_bugs/tussock_moth_caterpillar.jpg",
+            "name": "tussock moth caterpillar"
+        }
+    },
+    {
+        "pk": 319,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/turfgrass_and_lawn_bugs/aphids_grass.jpg",
+            "name": "aphid"
+        }
+    },
+    {
+        "pk": 159,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/chicory.jpg",
+            "name": "chicory"
+        }
+    },
+    {
+        "pk": 284,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/household_pests/fruit_fly.jpg",
+            "name": "fruit fly"
+        }
+    },
+    {
+        "pk": 41,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/blights_diseases/turf_grasses_and_yards/turfgrass_diseases/large_patch_(Rhizoctonia_solaria)_turf.jpg",
+            "name": "rhizoctonia large patch"
+        }
+    },
+    {
+        "pk": 80,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/algaecides/submersed_plants/hydrilla.jpg",
+            "name": "hydrilla"
+        }
+    },
+    {
+        "pk": 27,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/blights_diseases/common_ornamental_diseases/ink_spot.jpg",
+            "name": "ink spot"
+        }
+    },
+    {
+        "pk": 154,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/carolina_false_dandelion.jpg",
+            "name": "false dandelion"
+        }
+    },
+    {
+        "pk": 131,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/grasses/barnyardgrass.jpg",
+            "name": "barnyardgrass"
+        }
+    },
+    {
+        "pk": 35,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/blights_diseases/shade_and_forest_tree_diseases/sycamore_anthracnose.jpg",
+            "name": "anthracnose"
+        }
+    },
+    {
+        "pk": 230,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/wild_mustard.jpg",
+            "name": "wild mustard"
+        }
+    },
+    {
+        "pk": 252,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/povertyweed.jpg",
+            "name": "povertyweed"
+        }
+    },
+    {
+        "pk": 50,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/blights_diseases/turf_grasses_and_yards/turfgrass_diseases/slime_mold_turf.jpg",
+            "name": "slime mold"
+        }
+    },
+    {
+        "pk": 19,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/blights_diseases/common_fruit_vegetable_diseases/southern_blight_tomato.jpg",
+            "name": "southern blight"
+        }
+    },
+    {
+        "pk": 145,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/grasses/thin_paspalum.jpg",
+            "name": "thin paspalum"
+        }
+    },
+    {
+        "pk": 282,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/household_pests/flea.jpg",
+            "name": "flea"
+        }
+    },
+    {
+        "pk": 286,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/household_pests/wood_cockroach.jpg",
+            "name": "wood cockroach"
+        }
+    },
+    {
+        "pk": 226,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/Virginia_creeper.jpg",
+            "name": "Virginia creeper"
+        }
+    },
+    {
+        "pk": 9,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/blights_diseases/common_fruit_vegetable_diseases/scabs.jpg",
+            "name": "scabs"
+        }
+    },
+    {
+        "pk": 313,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/stinging_and_biting_bugs/no-see-ums.jpg",
+            "name": "no-see-ums"
+        }
+    },
+    {
+        "pk": 257,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/sunflower.jpg",
+            "name": "sunflower"
+        }
+    },
+    {
+        "pk": 394,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/general_bug/nuisance_moths.jpg",
+            "name": "nuisance moths"
+        }
+    },
+    {
+        "pk": 103,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/algaecides/aquatic_weeds/smartweed.jpg",
+            "name": "smartweed"
+        }
+    },
+    {
+        "pk": 132,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/grasses/smutgrass.jpg",
+            "name": "smutgrass"
+        }
+    },
+    {
+        "pk": 29,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/blights_diseases/common_ornamental_diseases/leaf_scorch.jpg",
+            "name": "leaf scorch"
+        }
+    },
+    {
+        "pk": 39,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/blights_diseases/turf_grasses_and_yards/turfgrass_diseases/dollar_spot_turf.gif",
+            "name": "dollar spot"
+        }
+    },
+    {
+        "pk": 337,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/vegetable_fruit_and_ornamental_bugs/banded_cucumber_beetle.jpg",
+            "name": "cucumber beetle"
+        }
+    },
+    {
+        "pk": 105,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/algaecides/aquatic_weeds/southern_watergrass.jpg",
+            "name": "southern watergrass"
+        }
+    },
+    {
+        "pk": 376,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/vegetable_fruit_and_ornamental_bugs/sowbug.jpg",
+            "name": "sowbug"
+        }
+    },
+    {
+        "pk": 150,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/broadleaf_dock.jpg",
+            "name": "docks"
+        }
+    },
+    {
+        "pk": 270,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/mayweed.jpg",
+            "name": "mayweed"
+        }
+    },
+    {
+        "pk": 255,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/sicklepod.jpg",
+            "name": "sicklepod"
+        }
+    },
+    {
+        "pk": 134,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/grasses/bermuda_grass.jpg",
+            "name": "bermudagrass"
+        }
+    },
+    {
+        "pk": 104,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/algaecides/aquatic_weeds/spatterdock.jpg",
+            "name": "spatterdock"
+        }
+    },
+    {
+        "pk": 388,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/vegetable_fruit_and_ornamental_bugs/mirid.jpg",
+            "name": "mirid"
+        }
+    },
+    {
+        "pk": 94,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/algaecides/emergent_plants/White_Waterlily.jpg",
+            "name": "fragrant water lily"
+        }
+    },
+    {
+        "pk": 72,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/algaecides/floating_plants/floating_pennywort.jpg",
+            "name": "floating pennywort"
+        }
+    },
+    {
+        "pk": 311,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/stinging_and_biting_bugs/midges.jpg",
+            "name": "midge"
+        }
+    },
+    {
+        "pk": 344,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/vegetable_fruit_and_ornamental_bugs/elm_leaf_beetle_adult_and_larva.jpg",
+            "name": "elmleaf beetle"
+        }
+    },
+    {
+        "pk": 310,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/stinging_and_biting_bugs/flea_larvae.jpg",
+            "name": "flea larvae"
+        }
+    },
+    {
+        "pk": 162,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/common_cinquefoil.jpg",
+            "name": "common cinquefoil"
+        }
+    },
+    {
+        "pk": 202,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/oxeye_daisy.jpg",
+            "name": "oxeye daisy"
+        }
+    },
+    {
+        "pk": 269,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/London_rocket.jpg",
+            "name": "London rocket"
+        }
+    },
+    {
+        "pk": 214,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/redstem_filaree.jpg",
+            "name": "filaree"
+        }
+    },
+    {
+        "pk": 110,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/algaecides/aquatic_weeds/flamingo_willow.jpg",
+            "name": "willows"
+        }
+    },
+    {
+        "pk": 362,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/vegetable_fruit_and_ornamental_bugs/tomato_fruitworm.jpg",
+            "name": "tomato fruitworm"
+        }
+    },
+    {
+        "pk": 142,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/grasses/pampasgrass.jpg",
+            "name": "pampasgrass"
+        }
+    },
+    {
+        "pk": 272,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/Japanese_honeysuckle.jpg",
+            "name": "Japanese honeysuckle"
+        }
+    },
+    {
+        "pk": 280,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/household_pests/earwig.jpg",
+            "name": "earwig"
+        }
+    },
+    {
+        "pk": 377,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/vegetable_fruit_and_ornamental_bugs/springtail.jpg",
+            "name": "springtail"
+        }
+    },
+    {
+        "pk": 249,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/jimsonweed.jpg",
+            "name": "jimsonweed"
+        }
+    },
+    {
+        "pk": 210,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/prostrate_spurge.jpg",
+            "name": "prostrate spurge"
+        }
+    },
+    {
+        "pk": 235,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/thorny_olive.jpg",
+            "name": "thorny olive"
+        }
+    },
+    {
+        "pk": 308,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/vegetable_fruit_and_ornamental_bugs/midge_larvae.jpg",
+            "name": "midge larvae"
+        }
+    },
+    {
+        "pk": 379,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/vegetable_fruit_and_ornamental_bugs/pine_beetle.jpg",
+            "name": "pine beetle"
+        }
+    },
+    {
+        "pk": 178,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/english_ivy.jpg",
+            "name": "English ivy"
+        }
+    },
+    {
+        "pk": 182,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/germander_speedwell.jpg",
+            "name": "germander speedwell"
+        }
+    },
+    {
+        "pk": 267,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/knapweed.jpg",
+            "name": "knapweed"
+        }
+    },
+    {
+        "pk": 57,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/blights_diseases/turf_grasses_and_yards/turfgrass_diseases/necrotic_ring_spot.jpg",
+            "name": "necrotic ring spot"
+        }
+    },
+    {
+        "pk": 83,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/algaecides/submersed_plants/curly_pondweed.jpg",
+            "name": "pondweed"
+        }
+    },
+    {
+        "pk": 218,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/smilax.jpg",
+            "name": "smilax"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/blights_diseases/common_ornamental_diseases/leaf_curl.jpg",
+            "name": "leaf curl"
+        }
+    },
+    {
+        "pk": 329,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/turfgrass_and_lawn_bugs/mites.jpg",
+            "name": "mite"
+        }
+    },
+    {
+        "pk": 354,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/vegetable_fruit_and_ornamental_bugs/orange_striped_oak_worm.jpg",
+            "name": "orange striped oakworm"
+        }
+    },
+    {
+        "pk": 259,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/stemless_ironweed.jpg",
+            "name": "stemless ironweed"
+        }
+    },
+    {
+        "pk": 38,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/blights_diseases/turf_grasses_and_yards/turfgrass_diseases/copper_spot_on_bermudagrass_turf.jpg",
+            "name": "copper spot"
+        }
+    },
+    {
+        "pk": 389,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/vegetable_fruit_and_ornamental_bugs/tingid.jpg",
+            "name": "tingid"
+        }
+    },
+    {
+        "pk": 129,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/grasses/quackgrass.jpg",
+            "name": "quackgrass"
+        }
+    },
+    {
+        "pk": 127,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/grasses/kikuyu_grass.jpg",
+            "name": "kikuyu grass"
+        }
+    },
+    {
+        "pk": 356,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/vegetable_fruit_and_ornamental_bugs/pickleworm.jpg",
+            "name": "pickleworm"
+        }
+    },
+    {
+        "pk": 225,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/Virginia_buttonweed.jpg",
+            "name": "Virginia buttonweed"
+        }
+    },
+    {
+        "pk": 25,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/blights_diseases/common_ornamental_diseases/leaf_spot_chrysanthemum.jpg",
+            "name": "leaf spot"
+        }
+    },
+    {
+        "pk": 181,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/Florida_pusley.jpg",
+            "name": "Florida pusley"
+        }
+    },
+    {
+        "pk": 82,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/algaecides/submersed_plants/parrotfeather.jpg",
+            "name": "parrotfeather"
+        }
+    },
+    {
+        "pk": 348,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/vegetable_fruit_and_ornamental_bugs/Japanese_beetle.jpg",
+            "name": "Japanese beetle"
+        }
+    },
+    {
+        "pk": 289,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/household_pests/millipede.jpg",
+            "name": "millipede"
+        }
+    },
+    {
+        "pk": 143,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/grasses/muhlygrass.jpg",
+            "name": "muhlygrass"
+        }
+    },
+    {
+        "pk": 31,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/blights_diseases/shade_and_forest_tree_diseases/anthacnose_of_dogwood.jpg",
+            "name": "anthacnose"
+        }
+    },
+    {
+        "pk": 317,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/stinging_and_biting_bugs/velvet_ant.jpg",
+            "name": "velvet ant"
+        }
+    },
+    {
+        "pk": 123,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/grasses/cetipedegrass.jpg",
+            "name": "centipedegrass"
+        }
+    },
+    {
+        "pk": 231,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/wild_onion.jpg",
+            "name": "wild onion"
+        }
+    },
+    {
+        "pk": 297,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/stinging_and_biting_bugs/bagworm.jpg",
+            "name": "bagworm"
+        }
+    },
+    {
+        "pk": 166,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/common_vetch.jpg",
+            "name": "common vetch"
+        }
+    },
+    {
+        "pk": 340,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/vegetable_fruit_and_ornamental_bugs/boxwood_leafminer_larvae.jpg",
+            "name": "leafminer larvae"
+        }
+    },
+    {
+        "pk": 70,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/algaecides/floating_plants/watermeal.jpg",
+            "name": "watermeal"
+        }
+    },
+    {
+        "pk": 99,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/algaecides/emergent_plants/rushes.jpg",
+            "name": "rushes"
+        }
+    },
+    {
+        "pk": 349,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/vegetable_fruit_and_ornamental_bugs/leaf_miner.jpg",
+            "name": "leafminer"
+        }
+    },
+    {
+        "pk": 323,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/turfgrass_and_lawn_bugs/cricket.jpg",
+            "name": "cricket"
+        }
+    },
+    {
+        "pk": 220,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/spotted_spurge.jpg",
+            "name": "spurges"
+        }
+    },
+    {
+        "pk": 191,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/indian_mock_strawberry.jpg",
+            "name": "mock strawberry"
+        }
+    },
+    {
+        "pk": 212,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/purslane_speedwell.jpg",
+            "name": "purslane speedwell"
+        }
+    },
+    {
+        "pk": 13,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/blights_diseases/common_fruit_vegetable_diseases/purple_blotch.jpg",
+            "name": "purple blotch"
+        }
+    },
+    {
+        "pk": 271,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/sandbur.jpg",
+            "name": "sandbur"
+        }
+    },
+    {
+        "pk": 73,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/algaecides/floating_plants/smooth_.jpg",
+            "name": "smooth"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/blights_diseases/common_ornamental_diseases/damping_off_of_seed.jpg",
+            "name": "damping off"
+        }
+    },
+    {
+        "pk": 164,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/common_ragweed.jpg",
+            "name": "common ragweed"
+        }
+    },
+    {
+        "pk": 300,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/stinging_and_biting_bugs/centipede.jpg",
+            "name": "centipede"
+        }
+    },
+    {
+        "pk": 33,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/blights_diseases/shade_and_forest_tree_diseases/pine_needle_rust.jpg",
+            "name": "rust"
+        }
+    },
+    {
+        "pk": 89,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/algaecides/emergent_plants/cattail.jpg",
+            "name": "cattail"
+        }
+    },
+    {
+        "pk": 115,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/grasses/common_chickweed.jpg",
+            "name": "common chickweed"
+        }
+    },
+    {
+        "pk": 75,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/algaecides/submersed_plants/coontail.jpg",
+            "name": "coontail"
+        }
+    },
+    {
+        "pk": 87,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/algaecides/emergent_plants/broadleaf_arrowhead.jpg",
+            "name": "arrowhead"
+        }
+    },
+    {
+        "pk": 128,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/grasses/overseeded_ryegrass.jpg",
+            "name": "overseeded ryegrass"
+        }
+    },
+    {
+        "pk": 387,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/vegetable_fruit_and_ornamental_bugs/bollworm.jpg",
+            "name": "bollworm"
+        }
+    },
+    {
+        "pk": 309,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/stinging_and_biting_bugs/stable_fly.jpg",
+            "name": "stable fly"
+        }
+    },
+    {
+        "pk": 179,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/field_bindweed.jpg",
+            "name": "bindweed"
+        }
+    },
+    {
+        "pk": 367,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/vegetable_fruit_and_ornamental_bugs/flea_beetle.jpg",
+            "name": "flea beetle"
+        }
+    },
+    {
+        "pk": 268,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/common_milkweed.jpg",
+            "name": "common milkweed"
+        }
+    },
+    {
+        "pk": 111,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/pearlwort.jpg",
+            "name": "pearlwort"
+        }
+    },
+    {
+        "pk": 139,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/grasses/johnsongrass.jpg",
+            "name": "johnsongrass"
+        }
+    },
+    {
+        "pk": 312,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/stinging_and_biting_bugs/mosquito_larvae.jpg",
+            "name": "mosquito larvae"
+        }
+    },
+    {
+        "pk": 67,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/algaecides/floating_plants/carolina_mosquito_fern.jpg",
+            "name": "mosquito fern"
+        }
+    },
+    {
+        "pk": 113,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/grasses/goosegrass.jpg",
+            "name": "goosegrass"
+        }
+    },
+    {
+        "pk": 149,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/black_medic.jpg",
+            "name": "black medic"
+        }
+    },
+    {
+        "pk": 112,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/grasses/crabgrass.jpg",
+            "name": "crabgrass"
+        }
+    },
+    {
+        "pk": 371,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/vegetable_fruit_and_ornamental_bugs/june_bug.jpg",
+            "name": "june bug"
+        }
+    },
+    {
+        "pk": 204,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/weeds/pigweed.jpg",
+            "name": "pigweed"
+        }
+    },
+    {
+        "pk": 332,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/turfgrass_and_lawn_bugs/rhodesgrass_mealybug.jpg",
+            "name": "mealybug"
+        }
+    },
+    {
+        "pk": 133,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/weeds/grasses/St._Augustinegrass.jpg",
+            "name": "St. Augustinegrass"
+        }
+    },
+    {
+        "pk": 383,
+        "model": "data_manager.Pest",
+        "fields": {
+            "image_url": "http://sccoastalpesticides.org/images/decision_buttons/bugs/vegetable_fruit_and_ornamental_bugs/budworm.jpg",
+            "name": "budworm"
+        }
+    },
+    {
+        "pk": 1,
+        "model": "data_manager.PesticideClass",
+        "fields": {
+            "name": "Algaecide"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "data_manager.PesticideClass",
+        "fields": {
+            "name": "Herbicide"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "data_manager.PesticideClass",
+        "fields": {
+            "name": "Insecticide"
+        }
+    },
+    {
+        "pk": 0,
+        "model": "data_manager.PesticideClass",
+        "fields": {
+            "name": "Fungicide"
+        }
+    }
+]

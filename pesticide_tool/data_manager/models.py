@@ -18,8 +18,16 @@ class ActiveIngredient(models.Model):
     cumulative_score = models.FloatField(blank=True, null=True)
     relative_potential_ecosystem_hazard = models.CharField(max_length=50, blank=True)
 
-    warning = models.ForeignKey('Warning', blank=True, null=True)
+    warnings = models.ForeignKey('Warning', blank=True, null=True)
+    pests_treated = models.ManyToManyField('Pest')
+    pesticide_classes = models.ManyToManyField('pesticideClass')
+    brands = models.ManyToManyField('Brand')
 
+class PesticideClass(models.Model):
+    row_id = models.IntegerField(primary_key=True)
+    row_entry_date = models.DateTimeField(blank=True, null=True)
+    row_update_date = models.DateTimeField(blank=True, null=True)
+    name = models.CharField(unique=True, max_length=50)
 
 class Brand(models.Model):
     row_id = models.IntegerField(primary_key=True)
@@ -87,6 +95,8 @@ class Category(models.Model):
     name = models.CharField(unique=True, max_length=50)
     image_url = models.TextField()
 
+    sub_category = models.ForeignKey('SubCategory', null=True)
+
 class SubCategory(models.Model):
     row_id = models.IntegerField(primary_key=True)
     row_entry_date = models.DateTimeField(blank=True, null=True)
@@ -94,7 +104,7 @@ class SubCategory(models.Model):
     name = models.CharField(unique=True, max_length=50)
     image_url = models.TextField(blank=True)
 
-    category = models.ForeignKey('Category', null=True)
+    #category = models.ForeignKey('Category', null=True)
     pests = models.ForeignKey('Pest', null=True)
 
 """
