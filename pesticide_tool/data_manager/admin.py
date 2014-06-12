@@ -5,3 +5,5 @@ class ActiveIngredient(admin.ModelAdmin):
     list_display = ('name', 'row_id')
     search_fields = ['name']
     ordering = ('name')
+
+admin.site.register(ActiveIngredient, ActiveIngredientAdmin)
