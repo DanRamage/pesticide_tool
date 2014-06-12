@@ -82,7 +82,7 @@ PROJECT_ROOT = '/home2/sccoasta/django_projects/pesticide_tool/pesticide_tool/'
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
 STATIC_ROOT = '/home2/sccoasta/django_projects/pesticide_tool/pesticide_tool/static/'
-STATIC_URL = '/static/'
+STATIC_URL = 'http://sccoastalpesticides.org/pesticide_tool/static/'
 
 STATICFILES_DIRS = (
     ('', path.join(PROJECT_ROOT,'static')), #store site-specific media here.
