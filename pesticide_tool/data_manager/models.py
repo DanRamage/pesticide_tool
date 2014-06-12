@@ -20,7 +20,7 @@ class ActiveIngredient(models.Model):
 
     warnings = models.ForeignKey('Warning', blank=True, null=True)
     pests_treated = models.ManyToManyField('Pest')
-    pesticide_classes = models.ManyToManyField('pesticideClass')
+    pesticide_classes = models.ManyToManyField('PesticideClass')
     brands = models.ManyToManyField('Brand')
 
 class PesticideClass(models.Model):
