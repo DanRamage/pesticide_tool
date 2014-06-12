@@ -85,7 +85,57 @@ STATIC_URL = '/pesticide_tool/media/'
 
 MEDIA_URL = '/pesticide_tool/pesticide_tool/media'
 
-import logging
-logging.getLogger('django.db.backends').setLevel(logging.ERROR)
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'filters': {
+        'require_debug_false': {
+            '()': 'django.utils.log.RequireDebugFalse'
+        }
+    },
+    'handlers': {
+        'mail_admins': {
+            'level': 'ERROR',
+            'filters': ['require_debug_false'],
+            'class': 'django.utils.log.AdminEmailHandler'
+        },
+        'logfile': {
+            'level':'DEBUG',
+            'class':'logging.handlers.RotatingFileHandler',
+            'filename': SITE_ROOT + "/debug.log",
+            'maxBytes': 50000,
+            'backupCount': 2,
+            'formatter': 'custom',
+        },
+    },
+    'loggers': {
+        #'django': {
+        #    'handlers':['logfile'],
+        #    'level':'DEBUG',
+        #    'propagate': True,
+        #},
+        #'django.request': {
+        #    'handlers': ['mail_admins', 'logfile'],
+        #    'level': 'DEBUG',
+        #    'propagate': True,
+        #},
+        'nodeshot.core.mailing': {
+            'handlers': ['logfile'],
+            'level': 'DEBUG',
+        },
+    },
+    'formatters': {
+        'verbose': {
+            'format': '%(levelname)s %(asctime)s %(module)s %(process)d %(thread)d %(message)s'
+        },
+        'simple': {
+            'format': '%(levelname)s %(message)s'
+        },
+        'custom': {
+            'format': '%(levelname)s %(asctime)s\n%(message)s'
+        }
+    }
+}
+
 from settings_local import *
 
