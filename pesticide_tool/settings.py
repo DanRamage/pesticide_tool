@@ -49,7 +49,7 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
-ROOT_URLCONF = 'pesticide_tool.urls'
+ROOT_URLCONF = 'urls'
 
 #WSGI_APPLICATION = 'pesticide_tool.wsgi.application'
 
@@ -57,12 +57,12 @@ ROOT_URLCONF = 'pesticide_tool.urls'
 # Database
 # https://docs.djangoproject.com/en/1.6/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
-}
+#DATABASES = {
+#    'default': {
+#        'ENGINE': 'django.db.backends.sqlite3',
+#        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#    }
+#}
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.6/topics/i18n/
@@ -83,5 +83,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+import logging
+logging.getLogger('django.db.backends').setLevel(logging.ERROR)
 from settings_local import *
 
