@@ -3,7 +3,6 @@
         "pk": 1,
         "model": "data_manager.category",
         "fields": {
-            "brands": [],
             "pesticide_class": [
                 1
             ],
@@ -22,7 +21,6 @@
         "pk": 2,
         "model": "data_manager.category",
         "fields": {
-            "brands": [],
             "pesticide_class": [
                 2
             ],
@@ -38,7 +36,6 @@
         "pk": 0,
         "model": "data_manager.category",
         "fields": {
-            "brands": [],
             "pesticide_class": [
                 0
             ],
@@ -56,7 +53,6 @@
         "pk": 3,
         "model": "data_manager.category",
         "fields": {
-            "brands": [],
             "pesticide_class": [
                 3
             ],
