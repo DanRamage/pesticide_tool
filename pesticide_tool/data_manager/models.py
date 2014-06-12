@@ -95,7 +95,7 @@ class Category(models.Model):
     name = models.CharField(unique=True, max_length=50)
     image_url = models.TextField()
 
-    sub_category = models.ForeignKey('SubCategory', null=True)
+    sub_categories = models.ForeignKey('SubCategory', null=True)
 
 class SubCategory(models.Model):
     row_id = models.IntegerField(primary_key=True)
