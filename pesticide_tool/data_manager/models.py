@@ -74,7 +74,7 @@ class Pest(models.Model):
 
   def admin_thumbnail(self):
     if self.image_url:
-      return u'<img src="%s" />' % (self.image.url)
+      return u'<img src="%s" />' % (self.image_url)
     else:
       return u''
 
