@@ -79,7 +79,7 @@ class Pest(models.Model):
   row_entry_date = models.DateTimeField(blank=True, null=True)
   row_update_date = models.DateTimeField(blank=True, null=True)
   name = models.CharField(unique=True, max_length=50)
-  display_name = models.CharField(unique=True, max_length=50)
+  #display_name = models.CharField(unique=True, max_length=50)
 
   image_url = models.TextField(blank=True)
 
