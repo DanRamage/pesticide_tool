@@ -73,7 +73,11 @@ class Pest(models.Model):
     return self.name
 
   def admin_thumbnail(self):
+    if self.image_url:
       return u'<img src="%s" />' % (self.image.url)
+    else:
+      return u''
+
   admin_thumbnail.short_description = 'Thumbnail'
   admin_thumbnail.allow_tags = True
 
