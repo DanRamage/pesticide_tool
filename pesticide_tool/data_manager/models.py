@@ -57,6 +57,9 @@ class Pest(models.Model):
 
     pesticides = models.ManyToManyField('ActiveIngredient', blank=True, null=True)
 
+   def __unicode__(self):
+       return self.name
+
 class ActiveIngredientClass(models.Model):
     row_id = models.IntegerField(primary_key=True)
     row_entry_date = models.DateTimeField(blank=True, null=True)
@@ -64,6 +67,9 @@ class ActiveIngredientClass(models.Model):
     name = models.CharField(unique=True, max_length=50)
 
     active_ingredient = models.ManyToManyField('ActiveIngredient', blank=True, null=True)
+
+   def __unicode__(self):
+       return self.name
 
 class ApplicationArea(models.Model):
     row_id = models.IntegerField(primary_key=True)
@@ -73,6 +79,9 @@ class ApplicationArea(models.Model):
 
     #brand = models.ManyToManyField('Brand', blank=True, null=True)
 
+   def __unicode__(self):
+       return self.name
+
 class Warning(models.Model):
     row_id = models.IntegerField(primary_key=True)
     row_entry_date = models.DateTimeField(blank=True, null=True)
@@ -80,6 +89,8 @@ class Warning(models.Model):
     name = models.CharField(unique=True, max_length=50)
     image_url = models.TextField(blank=True)
 
+   def __unicode__(self):
+       return self.name
 
 class PestType(models.Model):
     row_id = models.IntegerField(primary_key=True)
@@ -87,6 +98,8 @@ class PestType(models.Model):
     row_update_date = models.DateTimeField(blank=True, null=True)
     name = models.CharField(unique=True, max_length=50)
 
+   def __unicode__(self):
+       return self.name
 
 class Category(models.Model):
     row_id = models.IntegerField(primary_key=True)
@@ -96,6 +109,9 @@ class Category(models.Model):
     image_url = models.TextField()
 
     sub_categories = models.ManyToManyField('SubCategory', null=True)
+
+   def __unicode__(self):
+       return self.name
 
 class SubCategory(models.Model):
     row_id = models.IntegerField(primary_key=True)
@@ -107,6 +123,8 @@ class SubCategory(models.Model):
     #category = models.ForeignKey('Category', null=True)
     pests = models.ManyToManyField('Pest', null=True)
 
+   def __unicode__(self):
+       return self.name
 """
 class PestToPesticide(models.Model):
     row_id = models.IntegerField(primary_key=True)

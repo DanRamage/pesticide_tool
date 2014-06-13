@@ -10,20 +10,23 @@ class LayerAdmin(admin.ModelAdmin):
     exclude = ('slug_name',)
 """
 class ActiveIngredientAdmin(admin.ModelAdmin):
-    list_display = ('name', 'row_id')
-    search_fields = ['name']
-    ordering = ('name','row_id')
+  list_display = ('name', 'row_id')
+  search_fields = ['name']
+  ordering = ('name','row_id')
 
 class CategoryAdmin(admin.ModelAdmin):
   list_display = ('name', 'row_id')
+  ordering = ('name', 'row_id')
   search_fields = ['name']
 
 class SubCategoryAdmin(admin.ModelAdmin):
   list_display = ('name', 'row_id')
+  ordering = ('name', 'row_id')
   search_fields = ['name']
 
 class PestAdmin(admin.ModelAdmin):
   list_display = ('name', 'row_id')
+  ordering = ('name', 'row_id')
   search_fields = ['name']
 
 admin.site.register(ActiveIngredient, ActiveIngredientAdmin)
