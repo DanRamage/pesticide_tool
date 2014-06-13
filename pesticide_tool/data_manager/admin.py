@@ -25,7 +25,7 @@ class SubCategoryAdmin(admin.ModelAdmin):
   search_fields = ['name']
 
 class PestAdmin(admin.ModelAdmin):
-  list_display = ('name', 'admin_thumbnail')
+  list_display = ('name')
   ordering = ('name', 'row_id')
   search_fields = ['name']
 
