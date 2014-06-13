@@ -15,6 +15,7 @@ class ActiveIngredient(models.Model):
   row_entry_date = models.DateTimeField(blank=True, null=True)
   row_update_date = models.DateTimeField(blank=True, null=True)
   name = models.CharField(unique=True, max_length=50)
+  display_name = models.CharField(unique=True, max_length=50)
   cumulative_score = models.FloatField(blank=True, null=True)
   relative_potential_ecosystem_hazard = models.CharField(max_length=50, blank=True)
 
@@ -31,7 +32,6 @@ class PesticideClass(models.Model):
   row_entry_date = models.DateTimeField(blank=True, null=True)
   row_update_date = models.DateTimeField(blank=True, null=True)
   name = models.CharField(unique=True, max_length=50)
-
   def __unicode__(self):
     return self.name
 
@@ -42,12 +42,26 @@ class Brand(models.Model):
   name = models.TextField()
   label_url = models.TextField(blank=True)
 
+  restricted_use = models.BooleanField(blank=True)
+  special_local_need = models.BooleanField(blank=True)
+
+  epa_registration_number = models.CharField(unique=True, max_length=50)
+
+  company_name = models.ManyToManyField(blank=True)
+  pesticide_type = models.ManyToManyField('PesticideClass')
   active_ingredients = models.ManyToManyField('BrandFormulation')
   application_areas = models.ManyToManyField('ApplicationArea')
   pests_treated = models.ManyToManyField('Pest')
 
   def __unicode__(self):
     return self.name
+
+class Company(models.Model):
+  row_id = models.IntegerField(primary_key=True)
+  row_entry_date = models.DateTimeField(blank=True, null=True)
+  row_update_date = models.DateTimeField(blank=True, null=True)
+  name = models.TextField()
+  epa_id = models.CharField(max_length=25)
 
 class BrandFormulation(models.Model):
   row_id = models.IntegerField(primary_key=True)
@@ -65,6 +79,7 @@ class Pest(models.Model):
   row_entry_date = models.DateTimeField(blank=True, null=True)
   row_update_date = models.DateTimeField(blank=True, null=True)
   name = models.CharField(unique=True, max_length=50)
+  display_name = models.CharField(unique=True, max_length=50)
   image_url = models.TextField(blank=True)
 
   pesticides = models.ManyToManyField('ActiveIngredient', blank=True, null=True)
@@ -86,6 +101,7 @@ class ActiveIngredientClass(models.Model):
   row_entry_date = models.DateTimeField(blank=True, null=True)
   row_update_date = models.DateTimeField(blank=True, null=True)
   name = models.CharField(unique=True, max_length=50)
+  display_name = models.CharField(unique=True, max_length=50)
 
   active_ingredient = models.ManyToManyField('ActiveIngredient', blank=True, null=True)
 
