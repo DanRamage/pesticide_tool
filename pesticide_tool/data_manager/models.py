@@ -72,6 +72,11 @@ class Pest(models.Model):
   def __unicode__(self):
     return self.name
 
+  def admin_thumbnail(self):
+      return u'<img src="%s" />' % (self.image.url)
+  admin_thumbnail.short_description = 'Thumbnail'
+  admin_thumbnail.allow_tags = True
+
 class ActiveIngredientClass(models.Model):
   row_id = models.IntegerField(primary_key=True)
   row_entry_date = models.DateTimeField(blank=True, null=True)
