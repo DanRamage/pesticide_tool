@@ -126,7 +126,7 @@ class Warning(models.Model):
   row_entry_date = models.DateTimeField(blank=True, null=True)
   row_update_date = models.DateTimeField(blank=True, null=True)
   name = models.CharField(unique=True, max_length=50)
-  image_url = models.TextField(blank=True)
+  image_url = models.TextField(blank=True, null=True)
 
   def __unicode__(self):
     return self.name
