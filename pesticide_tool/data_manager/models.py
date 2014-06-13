@@ -15,7 +15,7 @@ class ActiveIngredient(models.Model):
   row_entry_date = models.DateTimeField(blank=True, null=True)
   row_update_date = models.DateTimeField(blank=True, null=True)
   name = models.CharField(unique=True, max_length=50)
-  display_name = models.CharField(unique=True, max_length=50)
+  display_name = models.CharField(max_length=50)
   cumulative_score = models.FloatField(blank=True, null=True)
   relative_potential_ecosystem_hazard = models.CharField(max_length=50, blank=True)
 
@@ -103,7 +103,7 @@ class ActiveIngredientClass(models.Model):
   row_entry_date = models.DateTimeField(blank=True, null=True)
   row_update_date = models.DateTimeField(blank=True, null=True)
   name = models.CharField(unique=True, max_length=50)
-  display_name = models.CharField(unique=True, max_length=50)
+  display_name = models.CharField(max_length=50)
 
   active_ingredient = models.ManyToManyField('ActiveIngredient', blank=True, null=True)
 
@@ -126,7 +126,7 @@ class Warning(models.Model):
   row_entry_date = models.DateTimeField(blank=True, null=True)
   row_update_date = models.DateTimeField(blank=True, null=True)
   name = models.CharField(unique=True, max_length=50)
-  display_name = models.CharField(unique=True, max_length=50)
+  display_name = models.CharField(max_length=50)
   image_url = models.TextField(blank=True, null=True)
 
   def __unicode__(self):
