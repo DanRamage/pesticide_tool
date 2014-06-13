@@ -15,12 +15,12 @@ class ActiveIngredientAdmin(admin.ModelAdmin):
   ordering = ('name','row_id')
 
 class CategoryAdmin(admin.ModelAdmin):
-  list_display = ('name', 'row_id')
+  list_display = ('name', 'admin_thumbnail')
   ordering = ('name', 'row_id')
   search_fields = ['name']
 
 class SubCategoryAdmin(admin.ModelAdmin):
-  list_display = ('name', 'row_id')
+  list_display = ('name', 'admin_thumbnail')
   ordering = ('name', 'row_id')
   search_fields = ['name']
 
