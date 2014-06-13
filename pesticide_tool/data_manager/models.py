@@ -47,7 +47,7 @@ class Brand(models.Model):
 
   epa_registration_number = models.CharField(unique=True, max_length=50)
 
-  company_name = models.ManyToManyField(blank=True)
+  company_name = models.ManyToManyField('Company', blank=True)
   pesticide_type = models.ManyToManyField('PesticideClass')
   active_ingredients = models.ManyToManyField('BrandFormulation')
   application_areas = models.ManyToManyField('ApplicationArea')
