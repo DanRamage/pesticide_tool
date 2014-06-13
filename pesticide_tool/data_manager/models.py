@@ -131,6 +131,16 @@ class Warning(models.Model):
   def __unicode__(self):
     return self.name
 
+  def admin_thumbnail(self):
+    if self.image_url:
+      return u'<img src="%s" />' % (self.image_url)
+    else:
+      return u''
+
+  admin_thumbnail.short_description = 'Thumbnail'
+  admin_thumbnail.allow_tags = True
+
+
 class PestType(models.Model):
   row_id = models.IntegerField(primary_key=True)
   row_entry_date = models.DateTimeField(blank=True, null=True)
