@@ -29,12 +29,17 @@ class PestAdmin(admin.ModelAdmin):
   ordering = ('name', 'row_id')
   search_fields = ['name']
 
+class WarningAdmin(admin.ModelAdmin):
+  list_display = ('name', 'admin_thumbnail')
+  ordering = ('name', 'row_id')
+  search_fields = ['name']
+
 admin.site.register(ActiveIngredient, ActiveIngredientAdmin)
 admin.site.register(PesticideClass)#, PesticideClassAdmin)
 admin.site.register(Brand)#, BrandAdmin)
 admin.site.register(BrandFormulation)#, BrandFormulationAdmin)
 admin.site.register(Pest, PestAdmin)
-admin.site.register(Warning)#, WarningAdmin)
+admin.site.register(Warning, WarningAdmin)
 admin.site.register(PestType)#, PestTypeAdmin)
 admin.site.register(Category, CategoryAdmin)
 admin.site.register(SubCategory, SubCategoryAdmin)
