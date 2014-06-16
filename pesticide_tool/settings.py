@@ -78,58 +78,5 @@ USE_L10N = True
 
 USE_TZ = True
 
-PROJECT_ROOT = '/home2/sccoasta/django_projects/pesticide_tool/pesticide_tool/'
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/1.6/howto/static-files/
-STATIC_ROOT = '/home2/sccoasta/django_projects/pesticide_tool/pesticide_tool/static/'
-STATIC_URL = 'http://sccoastalpesticides.org/pesticide_tool/static/'
-
-STATICFILES_DIRS = (
-    ('', path.join(PROJECT_ROOT,'static')), #store site-specific media here.
-)
-# List of finder classes that know how to find static files in
-# various locations.
-STATICFILES_FINDERS = (
-    'django.contrib.staticfiles.finders.FileSystemFinder',
-    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
-#    'django.contrib.staticfiles.finders.DefaultStorageFinder',
-)
-
-MEDIA_URL = '/media/'
-MEDIA_ROOT = path.join(PROJECT_ROOT,'media')
-
-#LOG_FILE = "/home2/sccoasta/django_projects/pesticide_tool/log/app.log"
-LOGGING = {
-    'version': 1,
-    'disable_existing_loggers': False,
-    'formatters': {
-        'verbose': {
-            'format' : "[%(asctime)s] %(levelname)s [%(name)s:%(lineno)s] %(message)s",
-            'datefmt' : "%d/%b/%Y %H:%M:%S"
-        },
-        'simple': {
-            'format': '%(levelname)s %(message)s'
-        },
-    },
-    'handlers': {
-        'file': {
-            'level': 'DEBUG',
-            'class': 'logging.FileHandler',
-            'filename': '/home2/sccoasta/django_projects/pesticide_tool/log/app.log',
-            'formatter': 'verbose'
-        },
-    },
-    'loggers': {
-        'django': {
-            'handlers':['file'],
-            'propagate': True,
-            'level':'DEBUG',
-        },
-        'MYAPP': {
-            'handlers': ['file'],
-            'level': 'DEBUG',
-        },
-    }
-}
-from settings_local import *
+from settings_local-bluehost import *
 
