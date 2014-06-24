@@ -43,11 +43,14 @@ class Brand(models.Model):
   label_url = models.TextField(blank=True)
 
   restricted_use = models.BooleanField(blank=True)
+  experimental_use = models.BooleanField(blank=True)
   special_local_need = models.BooleanField(blank=True)
-
+  formulation = models.CharField(max_length=50, blank=True)
   epa_registration_number = models.CharField(unique=True, max_length=50)
 
   company_name = models.ManyToManyField('Company', blank=True)
+  company_number = models.IntegerField(blank=True)
+
   pesticide_type = models.ManyToManyField('PesticideClass')
   active_ingredients = models.ManyToManyField('BrandFormulation')
   application_areas = models.ManyToManyField('ApplicationArea')

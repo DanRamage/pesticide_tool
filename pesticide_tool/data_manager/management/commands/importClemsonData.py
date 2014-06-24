@@ -8,6 +8,7 @@ from _pesticideClemsonWebRequest import clemsonWebService
 
 logger = logging.getLogger('pesticide_tool')
 
+
 def queryClemsonWebService(config_file):
   if logger:
     logger.info("Starting active ingredient lookups.")
