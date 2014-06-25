@@ -42,10 +42,10 @@ class Brand(models.Model):
   name = models.TextField()
   label_url = models.TextField(blank=True)
 
-  restricted_use = models.NullBooleanField(blank=True, null=True)
-  experimental_use = models.NullBooleanField(blank=True, null=True)
-  special_local_need = models.NullBooleanField(blank=True, null=True)
-  formulation = models.CharField(max_length=50, blank=True, null=True)
+  restricted_use = models.NullBooleanField(blank=True, null=True, default=None)
+  experimental_use = models.NullBooleanField(blank=True, null=True, default=None)
+  special_local_need = models.NullBooleanField(blank=True, null=True, default=None)
+  formulation = models.CharField(max_length=50, blank=True, null=True, default=None)
   epa_registration_number = models.CharField(unique=True, max_length=50)
 
   company_name = models.ManyToManyField('Company', blank=True)
