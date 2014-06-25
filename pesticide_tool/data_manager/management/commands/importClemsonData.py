@@ -84,7 +84,7 @@ def build_formulation(ingr, brand_name, ndx, date, lookups):
     "model": "data_manager.BrandFormulation",
     "fields": {
       "row_entry_date": date,
-      "brand_id": lookups['brand_lookup'][brand_name],
+      "brand_id": [lookups['brand_lookup'][brand_name]],
       "active_ingredient": lookups['ai_lookup'][ingr.active_ingredient],
       "percentage_active_ingredient": ingr.percentage_active_ingredient
     }
