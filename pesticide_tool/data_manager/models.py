@@ -71,7 +71,8 @@ class BrandFormulation(models.Model):
   row_id = models.IntegerField(primary_key=True)
   row_entry_date = models.DateTimeField(blank=True, null=True)
   row_update_date = models.DateTimeField(blank=True, null=True)
-  brand_id = models.ForeignKey('Brand', null=False)
+  #brand_id = models.ForeignKey('Brand', null=False)
+  brand_id = models.ManyToManyField('Brand')
   active_ingredient = models.ForeignKey('ActiveIngredient', null=False)
   percentage_active_ingredient = models.FloatField(null=False)
 
