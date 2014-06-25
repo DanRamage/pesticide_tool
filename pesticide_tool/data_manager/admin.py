@@ -37,7 +37,7 @@ class WarningAdmin(admin.ModelAdmin):
 class BrandFormulationAdmin(admin.ModelAdmin):
   list_display = ('active_ingredient', 'brand_name')
   ordering = ('percentage_active_ingredient', 'row_id')
-  search_fields = ['name']
+  search_fields = ['active_ingredient']
 
 class CompanyAdmin(admin.ModelAdmin):
   list_display = ('name', 'epa_id')
