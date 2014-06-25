@@ -200,10 +200,12 @@ class Pest(object):
 
 
   def __dict__(self):
-    return {'name': self.name,
+    pest =  {'name': self.name,
             'display_name': self.display_name,
             'image_url': self.image_url}
-
+    if pest['display_name'] is None:
+      pest['display_name'] = self.name
+    return pest
 class Pests(list):
   def add(self, **kwargs):
     pest = Pest()
@@ -215,6 +217,8 @@ class Pests(list):
       pest_obj = Pest()
       pest_obj.name=pest['name']
       pest_obj.display_name=pest['display_name']
+      if pest_obj.display_name is None:
+        pest_obj.display_name = pest_obj.name
       pest_obj.image_url=pest['image_url']
       self.append(pest_obj)
 
