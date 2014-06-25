@@ -31,15 +31,36 @@ class PestAdmin(admin.ModelAdmin):
 
 class WarningAdmin(admin.ModelAdmin):
   list_display = ('name', 'admin_thumbnail')
+  ordering = ('percentage_active_ingredient', 'row_id')
+  search_fields = ['active_ingredient']
+
+class BrandFormulationAdmin(admin.ModelAdmin):
+  list_display = ('active_ingredient', 'brand_id')
+  ordering = ('name', 'row_id')
+  search_fields = ['name']
+
+class CompanyAdmin(admin.ModelAdmin):
+  list_display = ('name', 'epa_id')
+  ordering = ('name', 'row_id')
+  search_fields = ['name']
+
+class ApplicationAreaAdmin(admin.ModelAdmin):
+  list_display = ('name', 'row_id')
+  ordering = ('name', 'row_id')
+  search_fields = ['name']
+
+class BrandAdmin(admin.ModelAdmin):
+  list_display = ('name', 'row_id')
   ordering = ('name', 'row_id')
   search_fields = ['name']
 
 admin.site.register(ActiveIngredient, ActiveIngredientAdmin)
 admin.site.register(PesticideClass)#, PesticideClassAdmin)
-admin.site.register(Brand)#, BrandAdmin)
-admin.site.register(BrandFormulation)#, BrandFormulationAdmin)
+admin.site.register(Brand, BrandAdmin)
+admin.site.register(BrandFormulation, BrandFormulationAdmin)
 admin.site.register(Pest, PestAdmin)
 admin.site.register(Warning, WarningAdmin)
 admin.site.register(PestType)#, PestTypeAdmin)
 admin.site.register(Category, CategoryAdmin)
 admin.site.register(SubCategory, SubCategoryAdmin)
+admin.site.register(ApplicationArea, ApplicationAreaAdmin)
