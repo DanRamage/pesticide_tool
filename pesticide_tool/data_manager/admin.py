@@ -31,12 +31,12 @@ class PestAdmin(admin.ModelAdmin):
 
 class WarningAdmin(admin.ModelAdmin):
   list_display = ('name', 'admin_thumbnail')
-  ordering = ('percentage_active_ingredient', 'row_id')
-  search_fields = ['active_ingredient']
+  ordering = ('name', 'row_id')
+  search_fields = ['name']
 
 class BrandFormulationAdmin(admin.ModelAdmin):
   list_display = ('active_ingredient', 'brand_id')
-  ordering = ('active_ingredient', 'row_id')
+  ordering = ('percentage_active_ingredient', 'row_id')
   search_fields = ['name']
 
 class CompanyAdmin(admin.ModelAdmin):
