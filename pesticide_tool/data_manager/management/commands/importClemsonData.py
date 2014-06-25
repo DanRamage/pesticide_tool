@@ -68,6 +68,27 @@ def build_company_model(prod, ndx, date):
     }
   })
 
+def build_active_ingredient(ingr, ndx, date):
+  return({
+    "pk": ndx,
+    "model": "data_manager.ActiveIngredient",
+    "fields": {
+      "row_entry_date": date,
+      "name": ingr.active_ingredient
+    }
+  })
+
+def build_formulation(ingr, brand_name, ndx, date, lookups):
+  return({
+    "pk": ndx,
+    "model": "data_manager.BrandFormulation",
+    "fields": {
+      "row_entry_date": date,
+      "brand_id": lookups['brand_lookup'][brand_name],
+      "active_ingredient": lookups['ai_lookup'][ingr.active_ingredient],
+      "percentage_active_ingredient": ingr.percentage_active_ingredient
+    }
+  })
 def build_brand_model(prod, lookups, ndx, date):
   return({
     "pk": ndx,
@@ -83,7 +104,8 @@ def build_brand_model(prod, lookups, ndx, date):
       "company_name" : [lookups['company_lookup'][prod.company_name]],
       "company_number": prod.company_number,
       "pests_treated": [lookups['pest_lookup'][rec.name] for rec in prod.pests_treated],
-      "application_areas": [lookups['site_lookup'][rec] for rec in prod.application_areas]
+      "application_areas": [lookups['site_lookup'][rec] for rec in prod.application_areas],
+      "active_ingredients": [lookups['ai_lookup'][rec.active_ingredient] for rec in prod.active_ingredients],
     }
   })
 def createInitialData(**kwargs):
@@ -115,7 +137,10 @@ def createInitialData(**kwargs):
       lookups = {
         'pest_lookup' : {},
         'company_lookup' : {},
-        'site_lookup' : {}
+        'site_lookup' : {},
+        'brand_lookup': {},
+        'ai_lookup': {},
+        'form_lookup' : {}
       }
       models = []
       """
@@ -126,12 +151,12 @@ def createInitialData(**kwargs):
         'brands' :[]
       }
       """
-      active_ingr_models = []
       app_ndx = 1
       pest_ndx = 1
       ingr_ndx = 1
       cmp_ndx = 1
       prod_ndx = 1
+      form_ndx = 1
       #Make a pass to build the unique values for the active ingredients, pests, and application
       #sites. In the initial JSON we have to create their models and we need their pk ids to
       #make the relations.
@@ -148,22 +173,24 @@ def createInitialData(**kwargs):
             models.append(build_pest_model(pest, pest_ndx, row_entry_date))
             pest_ndx += 1
 
-        models.append(build_brand_model(prod, lookups, prod_ndx, row_entry_date))
-        prod_ndx += 1
-        """
+        if build_dict(lookups['brand_lookup'], prod.name, prod_ndx) is False:
+          prod_ndx += 1
+
         for ingr in prod.active_ingredients:
-          #Check to see if the active ingredient is one we already have in the DB.
-          if ingr.active_ingredient in calculated_ais is not True:
-            if build_dict(active_ingr_lookup, ingr.active_ingredient, ingr_ndx) is False:
-              active_ingr_models.append({
-                "pk": ingr_ndx,
-                "model": "data_manager.BrandFormulation",
-                "fields": {
-                  "row_entry_date": row_entry_date
-              }
-              })
+          if build_dict(lookups['ai_lookup'], ingr.active_ingredient, ingr_ndx) is False:
+            #Check to see if the active ingredient is one we already have in the DB.
+            if ingr.active_ingredient in calculated_ais is not True:
+              models.append(build_active_ingredient(ingr, ingr_ndx, row_entry_date, lookups))
               ingr_ndx += 1
-        """
+
+          #Build the formulation for the brand.
+          if build_dict(lookups['form_lookup'], ingr.active_ingredient, form_ndx) is False:
+            models.append(build_formulation(ingr, prod.name, form_ndx, row_entry_date, lookups))
+            form_ndx += 1
+
+        brand_model = build_brand_model(prod, lookups, prod_ndx, row_entry_date)
+
+        models.append(brand_model)
   try:
     out_file = open(initial_json, "w")
     out_file.write(json.dumps(models, sort_keys=True, indent=2 * ' '))

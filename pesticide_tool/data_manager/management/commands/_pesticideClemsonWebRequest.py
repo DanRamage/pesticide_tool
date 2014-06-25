@@ -375,7 +375,9 @@ class product_web_collector(web_data_collector):
     if tag:
       tag = tag.find_parent()
       if tag.next_sibling:
-        self.prod.special_local_need = unicode(tag.next_sibling).strip()
+        self.prod.special_local_need = False
+        if val.lower() == 'yes':
+          self.prod.special_local_need = True
 
 
     tag = soup.find(text=re.compile('Formulation:'))
