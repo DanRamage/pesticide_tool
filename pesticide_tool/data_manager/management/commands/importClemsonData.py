@@ -39,7 +39,7 @@ def build_dict(model_dict, value, ndx):
 
 def build_app_model(area, ndx, date):
   return({
-    "pk" : ndx,
+    "pk": ndx,
     "model": "data_manager.ApplicationArea",
     "fields" : {
       "row_entry_date": date,
@@ -48,7 +48,7 @@ def build_app_model(area, ndx, date):
   })
 def build_pest_model(pest, ndx, date):
   return({
-    "pk:": ndx,
+    "pk": ndx,
     "model": "data_manager.Pest",
     "fields": {
       "row_entry_date": date,
