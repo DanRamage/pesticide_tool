@@ -440,24 +440,28 @@ class products_web_collector(web_data_collector):
 
 class clemsonWebService(object):
   def __init__(self, configFilename, logger_name=None):
-    self.configFile = ConfigParser.RawConfigParser()
-    self.configFile.read(configFilename)
-    self.baseURL = self.configFile.get('url', 'baseurl')
-    self.jsonOutputDir = self.configFile.get('output', 'jsonoutdir')
-    self.logger_name = logger_name
-    if(logger_name):
-      self.logger = logging.getLogger(logger_name)
+    try:
+      self.logger_name = logger_name
+      if(logger_name):
+        self.logger = logging.getLogger(logger_name)
 
-    #URL and params for pest name search.
-    pagename = self.configFile.get('searchbypest', 'pagename')
-    self.searchByPestURLParams = self.configFile.get('searchbypest', 'params')
-    self.searchByPestURL = self.baseURL + pagename
-      
-    #URL and params for active ingredient search.
-    pagename = self.configFile.get('searchbyactive', 'pagename')
-    self.searchByActiveURLParams = self.configFile.get('searchbyactive', 'params')
-    self.searchByActiveURL = self.baseURL + pagename
+      self.configFile = ConfigParser.RawConfigParser()
+      self.configFile.read(configFilename)
+      self.baseURL = self.configFile.get('url', 'baseurl')
+      self.jsonOutputDir = self.configFile.get('output', 'jsonoutdir')
 
+      #URL and params for pest name search.
+      pagename = self.configFile.get('searchbypest', 'pagename')
+      self.searchByPestURLParams = self.configFile.get('searchbypest', 'params')
+      self.searchByPestURL = self.baseURL + pagename
+
+      #URL and params for active ingredient search.
+      pagename = self.configFile.get('searchbyactive', 'pagename')
+      self.searchByActiveURLParams = self.configFile.get('searchbyactive', 'params')
+      self.searchByActiveURL = self.baseURL + pagename
+    except Exception, e:
+      if self.logger:
+        self.logger.exception(e)
 
   def getUrlAndParams(self, baseUrl):
     parts = urlparse(baseUrl)
