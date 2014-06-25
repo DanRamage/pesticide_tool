@@ -86,7 +86,7 @@ class Pest(models.Model):
 
   display_name = models.CharField(max_length=50)
 
-  image_url = models.TextField(blank=True)
+  image_url = models.TextField(null=True)
 
   pesticides = models.ManyToManyField('ActiveIngredient', blank=True, null=True)
 
