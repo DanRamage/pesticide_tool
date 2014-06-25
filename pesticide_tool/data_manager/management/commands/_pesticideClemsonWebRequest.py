@@ -53,7 +53,13 @@ class web_data_collector(object):
       except Exception, e:
         if self.logger:
           self.logger.exception(e)
+
 class application_sites(list):
+
+  def load_from_json(self, json_data):
+    for site in json_data:
+      self.append(site['name'])
+
   def __dict__(self):
     sites_dict = []
     for rec in self:
@@ -144,6 +150,13 @@ class active_ingredients(list):
     ingr.percentage_active_ingredient = kwargs['percentage']
     self.append(ingr)
 
+  def load_from_json(self, json_data):
+    for ingr in json_data:
+      active_ingr = ingredient()
+      active_ingr.active_ingredient = ingr['active_ingredient']
+      active_ingr.percentage_active_ingredient = ingr['percentage_active_ingredient']
+      self.append(active_ingr)
+
   def __dict__(self):
     ingrs = []
     for rec in self:
@@ -185,6 +198,7 @@ class Pest(object):
     self.display_name = None
     self.image_url = None
 
+
   def __dict__(self):
     return {'name': self.name,
             'display_name': self.display_name,
@@ -195,11 +209,20 @@ class Pests(list):
     pest = Pest()
     pest.name = kwargs['name']
     self.append(pest)
+
+  def load_from_json(self, json_data):
+    for pest in json_data:
+      pest_obj = Pest()
+      pest_obj.name=pest['name']
+      pest_obj.display_name=pest['display_name']
+      pest_obj.image_url=pest['image_url']
+      self.append(pest_obj)
+
   def __dict__(self):
-    pests = []
+    pest_list = []
     for rec in self:
-      pests.append(rec.__dict__())
-    return pests
+      pest_list.append(rec.__dict__())
+    return pest_list
 
 class pests_treated_web_collector(web_data_collector):
   def __init__(self, url, params, logger_name):
@@ -262,10 +285,29 @@ class product(object):
     self.application_sites_url = None
     self.pests_url = None
 
+  def load_from_json(self, json_data):
+    self.name = json_data['name']
+    self.label_url = json_data['label_url']
+    self.restricted_use = json_data['restricted_use']
+    self.experimental_use = json_data['experimental_use']
+    self.special_local_need = json_data['special_local_need']
+    self.formulation = json_data['formulation']
+    self.epa_registration_number = json_data['epa_registration_number']
+    self.company_name = json_data['company_name']
+    self.company_number =json_data['company_number']
+    self.pesticide_type =json_data['pesticide_type']
+
+    self.pests_treated = Pests()
+    self.pests_treated.load_from_json(json_data["pests_treated"])
+    self.active_ingredients = active_ingredients()
+    self.active_ingredients.load_from_json(json_data["active_ingredients"])
+    self.application_areas = application_sites()
+    self.application_areas.load_from_json(json_data["application_areas"])
+
   def __dict__(self):
 
     ais = [rec.__dict__() for rec in self.active_ingredients]
-    pests_treated = self.pests_treated.__dict__(),
+    pest_list = self.pests_treated.__dict__()
     application_areas = self.application_areas.__dict__()
     prod = {'name' : self.name,
             'label_url': self.label_url,
@@ -278,7 +320,7 @@ class product(object):
             'company_number': self.company_number,
             'pesticide_type': self.pesticide_type,
             'active_ingredients': ais,
-            'pests_treated': pests_treated,
+            'pests_treated': pest_list,
             'application_areas': application_areas
             }
     return prod
@@ -506,14 +548,13 @@ class clemsonWebService(object):
           brandList = self.getBrandsForIngredient(active_i['url'], activeIngredient)
           if self.logger:
             self.logger.debug("%s has %d brands" % (activeIngredient, len(brandList.products)))
-          outfile.write("{\n\"%s\":\n" % (activeIngredient))
-          for brand in brandList.products:
+          outfile.write("{\n\"%s\":\n[\n" % (activeIngredient))
+          for ndx,brand in enumerate(brandList.products):
             self.getBrandInformation(brand, activeIngredient)
-
-            jsonData = {brand.prod.name: brand.prod.__dict__()}
-            outfile.write(json.dumps(jsonData, sort_keys=True, indent=2 * ' '))
-
-          outfile.write('}')
+            outfile.write(json.dumps(brand.prod.__dict__(), sort_keys=True, indent=2 * ' '))
+            if ndx < len(brandList.products) - 1:
+              outfile.write(',')
+          outfile.write(']\n}')
           outfile.close()
           break
         if foundIngredient == False and self.logger:
