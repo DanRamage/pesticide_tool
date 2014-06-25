@@ -40,7 +40,7 @@ class Brand(models.Model):
   row_entry_date = models.DateTimeField(blank=True, null=True)
   row_update_date = models.DateTimeField(blank=True, null=True)
   name = models.TextField()
-  label_url = models.TextField(blank=True)
+  label_url = models.TextField(null=True)
 
   special_local_need = models.NullBooleanField(null=True)
   restricted_use = models.NullBooleanField(null=True)
