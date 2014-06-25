@@ -67,6 +67,9 @@ class Company(models.Model):
   name = models.TextField()
   epa_id = models.CharField(max_length=25)
 
+  def __unicode__(self):
+    return self.name
+
 class BrandFormulation(models.Model):
   row_id = models.IntegerField(primary_key=True)
   row_entry_date = models.DateTimeField(blank=True, null=True)
@@ -78,7 +81,7 @@ class BrandFormulation(models.Model):
   percentage_active_ingredient = models.FloatField(null=False)
 
   def __unicode__(self):
-    return self.name
+    return self.brand_name
 
 class Pest(models.Model):
   row_id = models.IntegerField(primary_key=True)
