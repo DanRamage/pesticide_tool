@@ -17,7 +17,7 @@ def queryClemsonWebService(**kwargs):
     logger.info("Starting active ingredient lookups.")
 
   webService = clemsonWebService(kwargs['config_file'], 'pesticide_tool')
-  if 'starting_ingredient' in kwargs:
+  if 'starting_ingredient' in kwargs and kwargs['starting_ingredient']:
     query = ActiveIngredient.objects.filter(name__gte = kwargs['starting_ingredient']).all().order_by('name')
   else:
     query = ActiveIngredient.objects.all().order_by('name')
