@@ -89,7 +89,14 @@ def build_formulation(ingr, brand_name, ndx, date, lookups):
       "percentage_active_ingredient": ingr.percentage_active_ingredient
     }
   })
-def build_brand_model(prod, lookups, ndx, date):
+def build_brand_model(prod, lookups, ndx, date, add_formuation):
+  #Since the formulation has a key back to the Brand, and the brand has a relation to the
+  #formulation we end up with one getting created before the other an an error occuring
+  #because the other relation has not yet been created. We do a two pass.
+  if add_formuation:
+    active_ingredients = [lookups['ai_lookup'][rec.active_ingredient] for rec in prod.active_ingredients]
+  else:
+    active_ingredients = None
   return({
     "pk": ndx,
     "model": "data_manager.Brand",
@@ -105,7 +112,7 @@ def build_brand_model(prod, lookups, ndx, date):
       "company_number": prod.company_number,
       "pests_treated": [lookups['pest_lookup'][rec.name] for rec in prod.pests_treated],
       "application_areas": [lookups['site_lookup'][rec] for rec in prod.application_areas],
-      "active_ingredients": [lookups['ai_lookup'][rec.active_ingredient] for rec in prod.active_ingredients],
+      "active_ingredients": active_ingredients
     }
   })
 def createInitialData(**kwargs):
@@ -121,6 +128,8 @@ def createInitialData(**kwargs):
     calculated_ais.append(row.name)
   data_dir = config_file.get('output', 'jsonoutdir')
   initial_json = config_file.get('output', 'initial_json')
+  brand_json = config_file.get('output', 'brand_only_init_json')
+
   row_entry_date = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
   for file in os.listdir(data_dir):
     if file.endswith(".json"):
@@ -135,22 +144,9 @@ def createInitialData(**kwargs):
           product_list.append(prod)
       #Build the init data for the active ingredient models.
       lookups = {
-        'pest_lookup' : {},
-        'company_lookup' : {},
-        'site_lookup' : {},
-        'brand_lookup': {},
-        'ai_lookup': {},
-        'form_lookup' : {}
       }
       models = []
-      """
-        'sites': [],
-        'pests': [],
-        'companies': [],
-        'active_ingr': [],
-        'brands' :[]
-      }
-      """
+      brands_with_ai = []
       app_ndx = 1
       pest_ndx = 1
       ingr_ndx = 1
@@ -188,12 +184,19 @@ def createInitialData(**kwargs):
             models.append(build_formulation(ingr, prod.name, form_ndx, row_entry_date, lookups))
             form_ndx += 1
 
-        brand_model = build_brand_model(prod, lookups, prod_ndx, row_entry_date)
-
+        brand_model = build_brand_model(prod, lookups, prod_ndx, row_entry_date, False)
         models.append(brand_model)
+        #Make our second pass brand models with the ai data. Store it in a separate
+        #list so we can write a second file.
+        brand_model = build_brand_model(prod, lookups, prod_ndx, row_entry_date, True)
+        brands_with_ai.append(brand_model)
+
   try:
     out_file = open(initial_json, "w")
     out_file.write(json.dumps(models, sort_keys=True, indent=2 * ' '))
+    out_file.close()
+    out_file = open(brand_json, "w")
+    out_file.write(json.dumps(brands_with_ai, sort_keys=True, indent=2 * ' '))
     out_file.close()
   except Exception, e:
     logger.exception(e)
