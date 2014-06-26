@@ -40,6 +40,9 @@
       "formulation": "Water Dispersible Granules",
       "label_url": "http://www.kellysolutions.com/erenewals/documentsubmit/KellyData\\SC\\pesticide\\Product%20Label\\352\\352%2D787\\352%2D787%5FDUPONT%5FMETHOD%5F50SG%5FHERBICIDE%5F4%5F25%5F2014%5F11%5F12%5F48%5FAM%2Epdf",
       "name": "DUPONT METHOD 50SG HERBICIDE",
+      "pesticide_type": [
+        4
+      ],
       "pests_treated": [
         1,
         2,
@@ -96,7 +99,7 @@
         53
       ],
       "restricted_use": false,
-      "row_entry_date": "2014-06-26 14:57:45",
+      "row_entry_date": "2014-06-26 15:09:51",
       "special_local_need": false
     },
     "model": "data_manager.Brand",
@@ -157,6 +160,9 @@
       "formulation": "Water Dispersible Granules",
       "label_url": "http://www.kellysolutions.com/erenewals/documentsubmit/KellyData\\SC\\pesticide\\Product%20Label\\352\\352%2D846\\352%2D846%5FDUPONT%5FPERSPECTIVE%5FHERBICIDE%5F4%5F25%5F2014%5F11%5F16%5F47%5FAM%2Epdf",
       "name": "DUPONT PERSPECTIVE HERBICIDE",
+      "pesticide_type": [
+        5
+      ],
       "pests_treated": [
         54,
         55,
@@ -345,7 +351,7 @@
         217
       ],
       "restricted_use": false,
-      "row_entry_date": "2014-06-26 14:57:45",
+      "row_entry_date": "2014-06-26 15:09:51",
       "special_local_need": false
     },
     "model": "data_manager.Brand",
@@ -403,6 +409,9 @@
       "formulation": "Water Dispersible Granules",
       "label_url": "http://www.kellysolutions.com/erenewals/documentsubmit/KellyData\\SC\\pesticide\\Product%20Label\\352\\352%2D848\\352%2D848%5FDUPONT%5FSTREAMLINE%5FHERBICIDE%5F4%5F25%5F2014%5F11%5F18%5F31%5FAM%2Epdf",
       "name": "DUPONT STREAMLINE HERBICIDE",
+      "pesticide_type": [
+        5
+      ],
       "pests_treated": [
         218,
         219,
@@ -667,7 +676,7 @@
         337
       ],
       "restricted_use": false,
-      "row_entry_date": "2014-06-26 14:57:45",
+      "row_entry_date": "2014-06-26 15:09:51",
       "special_local_need": false
     },
     "model": "data_manager.Brand",
@@ -714,6 +723,9 @@
       "formulation": "Water Dispersible Granules",
       "label_url": "http://www.kellysolutions.com/erenewals/documentsubmit/KellyData\\SC\\pesticide\\Product%20Label\\352\\352%2D847\\352%2D847%5FDUPONT%5FVIEWPOINT%5FHERBICIDE%5F4%5F25%5F2014%5F11%5F20%5F43%5FAM%2Epdf",
       "name": "DUPONT VIEWPOINT HERBICIDE",
+      "pesticide_type": [
+        4
+      ],
       "pests_treated": [
         220,
         222,
@@ -879,7 +891,7 @@
         337
       ],
       "restricted_use": false,
-      "row_entry_date": "2014-06-26 14:57:45",
+      "row_entry_date": "2014-06-26 15:09:51",
       "special_local_need": false
     },
     "model": "data_manager.Brand",

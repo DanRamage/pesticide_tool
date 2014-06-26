@@ -113,6 +113,7 @@ def build_brand_model(prod, lookups, ndx, date, ai_for_brand):
       "epa_registration_number": prod.epa_registration_number,
       "company_name" : [lookups['company_lookup'][prod.company_name]],
       "company_number": prod.company_number,
+      "pesticide_type": [lookups['type_lookup'][prod.pesticide_type.lower()]],
       "pests_treated": [lookups['pest_lookup'][rec.name] for rec in prod.pests_treated],
       "application_areas": [lookups['site_lookup'][rec] for rec in prod.application_areas],
       "active_ingredients": ai_for_brand
