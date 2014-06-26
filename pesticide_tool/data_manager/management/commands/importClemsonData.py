@@ -96,7 +96,7 @@ def build_brand_model(prod, lookups, ndx, date, add_formuation):
   if add_formuation:
     active_ingredients = [lookups['ai_lookup'][rec.active_ingredient] for rec in prod.active_ingredients]
   else:
-    active_ingredients = None
+    active_ingredients = []
   return({
     "pk": ndx,
     "model": "data_manager.Brand",
