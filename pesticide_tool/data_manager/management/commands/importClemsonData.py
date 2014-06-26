@@ -186,29 +186,29 @@ def createInitialData(**kwargs):
       #sites. In the initial JSON we have to create their models and we need their pk ids to
       #make the relations.
       for prod in product_list:
-        if build_dict(lookups['company_lookup'], prod.company_name, cmp_ndx) is False:
+        if build_dict(lookups['company_lookup'], prod.company_name, cmp_ndx) == False:
           models.append(build_company_model(prod, cmp_ndx, row_entry_date))
           cmp_ndx += 1
         for area in prod.application_areas:
-          if build_dict(lookups['site_lookup'], area, app_ndx) is False:
+          if build_dict(lookups['site_lookup'], area, app_ndx) == False:
             models.append(build_app_model(area, app_ndx, row_entry_date))
             app_ndx += 1
         for pest in prod.pests_treated:
-          if build_dict(lookups['pest_lookup'], pest.name, pest_ndx) is False:
+          if build_dict(lookups['pest_lookup'], pest.name, pest_ndx) == False:
             models.append(build_pest_model(pest, pest_ndx, row_entry_date))
             pest_ndx += 1
 
-        if build_dict(lookups['type_lookup'], prod.pesticide_type.lower(), type_ndx) is False:
+        if build_dict(lookups['type_lookup'], prod.pesticide_type.lower(), type_ndx) == False:
           models.append(build_pesticide_type_model(prod.pesticide_type, type_ndx, row_entry_date))
           type_ndx += 1
 
 
-        if build_dict(lookups['brand_lookup'], prod.name, prod_ndx) is False:
+        if build_dict(lookups['brand_lookup'], prod.name, prod_ndx) == False:
           prod_ndx += 1
 
         ai_for_brand = []
         for ingr in prod.active_ingredients:
-          if build_dict(lookups['ai_lookup'], ingr.active_ingredient.lower(), ingr_ndx) is False:
+          if build_dict(lookups['ai_lookup'], ingr.active_ingredient.lower(), ingr_ndx) == False:
             #Check to see if the active ingredient is one we already have in the DB.
             if (ingr.active_ingredient in calculated_ais) == False:
               models.append(build_active_ingredient(ingr, ingr_ndx, row_entry_date))
