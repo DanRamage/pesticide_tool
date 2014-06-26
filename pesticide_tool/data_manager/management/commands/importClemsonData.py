@@ -5,7 +5,7 @@ import os
 import simplejson as json
 from datetime import datetime
 from django.core.management.base import BaseCommand
-
+from django.db.models import Max
 from ... models import *
 from _pesticideClemsonWebRequest import clemsonWebService,product,application_sites
 
@@ -124,8 +124,11 @@ def createInitialData(**kwargs):
   #the Clemson data, there are brands with active ingredients we don't have that
   #data for but want to add.
   calculated_ais = []
-  for row in ActiveIngredient.objects.all().order_by('name'):
+  ai_rows = ActiveIngredient.objects.all().order_by('name')
+  for row in ai_rows:
     calculated_ais.append(row.name)
+  ai_max_row_id = ai_rows.aggregate((Max('row_id')))
+
   data_dir = config_file.get('output', 'jsonoutdir')
   initial_json = config_file.get('output', 'initial_json')
   brand_json = config_file.get('output', 'brand_only_init_json')
@@ -154,7 +157,7 @@ def createInitialData(**kwargs):
       brands_with_ai = []
       app_ndx = 1
       pest_ndx = 1
-      ingr_ndx = 1
+      ingr_ndx = ai_max_row_id['row_id__max'] + 1
       cmp_ndx = 1
       prod_ndx = 1
       form_ndx = 1

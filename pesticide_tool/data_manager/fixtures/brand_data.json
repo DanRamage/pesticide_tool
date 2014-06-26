@@ -2,7 +2,7 @@
   {
     "fields": {
       "active_ingredients": [
-        1
+        100
       ],
       "application_areas": [
         1,
@@ -96,7 +96,7 @@
         53
       ],
       "restricted_use": false,
-      "row_entry_date": "2014-06-26 12:35:35",
+      "row_entry_date": "2014-06-26 12:47:51",
       "special_local_need": false
     },
     "model": "data_manager.Brand",
@@ -105,8 +105,8 @@
   {
     "fields": {
       "active_ingredients": [
-        1,
-        1
+        100,
+        100
       ],
       "application_areas": [
         1,
@@ -345,7 +345,7 @@
         217
       ],
       "restricted_use": false,
-      "row_entry_date": "2014-06-26 12:35:35",
+      "row_entry_date": "2014-06-26 12:47:51",
       "special_local_need": false
     },
     "model": "data_manager.Brand",
@@ -354,8 +354,8 @@
   {
     "fields": {
       "active_ingredients": [
-        1,
-        1
+        100,
+        100
       ],
       "application_areas": [
         1,
@@ -667,7 +667,7 @@
         337
       ],
       "restricted_use": false,
-      "row_entry_date": "2014-06-26 12:35:35",
+      "row_entry_date": "2014-06-26 12:47:51",
       "special_local_need": false
     },
     "model": "data_manager.Brand",
@@ -676,9 +676,9 @@
   {
     "fields": {
       "active_ingredients": [
-        1,
-        1,
-        1
+        100,
+        100,
+        100
       ],
       "application_areas": [
         2,
@@ -879,7 +879,7 @@
         337
       ],
       "restricted_use": false,
-      "row_entry_date": "2014-06-26 12:35:35",
+      "row_entry_date": "2014-06-26 12:47:51",
       "special_local_need": false
     },
     "model": "data_manager.Brand",
