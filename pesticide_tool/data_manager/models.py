@@ -81,7 +81,7 @@ class BrandFormulation(models.Model):
   percentage_active_ingredient = models.FloatField(null=False)
 
   def __unicode__(self):
-    return self.brand_name
+    return self.active_ingredient
 
 class Pest(models.Model):
   row_id = models.IntegerField(primary_key=True)

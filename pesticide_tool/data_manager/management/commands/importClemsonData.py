@@ -192,9 +192,9 @@ def createInitialData(**kwargs):
               ingr_ndx += 1
 
           #Build the formulation for the brand.
-          if build_dict(lookups['form_lookup'], ingr.active_ingredient.lower(), form_ndx) is False:
-            models.append(build_formulation(ingr, prod.name, form_ndx, row_entry_date, lookups))
-            form_ndx += 1
+          #if build_dict(lookups['form_lookup'], ingr.active_ingredient.lower(), form_ndx) is False:
+          models.append(build_formulation(ingr, prod.name, form_ndx, row_entry_date, lookups))
+          form_ndx += 1
 
         brand_model = build_brand_model(prod, lookups, prod_ndx, row_entry_date, False)
         models.append(brand_model)
