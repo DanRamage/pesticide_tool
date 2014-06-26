@@ -129,7 +129,6 @@ def createInitialData(**kwargs):
   data_dir = config_file.get('output', 'jsonoutdir')
   initial_json = config_file.get('output', 'initial_json')
   brand_json = config_file.get('output', 'brand_only_init_json')
-
   row_entry_date = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
   for file in os.listdir(data_dir):
     if file.endswith(".json"):
@@ -144,6 +143,12 @@ def createInitialData(**kwargs):
           product_list.append(prod)
       #Build the init data for the active ingredient models.
       lookups = {
+        'pest_lookup' : {},
+        'company_lookup' : {},
+        'site_lookup' : {},
+        'brand_lookup': {},
+        'ai_lookup': {},
+        'form_lookup' : {}
       }
       models = []
       brands_with_ai = []
@@ -186,15 +191,14 @@ def createInitialData(**kwargs):
 
         brand_model = build_brand_model(prod, lookups, prod_ndx, row_entry_date, False)
         models.append(brand_model)
-        #Make our second pass brand models with the ai data. Store it in a separate
-        #list so we can write a second file.
+        #Build the brand model that has the AI data.
         brand_model = build_brand_model(prod, lookups, prod_ndx, row_entry_date, True)
         brands_with_ai.append(brand_model)
-
   try:
     out_file = open(initial_json, "w")
     out_file.write(json.dumps(models, sort_keys=True, indent=2 * ' '))
     out_file.close()
+
     out_file = open(brand_json, "w")
     out_file.write(json.dumps(brands_with_ai, sort_keys=True, indent=2 * ' '))
     out_file.close()
