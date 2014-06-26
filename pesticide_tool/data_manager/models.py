@@ -27,6 +27,7 @@ class ActiveIngredient(models.Model):
   def __unicode__(self):
     return self.name
 
+
 class PesticideClass(models.Model):
   row_id = models.IntegerField(primary_key=True)
   row_entry_date = models.DateTimeField(blank=True, null=True)
