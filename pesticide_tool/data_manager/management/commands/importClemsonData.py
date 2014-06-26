@@ -251,8 +251,12 @@ class Command(BaseCommand):
   )
 
   def handle(self, *args, **options):
+    if logger:
+      logger.info("Processing command: %s" % (options))
     if options['import_from_web'] is True:
       queryClemsonWebService(config_file = options['config_file'], starting_ingredient=options['starting_ingredient'])
     if options['create_init'] is True:
       createInitialData(config_file = options['config_file'])
+    if logger:
+      logger.info("Finished processing command")
     return
