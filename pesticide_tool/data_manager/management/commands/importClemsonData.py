@@ -156,8 +156,22 @@ def createInitialData(**kwargs):
   initial_json = config_file.get('output', 'initial_json')
   brand_json = config_file.get('output', 'brand_only_init_json')
   row_entry_date = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+
+  models = []
+  brands_with_ai = []
+  app_ndx = 1
+  pest_ndx = 1
+  #Have to start index past the AIs already in database.
+  ingr_ndx = ai_max_row_id['row_id__max'] + 1
+  cmp_ndx = 1
+  prod_ndx = 1
+  form_ndx = 1
+  type_ndx = p_type_max_row_id['row_id__max'] + 1
+
   for file in os.listdir(data_dir):
     if file.endswith(".json"):
+      if logger:
+        logger.info("Processing file: %s" % (file))
       file_obj = open("%s/%s" % (data_dir,file), "r")
       json_data = json.load(file_obj)
       product_list = []
@@ -167,16 +181,6 @@ def createInitialData(**kwargs):
           prod = product()
           prod.load_from_json(brand)
           product_list.append(prod)
-      models = []
-      brands_with_ai = []
-      app_ndx = 1
-      pest_ndx = 1
-      #Have to start index past the AIs already in database.
-      ingr_ndx = ai_max_row_id['row_id__max'] + 1
-      cmp_ndx = 1
-      prod_ndx = 1
-      form_ndx = 1
-      type_ndx = p_type_max_row_id['row_id__max'] + 1
 
       #Make a pass to build the unique values for the active ingredients, pests, and application
       #sites. In the initial JSON we have to create their models and we need their pk ids to
@@ -222,6 +226,9 @@ def createInitialData(**kwargs):
         #Build the brand model that has the AI data.
         brand_model = build_brand_model(prod, lookups, prod_ndx, row_entry_date, ai_for_brand)
         brands_with_ai.append(brand_model)
+    if logger:
+      logger.info("Finished processing file: %s" % (file))
+
   try:
     out_file = open(initial_json, "w")
     out_file.write(json.dumps(models, sort_keys=True, indent=2 * ' '))
