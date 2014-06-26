@@ -48,7 +48,7 @@ class Brand(models.Model):
   experimental_use = models.NullBooleanField(null=True)
 
   formulation = models.CharField(max_length=50, blank=True, null=True, default=None)
-  epa_registration_number = models.CharField(unique=True, max_length=50)
+  epa_registration_number = models.CharField(unique=False, max_length=50)
 
   company_name = models.ManyToManyField('Company', blank=True)
   company_number = models.IntegerField(blank=True, null=True)
