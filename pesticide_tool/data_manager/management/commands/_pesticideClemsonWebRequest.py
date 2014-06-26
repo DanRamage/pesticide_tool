@@ -295,6 +295,11 @@ class product(object):
     self.restricted_use = json_data['restricted_use']
     self.experimental_use = json_data['experimental_use']
     self.special_local_need = json_data['special_local_need']
+    if json_data['special_local_need'] == "No":
+      self.special_local_need = False
+    elif json_data['special_local_need'] == "yes":
+      self.special_local_need = True
+
     self.formulation = json_data['formulation']
     self.epa_registration_number = json_data['epa_registration_number']
     self.company_name = json_data['company_name']

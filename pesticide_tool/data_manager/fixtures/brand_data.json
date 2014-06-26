@@ -235,8 +235,8 @@
         193
       ],
       "restricted_use": false,
-      "row_entry_date": "2014-06-26 16:51:34",
-      "special_local_need": "No"
+      "row_entry_date": "2014-06-26 17:35:08",
+      "special_local_need": false
     },
     "model": "data_manager.Brand",
     "pk": 2
@@ -477,8 +477,8 @@
         193
       ],
       "restricted_use": false,
-      "row_entry_date": "2014-06-26 16:51:34",
-      "special_local_need": "No"
+      "row_entry_date": "2014-06-26 17:35:08",
+      "special_local_need": false
     },
     "model": "data_manager.Brand",
     "pk": 3
@@ -719,8 +719,8 @@
         193
       ],
       "restricted_use": false,
-      "row_entry_date": "2014-06-26 16:51:34",
-      "special_local_need": "No"
+      "row_entry_date": "2014-06-26 17:35:08",
+      "special_local_need": false
     },
     "model": "data_manager.Brand",
     "pk": 4
@@ -778,8 +778,8 @@
         159
       ],
       "restricted_use": false,
-      "row_entry_date": "2014-06-26 16:51:34",
-      "special_local_need": "No"
+      "row_entry_date": "2014-06-26 17:35:08",
+      "special_local_need": false
     },
     "model": "data_manager.Brand",
     "pk": 5
@@ -971,8 +971,8 @@
         299
       ],
       "restricted_use": false,
-      "row_entry_date": "2014-06-26 16:51:34",
-      "special_local_need": "No"
+      "row_entry_date": "2014-06-26 17:35:08",
+      "special_local_need": false
     },
     "model": "data_manager.Brand",
     "pk": 6
@@ -1035,8 +1035,8 @@
         159
       ],
       "restricted_use": false,
-      "row_entry_date": "2014-06-26 16:51:34",
-      "special_local_need": "No"
+      "row_entry_date": "2014-06-26 17:35:08",
+      "special_local_need": false
     },
     "model": "data_manager.Brand",
     "pk": 7
@@ -1108,8 +1108,8 @@
         304
       ],
       "restricted_use": false,
-      "row_entry_date": "2014-06-26 16:51:34",
-      "special_local_need": "No"
+      "row_entry_date": "2014-06-26 17:35:08",
+      "special_local_need": false
     },
     "model": "data_manager.Brand",
     "pk": 8
@@ -1354,8 +1354,8 @@
         193
       ],
       "restricted_use": false,
-      "row_entry_date": "2014-06-26 16:51:34",
-      "special_local_need": "No"
+      "row_entry_date": "2014-06-26 17:35:08",
+      "special_local_need": false
     },
     "model": "data_manager.Brand",
     "pk": 9
@@ -1641,8 +1641,8 @@
         298
       ],
       "restricted_use": false,
-      "row_entry_date": "2014-06-26 16:51:34",
-      "special_local_need": "No"
+      "row_entry_date": "2014-06-26 17:35:08",
+      "special_local_need": false
     },
     "model": "data_manager.Brand",
     "pk": 10
@@ -1886,8 +1886,8 @@
         299
       ],
       "restricted_use": false,
-      "row_entry_date": "2014-06-26 16:51:34",
-      "special_local_need": "No"
+      "row_entry_date": "2014-06-26 17:35:08",
+      "special_local_need": false
     },
     "model": "data_manager.Brand",
     "pk": 11
@@ -1960,8 +1960,8 @@
         159
       ],
       "restricted_use": false,
-      "row_entry_date": "2014-06-26 16:51:34",
-      "special_local_need": "No"
+      "row_entry_date": "2014-06-26 17:35:08",
+      "special_local_need": false
     },
     "model": "data_manager.Brand",
     "pk": 12
@@ -2034,8 +2034,8 @@
         159
       ],
       "restricted_use": false,
-      "row_entry_date": "2014-06-26 16:51:34",
-      "special_local_need": "No"
+      "row_entry_date": "2014-06-26 17:35:08",
+      "special_local_need": false
     },
     "model": "data_manager.Brand",
     "pk": 13
@@ -2304,8 +2304,8 @@
         193
       ],
       "restricted_use": false,
-      "row_entry_date": "2014-06-26 16:51:34",
-      "special_local_need": "No"
+      "row_entry_date": "2014-06-26 17:35:08",
+      "special_local_need": false
     },
     "model": "data_manager.Brand",
     "pk": 14
@@ -2574,8 +2574,8 @@
         193
       ],
       "restricted_use": false,
-      "row_entry_date": "2014-06-26 16:51:34",
-      "special_local_need": "No"
+      "row_entry_date": "2014-06-26 17:35:08",
+      "special_local_need": false
     },
     "model": "data_manager.Brand",
     "pk": 15
@@ -2816,8 +2816,8 @@
         193
       ],
       "restricted_use": false,
-      "row_entry_date": "2014-06-26 16:51:34",
-      "special_local_need": "No"
+      "row_entry_date": "2014-06-26 17:35:08",
+      "special_local_need": false
     },
     "model": "data_manager.Brand",
     "pk": 16
@@ -3111,8 +3111,8 @@
         298
       ],
       "restricted_use": false,
-      "row_entry_date": "2014-06-26 16:51:34",
-      "special_local_need": "No"
+      "row_entry_date": "2014-06-26 17:35:08",
+      "special_local_need": false
     },
     "model": "data_manager.Brand",
     "pk": 17
@@ -3398,8 +3398,8 @@
         298
       ],
       "restricted_use": false,
-      "row_entry_date": "2014-06-26 16:51:34",
-      "special_local_need": "No"
+      "row_entry_date": "2014-06-26 17:35:08",
+      "special_local_need": false
     },
     "model": "data_manager.Brand",
     "pk": 18
@@ -3686,8 +3686,8 @@
         193
       ],
       "restricted_use": false,
-      "row_entry_date": "2014-06-26 16:51:34",
-      "special_local_need": "No"
+      "row_entry_date": "2014-06-26 17:35:08",
+      "special_local_need": false
     },
     "model": "data_manager.Brand",
     "pk": 19
@@ -3974,8 +3974,8 @@
         193
       ],
       "restricted_use": false,
-      "row_entry_date": "2014-06-26 16:51:34",
-      "special_local_need": "No"
+      "row_entry_date": "2014-06-26 17:35:08",
+      "special_local_need": false
     },
     "model": "data_manager.Brand",
     "pk": 20
@@ -4238,8 +4238,8 @@
         299
       ],
       "restricted_use": false,
-      "row_entry_date": "2014-06-26 16:51:34",
-      "special_local_need": "No"
+      "row_entry_date": "2014-06-26 17:35:08",
+      "special_local_need": false
     },
     "model": "data_manager.Brand",
     "pk": 21
@@ -4484,8 +4484,8 @@
         193
       ],
       "restricted_use": false,
-      "row_entry_date": "2014-06-26 16:51:34",
-      "special_local_need": "No"
+      "row_entry_date": "2014-06-26 17:35:08",
+      "special_local_need": false
     },
     "model": "data_manager.Brand",
     "pk": 22
@@ -4694,8 +4694,8 @@
         299
       ],
       "restricted_use": false,
-      "row_entry_date": "2014-06-26 16:51:34",
-      "special_local_need": "No"
+      "row_entry_date": "2014-06-26 17:35:08",
+      "special_local_need": false
     },
     "model": "data_manager.Brand",
     "pk": 23
@@ -4788,8 +4788,8 @@
         193
       ],
       "restricted_use": false,
-      "row_entry_date": "2014-06-26 16:51:34",
-      "special_local_need": "No"
+      "row_entry_date": "2014-06-26 17:35:08",
+      "special_local_need": false
     },
     "model": "data_manager.Brand",
     "pk": 24
@@ -5034,8 +5034,8 @@
         193
       ],
       "restricted_use": false,
-      "row_entry_date": "2014-06-26 16:51:34",
-      "special_local_need": "No"
+      "row_entry_date": "2014-06-26 17:35:08",
+      "special_local_need": false
     },
     "model": "data_manager.Brand",
     "pk": 25
@@ -5155,8 +5155,8 @@
         547
       ],
       "restricted_use": false,
-      "row_entry_date": "2014-06-26 16:51:34",
-      "special_local_need": "No"
+      "row_entry_date": "2014-06-26 17:35:08",
+      "special_local_need": false
     },
     "model": "data_manager.Brand",
     "pk": 26
@@ -5228,8 +5228,8 @@
         304
       ],
       "restricted_use": false,
-      "row_entry_date": "2014-06-26 16:51:34",
-      "special_local_need": "No"
+      "row_entry_date": "2014-06-26 17:35:08",
+      "special_local_need": false
     },
     "model": "data_manager.Brand",
     "pk": 27
@@ -5302,8 +5302,8 @@
         159
       ],
       "restricted_use": false,
-      "row_entry_date": "2014-06-26 16:51:34",
-      "special_local_need": "No"
+      "row_entry_date": "2014-06-26 17:35:08",
+      "special_local_need": false
     },
     "model": "data_manager.Brand",
     "pk": 28
@@ -5376,8 +5376,8 @@
         159
       ],
       "restricted_use": false,
-      "row_entry_date": "2014-06-26 16:51:34",
-      "special_local_need": "No"
+      "row_entry_date": "2014-06-26 17:35:08",
+      "special_local_need": false
     },
     "model": "data_manager.Brand",
     "pk": 29
@@ -5646,8 +5646,8 @@
         193
       ],
       "restricted_use": false,
-      "row_entry_date": "2014-06-26 16:51:34",
-      "special_local_need": "No"
+      "row_entry_date": "2014-06-26 17:35:08",
+      "special_local_need": false
     },
     "model": "data_manager.Brand",
     "pk": 30
@@ -5931,8 +5931,8 @@
         589
       ],
       "restricted_use": false,
-      "row_entry_date": "2014-06-26 16:51:34",
-      "special_local_need": "No"
+      "row_entry_date": "2014-06-26 17:35:08",
+      "special_local_need": false
     },
     "model": "data_manager.Brand",
     "pk": 31
@@ -6005,8 +6005,8 @@
         159
       ],
       "restricted_use": false,
-      "row_entry_date": "2014-06-26 16:51:34",
-      "special_local_need": "No"
+      "row_entry_date": "2014-06-26 17:35:08",
+      "special_local_need": false
     },
     "model": "data_manager.Brand",
     "pk": 32
@@ -6079,8 +6079,8 @@
         159
       ],
       "restricted_use": false,
-      "row_entry_date": "2014-06-26 16:51:34",
-      "special_local_need": "No"
+      "row_entry_date": "2014-06-26 17:35:08",
+      "special_local_need": false
     },
     "model": "data_manager.Brand",
     "pk": 33
@@ -6153,8 +6153,8 @@
         159
       ],
       "restricted_use": false,
-      "row_entry_date": "2014-06-26 16:51:34",
-      "special_local_need": "No"
+      "row_entry_date": "2014-06-26 17:35:08",
+      "special_local_need": false
     },
     "model": "data_manager.Brand",
     "pk": 34
@@ -6448,8 +6448,8 @@
         193
       ],
       "restricted_use": false,
-      "row_entry_date": "2014-06-26 16:51:34",
-      "special_local_need": "No"
+      "row_entry_date": "2014-06-26 17:35:08",
+      "special_local_need": false
     },
     "model": "data_manager.Brand",
     "pk": 35
@@ -6743,8 +6743,8 @@
         193
       ],
       "restricted_use": false,
-      "row_entry_date": "2014-06-26 16:51:34",
-      "special_local_need": "No"
+      "row_entry_date": "2014-06-26 17:35:08",
+      "special_local_need": false
     },
     "model": "data_manager.Brand",
     "pk": 36
@@ -6890,8 +6890,8 @@
         188
       ],
       "restricted_use": false,
-      "row_entry_date": "2014-06-26 16:51:34",
-      "special_local_need": "No"
+      "row_entry_date": "2014-06-26 17:35:08",
+      "special_local_need": false
     },
     "model": "data_manager.Brand",
     "pk": 37
@@ -7136,8 +7136,8 @@
         193
       ],
       "restricted_use": false,
-      "row_entry_date": "2014-06-26 16:51:34",
-      "special_local_need": "No"
+      "row_entry_date": "2014-06-26 17:35:08",
+      "special_local_need": false
     },
     "model": "data_manager.Brand",
     "pk": 38
@@ -7424,8 +7424,8 @@
         193
       ],
       "restricted_use": false,
-      "row_entry_date": "2014-06-26 16:51:34",
-      "special_local_need": "No"
+      "row_entry_date": "2014-06-26 17:35:08",
+      "special_local_need": false
     },
     "model": "data_manager.Brand",
     "pk": 39
@@ -7670,8 +7670,8 @@
         193
       ],
       "restricted_use": false,
-      "row_entry_date": "2014-06-26 16:51:34",
-      "special_local_need": "No"
+      "row_entry_date": "2014-06-26 17:35:08",
+      "special_local_need": false
     },
     "model": "data_manager.Brand",
     "pk": 40
@@ -7940,8 +7940,8 @@
         193
       ],
       "restricted_use": false,
-      "row_entry_date": "2014-06-26 16:51:34",
-      "special_local_need": "No"
+      "row_entry_date": "2014-06-26 17:35:08",
+      "special_local_need": false
     },
     "model": "data_manager.Brand",
     "pk": 41
@@ -8178,8 +8178,8 @@
         193
       ],
       "restricted_use": false,
-      "row_entry_date": "2014-06-26 16:51:34",
-      "special_local_need": "No"
+      "row_entry_date": "2014-06-26 17:35:08",
+      "special_local_need": false
     },
     "model": "data_manager.Brand",
     "pk": 42
@@ -8251,8 +8251,8 @@
         304
       ],
       "restricted_use": false,
-      "row_entry_date": "2014-06-26 16:51:34",
-      "special_local_need": "No"
+      "row_entry_date": "2014-06-26 17:35:08",
+      "special_local_need": false
     },
     "model": "data_manager.Brand",
     "pk": 43
@@ -8324,8 +8324,8 @@
         304
       ],
       "restricted_use": false,
-      "row_entry_date": "2014-06-26 16:51:34",
-      "special_local_need": "No"
+      "row_entry_date": "2014-06-26 17:35:08",
+      "special_local_need": false
     },
     "model": "data_manager.Brand",
     "pk": 44
@@ -8405,7 +8405,7 @@
       "label_url": "http://www.kellysolutions.com/erenewals/documentsubmit/KellyData%5CSC\\pesticide\\Product%20Label\\1381\\1381%2D247\\1381%2D247%5FRUGGED%5FHERBICIDE%5F2%5F5%5F2014%5F11%5F13%5F38%5FAM%2Epdf",
       "name": "RUGGED HERBICIDE",
       "pesticide_type": [
-        6
+        5
       ],
       "pests_treated": [
         198,
@@ -8552,8 +8552,8 @@
         298
       ],
       "restricted_use": false,
-      "row_entry_date": "2014-06-26 16:51:34",
-      "special_local_need": "No"
+      "row_entry_date": "2014-06-26 17:35:08",
+      "special_local_need": false
     },
     "model": "data_manager.Brand",
     "pk": 45
@@ -8652,8 +8652,8 @@
         193
       ],
       "restricted_use": false,
-      "row_entry_date": "2014-06-26 16:51:34",
-      "special_local_need": "No"
+      "row_entry_date": "2014-06-26 17:35:08",
+      "special_local_need": false
     },
     "model": "data_manager.Brand",
     "pk": 46
@@ -8752,8 +8752,8 @@
         193
       ],
       "restricted_use": false,
-      "row_entry_date": "2014-06-26 16:51:34",
-      "special_local_need": "No"
+      "row_entry_date": "2014-06-26 17:35:08",
+      "special_local_need": false
     },
     "model": "data_manager.Brand",
     "pk": 47
@@ -8852,8 +8852,8 @@
         193
       ],
       "restricted_use": false,
-      "row_entry_date": "2014-06-26 16:51:34",
-      "special_local_need": "No"
+      "row_entry_date": "2014-06-26 17:35:08",
+      "special_local_need": false
     },
     "model": "data_manager.Brand",
     "pk": 48
@@ -8952,8 +8952,8 @@
         193
       ],
       "restricted_use": false,
-      "row_entry_date": "2014-06-26 16:51:34",
-      "special_local_need": "No"
+      "row_entry_date": "2014-06-26 17:35:08",
+      "special_local_need": false
     },
     "model": "data_manager.Brand",
     "pk": 49
@@ -9016,8 +9016,8 @@
         159
       ],
       "restricted_use": false,
-      "row_entry_date": "2014-06-26 16:51:34",
-      "special_local_need": "No"
+      "row_entry_date": "2014-06-26 17:35:08",
+      "special_local_need": false
     },
     "model": "data_manager.Brand",
     "pk": 50
@@ -9080,8 +9080,8 @@
         159
       ],
       "restricted_use": false,
-      "row_entry_date": "2014-06-26 16:51:34",
-      "special_local_need": "No"
+      "row_entry_date": "2014-06-26 17:35:08",
+      "special_local_need": false
     },
     "model": "data_manager.Brand",
     "pk": 51
@@ -9375,8 +9375,8 @@
         298
       ],
       "restricted_use": false,
-      "row_entry_date": "2014-06-26 16:51:34",
-      "special_local_need": "No"
+      "row_entry_date": "2014-06-26 17:35:08",
+      "special_local_need": false
     },
     "model": "data_manager.Brand",
     "pk": 52
@@ -9634,8 +9634,8 @@
         193
       ],
       "restricted_use": false,
-      "row_entry_date": "2014-06-26 16:51:34",
-      "special_local_need": "No"
+      "row_entry_date": "2014-06-26 17:35:08",
+      "special_local_need": false
     },
     "model": "data_manager.Brand",
     "pk": 53
@@ -9893,8 +9893,8 @@
         193
       ],
       "restricted_use": false,
-      "row_entry_date": "2014-06-26 16:51:34",
-      "special_local_need": "No"
+      "row_entry_date": "2014-06-26 17:35:08",
+      "special_local_need": false
     },
     "model": "data_manager.Brand",
     "pk": 54
@@ -10004,8 +10004,8 @@
         193
       ],
       "restricted_use": false,
-      "row_entry_date": "2014-06-26 16:51:34",
-      "special_local_need": "No"
+      "row_entry_date": "2014-06-26 17:35:08",
+      "special_local_need": false
     },
     "model": "data_manager.Brand",
     "pk": 55
@@ -10115,8 +10115,8 @@
         193
       ],
       "restricted_use": false,
-      "row_entry_date": "2014-06-26 16:51:34",
-      "special_local_need": "No"
+      "row_entry_date": "2014-06-26 17:35:08",
+      "special_local_need": false
     },
     "model": "data_manager.Brand",
     "pk": 56
@@ -10145,7 +10145,7 @@
       "label_url": "http://www.kellysolutions.com/erenewals/documentsubmit/KellyData\\SC\\pesticide\\Product%20Label\\538\\538%2D280\\538%2D280%5FSUPER%5FTURF%5FBUILDER%5FW%5F+%5F2%5FWEED%5FCONTROL%5F29%5F3%5F3%5F4%5F22%5F2010%5F11%5F26%5F02%5FAM%2Epdf",
       "name": "SUPER TURF BUILDER W/+ 2 WEED CONTROL 29-3-3",
       "pesticide_type": [
-        7
+        6
       ],
       "pests_treated": [
         2,
@@ -10224,8 +10224,8 @@
         193
       ],
       "restricted_use": false,
-      "row_entry_date": "2014-06-26 16:51:34",
-      "special_local_need": "No"
+      "row_entry_date": "2014-06-26 17:35:08",
+      "special_local_need": false
     },
     "model": "data_manager.Brand",
     "pk": 57
@@ -10254,7 +10254,7 @@
       "label_url": "http://www.kellysolutions.com/erenewals/documentsubmit/KellyData\\SC\\pesticide\\Product%20Label\\538\\538%2D280\\538%2D280%5FSUPER%5FTURF%5FBUILDER%5FW%5FPLUS%5F2%5FWEED%5FCTRL%5F29%5F2%5F3%5F4%5F22%5F2010%5F11%5F26%5F02%5FAM%2Epdf",
       "name": "SUPER TURF BUILDER W/PLUS 2 WEED CTRL 29-2-3",
       "pesticide_type": [
-        7
+        6
       ],
       "pests_treated": [
         2,
@@ -10333,8 +10333,8 @@
         193
       ],
       "restricted_use": false,
-      "row_entry_date": "2014-06-26 16:51:34",
-      "special_local_need": "No"
+      "row_entry_date": "2014-06-26 17:35:08",
+      "special_local_need": false
     },
     "model": "data_manager.Brand",
     "pk": 58
@@ -10444,8 +10444,8 @@
         193
       ],
       "restricted_use": false,
-      "row_entry_date": "2014-06-26 16:51:34",
-      "special_local_need": "No"
+      "row_entry_date": "2014-06-26 17:35:08",
+      "special_local_need": false
     },
     "model": "data_manager.Brand",
     "pk": 59
@@ -10531,8 +10531,8 @@
         193
       ],
       "restricted_use": false,
-      "row_entry_date": "2014-06-26 16:51:34",
-      "special_local_need": "No"
+      "row_entry_date": "2014-06-26 17:35:08",
+      "special_local_need": false
     },
     "model": "data_manager.Brand",
     "pk": 60
@@ -10618,8 +10618,8 @@
         193
       ],
       "restricted_use": false,
-      "row_entry_date": "2014-06-26 16:51:34",
-      "special_local_need": "No"
+      "row_entry_date": "2014-06-26 17:35:08",
+      "special_local_need": false
     },
     "model": "data_manager.Brand",
     "pk": 61
@@ -10705,8 +10705,8 @@
         193
       ],
       "restricted_use": false,
-      "row_entry_date": "2014-06-26 16:51:34",
-      "special_local_need": "No"
+      "row_entry_date": "2014-06-26 17:35:08",
+      "special_local_need": false
     },
     "model": "data_manager.Brand",
     "pk": 62
@@ -10993,8 +10993,8 @@
         193
       ],
       "restricted_use": false,
-      "row_entry_date": "2014-06-26 16:51:34",
-      "special_local_need": "No"
+      "row_entry_date": "2014-06-26 17:35:08",
+      "special_local_need": false
     },
     "model": "data_manager.Brand",
     "pk": 63
@@ -11064,8 +11064,8 @@
         191
       ],
       "restricted_use": false,
-      "row_entry_date": "2014-06-26 16:51:34",
-      "special_local_need": "No"
+      "row_entry_date": "2014-06-26 17:35:08",
+      "special_local_need": false
     },
     "model": "data_manager.Brand",
     "pk": 64
@@ -11175,8 +11175,8 @@
         193
       ],
       "restricted_use": false,
-      "row_entry_date": "2014-06-26 16:51:34",
-      "special_local_need": "No"
+      "row_entry_date": "2014-06-26 17:35:08",
+      "special_local_need": false
     },
     "model": "data_manager.Brand",
     "pk": 65
@@ -11286,8 +11286,8 @@
         193
       ],
       "restricted_use": false,
-      "row_entry_date": "2014-06-26 16:51:34",
-      "special_local_need": "No"
+      "row_entry_date": "2014-06-26 17:35:08",
+      "special_local_need": false
     },
     "model": "data_manager.Brand",
     "pk": 66
@@ -11397,8 +11397,8 @@
         193
       ],
       "restricted_use": false,
-      "row_entry_date": "2014-06-26 16:51:34",
-      "special_local_need": "No"
+      "row_entry_date": "2014-06-26 17:35:08",
+      "special_local_need": false
     },
     "model": "data_manager.Brand",
     "pk": 67
@@ -11497,8 +11497,8 @@
         193
       ],
       "restricted_use": false,
-      "row_entry_date": "2014-06-26 16:51:34",
-      "special_local_need": "No"
+      "row_entry_date": "2014-06-26 17:35:08",
+      "special_local_need": false
     },
     "model": "data_manager.Brand",
     "pk": 68
@@ -11597,8 +11597,8 @@
         193
       ],
       "restricted_use": false,
-      "row_entry_date": "2014-06-26 16:51:34",
-      "special_local_need": "No"
+      "row_entry_date": "2014-06-26 17:35:08",
+      "special_local_need": false
     },
     "model": "data_manager.Brand",
     "pk": 69
@@ -11697,8 +11697,8 @@
         193
       ],
       "restricted_use": false,
-      "row_entry_date": "2014-06-26 16:51:34",
-      "special_local_need": "No"
+      "row_entry_date": "2014-06-26 17:35:08",
+      "special_local_need": false
     },
     "model": "data_manager.Brand",
     "pk": 70
@@ -11784,8 +11784,8 @@
         193
       ],
       "restricted_use": false,
-      "row_entry_date": "2014-06-26 16:51:34",
-      "special_local_need": "No"
+      "row_entry_date": "2014-06-26 17:35:08",
+      "special_local_need": false
     },
     "model": "data_manager.Brand",
     "pk": 71
@@ -11884,8 +11884,8 @@
         193
       ],
       "restricted_use": false,
-      "row_entry_date": "2014-06-26 16:51:34",
-      "special_local_need": "No"
+      "row_entry_date": "2014-06-26 17:35:08",
+      "special_local_need": false
     },
     "model": "data_manager.Brand",
     "pk": 72
@@ -11971,8 +11971,8 @@
         193
       ],
       "restricted_use": false,
-      "row_entry_date": "2014-06-26 16:51:34",
-      "special_local_need": "No"
+      "row_entry_date": "2014-06-26 17:35:08",
+      "special_local_need": false
     },
     "model": "data_manager.Brand",
     "pk": 73
@@ -12071,8 +12071,8 @@
         193
       ],
       "restricted_use": false,
-      "row_entry_date": "2014-06-26 16:51:34",
-      "special_local_need": "No"
+      "row_entry_date": "2014-06-26 17:35:08",
+      "special_local_need": false
     },
     "model": "data_manager.Brand",
     "pk": 74
@@ -12607,8 +12607,8 @@
         298
       ],
       "restricted_use": false,
-      "row_entry_date": "2014-06-26 16:51:34",
-      "special_local_need": "No"
+      "row_entry_date": "2014-06-26 17:35:08",
+      "special_local_need": false
     },
     "model": "data_manager.Brand",
     "pk": 75
@@ -12877,8 +12877,8 @@
         193
       ],
       "restricted_use": false,
-      "row_entry_date": "2014-06-26 16:51:34",
-      "special_local_need": "No"
+      "row_entry_date": "2014-06-26 17:35:08",
+      "special_local_need": false
     },
     "model": "data_manager.Brand",
     "pk": 76
@@ -12988,8 +12988,8 @@
         193
       ],
       "restricted_use": false,
-      "row_entry_date": "2014-06-26 16:51:34",
-      "special_local_need": "No"
+      "row_entry_date": "2014-06-26 17:35:08",
+      "special_local_need": false
     },
     "model": "data_manager.Brand",
     "pk": 77
@@ -13099,8 +13099,8 @@
         193
       ],
       "restricted_use": false,
-      "row_entry_date": "2014-06-26 16:51:34",
-      "special_local_need": "No"
+      "row_entry_date": "2014-06-26 17:35:08",
+      "special_local_need": false
     },
     "model": "data_manager.Brand",
     "pk": 78
@@ -13210,8 +13210,8 @@
         193
       ],
       "restricted_use": false,
-      "row_entry_date": "2014-06-26 16:51:34",
-      "special_local_need": "No"
+      "row_entry_date": "2014-06-26 17:35:08",
+      "special_local_need": false
     },
     "model": "data_manager.Brand",
     "pk": 79
@@ -13323,8 +13323,8 @@
         193
       ],
       "restricted_use": false,
-      "row_entry_date": "2014-06-26 16:51:34",
-      "special_local_need": "No"
+      "row_entry_date": "2014-06-26 17:35:08",
+      "special_local_need": false
     },
     "model": "data_manager.Brand",
     "pk": 80
@@ -13436,8 +13436,8 @@
         193
       ],
       "restricted_use": false,
-      "row_entry_date": "2014-06-26 16:51:34",
-      "special_local_need": "No"
+      "row_entry_date": "2014-06-26 17:35:08",
+      "special_local_need": false
     },
     "model": "data_manager.Brand",
     "pk": 81
