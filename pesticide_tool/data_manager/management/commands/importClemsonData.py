@@ -229,7 +229,7 @@ def createInitialData(**kwargs):
         brands_with_ai.append(brand_model)
       if logger:
         logger.info("Finished processing file: %s" % (file))
-      break
+
   try:
     out_file = open(initial_json, "w")
     out_file.write(json.dumps(models, sort_keys=True, indent=2 * ' '))

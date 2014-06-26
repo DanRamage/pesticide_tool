@@ -32,7 +32,7 @@ class PesticideClass(models.Model):
   row_id = models.IntegerField(primary_key=True)
   row_entry_date = models.DateTimeField(blank=True, null=True)
   row_update_date = models.DateTimeField(blank=True, null=True)
-  name = models.CharField(unique=True, max_length=50)
+  name = models.CharField(unique=True, max_length=128)
   def __unicode__(self):
     return self.name
 
@@ -124,7 +124,7 @@ class ApplicationArea(models.Model):
   row_id = models.IntegerField(primary_key=True)
   row_entry_date = models.DateTimeField(blank=True, null=True)
   row_update_date = models.DateTimeField(blank=True, null=True)
-  name = models.CharField(unique=True, max_length=124, blank=False)
+  name = models.CharField(unique=True, max_length=128, blank=False)
 
   #brand = models.ManyToManyField('Brand', blank=True, null=True)
 
