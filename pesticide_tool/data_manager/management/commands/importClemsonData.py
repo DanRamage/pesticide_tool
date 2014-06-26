@@ -85,7 +85,7 @@ def build_formulation(ingr, brand_name, ndx, date, lookups):
     "fields": {
       "row_entry_date": date,
       "brand_name": brand_name,
-      "active_ingredient": lookups['ai_lookup'][ingr.active_ingredient],
+      "active_ingredient": lookups['ai_lookup'][ingr.active_ingredient.lower()],
       "percentage_active_ingredient": ingr.percentage_active_ingredient
     }
   })
@@ -94,7 +94,7 @@ def build_brand_model(prod, lookups, ndx, date, add_formuation):
   #formulation we end up with one getting created before the other an an error occuring
   #because the other relation has not yet been created. We do a two pass.
   if add_formuation:
-    active_ingredients = [lookups['ai_lookup'][rec.active_ingredient] for rec in prod.active_ingredients]
+    active_ingredients = [lookups['ai_lookup'][rec.active_ingredient.lower()] for rec in prod.active_ingredients]
   else:
     active_ingredients = []
   return({
@@ -124,9 +124,22 @@ def createInitialData(**kwargs):
   #the Clemson data, there are brands with active ingredients we don't have that
   #data for but want to add.
   calculated_ais = []
+  #Build the init data for the active ingredient models.
+  lookups = {
+    'pest_lookup' : {},
+    'company_lookup' : {},
+    'site_lookup' : {},
+    'brand_lookup': {},
+    'ai_lookup': {},
+    'form_lookup' : {}
+  }
+
   ai_rows = ActiveIngredient.objects.all().order_by('name')
   for row in ai_rows:
     calculated_ais.append(row.name)
+    #For the existing AIs, build the lookups.
+    build_dict(lookups['ai_lookup'], row.name.lower(), row.row_id)
+
   ai_max_row_id = ai_rows.aggregate((Max('row_id')))
 
   data_dir = config_file.get('output', 'jsonoutdir')
@@ -144,15 +157,6 @@ def createInitialData(**kwargs):
           prod = product()
           prod.load_from_json(brand)
           product_list.append(prod)
-      #Build the init data for the active ingredient models.
-      lookups = {
-        'pest_lookup' : {},
-        'company_lookup' : {},
-        'site_lookup' : {},
-        'brand_lookup': {},
-        'ai_lookup': {},
-        'form_lookup' : {}
-      }
       models = []
       brands_with_ai = []
       app_ndx = 1
@@ -181,14 +185,14 @@ def createInitialData(**kwargs):
           prod_ndx += 1
 
         for ingr in prod.active_ingredients:
-          if build_dict(lookups['ai_lookup'], ingr.active_ingredient, ingr_ndx) is False:
+          if build_dict(lookups['ai_lookup'], ingr.active_ingredient.lower(), ingr_ndx) is False:
             #Check to see if the active ingredient is one we already have in the DB.
             if ingr.active_ingredient in calculated_ais is not True:
               models.append(build_active_ingredient(ingr, ingr_ndx, row_entry_date, lookups))
               ingr_ndx += 1
 
           #Build the formulation for the brand.
-          if build_dict(lookups['form_lookup'], ingr.active_ingredient, form_ndx) is False:
+          if build_dict(lookups['form_lookup'], ingr.active_ingredient.lower(), form_ndx) is False:
             models.append(build_formulation(ingr, prod.name, form_ndx, row_entry_date, lookups))
             form_ndx += 1
 
