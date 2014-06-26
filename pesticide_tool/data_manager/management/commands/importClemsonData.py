@@ -9,6 +9,7 @@ from django.db.models import Max
 from ... models import *
 from _pesticideClemsonWebRequest import clemsonWebService,product,application_sites
 
+#importClemsonData --ConfigFile=/Users/danramage/Documents/workspace/PesticideProject/pesticide_tool/pesticide_tool/data_manager/management/commands/pesticideDebug.ini --CreateInitialData --StartingActiveIngredient=aminocyclopyrachlor
 logger = logging.getLogger('pesticide_tool')
 
 
@@ -226,9 +227,9 @@ def createInitialData(**kwargs):
         #Build the brand model that has the AI data.
         brand_model = build_brand_model(prod, lookups, prod_ndx, row_entry_date, ai_for_brand)
         brands_with_ai.append(brand_model)
-    if logger:
-      logger.info("Finished processing file: %s" % (file))
-
+      if logger:
+        logger.info("Finished processing file: %s" % (file))
+      break
   try:
     out_file = open(initial_json, "w")
     out_file.write(json.dumps(models, sort_keys=True, indent=2 * ' '))
