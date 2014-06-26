@@ -89,14 +89,7 @@ def build_formulation(ingr, brand_name, ndx, date, lookups):
       "percentage_active_ingredient": ingr.percentage_active_ingredient
     }
   })
-def build_brand_model(prod, lookups, ndx, date, add_formuation):
-  #Since the formulation has a key back to the Brand, and the brand has a relation to the
-  #formulation we end up with one getting created before the other an an error occuring
-  #because the other relation has not yet been created. We do a two pass.
-  if add_formuation:
-    active_ingredients = [lookups['ai_lookup'][rec.active_ingredient.lower()] for rec in prod.active_ingredients]
-  else:
-    active_ingredients = []
+def build_brand_model(prod, lookups, ndx, date, ai_for_brand):
   return({
     "pk": ndx,
     "model": "data_manager.Brand",
@@ -112,7 +105,7 @@ def build_brand_model(prod, lookups, ndx, date, add_formuation):
       "company_number": prod.company_number,
       "pests_treated": [lookups['pest_lookup'][rec.name] for rec in prod.pests_treated],
       "application_areas": [lookups['site_lookup'][rec] for rec in prod.application_areas],
-      "active_ingredients": active_ingredients
+      "active_ingredients": ai_for_brand
     }
   })
 def createInitialData(**kwargs):
@@ -158,6 +151,7 @@ def createInitialData(**kwargs):
           prod.load_from_json(brand)
           product_list.append(prod)
       models = []
+      ai_for_brand = []
       brands_with_ai = []
       app_ndx = 1
       pest_ndx = 1
@@ -192,15 +186,18 @@ def createInitialData(**kwargs):
               ingr_ndx += 1
 
           #Build the formulation for the brand.
-          #if build_dict(lookups['form_lookup'], ingr.active_ingredient.lower(), form_ndx) is False:
-          models.append(build_formulation(ingr, prod.name, form_ndx, row_entry_date, lookups))
+          build_dict(lookups['form_lookup'],  prod.name + '_' + ingr.active_ingredient.lower(), form_ndx)
+          ai_model = build_formulation(ingr, prod.name, form_ndx, row_entry_date, lookups)
+          ai_for_brand.append(ai_model['pk'])
+          models.append(ai_model)
           form_ndx += 1
 
-        brand_model = build_brand_model(prod, lookups, prod_ndx, row_entry_date, False)
+        brand_model = build_brand_model(prod, lookups, prod_ndx, row_entry_date, [])
         models.append(brand_model)
         #Build the brand model that has the AI data.
-        brand_model = build_brand_model(prod, lookups, prod_ndx, row_entry_date, True)
+        brand_model = build_brand_model(prod, lookups, prod_ndx, row_entry_date, ai_for_brand)
         brands_with_ai.append(brand_model)
+        del ai_for_brand[:]
   try:
     out_file = open(initial_json, "w")
     out_file.write(json.dumps(models, sort_keys=True, indent=2 * ' '))
