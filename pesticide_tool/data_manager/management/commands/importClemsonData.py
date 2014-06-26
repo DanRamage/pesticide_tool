@@ -151,7 +151,6 @@ def createInitialData(**kwargs):
           prod.load_from_json(brand)
           product_list.append(prod)
       models = []
-      ai_for_brand = []
       brands_with_ai = []
       app_ndx = 1
       pest_ndx = 1
@@ -178,6 +177,7 @@ def createInitialData(**kwargs):
         if build_dict(lookups['brand_lookup'], prod.name, prod_ndx) is False:
           prod_ndx += 1
 
+        ai_for_brand = []
         for ingr in prod.active_ingredients:
           if build_dict(lookups['ai_lookup'], ingr.active_ingredient.lower(), ingr_ndx) is False:
             #Check to see if the active ingredient is one we already have in the DB.
@@ -197,7 +197,6 @@ def createInitialData(**kwargs):
         #Build the brand model that has the AI data.
         brand_model = build_brand_model(prod, lookups, prod_ndx, row_entry_date, ai_for_brand)
         brands_with_ai.append(brand_model)
-        del ai_for_brand[:]
   try:
     out_file = open(initial_json, "w")
     out_file.write(json.dumps(models, sort_keys=True, indent=2 * ' '))
