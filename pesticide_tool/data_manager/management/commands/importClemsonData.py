@@ -187,8 +187,8 @@ def createInitialData(**kwargs):
         for ingr in prod.active_ingredients:
           if build_dict(lookups['ai_lookup'], ingr.active_ingredient.lower(), ingr_ndx) is False:
             #Check to see if the active ingredient is one we already have in the DB.
-            if ingr.active_ingredient in calculated_ais is not True:
-              models.append(build_active_ingredient(ingr, ingr_ndx, row_entry_date, lookups))
+            if (ingr.active_ingredient in calculated_ais) == False:
+              models.append(build_active_ingredient(ingr, ingr_ndx, row_entry_date))
               ingr_ndx += 1
 
           #Build the formulation for the brand.
