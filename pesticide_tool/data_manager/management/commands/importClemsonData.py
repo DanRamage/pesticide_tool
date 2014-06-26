@@ -158,7 +158,15 @@ def createInitialData(**kwargs):
   brand_json = config_file.get('output', 'brand_only_init_json')
   row_entry_date = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
-  models = []
+  models = {
+    'type_models': [],
+    'comp_models': [],
+    'pest_models': [],
+    'site_models': [],
+    'form_models': [],
+    'brand_models': [],
+    'ai_models': [],
+  }
   brands_with_ai = []
   app_ndx = 1
   pest_ndx = 1
@@ -188,19 +196,19 @@ def createInitialData(**kwargs):
       #make the relations.
       for prod in product_list:
         if build_dict(lookups['company_lookup'], prod.company_name, cmp_ndx) == False:
-          models.append(build_company_model(prod, cmp_ndx, row_entry_date))
+          models['comp_models'].append(build_company_model(prod, cmp_ndx, row_entry_date))
           cmp_ndx += 1
         for area in prod.application_areas:
           if build_dict(lookups['site_lookup'], area, app_ndx) == False:
-            models.append(build_app_model(area, app_ndx, row_entry_date))
+            models['site_models'].append(build_app_model(area, app_ndx, row_entry_date))
             app_ndx += 1
         for pest in prod.pests_treated:
           if build_dict(lookups['pest_lookup'], pest.name, pest_ndx) == False:
-            models.append(build_pest_model(pest, pest_ndx, row_entry_date))
+            models['pest_models'].append(build_pest_model(pest, pest_ndx, row_entry_date))
             pest_ndx += 1
 
         if build_dict(lookups['type_lookup'], prod.pesticide_type.lower(), type_ndx) == False:
-          models.append(build_pesticide_type_model(prod.pesticide_type, type_ndx, row_entry_date))
+          models['type_models'].append(build_pesticide_type_model(prod.pesticide_type, type_ndx, row_entry_date))
           type_ndx += 1
 
 
@@ -212,18 +220,18 @@ def createInitialData(**kwargs):
           if build_dict(lookups['ai_lookup'], ingr.active_ingredient.lower(), ingr_ndx) == False:
             #Check to see if the active ingredient is one we already have in the DB.
             if (ingr.active_ingredient in calculated_ais) == False:
-              models.append(build_active_ingredient(ingr, ingr_ndx, row_entry_date))
+              models['ai_models'].append(build_active_ingredient(ingr, ingr_ndx, row_entry_date))
               ingr_ndx += 1
 
           #Build the formulation for the brand.
           build_dict(lookups['form_lookup'],  prod.name + '_' + ingr.active_ingredient.lower(), form_ndx)
           ai_model = build_formulation(ingr, prod.name, form_ndx, row_entry_date, lookups)
           ai_for_brand.append(ai_model['pk'])
-          models.append(ai_model)
+          models['form_models'].append(ai_model)
           form_ndx += 1
 
         brand_model = build_brand_model(prod, lookups, prod_ndx, row_entry_date, [])
-        models.append(brand_model)
+        models['brand_models'].append(brand_model)
         #Build the brand model that has the AI data.
         brand_model = build_brand_model(prod, lookups, prod_ndx, row_entry_date, ai_for_brand)
         brands_with_ai.append(brand_model)
@@ -231,8 +239,50 @@ def createInitialData(**kwargs):
         logger.info("Finished processing file: %s" % (file))
 
   try:
-    out_file = open(initial_json, "w")
-    out_file.write(json.dumps(models, sort_keys=True, indent=2 * ' '))
+    #Write the initial JSON data for each of the model types. Break them apart since
+    #the data is pretty large.
+    """
+    'type_models': [],
+    'comp_models': [],
+    'pest_models': [],
+    'site_models': [],
+    'form_models': [],
+    'brand_models': [],
+    'ai_models': [],
+    """
+    file_name = "%s/pests.json" % (initial_json)
+    out_file = open(file_name, "w")
+    out_file.write(json.dumps(models['pest_models'], sort_keys=True, indent=2 * ' '))
+    out_file.close()
+
+    file_name = "%s/sites.json" % (initial_json)
+    out_file = open(file_name, "w")
+    out_file.write(json.dumps(models['site_models'], sort_keys=True, indent=2 * ' '))
+    out_file.close()
+
+    file_name = "%s/pesticide_types.json" % (initial_json)
+    out_file = open(file_name, "w")
+    out_file.write(json.dumps(models['type_models'], sort_keys=True, indent=2 * ' '))
+    out_file.close()
+
+    file_name = "%s/companies.json" % (initial_json)
+    out_file = open(file_name, "w")
+    out_file.write(json.dumps(models['comp_models'], sort_keys=True, indent=2 * ' '))
+    out_file.close()
+
+    file_name = "%s/pesticide_formulas.json" % (initial_json)
+    out_file = open(file_name, "w")
+    out_file.write(json.dumps(models['form_models'], sort_keys=True, indent=2 * ' '))
+    out_file.close()
+
+    file_name = "%s/active_ingredients.json" % (initial_json)
+    out_file = open(file_name, "w")
+    out_file.write(json.dumps(models['ai_models'], sort_keys=True, indent=2 * ' '))
+    out_file.close()
+
+    file_name = "%s/brands.json" % (initial_json)
+    out_file = open(file_name, "w")
+    out_file.write(json.dumps(models['brand_models'], sort_keys=True, indent=2 * ' '))
     out_file.close()
 
     out_file = open(brand_json, "w")

@@ -1,0 +1,1514 @@
+[
+  {
+    "fields": {
+      "name": "(R)-(+)-2-(4-Chloro-2-methylphenoxy)propanoic acid",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 100
+  },
+  {
+    "fields": {
+      "name": "3,6-Dichloro-o-anisic acid",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 101
+  },
+  {
+    "fields": {
+      "name": "Acetic acid, (2,4-dichlorophenoxy)-, 2-ethylhexyl ester",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 102
+  },
+  {
+    "fields": {
+      "name": "Benzenesulfonamide, 2-(2,2-difluoroethoxy)-N-(5,8-dimethoxy[1,2,4]triazolo[1,5-c]pyrimidin-2-yl)-6-(trifluoromethyl)-",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 103
+  },
+  {
+    "fields": {
+      "name": "3,5-Pyridinedicarbothioic acid, 2-(difluoromethyl)-4-(2-methylpropyl)-6-(trifluoromethyl)-, S,S-dimethyl ester",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 104
+  },
+  {
+    "fields": {
+      "name": "3,7-Dichloro-8-quinolinecarboxylic acid",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 105
+  },
+  {
+    "fields": {
+      "name": "Butoxyethyl 2,4-dichlorophenoxyacetate",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 106
+  },
+  {
+    "fields": {
+      "name": "Dichlorprop-P",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 107
+  },
+  {
+    "fields": {
+      "name": "Avermectin B1",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 108
+  },
+  {
+    "fields": {
+      "name": "2-(2-Ethoxyethoxy)ethyl 2-benzimidazole carbamate",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 109
+  },
+  {
+    "fields": {
+      "name": "Carbendazim",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 110
+  },
+  {
+    "fields": {
+      "name": "(2-Methyl{1,1'-biphenyl}-3-yl)methyl 3-(2-chloro-3,3,3-trifluoro-1-propenyl)-2,2-dimethylcyclopropanecarboxylate, {1.alpha.,3.alpha.(Z)}-(.+-.)-",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 111
+  },
+  {
+    "fields": {
+      "name": "Fludioxonil",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 112
+  },
+  {
+    "fields": {
+      "name": "Metalaxyl-M",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 113
+  },
+  {
+    "fields": {
+      "name": "S-Cyano(3-phenoxyphenyl)methyl (+/-)-cis/trans-3-(2,2-dichloethenyl)-2,2-dimethylcyclopropanecarboxylate",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 114
+  },
+  {
+    "fields": {
+      "name": "Bifenazate",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 115
+  },
+  {
+    "fields": {
+      "name": "(Butylcarbityl)(6-propylpiperonyl) ether 80% and related compounds 20%",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 116
+  },
+  {
+    "fields": {
+      "name": "O,S-Dimethyl acetylphosphoramidothioate",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 117
+  },
+  {
+    "fields": {
+      "name": "Alpha-Cyano-3-phenoxybenzyl 2,2,3,3-tetramethylcyclopropanecarboxylate",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 118
+  },
+  {
+    "fields": {
+      "name": "2-Chloro-N-(((4-methoxy-6-methyl-1,3,5-triazin-2-yl)amino)carbonyl)benzenesulfonamide",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 119
+  },
+  {
+    "fields": {
+      "name": "Methyl 2-(((((4-methoxy-6-methyl-1,3,5-triazin-2-yl)amino)carbonyl)amino)sulfonyl)benzoate",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 120
+  },
+  {
+    "fields": {
+      "name": "2-(4-Isopropyl-4-methyl-5-oxo-2-imidazolin-2-yl)-nicotinic acid",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 121
+  },
+  {
+    "fields": {
+      "name": "2-Chloro-4-(ethylamino)-6-(isopropylamino)-s-triazine",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 122
+  },
+  {
+    "fields": {
+      "name": "2'-Ethyl-6'-methyl-N-(ethoxymethyl)-2-chloroacetanilide",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 123
+  },
+  {
+    "fields": {
+      "name": "9-(4-Chloro-2-fluoro-5-methoxycarbonylmethylthiophenylimino)-8-thia-1,6-diazabicyclo(4.3.0)nonan-7-one",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 124
+  },
+  {
+    "fields": {
+      "name": "Pyroxasulfone",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 125
+  },
+  {
+    "fields": {
+      "name": "(S)-2-Chloro-N-(2-ethyl-6-methylphenyl)-N-(2-methoxy-1-methylethyl) acetamide",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 126
+  },
+  {
+    "fields": {
+      "name": "Alachlor (2-Chloro-N-(2,6-diethylphenyl)-N-(methoxymethyl)acetamide)",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 127
+  },
+  {
+    "fields": {
+      "name": "2-{4-(methylsulfonyl)-2-nitrobenzoyl}- 1,3-cyclohexanedione",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 128
+  },
+  {
+    "fields": {
+      "name": "2-Chloro-4,6-bis(ethylamino)-s-triazine",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 129
+  },
+  {
+    "fields": {
+      "name": "2-(((((4,6-Dimethoxy-2-pyrimidinyl)amino)carbonyl)amino)sulfonyl)-N,N-dimethyl-3-pyridinecarboxamide",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 130
+  },
+  {
+    "fields": {
+      "name": "N-((4,6-Dimethoxypyrimidin-2-yl)aminocarbonyl)-3-(ethylsulfonyl)-2-pyridinesulfonamide",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 131
+  },
+  {
+    "fields": {
+      "name": "Glyphosate, isopropylamine salt",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 132
+  },
+  {
+    "fields": {
+      "name": "(S)-2-Chloro-N-{(1-methyl-2-methoxy)ethyl}-N-(2,4-dimethyl-thien-3-yl)  acetamide",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 133
+  },
+  {
+    "fields": {
+      "name": "Tetraconazole",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 134
+  },
+  {
+    "fields": {
+      "name": "1-((2-(2,4-Dichlorophenyl)-4-propyl-1,3-dioxolan-2-yl)methyl)-1H-1,2,4-triazole",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 135
+  },
+  {
+    "fields": {
+      "name": "2-(4'-Thiazolyl)benzimidazole",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 136
+  },
+  {
+    "fields": {
+      "name": "1H-1,2,4-Triazole-1-ethanol, .alpha.-(2-(4-chlorophenyl)ethyl)-.alpha.-(1,1-dimethylethyl)-, (+-),",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 137
+  },
+  {
+    "fields": {
+      "name": "Tetrachloroisophthalonitrile",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 138
+  },
+  {
+    "fields": {
+      "name": "Alpha-(4-Chlorophenyl)-alpha-(1-cyclopropylethyl)-1H-1,2,4-triazole-1-ethanol",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 139
+  },
+  {
+    "fields": {
+      "name": "Alanine, N-(2,6-dimethylphenyl)-N-(methoxyacetyl)-, methyl ester",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 140
+  },
+  {
+    "fields": {
+      "name": "3,5-Dinitro-N4,N4-dipropylsulfanilamide",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 141
+  },
+  {
+    "fields": {
+      "name": "Benfluralin",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 142
+  },
+  {
+    "fields": {
+      "name": "Trifluralin ( a,a,a-trifluro-2,6-dinitro-N,N-dipropyl-p-toluidine ) (Note: a = alpha)",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 143
+  },
+  {
+    "fields": {
+      "name": "2-tert-Butyl-4-(2,4-dichloro-5-isopropoxyphenyl-delta2-1,3,4-oxadiazoline-5-one   (Note: delta2 = delta superscript 2)",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 144
+  },
+  {
+    "fields": {
+      "name": "N-(3-(1-Ethyl-1-methylpropyl)-5-isoxazolyl)-2,6-dimethoxybenzamide",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 145
+  },
+  {
+    "fields": {
+      "name": "S-(O,O-Diisopropyl phosphorodithioate) ester of N-(2-mercaptoethyl)benzenesulfonamide",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 146
+  },
+  {
+    "fields": {
+      "name": "1-Naphthyl-N-methylcarbamate",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 147
+  },
+  {
+    "fields": {
+      "name": "1-((6-Chloro-3-pyridinyl)methyl)-N-nitro-2-imidazolidinimine",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 148
+  },
+  {
+    "fields": {
+      "name": "1-((6-Chloro-3-pyridinyl)methyl)-4,5-dihydro-N-nitro-1H-imidazol-2-amine",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 149
+  },
+  {
+    "fields": {
+      "name": "Dicrotophos",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 150
+  },
+  {
+    "fields": {
+      "name": "IBA",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 151
+  },
+  {
+    "fields": {
+      "name": "Acetamiprid",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 152
+  },
+  {
+    "fields": {
+      "name": "O,O-Diethyl O-(3,5,6-trichloro-2-pyridyl) phosphorothioate",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 153
+  },
+  {
+    "fields": {
+      "name": "Borax (B4Na2O7.10H2O)",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 154
+  },
+  {
+    "fields": {
+      "name": "Copper 8-quinolinolate",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 155
+  },
+  {
+    "fields": {
+      "name": "Cyclopropanecarboxylic acid, 2,2-dimethyl-3-(2-methyl-1-propenyl)-, 2-methyl-4-oxo-3-(2-propynyl)-2-cyclopenten-1-yl ester",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 156
+  },
+  {
+    "fields": {
+      "name": "O,O-Diethyl O-(1,2,2,2-tetrachloroethyl) phosphorothioate",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 157
+  },
+  {
+    "fields": {
+      "name": "Sodium 2,6-bis[(4,6-dimethoxypyrimidin-2-yl)oxy] benzoate",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 158
+  },
+  {
+    "fields": {
+      "name": "Boron sodium oxide (B8Na2O13)  (12008-41-2)",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 159
+  },
+  {
+    "fields": {
+      "name": "Copper hydroxide",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 160
+  },
+  {
+    "fields": {
+      "name": "Boron sodium oxide (B8Na2O13), tetrahydrate  (12280-03-4)",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 161
+  },
+  {
+    "fields": {
+      "name": "Boric acid (H3BO3), polymer with N-decyl-1-decanamine, oxirane and 1,2- propanediol",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 162
+  },
+  {
+    "fields": {
+      "name": "Copper carbonate, basic",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 163
+  },
+  {
+    "fields": {
+      "name": "Fenpropimorph",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 164
+  },
+  {
+    "fields": {
+      "name": "2,4,6,8-Tetramethyl-1,3,5,7-tetroxocane",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 165
+  },
+  {
+    "fields": {
+      "name": "Basic copper sulfate",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 166
+  },
+  {
+    "fields": {
+      "name": "Cis-N-Trichloromethylthio-4-cyclohexene-1,2-dicarboximide",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 167
+  },
+  {
+    "fields": {
+      "name": "O,O-Dimethyl phosphorodithioate of diethyl mercaptosuccinate",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 168
+  },
+  {
+    "fields": {
+      "name": "(R+S)-alpha-Cyano-3-phenoxybenzyl (1S+1R)-cis-3-(Z-2-chloro-3,3,3-trifluoroprop-1-enyl)-2,2-dimethylcyclopropanecarboxylate",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 169
+  },
+  {
+    "fields": {
+      "name": "3-(3,4-Dichlorophenyl)-1,1-dimethylurea",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 170
+  },
+  {
+    "fields": {
+      "name": "Methylene bis(thiocyanate)",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 171
+  },
+  {
+    "fields": {
+      "name": "2-Cyano-N-((ethylamino)carbonyl)-2-(methoxyimino)acetamide",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 172
+  },
+  {
+    "fields": {
+      "name": "Mono- and di- potassium salts of phosphorous acid",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 173
+  },
+  {
+    "fields": {
+      "name": "Dimethyl ((1,2-phenylene)bis(iminocarbonothioyl))bis(carbamate)",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 174
+  },
+  {
+    "fields": {
+      "name": "Acibenzolar-s-methyl",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 175
+  },
+  {
+    "fields": {
+      "name": "Methanone, [2-[[6-(2-chlorophenoxy)-5-fluoro-4-pyrimidinyl]oxy]phenyl]  (5,6-dihydro-1,4,2-dioxazin-3-yl)-, O-methyloxime,  (1E)-",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 176
+  },
+  {
+    "fields": {
+      "name": "3-Pyridinecarboxamide, 2-chloro-N-(4'-chloro?1,1'-biphenylU-2-yl)-",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 177
+  },
+  {
+    "fields": {
+      "name": "3-(3,5-Dichlorophenyl)-N-(1-methylethyl)-2,4-dioxo-1-imidazolidinecarboxamide",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 178
+  },
+  {
+    "fields": {
+      "name": "Diiodomethyl p-tolyl sulfone",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 179
+  },
+  {
+    "fields": {
+      "name": "5-[(4-Chlorophenyl)methylene]-2,2-dimethyl-1-(1H-1,2,4-triazol-1-ylmethyl)cyclopentanol",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 180
+  },
+  {
+    "fields": {
+      "name": "2-Octyl-3(2H)-isothiazolone",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 181
+  },
+  {
+    "fields": {
+      "name": "Cyclopropanecarboxylic acid, 3-(2-chloro-3,3,3-trifluoro-1-propenyl)-2, 2-dimethyl-, cyano(3-phenoxyphenyl)methyl ester, [1R-[1 alpha(S*), 3    alpha(Z)]]-",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 182
+  },
+  {
+    "fields": {
+      "name": "Cyano(4-fluoro-3-phenoxyphenyl)methyl  3-(2,2-dichloroethenyl)-2,2-dimethylcyclopropanecarboxylate",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 183
+  },
+  {
+    "fields": {
+      "name": "O,O-Diethyl O-(2-isopropyl-6-methyl-4-pyrimidinyl) phosphorothioate",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 184
+  },
+  {
+    "fields": {
+      "name": "2-Cyclohexen-1-one, 2-(1-(((3-chloro-2-propenyl)oxy)imino)propyl)-5-(2-(ethylthio)propyl)-3-hydroxy-",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 185
+  },
+  {
+    "fields": {
+      "name": "3,6-Dichloropicolinic acid",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 186
+  },
+  {
+    "fields": {
+      "name": "Dicamba, dimethylamine salt",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 187
+  },
+  {
+    "fields": {
+      "name": "Dimethylamine 2,4-dichlorophenoxyacetate",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 188
+  },
+  {
+    "fields": {
+      "name": "Flumetsulam",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 189
+  },
+  {
+    "fields": {
+      "name": "Triethylamine triclopyr",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 190
+  },
+  {
+    "fields": {
+      "name": "Cyclopentanol, 2-[(4-chlorophenyl)methyl]-5-(1-methylethyl)-1-(1H-1,2,4-triazol-1-ylmethyl)-",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 191
+  },
+  {
+    "fields": {
+      "name": "Metconazole",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 192
+  },
+  {
+    "fields": {
+      "name": "Bacillus firmus strain I-1582",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 193
+  },
+  {
+    "fields": {
+      "name": "Prothioconazole",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 194
+  },
+  {
+    "fields": {
+      "name": "Pyrethrins  (NO INERT USE)",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 195
+  },
+  {
+    "fields": {
+      "name": "(1-Cyclohexene-1,2-dicarboximido)methyl 2,2-dimethyl-3-(2-methylpropenyl)cyclopropanecarboxylate",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 196
+  },
+  {
+    "fields": {
+      "name": "Butoxypolypropylene glycol",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 197
+  },
+  {
+    "fields": {
+      "name": "Alkyl* dimethyl benzyl ammonium chloride *(60% C14, 30% C16, 10% C12)",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 198
+  },
+  {
+    "fields": {
+      "name": "Alkyl* dimethyl ethylbenzyl ammonium chloride *(68% C12, 32% C14)",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 199
+  },
+  {
+    "fields": {
+      "name": "Dipropyl isocinchomeronate",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 200
+  },
+  {
+    "fields": {
+      "name": "Alkyl* dimethyl benzyl ammonium chloride *(60% C12, 30% C14, 5% C16, 5% C18)",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 201
+  },
+  {
+    "fields": {
+      "name": "Alkyl* dimethyl benzyl ammonium chloride *(50% C14, 40% C12, 10% C16)",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 202
+  },
+  {
+    "fields": {
+      "name": "Didecyl dimethyl ammonium chloride",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 203
+  },
+  {
+    "fields": {
+      "name": "Dioctyl dimethyl ammonium chloride",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 204
+  },
+  {
+    "fields": {
+      "name": "Octyl decyl dimethyl ammonium chloride",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 205
+  },
+  {
+    "fields": {
+      "name": "Imiprothrin",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 206
+  },
+  {
+    "fields": {
+      "name": "N,N-Diethyl-meta-toluamide and other isomers",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 207
+  },
+  {
+    "fields": {
+      "name": "N-Octyl bicycloheptene dicarboximide",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 208
+  },
+  {
+    "fields": {
+      "name": "(S)-alpha-Cyano-m-phenoxybenzyl (1R,3R)-3-(2,2-dibromovinyl)-2,2-dimethylcyclopropanecarboxylate",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 209
+  },
+  {
+    "fields": {
+      "name": "D-trans-Chrysanthemum monocarboxylic acid ester of d-2-allyl-4-hydroxy-3-methyl-2-cyclopenten-1-one",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 210
+  },
+  {
+    "fields": {
+      "name": "Geraniol",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 211
+  },
+  {
+    "fields": {
+      "name": "Oil of thyme",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 212
+  },
+  {
+    "fields": {
+      "name": "O,O-Dimethyl O-(3,5,6-trichloro-2-pyridyl) phosophorothioate",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 213
+  },
+  {
+    "fields": {
+      "name": "Butoxyethyl triclopyr",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 214
+  },
+  {
+    "fields": {
+      "name": "Methanesulfonamide, N-(2,4-dichloro-5-(4-(difluoromethyl)-4,5-dihydro-3-methyl-5-oxo-1H-1,2,4-triazol-1-yl)phenyl)-",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 215
+  },
+  {
+    "fields": {
+      "name": "(R)-2-(2,4-Dichlorophenoxy)propanoic acid, dimethylamine salt",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 216
+  },
+  {
+    "fields": {
+      "name": "Ethyl 2-chloro-5-[4-chloro-(5-difluoromethoxy)-1-methyl-1H-pyrazol-3-yl]-4-fluorophenoxyacetate",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 217
+  },
+  {
+    "fields": {
+      "name": "Isooctyl(2-ethyl-4-methylpentyl) 2,4-dichlorophenoxyacetate",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 218
+  },
+  {
+    "fields": {
+      "name": "1-Methylheptyl ((4-amino-3,5-dichloro-6-fluoro-2-pyridinyl)oxy)acetate",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 219
+  },
+  {
+    "fields": {
+      "name": "2-Ethylhexyl (R)-2-(2,4-dichlorophenoxy)propionate",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 220
+  },
+  {
+    "fields": {
+      "name": "2-Ethylhexyl 2-methyl-4-chlorophenoxyacetate",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 221
+  },
+  {
+    "fields": {
+      "name": "Carfentrazone-ethyl",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 222
+  },
+  {
+    "fields": {
+      "name": "4-Iodo-2-????(4-methoxy-6-methyl-1,3,5-triazin-2-yl-)aminoUcarbonylUaminoUsulfonylUbenzoic acid methyl ester, monosodium salt",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 223
+  },
+  {
+    "fields": {
+      "name": "Thiencarbazone-methyl",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 224
+  },
+  {
+    "fields": {
+      "name": "Dimethylamine 2-methyl-4-chlorophenoxyacetate",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 225
+  },
+  {
+    "fields": {
+      "name": "Dimethylamine (R)-2-(2-methyl-4-chlorophenoxy)propionate",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 226
+  },
+  {
+    "fields": {
+      "name": "Propanoic acid, 2-{4-{(6-chloro-2-benzoxazolyl)oxy}phenoxy}-, ethyl ester, (R)-",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 227
+  },
+  {
+    "fields": {
+      "name": "4-Amino-3,5,6-trichloropicolinic acid",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 228
+  },
+  {
+    "fields": {
+      "name": "Triisopropanolamine 2,4-dichlorophenoxyacetate",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 229
+  },
+  {
+    "fields": {
+      "name": "1,1-Bis(chlorophenyl)-2,2,2-trichloroethanol",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 230
+  },
+  {
+    "fields": {
+      "name": "N-(2-(1,1?-bicyclopropyl)-2-ylphenyl)-3-(difluoromethyl)-1-",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 231
+  },
+  {
+    "fields": {
+      "name": "Cyprodinil",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 232
+  },
+  {
+    "fields": {
+      "name": "Mandipropamide Technical",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 233
+  },
+  {
+    "fields": {
+      "name": "Guanidine, N-methyl-N'-nitro-N''-[(tetrahydro-3-furanyl)methyl]-",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 234
+  },
+  {
+    "fields": {
+      "name": "2-(1-Methyl-2-(4-phenoxyphenoxy)ethoxy)pyridine",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 235
+  },
+  {
+    "fields": {
+      "name": "Silicon dioxide",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 236
+  },
+  {
+    "fields": {
+      "name": "(Z)-9-Tricosene",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 237
+  },
+  {
+    "fields": {
+      "name": "6,7,8,9,10-Hexachloro-1,5,5a,6,9,9a-hexahydro-6,9-methano-2,4,3-benzodioxathiepin-3-oxide",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 238
+  },
+  {
+    "fields": {
+      "name": "2-Ethoxy-2,3-dihydro-3,3-dimethyl-5-benzofuranyl methanesulfonate, (+-)-",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 239
+  },
+  {
+    "fields": {
+      "name": "Ethofenprox",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 240
+  },
+  {
+    "fields": {
+      "name": "2,4-Dodecadienoic acid, 11-methoxy-3,7,11-trimethyl-, 1-methylethyl ester, [S-(E,E)]-",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 241
+  },
+  {
+    "fields": {
+      "name": "N'-(2,4-Dimethylphenyl)-N-(((2,4-dimethylphenyl)imino)methyl)-N-methylmethanimidamide",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 242
+  },
+  {
+    "fields": {
+      "name": "Novaluron",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 243
+  },
+  {
+    "fields": {
+      "name": "Alpha-Cyano-3-phenoxybenzyl 2,2-dimethyl-3-(2-methylpropenyl)cyclopropanecarboxylate",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 244
+  },
+  {
+    "fields": {
+      "name": "1-Methyl-3-phenyl-5-(3-(trifluoromethyl)phenyl)-4(1H)-pyridinone",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 245
+  },
+  {
+    "fields": {
+      "name": "N,N-Dimethyl-2-?3-(4,6-dimethoxypyrimidin-2-yl)ureidosulfonylU-4-formylaminobenzamide",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 246
+  },
+  {
+    "fields": {
+      "name": "3-Chloro-5-(((((4,6-dimethoxy-2-pyrimidinyl)amino)carbonyl)amino)sulfonyl)-1-methyl-1H-pyrazole-4-carboxylic acid, methyl ester",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 247
+  },
+  {
+    "fields": {
+      "name": "Aluminum tris(O-ethylphosphonate)",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 248
+  },
+  {
+    "fields": {
+      "name": "Butanoic acid, 2-amino-4-(hydroxy-methylphosphinyl)-, monoammonium salt",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 249
+  },
+  {
+    "fields": {
+      "name": "5-(2-Chloro-4-(trifluoromethyl)phenoxy)-N-(methylsulfonyl)-2-nitrobenzamide, sodium salt",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 250
+  },
+  {
+    "fields": {
+      "name": "N-(Phosphonomethyl)glycine",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 251
+  },
+  {
+    "fields": {
+      "name": "2-(2-Aminoethoxy)ethanol 3,6-dichloro-o-anisate",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 252
+  },
+  {
+    "fields": {
+      "name": "2-Chloro-1-(3-ethoxy-4-nitrophenoxy)-4-(trifluoromethyl)benzene",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 253
+  },
+  {
+    "fields": {
+      "name": "6,7-Dihydrodipyrido(1,2-a:2',1'-c)pyrazinediium dibromide",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 254
+  },
+  {
+    "fields": {
+      "name": "Benzamide, N-(((3,5-dichloro-4-(1,1,2,2-tetrafluoroethoxy)phenyl)amino)carbonyl)-2,6-difluoro-",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 255
+  },
+  {
+    "fields": {
+      "name": "Methyl 2-[[[[(4,6-dimethyl-2-pyrimidinyl)amino]carbonyl]amino]sulfonyl]benzoate",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 256
+  },
+  {
+    "fields": {
+      "name": "(+/-)-2-(4,5-Dihydro-4-methyl-4-(1-methylethyl)-5-oxo-1H-imadazol-2-yl)-5-ethyl-3-pyridinecarboxylic acid",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 257
+  },
+  {
+    "fields": {
+      "name": "Ammonium salt of (+/-)-2-(4,5-dihydro-4-methyl-4-(1-methylethyl)-5-oxo-1H-imidazol-2-yl)-5-ethyl-3-pyridinecarboxylic acid",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 258
+  },
+  {
+    "fields": {
+      "name": "Mefluidide, diethanolamine salt",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 259
+  },
+  {
+    "fields": {
+      "name": "2-(4,5-Dihydro-4-methyl-4-(1-methylethyl)-5-oxo-1H-imidazol-2-yl)-3-quinolinecarboxylic acid",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 260
+  },
+  {
+    "fields": {
+      "name": "Dimethyl N,N'-(thiobis((methylimino)carbonyloxy))bis(ethanimidothioate)",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 261
+  },
+  {
+    "fields": {
+      "name": "(3-Phenoxyphenyl)methyl d-cis and trans* 2,2-dimethyl-3-(2-methylpropenyl)cyclopropanecarboxylate *(Max. d-cis 25% : Max. trans 75%)",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 262
+  },
+  {
+    "fields": {
+      "name": "Beta-Cyfluthrin",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 263
+  },
+  {
+    "fields": {
+      "name": "N-(2-Chloro-4-trifluoromethyl)phenyl)-D-valine (+-)-cyano(3-phenoxyphenyl)methyl ester",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 264
+  },
+  {
+    "fields": {
+      "name": "4,5-Dichloro-2-n-octyl-3(2H)-isothiazolone",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 265
+  },
+  {
+    "fields": {
+      "name": "5,6-Dihydro-2-methyl-1,4-oxathiin-3-carboxanalide",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 266
+  },
+  {
+    "fields": {
+      "name": "3-(alpha-Acetonylbenzyl)-4-hydroxycoumarin",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 267
+  },
+  {
+    "fields": {
+      "name": "2-(Diphenylacetyl)-1,3-indandione",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 268
+  },
+  {
+    "fields": {
+      "name": "Cyano (4-fluoro 3-phenoxyphenyl)methyl 3-[2-chloro-2-(4-chlorophenyl)ethenyl]-2,2-dimethylcyclopropanecarboxylate]",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 269
+  },
+  {
+    "fields": {
+      "name": "(+)-(R)-2-(4-chloro-2-methylphenoxy) propanoic acid, potassium salt",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 270
+  },
+  {
+    "fields": {
+      "name": "Dicamba, potassium salt",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 271
+  },
+  {
+    "fields": {
+      "name": "2,4-Dinitro-N3,N3-dipropyl-6-(trifluoromethyl)-1,3-benzenediamine (Note: N3 = N superscript 3)",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 272
+  },
+  {
+    "fields": {
+      "name": "2-Methyl-4-oxo-3-(2-propenyl)-2-cyclopenten-1-yl d-trans-2,2-dimethyl-3-(2-methyl-1-propenyl)cyclopropanecarboxylate",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 273
+  },
+  {
+    "fields": {
+      "name": "O-(2-(Diethylamino)-6-methyl-4-pyrimidinyl) O,O-dimethyl phosphorothioate",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 274
+  },
+  {
+    "fields": {
+      "name": "1-(4-Chlorophenyl)-3-(2,6-difluorobenzoyl)urea",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 275
+  },
+  {
+    "fields": {
+      "name": "O-Phenylphenol   (NO INERT USE)",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 276
+  },
+  {
+    "fields": {
+      "name": "Zoxamide",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 277
+  },
+  {
+    "fields": {
+      "name": "4-(Methylthio)-3,5-xylyl methylcarbamate",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 278
+  },
+  {
+    "fields": {
+      "name": "Isopropyl (2E,4E)-11-methoxy-3,7,11-trimethyl-2,4-dodecadienoate",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 279
+  },
+  {
+    "fields": {
+      "name": "4-Amino-3,6-dichloropyridine-2-carboxylic acid,  potassium salt",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 280
+  },
+  {
+    "fields": {
+      "name": "1,2,4-Triazin-5(4H)-one, 4-amino-6-(1,1-dimethylethyl)-3-(methylthio)-",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 281
+  },
+  {
+    "fields": {
+      "name": "Alpha-Butyl-alpha-(4-chlorophenyl)-1H-1,2,4-triazole-1-propanenitrile",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 282
+  },
+  {
+    "fields": {
+      "name": "Sulfur",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 283
+  },
+  {
+    "fields": {
+      "name": "N,N-Diethyl-2-(1-naphthalenyloxy)propanamide",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 284
+  },
+  {
+    "fields": {
+      "name": "N-(1-Ethylpropyl)-3,4-dimethyl-2,6-dinitrobenzenamine",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 285
+  },
+  {
+    "fields": {
+      "name": "(2RS,3RS)-1-(4-Chlorophenyl)-4,4-dimethyl-2-(1H-1,2,4-triazol-1-yl)pentan-3-ol",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 286
+  },
+  {
+    "fields": {
+      "name": "Alpha-Isopropyl-alpha-(p-(trifluoromethoxy)phenyl)-5-pyrimidinemethanol",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 287
+  },
+  {
+    "fields": {
+      "name": "Cyclohexanecarboxylic acid, 4-(cyclopropylhydroxymethylene)-3,5-dioxo-, ethyl ester",
+      "row_entry_date": "2014-06-26 18:58:33"
+    },
+    "model": "data_manager.ActiveIngredient",
+    "pk": 288
+  }
+]
