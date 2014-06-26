@@ -46,6 +46,16 @@ def build_app_model(area, ndx, date):
       "name": area
     }
   })
+def build_pesticide_type_model(type, ndx, date):
+  return({
+    "pk": ndx,
+    "model": "data_manager.PesticideClass",
+    "fields": {
+      "row_entry_date": date,
+      "name": type
+    }
+  })
+
 def build_pest_model(pest, ndx, date):
   return({
     "pk": ndx,
@@ -124,7 +134,8 @@ def createInitialData(**kwargs):
     'site_lookup' : {},
     'brand_lookup': {},
     'ai_lookup': {},
-    'form_lookup' : {}
+    'form_lookup' : {},
+    'type_lookup' :{}
   }
 
   ai_rows = ActiveIngredient.objects.all().order_by('name')
@@ -132,8 +143,13 @@ def createInitialData(**kwargs):
     calculated_ais.append(row.name)
     #For the existing AIs, build the lookups.
     build_dict(lookups['ai_lookup'], row.name.lower(), row.row_id)
-
   ai_max_row_id = ai_rows.aggregate((Max('row_id')))
+
+  #Build the lookups for the pesticide types we already have in db.
+  pesticide_type_rows = PesticideClass.objects.all()
+  for row in pesticide_type_rows:
+    build_dict(lookups['type_lookup'], row.name.lower(), row.row_id)
+  p_type_max_row_id =  pesticide_type_rows.aggregate((Max('row_id')))
 
   data_dir = config_file.get('output', 'jsonoutdir')
   initial_json = config_file.get('output', 'initial_json')
@@ -154,10 +170,13 @@ def createInitialData(**kwargs):
       brands_with_ai = []
       app_ndx = 1
       pest_ndx = 1
+      #Have to start index past the AIs already in database.
       ingr_ndx = ai_max_row_id['row_id__max'] + 1
       cmp_ndx = 1
       prod_ndx = 1
       form_ndx = 1
+      type_ndx = p_type_max_row_id['row_id__max'] + 1
+
       #Make a pass to build the unique values for the active ingredients, pests, and application
       #sites. In the initial JSON we have to create their models and we need their pk ids to
       #make the relations.
@@ -173,6 +192,11 @@ def createInitialData(**kwargs):
           if build_dict(lookups['pest_lookup'], pest.name, pest_ndx) is False:
             models.append(build_pest_model(pest, pest_ndx, row_entry_date))
             pest_ndx += 1
+
+        if build_dict(lookups['type_lookup'], prod.pesticide_type.lower(), type_ndx) is False:
+          models.append(build_pesticide_type_model(prod.pesticide_type, type_ndx, row_entry_date))
+          type_ndx += 1
+
 
         if build_dict(lookups['brand_lookup'], prod.name, prod_ndx) is False:
           prod_ndx += 1

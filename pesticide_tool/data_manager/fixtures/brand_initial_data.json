@@ -3,7 +3,7 @@
     "fields": {
       "epa_id": 352,
       "name": "DUPONT, E I DE NEMOURS & CO",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Company",
     "pk": 1
@@ -11,7 +11,7 @@
   {
     "fields": {
       "name": "Aerial Application (fixed Wing)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.ApplicationArea",
     "pk": 1
@@ -19,7 +19,7 @@
   {
     "fields": {
       "name": "Aerial Application (rotary Aircraft)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.ApplicationArea",
     "pk": 2
@@ -27,7 +27,7 @@
   {
     "fields": {
       "name": "Agricultural (noncrop Areas) (foliar Treatment)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.ApplicationArea",
     "pk": 3
@@ -35,7 +35,7 @@
   {
     "fields": {
       "name": "Airports (foliar Treatment)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.ApplicationArea",
     "pk": 4
@@ -43,7 +43,7 @@
   {
     "fields": {
       "name": "Barrier Strips (foliar Treatment)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.ApplicationArea",
     "pk": 5
@@ -51,7 +51,7 @@
   {
     "fields": {
       "name": "Ditch Banks (foliar Treatment)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.ApplicationArea",
     "pk": 6
@@ -59,7 +59,7 @@
   {
     "fields": {
       "name": "Farm Fuel Storage Areas (foliar Treatment)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.ApplicationArea",
     "pk": 7
@@ -67,7 +67,7 @@
   {
     "fields": {
       "name": "Fence Rows (foliar Treatment)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.ApplicationArea",
     "pk": 8
@@ -75,7 +75,7 @@
   {
     "fields": {
       "name": "Flood Plain (dry) (foliar Treatment)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.ApplicationArea",
     "pk": 9
@@ -83,7 +83,7 @@
   {
     "fields": {
       "name": "Industrial Areas (outdoor) (foliar Treatment)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.ApplicationArea",
     "pk": 10
@@ -91,7 +91,7 @@
   {
     "fields": {
       "name": "Low Volume (lv) Application",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.ApplicationArea",
     "pk": 11
@@ -99,7 +99,7 @@
   {
     "fields": {
       "name": "Lumber Yards (foliar Treatment)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.ApplicationArea",
     "pk": 12
@@ -107,7 +107,7 @@
   {
     "fields": {
       "name": "Nonagricultural Areas (wildlife Refuge)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.ApplicationArea",
     "pk": 13
@@ -115,7 +115,7 @@
   {
     "fields": {
       "name": "Noncrop Areas (foliar Treatment)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.ApplicationArea",
     "pk": 14
@@ -123,7 +123,7 @@
   {
     "fields": {
       "name": "Ornamental Turf (industrial) (foliar Treatment)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.ApplicationArea",
     "pk": 15
@@ -131,7 +131,7 @@
   {
     "fields": {
       "name": "Pipeline Pumping Stations (outdoor) (foliar Treatment)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.ApplicationArea",
     "pk": 16
@@ -139,7 +139,7 @@
   {
     "fields": {
       "name": "Railroads (foliar Treatment)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.ApplicationArea",
     "pk": 17
@@ -147,7 +147,7 @@
   {
     "fields": {
       "name": "Recreational Areas (foliar Treatment)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.ApplicationArea",
     "pk": 18
@@ -155,7 +155,7 @@
   {
     "fields": {
       "name": "Rights-of-way (highway) (foliar Treatment)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.ApplicationArea",
     "pk": 19
@@ -163,7 +163,7 @@
   {
     "fields": {
       "name": "Rights-of-way (utility) (foliar Treatment)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.ApplicationArea",
     "pk": 20
@@ -171,7 +171,7 @@
   {
     "fields": {
       "name": "Roadsides (foliar Treatment)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.ApplicationArea",
     "pk": 21
@@ -179,7 +179,7 @@
   {
     "fields": {
       "name": "Sewage Disposal Areas (outdoors) (foliar Treatment)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.ApplicationArea",
     "pk": 22
@@ -187,7 +187,7 @@
   {
     "fields": {
       "name": "Swamps/marshes/bogs/standing Water (vegetation) (foliar Treatment)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.ApplicationArea",
     "pk": 23
@@ -195,7 +195,7 @@
   {
     "fields": {
       "name": "Tank Farms (foliar Treatment)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.ApplicationArea",
     "pk": 24
@@ -203,7 +203,7 @@
   {
     "fields": {
       "name": "Tank Mix",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.ApplicationArea",
     "pk": 25
@@ -211,7 +211,7 @@
   {
     "fields": {
       "name": "Trails (foliar Treatment)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.ApplicationArea",
     "pk": 26
@@ -221,7 +221,7 @@
       "display_name": "Black Locust",
       "image_url": null,
       "name": "Black Locust",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 1
@@ -231,7 +231,7 @@
       "display_name": "Boxelder",
       "image_url": null,
       "name": "Boxelder",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 2
@@ -241,7 +241,7 @@
       "display_name": "Broadleaf Weeds",
       "image_url": null,
       "name": "Broadleaf Weeds",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 3
@@ -251,7 +251,7 @@
       "display_name": "Brush",
       "image_url": null,
       "name": "Brush",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 4
@@ -261,7 +261,7 @@
       "display_name": "Canada Goldenrod",
       "image_url": null,
       "name": "Canada Goldenrod",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 5
@@ -271,7 +271,7 @@
       "display_name": "Canada Thistle",
       "image_url": null,
       "name": "Canada Thistle",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 6
@@ -281,7 +281,7 @@
       "display_name": "Catalpa",
       "image_url": null,
       "name": "Catalpa",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 7
@@ -291,7 +291,7 @@
       "display_name": "Common Dandelion",
       "image_url": null,
       "name": "Common Dandelion",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 8
@@ -301,7 +301,7 @@
       "display_name": "Common Ragweed",
       "image_url": null,
       "name": "Common Ragweed",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 9
@@ -311,7 +311,7 @@
       "display_name": "Common Sowthistle",
       "image_url": null,
       "name": "Common Sowthistle",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 10
@@ -321,7 +321,7 @@
       "display_name": "Common Yarrow",
       "image_url": null,
       "name": "Common Yarrow",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 11
@@ -331,7 +331,7 @@
       "display_name": "Cottonwood",
       "image_url": null,
       "name": "Cottonwood",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 12
@@ -341,7 +341,7 @@
       "display_name": "Dewberry",
       "image_url": null,
       "name": "Dewberry",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 13
@@ -351,7 +351,7 @@
       "display_name": "Diffuse Knapweed",
       "image_url": null,
       "name": "Diffuse Knapweed",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 14
@@ -361,7 +361,7 @@
       "display_name": "Dutch Clover",
       "image_url": null,
       "name": "Dutch Clover",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 15
@@ -371,7 +371,7 @@
       "display_name": "Elm",
       "image_url": null,
       "name": "Elm",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 16
@@ -381,7 +381,7 @@
       "display_name": "Field Bindweed",
       "image_url": null,
       "name": "Field Bindweed",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 17
@@ -391,7 +391,7 @@
       "display_name": "Green Ash",
       "image_url": null,
       "name": "Green Ash",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 18
@@ -401,7 +401,7 @@
       "display_name": "Hackberry",
       "image_url": null,
       "name": "Hackberry",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 19
@@ -411,7 +411,7 @@
       "display_name": "Huisache",
       "image_url": null,
       "name": "Huisache",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 20
@@ -421,7 +421,7 @@
       "display_name": "Japanese Honeysuckle",
       "image_url": null,
       "name": "Japanese Honeysuckle",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 21
@@ -431,7 +431,7 @@
       "display_name": "Kochia",
       "image_url": null,
       "name": "Kochia",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 22
@@ -441,7 +441,7 @@
       "display_name": "Leafy Spurge",
       "image_url": null,
       "name": "Leafy Spurge",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 23
@@ -451,7 +451,7 @@
       "display_name": "Lespedeza",
       "image_url": null,
       "name": "Lespedeza",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 24
@@ -461,7 +461,7 @@
       "display_name": "Marestail",
       "image_url": null,
       "name": "Marestail",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 25
@@ -471,7 +471,7 @@
       "display_name": "Mesquite",
       "image_url": null,
       "name": "Mesquite",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 26
@@ -481,7 +481,7 @@
       "display_name": "Musk Thistle",
       "image_url": null,
       "name": "Musk Thistle",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 27
@@ -491,7 +491,7 @@
       "display_name": "No Pest",
       "image_url": null,
       "name": "No Pest",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 28
@@ -501,7 +501,7 @@
       "display_name": "Northern Red Oak",
       "image_url": null,
       "name": "Northern Red Oak",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 29
@@ -511,7 +511,7 @@
       "display_name": "Poison Hemlock",
       "image_url": null,
       "name": "Poison Hemlock",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 30
@@ -521,7 +521,7 @@
       "display_name": "Poison Ivy",
       "image_url": null,
       "name": "Poison Ivy",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 31
@@ -531,7 +531,7 @@
       "display_name": "Prickly Lettuce",
       "image_url": null,
       "name": "Prickly Lettuce",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 32
@@ -541,7 +541,7 @@
       "display_name": "Red Maple",
       "image_url": null,
       "name": "Red Maple",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 33
@@ -551,7 +551,7 @@
       "display_name": "Russian Knapweed",
       "image_url": null,
       "name": "Russian Knapweed",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 34
@@ -561,7 +561,7 @@
       "display_name": "Russian Thistle",
       "image_url": null,
       "name": "Russian Thistle",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 35
@@ -571,7 +571,7 @@
       "display_name": "Sassafras",
       "image_url": null,
       "name": "Sassafras",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 36
@@ -581,7 +581,7 @@
       "display_name": "Silver Maple",
       "image_url": null,
       "name": "Silver Maple",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 37
@@ -591,7 +591,7 @@
       "display_name": "Spotted Knapweed",
       "image_url": null,
       "name": "Spotted Knapweed",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 38
@@ -601,7 +601,7 @@
       "display_name": "Sulphur Cinquefoil",
       "image_url": null,
       "name": "Sulphur Cinquefoil",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 39
@@ -611,7 +611,7 @@
       "display_name": "Sumac",
       "image_url": null,
       "name": "Sumac",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 40
@@ -621,7 +621,7 @@
       "display_name": "Sycamore",
       "image_url": null,
       "name": "Sycamore",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 41
@@ -631,7 +631,7 @@
       "display_name": "Tall Ironweed",
       "image_url": null,
       "name": "Tall Ironweed",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 42
@@ -641,7 +641,7 @@
       "display_name": "Teasel",
       "image_url": null,
       "name": "Teasel",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 43
@@ -651,7 +651,7 @@
       "display_name": "Tupelo",
       "image_url": null,
       "name": "Tupelo",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 44
@@ -661,7 +661,7 @@
       "display_name": "Turkey Mullein",
       "image_url": null,
       "name": "Turkey Mullein",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 45
@@ -671,7 +671,7 @@
       "display_name": "Vines",
       "image_url": null,
       "name": "Vines",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 46
@@ -681,7 +681,7 @@
       "display_name": "Western Ragweed",
       "image_url": null,
       "name": "Western Ragweed",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 47
@@ -691,7 +691,7 @@
       "display_name": "White Ash",
       "image_url": null,
       "name": "White Ash",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 48
@@ -701,7 +701,7 @@
       "display_name": "White Clover",
       "image_url": null,
       "name": "White Clover",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 49
@@ -711,7 +711,7 @@
       "display_name": "Wild Grape",
       "image_url": null,
       "name": "Wild Grape",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 50
@@ -721,7 +721,7 @@
       "display_name": "Woody Plants",
       "image_url": null,
       "name": "Woody Plants",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 51
@@ -731,7 +731,7 @@
       "display_name": "Yellow Poplar",
       "image_url": null,
       "name": "Yellow Poplar",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 52
@@ -741,17 +741,25 @@
       "display_name": "Yellow Starthistle",
       "image_url": null,
       "name": "Yellow Starthistle",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 53
   },
   {
     "fields": {
+      "name": "Herbicide Terrestrial",
+      "row_entry_date": "2014-06-26 14:57:45"
+    },
+    "model": "data_manager.PesticideClass",
+    "pk": 4
+  },
+  {
+    "fields": {
       "active_ingredient": 34,
       "brand_name": "DUPONT METHOD 50SG HERBICIDE",
       "percentage_active_ingredient": "50",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.BrandFormulation",
     "pk": 1
@@ -851,7 +859,7 @@
         53
       ],
       "restricted_use": false,
-      "row_entry_date": "2014-06-26 14:32:54",
+      "row_entry_date": "2014-06-26 14:57:45",
       "special_local_need": false
     },
     "model": "data_manager.Brand",
@@ -860,7 +868,7 @@
   {
     "fields": {
       "name": "Agricultural Areas (uncultivated) (foliar Treatment)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.ApplicationArea",
     "pk": 27
@@ -868,7 +876,7 @@
   {
     "fields": {
       "name": "Bahiagrass (ornamental Turf) (foliar Treatment)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.ApplicationArea",
     "pk": 28
@@ -876,7 +884,7 @@
   {
     "fields": {
       "name": "Bermudagrass (ornamental Turf) (foliar Treatment)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.ApplicationArea",
     "pk": 29
@@ -884,7 +892,7 @@
   {
     "fields": {
       "name": "Camp Areas (foliar Treatment)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.ApplicationArea",
     "pk": 30
@@ -892,7 +900,7 @@
   {
     "fields": {
       "name": "Farm Yards (foliar Treatment)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.ApplicationArea",
     "pk": 31
@@ -900,7 +908,7 @@
   {
     "fields": {
       "name": "Fencerows (foliar Treatment)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.ApplicationArea",
     "pk": 32
@@ -908,7 +916,7 @@
   {
     "fields": {
       "name": "Kentucky Bluegrass (ornamental Turf) (foliar Treatment)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.ApplicationArea",
     "pk": 33
@@ -916,7 +924,7 @@
   {
     "fields": {
       "name": "Nonagricultural Areas (public Health) (outdoor)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.ApplicationArea",
     "pk": 34
@@ -924,7 +932,7 @@
   {
     "fields": {
       "name": "Ornamental Grasses (perennial) (foliar Treatment)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.ApplicationArea",
     "pk": 35
@@ -932,7 +940,7 @@
   {
     "fields": {
       "name": "Paths (foliar Treatment)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.ApplicationArea",
     "pk": 36
@@ -940,7 +948,7 @@
   {
     "fields": {
       "name": "Private Roads, Walkways, Paths, Trails, Lanes (unpaved)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.ApplicationArea",
     "pk": 37
@@ -948,7 +956,7 @@
   {
     "fields": {
       "name": "Rights-of-way (pipeline) (foliar Treatment)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.ApplicationArea",
     "pk": 38
@@ -956,7 +964,7 @@
   {
     "fields": {
       "name": "Rights-of-way (railroad) (foliar Treatment)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.ApplicationArea",
     "pk": 39
@@ -964,7 +972,7 @@
   {
     "fields": {
       "name": "Ryegrass (perennial) (ornamental Turf) (foliar Treatment)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.ApplicationArea",
     "pk": 40
@@ -972,7 +980,7 @@
   {
     "fields": {
       "name": "Smooth Bromegrass (ornamental Turf) (foliar Treatment)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.ApplicationArea",
     "pk": 41
@@ -980,7 +988,7 @@
   {
     "fields": {
       "name": "Tall Fescue (ornamental Turf) (foliar Treatment)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.ApplicationArea",
     "pk": 42
@@ -988,7 +996,7 @@
   {
     "fields": {
       "name": "Uncultivated Agricultural Areas (barrier Strips) (foliar Treatment)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.ApplicationArea",
     "pk": 43
@@ -996,7 +1004,7 @@
   {
     "fields": {
       "name": "Uncultivated Nonagricultural Areas (foliar Treatment)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.ApplicationArea",
     "pk": 44
@@ -1004,7 +1012,7 @@
   {
     "fields": {
       "name": "Walks (foliar Treatment)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.ApplicationArea",
     "pk": 45
@@ -1012,7 +1020,7 @@
   {
     "fields": {
       "name": "Waterway Edges (related Surfaces)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.ApplicationArea",
     "pk": 46
@@ -1020,7 +1028,7 @@
   {
     "fields": {
       "name": "Wheatgrass (ornamental Turf) (foliar Treatment)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.ApplicationArea",
     "pk": 47
@@ -1030,7 +1038,7 @@
       "display_name": "Aster",
       "image_url": null,
       "name": "Aster",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 54
@@ -1040,7 +1048,7 @@
       "display_name": "Aster (preemergence)",
       "image_url": null,
       "name": "Aster (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 55
@@ -1050,7 +1058,7 @@
       "display_name": "Bedstraw",
       "image_url": null,
       "name": "Bedstraw",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 56
@@ -1060,7 +1068,7 @@
       "display_name": "Bedstraw (preemergence)",
       "image_url": null,
       "name": "Bedstraw (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 57
@@ -1070,7 +1078,7 @@
       "display_name": "Black Mustard",
       "image_url": null,
       "name": "Black Mustard",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 58
@@ -1080,7 +1088,7 @@
       "display_name": "Black Mustard (preemergence)",
       "image_url": null,
       "name": "Black Mustard (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 59
@@ -1090,7 +1098,7 @@
       "display_name": "Blue Mustard",
       "image_url": null,
       "name": "Blue Mustard",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 60
@@ -1100,7 +1108,7 @@
       "display_name": "Blue Mustard (preemergence)",
       "image_url": null,
       "name": "Blue Mustard (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 61
@@ -1110,7 +1118,7 @@
       "display_name": "Bouncingbet",
       "image_url": null,
       "name": "Bouncingbet",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 62
@@ -1120,7 +1128,7 @@
       "display_name": "Bouncingbet (preemergence)",
       "image_url": null,
       "name": "Bouncingbet (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 63
@@ -1130,7 +1138,7 @@
       "display_name": "Broadleaf Weeds (preemergence)",
       "image_url": null,
       "name": "Broadleaf Weeds (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 64
@@ -1140,7 +1148,7 @@
       "display_name": "Buckhorn Plantain",
       "image_url": null,
       "name": "Buckhorn Plantain",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 65
@@ -1150,7 +1158,7 @@
       "display_name": "Buckhorn Plantain (preemergence)",
       "image_url": null,
       "name": "Buckhorn Plantain (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 66
@@ -1160,7 +1168,7 @@
       "display_name": "Bull Thistle",
       "image_url": null,
       "name": "Bull Thistle",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 67
@@ -1170,7 +1178,7 @@
       "display_name": "Bull Thistle (preemergence)",
       "image_url": null,
       "name": "Bull Thistle (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 68
@@ -1180,7 +1188,7 @@
       "display_name": "Bur Beakchervil",
       "image_url": null,
       "name": "Bur Beakchervil",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 69
@@ -1190,7 +1198,7 @@
       "display_name": "Bur Beakchervil (preemergence)",
       "image_url": null,
       "name": "Bur Beakchervil (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 70
@@ -1200,7 +1208,7 @@
       "display_name": "Burclover",
       "image_url": null,
       "name": "Burclover",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 71
@@ -1210,7 +1218,7 @@
       "display_name": "Burclover (preemergence)",
       "image_url": null,
       "name": "Burclover (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 72
@@ -1220,7 +1228,7 @@
       "display_name": "Buttercup",
       "image_url": null,
       "name": "Buttercup",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 73
@@ -1230,7 +1238,7 @@
       "display_name": "Buttercup (preemergence)",
       "image_url": null,
       "name": "Buttercup (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 74
@@ -1240,7 +1248,7 @@
       "display_name": "Canada Thistle (preemergence)",
       "image_url": null,
       "name": "Canada Thistle (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 75
@@ -1250,7 +1258,7 @@
       "display_name": "Carolina Geranium",
       "image_url": null,
       "name": "Carolina Geranium",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 76
@@ -1260,7 +1268,7 @@
       "display_name": "Carolina Geranium (preemergence)",
       "image_url": null,
       "name": "Carolina Geranium (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 77
@@ -1270,7 +1278,7 @@
       "display_name": "Chickweed",
       "image_url": null,
       "name": "Chickweed",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 78
@@ -1280,7 +1288,7 @@
       "display_name": "Chickweed (preemergence)",
       "image_url": null,
       "name": "Chickweed (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 79
@@ -1290,7 +1298,7 @@
       "display_name": "Cinquefoil",
       "image_url": null,
       "name": "Cinquefoil",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 80
@@ -1300,7 +1308,7 @@
       "display_name": "Cinquefoil (preemergence)",
       "image_url": null,
       "name": "Cinquefoil (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 81
@@ -1310,7 +1318,7 @@
       "display_name": "Clover",
       "image_url": null,
       "name": "Clover",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 82
@@ -1320,7 +1328,7 @@
       "display_name": "Clover (preemergence)",
       "image_url": null,
       "name": "Clover (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 83
@@ -1330,7 +1338,7 @@
       "display_name": "Cogongrass",
       "image_url": null,
       "name": "Cogongrass",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 84
@@ -1340,7 +1348,7 @@
       "display_name": "Common Groundsel",
       "image_url": null,
       "name": "Common Groundsel",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 85
@@ -1350,7 +1358,7 @@
       "display_name": "Common Groundsel (preemergence)",
       "image_url": null,
       "name": "Common Groundsel (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 86
@@ -1360,7 +1368,7 @@
       "display_name": "Common Mallow",
       "image_url": null,
       "name": "Common Mallow",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 87
@@ -1370,7 +1378,7 @@
       "display_name": "Common Mallow (preemergence)",
       "image_url": null,
       "name": "Common Mallow (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 88
@@ -1380,7 +1388,7 @@
       "display_name": "Common Mullein",
       "image_url": null,
       "name": "Common Mullein",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 89
@@ -1390,7 +1398,7 @@
       "display_name": "Common Mullein (preemergence)",
       "image_url": null,
       "name": "Common Mullein (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 90
@@ -1400,7 +1408,7 @@
       "display_name": "Common Ragweed (preemergence)",
       "image_url": null,
       "name": "Common Ragweed (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 91
@@ -1410,7 +1418,7 @@
       "display_name": "Common Sunflower",
       "image_url": null,
       "name": "Common Sunflower",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 92
@@ -1420,7 +1428,7 @@
       "display_name": "Common Sunflower (preemergence)",
       "image_url": null,
       "name": "Common Sunflower (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 93
@@ -1430,7 +1438,7 @@
       "display_name": "Conical Catchfly",
       "image_url": null,
       "name": "Conical Catchfly",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 94
@@ -1440,7 +1448,7 @@
       "display_name": "Conical Catchfly (preemergence)",
       "image_url": null,
       "name": "Conical Catchfly (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 95
@@ -1450,7 +1458,7 @@
       "display_name": "Corn Spurry",
       "image_url": null,
       "name": "Corn Spurry",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 96
@@ -1460,7 +1468,7 @@
       "display_name": "Corn Spurry (preemergence)",
       "image_url": null,
       "name": "Corn Spurry (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 97
@@ -1470,7 +1478,7 @@
       "display_name": "Cow Cockle",
       "image_url": null,
       "name": "Cow Cockle",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 98
@@ -1480,7 +1488,7 @@
       "display_name": "Cow Cockle (preemergence)",
       "image_url": null,
       "name": "Cow Cockle (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 99
@@ -1490,7 +1498,7 @@
       "display_name": "Curly Dock",
       "image_url": null,
       "name": "Curly Dock",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 100
@@ -1500,7 +1508,7 @@
       "display_name": "Curly Dock (preemergence)",
       "image_url": null,
       "name": "Curly Dock (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 101
@@ -1510,7 +1518,7 @@
       "display_name": "Cutleaf Eveningprimrose",
       "image_url": null,
       "name": "Cutleaf Eveningprimrose",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 102
@@ -1520,7 +1528,7 @@
       "display_name": "Cutleaf Eveningprimrose (preemergence)",
       "image_url": null,
       "name": "Cutleaf Eveningprimrose (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 103
@@ -1530,7 +1538,7 @@
       "display_name": "Dandelion",
       "image_url": null,
       "name": "Dandelion",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 104
@@ -1540,7 +1548,7 @@
       "display_name": "Dandelion (preemergence)",
       "image_url": null,
       "name": "Dandelion (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 105
@@ -1550,7 +1558,7 @@
       "display_name": "Dyers Woad",
       "image_url": null,
       "name": "Dyers Woad",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 106
@@ -1560,7 +1568,7 @@
       "display_name": "Erect Knotweed",
       "image_url": null,
       "name": "Erect Knotweed",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 107
@@ -1570,7 +1578,7 @@
       "display_name": "False Chamomile",
       "image_url": null,
       "name": "False Chamomile",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 108
@@ -1580,7 +1588,7 @@
       "display_name": "False Chamomile (preemergence)",
       "image_url": null,
       "name": "False Chamomile (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 109
@@ -1590,7 +1598,7 @@
       "display_name": "Fiddleneck",
       "image_url": null,
       "name": "Fiddleneck",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 110
@@ -1600,7 +1608,7 @@
       "display_name": "Fiddleneck (preemergence)",
       "image_url": null,
       "name": "Fiddleneck (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 111
@@ -1610,7 +1618,7 @@
       "display_name": "Field Bindweed (preemergence)",
       "image_url": null,
       "name": "Field Bindweed (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 112
@@ -1620,7 +1628,7 @@
       "display_name": "Field Pennycress",
       "image_url": null,
       "name": "Field Pennycress",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 113
@@ -1630,7 +1638,7 @@
       "display_name": "Field Pennycress (preemergence)",
       "image_url": null,
       "name": "Field Pennycress (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 114
@@ -1640,7 +1648,7 @@
       "display_name": "Flixweed",
       "image_url": null,
       "name": "Flixweed",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 115
@@ -1650,7 +1658,7 @@
       "display_name": "Flixweed (preemergence)",
       "image_url": null,
       "name": "Flixweed (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 116
@@ -1660,7 +1668,7 @@
       "display_name": "Goldenrod",
       "image_url": null,
       "name": "Goldenrod",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 117
@@ -1670,7 +1678,7 @@
       "display_name": "Goldenrod (preemergence)",
       "image_url": null,
       "name": "Goldenrod (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 118
@@ -1680,7 +1688,7 @@
       "display_name": "Halogeton",
       "image_url": null,
       "name": "Halogeton",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 119
@@ -1690,7 +1698,7 @@
       "display_name": "Hempnettle",
       "image_url": null,
       "name": "Hempnettle",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 120
@@ -1700,7 +1708,7 @@
       "display_name": "Hempnettle (preemergence)",
       "image_url": null,
       "name": "Hempnettle (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 121
@@ -1710,7 +1718,7 @@
       "display_name": "Henbit",
       "image_url": null,
       "name": "Henbit",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 122
@@ -1720,7 +1728,7 @@
       "display_name": "Henbit (preemergence)",
       "image_url": null,
       "name": "Henbit (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 123
@@ -1730,7 +1738,7 @@
       "display_name": "Hoary Cress",
       "image_url": null,
       "name": "Hoary Cress",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 124
@@ -1740,7 +1748,7 @@
       "display_name": "Hoary Cress (preemergence)",
       "image_url": null,
       "name": "Hoary Cress (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 125
@@ -1750,7 +1758,7 @@
       "display_name": "Horsetail",
       "image_url": null,
       "name": "Horsetail",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 126
@@ -1760,7 +1768,7 @@
       "display_name": "Horsetail (preemergence)",
       "image_url": null,
       "name": "Horsetail (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 127
@@ -1770,7 +1778,7 @@
       "display_name": "Horseweed",
       "image_url": null,
       "name": "Horseweed",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 128
@@ -1780,7 +1788,7 @@
       "display_name": "Horseweed (preemergence)",
       "image_url": null,
       "name": "Horseweed (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 129
@@ -1790,7 +1798,7 @@
       "display_name": "Houndstongue",
       "image_url": null,
       "name": "Houndstongue",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 130
@@ -1800,7 +1808,7 @@
       "display_name": "Italian Ryegrass",
       "image_url": null,
       "name": "Italian Ryegrass",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 131
@@ -1810,7 +1818,7 @@
       "display_name": "Italian Ryegrass (preemergence)",
       "image_url": null,
       "name": "Italian Ryegrass (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 132
@@ -1820,7 +1828,7 @@
       "display_name": "Kochia (preemergence)",
       "image_url": null,
       "name": "Kochia (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 133
@@ -1830,7 +1838,7 @@
       "display_name": "Lambsquarters",
       "image_url": null,
       "name": "Lambsquarters",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 134
@@ -1840,7 +1848,7 @@
       "display_name": "Lambsquarters (preemergence)",
       "image_url": null,
       "name": "Lambsquarters (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 135
@@ -1850,7 +1858,7 @@
       "display_name": "Leafy Spurge (preemergence)",
       "image_url": null,
       "name": "Leafy Spurge (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 136
@@ -1860,7 +1868,7 @@
       "display_name": "Lespedeza (preemergence)",
       "image_url": null,
       "name": "Lespedeza (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 137
@@ -1870,7 +1878,7 @@
       "display_name": "London Rocket",
       "image_url": null,
       "name": "London Rocket",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 138
@@ -1880,7 +1888,7 @@
       "display_name": "London Rocket (preemergence)",
       "image_url": null,
       "name": "London Rocket (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 139
@@ -1890,7 +1898,7 @@
       "display_name": "Marestail (preemergence)",
       "image_url": null,
       "name": "Marestail (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 140
@@ -1900,7 +1908,7 @@
       "display_name": "Mayweed",
       "image_url": null,
       "name": "Mayweed",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 141
@@ -1910,7 +1918,7 @@
       "display_name": "Mayweed (preemergence)",
       "image_url": null,
       "name": "Mayweed (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 142
@@ -1920,7 +1928,7 @@
       "display_name": "Minerslettuce",
       "image_url": null,
       "name": "Minerslettuce",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 143
@@ -1930,7 +1938,7 @@
       "display_name": "Minerslettuce (preemergence)",
       "image_url": null,
       "name": "Minerslettuce (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 144
@@ -1940,7 +1948,7 @@
       "display_name": "Musk Thistle (preemergence)",
       "image_url": null,
       "name": "Musk Thistle (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 145
@@ -1950,7 +1958,7 @@
       "display_name": "Pepperweed",
       "image_url": null,
       "name": "Pepperweed",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 146
@@ -1960,7 +1968,7 @@
       "display_name": "Pepperweed (preemergence)",
       "image_url": null,
       "name": "Pepperweed (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 147
@@ -1970,7 +1978,7 @@
       "display_name": "Perennial Broadleaf Weeds",
       "image_url": null,
       "name": "Perennial Broadleaf Weeds",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 148
@@ -1980,7 +1988,7 @@
       "display_name": "Perennial Pepperweed",
       "image_url": null,
       "name": "Perennial Pepperweed",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 149
@@ -1990,7 +1998,7 @@
       "display_name": "Pineappleweed",
       "image_url": null,
       "name": "Pineappleweed",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 150
@@ -2000,7 +2008,7 @@
       "display_name": "Pineappleweed (preemergence)",
       "image_url": null,
       "name": "Pineappleweed (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 151
@@ -2010,7 +2018,7 @@
       "display_name": "Plantain",
       "image_url": null,
       "name": "Plantain",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 152
@@ -2020,7 +2028,7 @@
       "display_name": "Plantain (preemergence)",
       "image_url": null,
       "name": "Plantain (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 153
@@ -2030,7 +2038,7 @@
       "display_name": "Poison Hemlock (preemergence)",
       "image_url": null,
       "name": "Poison Hemlock (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 154
@@ -2040,7 +2048,7 @@
       "display_name": "Prickly Lettuce (preemergence)",
       "image_url": null,
       "name": "Prickly Lettuce (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 155
@@ -2050,7 +2058,7 @@
       "display_name": "Prostrate Knotweed",
       "image_url": null,
       "name": "Prostrate Knotweed",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 156
@@ -2060,7 +2068,7 @@
       "display_name": "Prostrate Knotweed (preemergence)",
       "image_url": null,
       "name": "Prostrate Knotweed (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 157
@@ -2070,7 +2078,7 @@
       "display_name": "Prostrate Pigweed",
       "image_url": null,
       "name": "Prostrate Pigweed",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 158
@@ -2080,7 +2088,7 @@
       "display_name": "Prostrate Pigweed (preemergence)",
       "image_url": null,
       "name": "Prostrate Pigweed (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 159
@@ -2090,7 +2098,7 @@
       "display_name": "Puncturevine",
       "image_url": null,
       "name": "Puncturevine",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 160
@@ -2100,7 +2108,7 @@
       "display_name": "Puncturevine (preemergence)",
       "image_url": null,
       "name": "Puncturevine (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 161
@@ -2110,7 +2118,7 @@
       "display_name": "Red Clover",
       "image_url": null,
       "name": "Red Clover",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 162
@@ -2120,7 +2128,7 @@
       "display_name": "Red Clover (preemergence)",
       "image_url": null,
       "name": "Red Clover (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 163
@@ -2130,7 +2138,7 @@
       "display_name": "Redroot Pigweed",
       "image_url": null,
       "name": "Redroot Pigweed",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 164
@@ -2140,7 +2148,7 @@
       "display_name": "Redroot Pigweed (preemergence)",
       "image_url": null,
       "name": "Redroot Pigweed (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 165
@@ -2150,7 +2158,7 @@
       "display_name": "Rush Skeletonweed",
       "image_url": null,
       "name": "Rush Skeletonweed",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 166
@@ -2160,7 +2168,7 @@
       "display_name": "Russian Knapweed (preemergence)",
       "image_url": null,
       "name": "Russian Knapweed (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 167
@@ -2170,7 +2178,7 @@
       "display_name": "Scotch Thistle",
       "image_url": null,
       "name": "Scotch Thistle",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 168
@@ -2180,7 +2188,7 @@
       "display_name": "Scouringrush",
       "image_url": null,
       "name": "Scouringrush",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 169
@@ -2190,7 +2198,7 @@
       "display_name": "Shepherdspurse",
       "image_url": null,
       "name": "Shepherdspurse",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 170
@@ -2200,7 +2208,7 @@
       "display_name": "Shepherdspurse (preemergence)",
       "image_url": null,
       "name": "Shepherdspurse (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 171
@@ -2210,7 +2218,7 @@
       "display_name": "Sickle Grass (preemergence)",
       "image_url": null,
       "name": "Sickle Grass (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 172
@@ -2220,7 +2228,7 @@
       "display_name": "Sicklepod",
       "image_url": null,
       "name": "Sicklepod",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 173
@@ -2230,7 +2238,7 @@
       "display_name": "Sicklepod (preemergence)",
       "image_url": null,
       "name": "Sicklepod (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 174
@@ -2240,7 +2248,7 @@
       "display_name": "Smallseed Falseflax",
       "image_url": null,
       "name": "Smallseed Falseflax",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 175
@@ -2250,7 +2258,7 @@
       "display_name": "Smooth Pigweed",
       "image_url": null,
       "name": "Smooth Pigweed",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 176
@@ -2260,7 +2268,7 @@
       "display_name": "Smooth Pigweed (preemergence)",
       "image_url": null,
       "name": "Smooth Pigweed (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 177
@@ -2270,7 +2278,7 @@
       "display_name": "Sowthistle",
       "image_url": null,
       "name": "Sowthistle",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 178
@@ -2280,7 +2288,7 @@
       "display_name": "Sowthistle (preemergence)",
       "image_url": null,
       "name": "Sowthistle (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 179
@@ -2290,7 +2298,7 @@
       "display_name": "Speedwell",
       "image_url": null,
       "name": "Speedwell",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 180
@@ -2300,7 +2308,7 @@
       "display_name": "Speedwell (preemergence)",
       "image_url": null,
       "name": "Speedwell (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 181
@@ -2310,7 +2318,7 @@
       "display_name": "Spikeweed",
       "image_url": null,
       "name": "Spikeweed",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 182
@@ -2320,7 +2328,7 @@
       "display_name": "Spreading Orach",
       "image_url": null,
       "name": "Spreading Orach",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 183
@@ -2330,7 +2338,7 @@
       "display_name": "Spreading Orach (preemergence)",
       "image_url": null,
       "name": "Spreading Orach (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 184
@@ -2340,7 +2348,7 @@
       "display_name": "Sweetclover",
       "image_url": null,
       "name": "Sweetclover",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 185
@@ -2350,7 +2358,7 @@
       "display_name": "Sweetclover (preemergence)",
       "image_url": null,
       "name": "Sweetclover (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 186
@@ -2360,7 +2368,7 @@
       "display_name": "Tansy",
       "image_url": null,
       "name": "Tansy",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 187
@@ -2370,7 +2378,7 @@
       "display_name": "Tansy Ragwort",
       "image_url": null,
       "name": "Tansy Ragwort",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 188
@@ -2380,7 +2388,7 @@
       "display_name": "Tansy Ragwort (preemergence)",
       "image_url": null,
       "name": "Tansy Ragwort (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 189
@@ -2390,7 +2398,7 @@
       "display_name": "Tansymustard",
       "image_url": null,
       "name": "Tansymustard",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 190
@@ -2400,7 +2408,7 @@
       "display_name": "Tansymustard (preemergence)",
       "image_url": null,
       "name": "Tansymustard (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 191
@@ -2410,7 +2418,7 @@
       "display_name": "Tarweed",
       "image_url": null,
       "name": "Tarweed",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 192
@@ -2420,7 +2428,7 @@
       "display_name": "Tarweed (preemergence)",
       "image_url": null,
       "name": "Tarweed (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 193
@@ -2430,7 +2438,7 @@
       "display_name": "Treacle Mustard",
       "image_url": null,
       "name": "Treacle Mustard",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 194
@@ -2440,7 +2448,7 @@
       "display_name": "Treacle Mustard (preemergence)",
       "image_url": null,
       "name": "Treacle Mustard (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 195
@@ -2450,7 +2458,7 @@
       "display_name": "Tumble Mustard",
       "image_url": null,
       "name": "Tumble Mustard",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 196
@@ -2460,7 +2468,7 @@
       "display_name": "Tumble Mustard (preemergence)",
       "image_url": null,
       "name": "Tumble Mustard (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 197
@@ -2470,7 +2478,7 @@
       "display_name": "Tumble Pigweed",
       "image_url": null,
       "name": "Tumble Pigweed",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 198
@@ -2480,7 +2488,7 @@
       "display_name": "Tumble Pigweed (preemergence)",
       "image_url": null,
       "name": "Tumble Pigweed (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 199
@@ -2490,7 +2498,7 @@
       "display_name": "Turkey Mullein (preemergence)",
       "image_url": null,
       "name": "Turkey Mullein (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 200
@@ -2500,7 +2508,7 @@
       "display_name": "Western Ragweed (preemergence)",
       "image_url": null,
       "name": "Western Ragweed (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 201
@@ -2510,7 +2518,7 @@
       "display_name": "White Clover (preemergence)",
       "image_url": null,
       "name": "White Clover (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 202
@@ -2520,7 +2528,7 @@
       "display_name": "Whitetop",
       "image_url": null,
       "name": "Whitetop",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 203
@@ -2530,7 +2538,7 @@
       "display_name": "Whitetop (preemergence)",
       "image_url": null,
       "name": "Whitetop (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 204
@@ -2540,7 +2548,7 @@
       "display_name": "Wild Buckwheat",
       "image_url": null,
       "name": "Wild Buckwheat",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 205
@@ -2550,7 +2558,7 @@
       "display_name": "Wild Buckwheat (preemergence)",
       "image_url": null,
       "name": "Wild Buckwheat (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 206
@@ -2560,7 +2568,7 @@
       "display_name": "Wild Carrot",
       "image_url": null,
       "name": "Wild Carrot",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 207
@@ -2570,7 +2578,7 @@
       "display_name": "Wild Carrot (preemergence)",
       "image_url": null,
       "name": "Wild Carrot (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 208
@@ -2580,7 +2588,7 @@
       "display_name": "Wild Garlic",
       "image_url": null,
       "name": "Wild Garlic",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 209
@@ -2590,7 +2598,7 @@
       "display_name": "Wild Garlic (preemergence)",
       "image_url": null,
       "name": "Wild Garlic (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 210
@@ -2600,7 +2608,7 @@
       "display_name": "Wild Mustard",
       "image_url": null,
       "name": "Wild Mustard",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 211
@@ -2610,7 +2618,7 @@
       "display_name": "Wild Mustard (preemergence)",
       "image_url": null,
       "name": "Wild Mustard (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 212
@@ -2620,7 +2628,7 @@
       "display_name": "Wild Onion",
       "image_url": null,
       "name": "Wild Onion",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 213
@@ -2630,7 +2638,7 @@
       "display_name": "Wild Onion (preemergence)",
       "image_url": null,
       "name": "Wild Onion (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 214
@@ -2640,7 +2648,7 @@
       "display_name": "Wild Parsnip",
       "image_url": null,
       "name": "Wild Parsnip",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 215
@@ -2650,7 +2658,7 @@
       "display_name": "Wild Parsnip (preemergence)",
       "image_url": null,
       "name": "Wild Parsnip (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 216
@@ -2660,17 +2668,25 @@
       "display_name": "Yellow Starthistle (preemergence)",
       "image_url": null,
       "name": "Yellow Starthistle (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 217
   },
   {
     "fields": {
+      "name": "Herbicide Terrestrial, Herbicide",
+      "row_entry_date": "2014-06-26 14:57:45"
+    },
+    "model": "data_manager.PesticideClass",
+    "pk": 5
+  },
+  {
+    "fields": {
       "active_ingredient": 100,
       "brand_name": "DUPONT PERSPECTIVE HERBICIDE",
       "percentage_active_ingredient": "15.8",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.BrandFormulation",
     "pk": 2
@@ -2680,7 +2696,7 @@
       "active_ingredient": 34,
       "brand_name": "DUPONT PERSPECTIVE HERBICIDE",
       "percentage_active_ingredient": "39.5",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.BrandFormulation",
     "pk": 3
@@ -2925,7 +2941,7 @@
         217
       ],
       "restricted_use": false,
-      "row_entry_date": "2014-06-26 14:32:54",
+      "row_entry_date": "2014-06-26 14:57:45",
       "special_local_need": false
     },
     "model": "data_manager.Brand",
@@ -2934,7 +2950,7 @@
   {
     "fields": {
       "name": "Crested Wheatgrass (ornamental Turf) (foliar Treatment)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.ApplicationArea",
     "pk": 48
@@ -2942,7 +2958,7 @@
   {
     "fields": {
       "name": "Western Wheatgrass (foliar Treatment)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.ApplicationArea",
     "pk": 49
@@ -2952,7 +2968,7 @@
       "display_name": "Annual Sowthistle",
       "image_url": null,
       "name": "Annual Sowthistle",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 218
@@ -2962,7 +2978,7 @@
       "display_name": "Annual Sowthistle (preemergence)",
       "image_url": null,
       "name": "Annual Sowthistle (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 219
@@ -2972,7 +2988,7 @@
       "display_name": "Ash",
       "image_url": null,
       "name": "Ash",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 220
@@ -2982,7 +2998,7 @@
       "display_name": "Ash (preemergence)",
       "image_url": null,
       "name": "Ash (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 221
@@ -2992,7 +3008,7 @@
       "display_name": "Aspen",
       "image_url": null,
       "name": "Aspen",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 222
@@ -3002,7 +3018,7 @@
       "display_name": "Baccharis",
       "image_url": null,
       "name": "Baccharis",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 223
@@ -3012,7 +3028,7 @@
       "display_name": "Bahiagrass",
       "image_url": null,
       "name": "Bahiagrass",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 224
@@ -3022,7 +3038,7 @@
       "display_name": "Bahiagrass (preemergence)",
       "image_url": null,
       "name": "Bahiagrass (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 225
@@ -3032,7 +3048,7 @@
       "display_name": "Beebalm",
       "image_url": null,
       "name": "Beebalm",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 226
@@ -3042,7 +3058,7 @@
       "display_name": "Bitter Sneezeweed",
       "image_url": null,
       "name": "Bitter Sneezeweed",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 227
@@ -3052,7 +3068,7 @@
       "display_name": "Bittercress",
       "image_url": null,
       "name": "Bittercress",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 228
@@ -3062,7 +3078,7 @@
       "display_name": "Bittercress (preemergence)",
       "image_url": null,
       "name": "Bittercress (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 229
@@ -3072,7 +3088,7 @@
       "display_name": "Black Henbane",
       "image_url": null,
       "name": "Black Henbane",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 230
@@ -3082,7 +3098,7 @@
       "display_name": "Black Spruce",
       "image_url": null,
       "name": "Black Spruce",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 231
@@ -3092,7 +3108,7 @@
       "display_name": "Blackberry",
       "image_url": null,
       "name": "Blackberry",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 232
@@ -3102,7 +3118,7 @@
       "display_name": "Blackberry (preemergence)",
       "image_url": null,
       "name": "Blackberry (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 233
@@ -3112,7 +3128,7 @@
       "display_name": "Blackeyedsusan",
       "image_url": null,
       "name": "Blackeyedsusan",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 234
@@ -3122,7 +3138,7 @@
       "display_name": "Blackeyedsusan (preemergence)",
       "image_url": null,
       "name": "Blackeyedsusan (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 235
@@ -3132,7 +3148,7 @@
       "display_name": "Boxelder (preemergence)",
       "image_url": null,
       "name": "Boxelder (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 236
@@ -3142,7 +3158,7 @@
       "display_name": "Broom Snakeweed",
       "image_url": null,
       "name": "Broom Snakeweed",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 237
@@ -3152,7 +3168,7 @@
       "display_name": "Burr Buttercup",
       "image_url": null,
       "name": "Burr Buttercup",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 238
@@ -3162,7 +3178,7 @@
       "display_name": "Burr Buttercup (preemergence)",
       "image_url": null,
       "name": "Burr Buttercup (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 239
@@ -3172,7 +3188,7 @@
       "display_name": "Camelthorn",
       "image_url": null,
       "name": "Camelthorn",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 240
@@ -3182,7 +3198,7 @@
       "display_name": "Cherry",
       "image_url": null,
       "name": "Cherry",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 241
@@ -3192,7 +3208,7 @@
       "display_name": "Cherry (preemergence)",
       "image_url": null,
       "name": "Cherry (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 242
@@ -3202,7 +3218,7 @@
       "display_name": "Chicory",
       "image_url": null,
       "name": "Chicory",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 243
@@ -3212,7 +3228,7 @@
       "display_name": "Chinese Tallowtree",
       "image_url": null,
       "name": "Chinese Tallowtree",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 244
@@ -3222,7 +3238,7 @@
       "display_name": "Chinese Tallowtree (preemergence)",
       "image_url": null,
       "name": "Chinese Tallowtree (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 245
@@ -3232,7 +3248,7 @@
       "display_name": "Cocklebur",
       "image_url": null,
       "name": "Cocklebur",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 246
@@ -3242,7 +3258,7 @@
       "display_name": "Cocklebur (preemergence)",
       "image_url": null,
       "name": "Cocklebur (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 247
@@ -3252,7 +3268,7 @@
       "display_name": "Common Chickweed",
       "image_url": null,
       "name": "Common Chickweed",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 248
@@ -3262,7 +3278,7 @@
       "display_name": "Common Chickweed (preemergence)",
       "image_url": null,
       "name": "Common Chickweed (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 249
@@ -3272,7 +3288,7 @@
       "display_name": "Common Crupina",
       "image_url": null,
       "name": "Common Crupina",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 250
@@ -3282,7 +3298,7 @@
       "display_name": "Common Purslane",
       "image_url": null,
       "name": "Common Purslane",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 251
@@ -3292,7 +3308,7 @@
       "display_name": "Common Purslane (preemergence)",
       "image_url": null,
       "name": "Common Purslane (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 252
@@ -3302,7 +3318,7 @@
       "display_name": "Common Sowthistle (preemergence)",
       "image_url": null,
       "name": "Common Sowthistle (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 253
@@ -3312,7 +3328,7 @@
       "display_name": "Common Tansy",
       "image_url": null,
       "name": "Common Tansy",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 254
@@ -3322,7 +3338,7 @@
       "display_name": "Common Yarrow (preemergence)",
       "image_url": null,
       "name": "Common Yarrow (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 255
@@ -3332,7 +3348,7 @@
       "display_name": "Corn Cockle",
       "image_url": null,
       "name": "Corn Cockle",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 256
@@ -3342,7 +3358,7 @@
       "display_name": "Corn Cockle (preemergence)",
       "image_url": null,
       "name": "Corn Cockle (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 257
@@ -3352,7 +3368,7 @@
       "display_name": "Crownvetch",
       "image_url": null,
       "name": "Crownvetch",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 258
@@ -3362,7 +3378,7 @@
       "display_name": "Dalmatian Toadflax",
       "image_url": null,
       "name": "Dalmatian Toadflax",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 259
@@ -3372,7 +3388,7 @@
       "display_name": "Dewberry (preemergence)",
       "image_url": null,
       "name": "Dewberry (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 260
@@ -3382,7 +3398,7 @@
       "display_name": "Dogfennel",
       "image_url": null,
       "name": "Dogfennel",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 261
@@ -3392,7 +3408,7 @@
       "display_name": "Dogfennel (preemergence)",
       "image_url": null,
       "name": "Dogfennel (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 262
@@ -3402,7 +3418,7 @@
       "display_name": "Eastern Red Cedar",
       "image_url": null,
       "name": "Eastern Red Cedar",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 263
@@ -3412,7 +3428,7 @@
       "display_name": "Elderberry",
       "image_url": null,
       "name": "Elderberry",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 264
@@ -3422,7 +3438,7 @@
       "display_name": "Elderberry (preemergence)",
       "image_url": null,
       "name": "Elderberry (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 265
@@ -3432,7 +3448,7 @@
       "display_name": "Elm (preemergence)",
       "image_url": null,
       "name": "Elm (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 266
@@ -3442,7 +3458,7 @@
       "display_name": "Fir",
       "image_url": null,
       "name": "Fir",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 267
@@ -3452,7 +3468,7 @@
       "display_name": "Garlic Mustard",
       "image_url": null,
       "name": "Garlic Mustard",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 268
@@ -3462,7 +3478,7 @@
       "display_name": "Gorse",
       "image_url": null,
       "name": "Gorse",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 269
@@ -3472,7 +3488,7 @@
       "display_name": "Greasewood",
       "image_url": null,
       "name": "Greasewood",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 270
@@ -3482,7 +3498,7 @@
       "display_name": "Gumweed",
       "image_url": null,
       "name": "Gumweed",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 271
@@ -3492,7 +3508,7 @@
       "display_name": "Gumweed (preemergence)",
       "image_url": null,
       "name": "Gumweed (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 272
@@ -3502,7 +3518,7 @@
       "display_name": "Hawthorn",
       "image_url": null,
       "name": "Hawthorn",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 273
@@ -3512,7 +3528,7 @@
       "display_name": "Hawthorn (preemergence)",
       "image_url": null,
       "name": "Hawthorn (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 274
@@ -3522,7 +3538,7 @@
       "display_name": "Honeysuckle",
       "image_url": null,
       "name": "Honeysuckle",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 275
@@ -3532,7 +3548,7 @@
       "display_name": "Honeysuckle (preemergence)",
       "image_url": null,
       "name": "Honeysuckle (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 276
@@ -3542,7 +3558,7 @@
       "display_name": "Kudzu",
       "image_url": null,
       "name": "Kudzu",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 277
@@ -3552,7 +3568,7 @@
       "display_name": "Kudzu (preemergence)",
       "image_url": null,
       "name": "Kudzu (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 278
@@ -3562,7 +3578,7 @@
       "display_name": "Larkspur",
       "image_url": null,
       "name": "Larkspur",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 279
@@ -3572,7 +3588,7 @@
       "display_name": "Lupine",
       "image_url": null,
       "name": "Lupine",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 280
@@ -3582,7 +3598,7 @@
       "display_name": "Lupines (preemergence)",
       "image_url": null,
       "name": "Lupines (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 281
@@ -3592,7 +3608,7 @@
       "display_name": "Maximilian Sunflower",
       "image_url": null,
       "name": "Maximilian Sunflower",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 282
@@ -3602,7 +3618,7 @@
       "display_name": "Mulberry",
       "image_url": null,
       "name": "Mulberry",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 283
@@ -3612,7 +3628,7 @@
       "display_name": "Mulberry (preemergence)",
       "image_url": null,
       "name": "Mulberry (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 284
@@ -3622,7 +3638,7 @@
       "display_name": "Multiflora Rose",
       "image_url": null,
       "name": "Multiflora Rose",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 285
@@ -3632,7 +3648,7 @@
       "display_name": "Multiflora Rose (preemergence)",
       "image_url": null,
       "name": "Multiflora Rose (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 286
@@ -3642,7 +3658,7 @@
       "display_name": "Oak",
       "image_url": null,
       "name": "Oak",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 287
@@ -3652,7 +3668,7 @@
       "display_name": "Oak (preemergence)",
       "image_url": null,
       "name": "Oak (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 288
@@ -3662,7 +3678,7 @@
       "display_name": "Osageorange",
       "image_url": null,
       "name": "Osageorange",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 289
@@ -3672,7 +3688,7 @@
       "display_name": "Oxeye Daisy",
       "image_url": null,
       "name": "Oxeye Daisy",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 290
@@ -3682,7 +3698,7 @@
       "display_name": "Oxeye Daisy (preemergence)",
       "image_url": null,
       "name": "Oxeye Daisy (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 291
@@ -3692,7 +3708,7 @@
       "display_name": "Pennsylvania Smartweed",
       "image_url": null,
       "name": "Pennsylvania Smartweed",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 292
@@ -3702,7 +3718,7 @@
       "display_name": "Pennsylvania Smartweed (preemergence)",
       "image_url": null,
       "name": "Pennsylvania Smartweed (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 293
@@ -3712,7 +3728,7 @@
       "display_name": "Persimmon Common",
       "image_url": null,
       "name": "Persimmon Common",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 294
@@ -3722,7 +3738,7 @@
       "display_name": "Plains Coreopsis",
       "image_url": null,
       "name": "Plains Coreopsis",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 295
@@ -3732,7 +3748,7 @@
       "display_name": "Plumeless Thistle",
       "image_url": null,
       "name": "Plumeless Thistle",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 296
@@ -3742,7 +3758,7 @@
       "display_name": "Poison Ivy (preemergence)",
       "image_url": null,
       "name": "Poison Ivy (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 297
@@ -3752,7 +3768,7 @@
       "display_name": "Purple Loose Strife",
       "image_url": null,
       "name": "Purple Loose Strife",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 298
@@ -3762,7 +3778,7 @@
       "display_name": "Red Maple (preemergence)",
       "image_url": null,
       "name": "Red Maple (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 299
@@ -3772,7 +3788,7 @@
       "display_name": "Redstem Filaree",
       "image_url": null,
       "name": "Redstem Filaree",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 300
@@ -3782,7 +3798,7 @@
       "display_name": "Redstem Filaree (preemergence)",
       "image_url": null,
       "name": "Redstem Filaree (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 301
@@ -3792,7 +3808,7 @@
       "display_name": "Rosering Gaillardia",
       "image_url": null,
       "name": "Rosering Gaillardia",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 302
@@ -3802,7 +3818,7 @@
       "display_name": "Rough Fleabane",
       "image_url": null,
       "name": "Rough Fleabane",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 303
@@ -3812,7 +3828,7 @@
       "display_name": "Rough Fleabane (preemergence)",
       "image_url": null,
       "name": "Rough Fleabane (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 304
@@ -3822,7 +3838,7 @@
       "display_name": "Russian Thistle (preemergence)",
       "image_url": null,
       "name": "Russian Thistle (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 305
@@ -3832,7 +3848,7 @@
       "display_name": "Salmonberry",
       "image_url": null,
       "name": "Salmonberry",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 306
@@ -3842,7 +3858,7 @@
       "display_name": "Salsify",
       "image_url": null,
       "name": "Salsify",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 307
@@ -3852,7 +3868,7 @@
       "display_name": "Salsify (preemergence)",
       "image_url": null,
       "name": "Salsify (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 308
@@ -3862,7 +3878,7 @@
       "display_name": "Sassafras (preemergence)",
       "image_url": null,
       "name": "Sassafras (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 309
@@ -3872,7 +3888,7 @@
       "display_name": "Seaside ArroWGrass",
       "image_url": null,
       "name": "Seaside ArroWGrass",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 310
@@ -3882,7 +3898,7 @@
       "display_name": "Snowberry",
       "image_url": null,
       "name": "Snowberry",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 311
@@ -3892,7 +3908,7 @@
       "display_name": "Sorrel",
       "image_url": null,
       "name": "Sorrel",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 312
@@ -3902,7 +3918,7 @@
       "display_name": "Sorrel (preemergence)",
       "image_url": null,
       "name": "Sorrel (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 313
@@ -3912,7 +3928,7 @@
       "display_name": "St. Johnswort",
       "image_url": null,
       "name": "St. Johnswort",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 314
@@ -3922,7 +3938,7 @@
       "display_name": "St. Johnswort (preemergence)",
       "image_url": null,
       "name": "St. Johnswort (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 315
@@ -3932,7 +3948,7 @@
       "display_name": "Sumac (preemergence)",
       "image_url": null,
       "name": "Sumac (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 316
@@ -3942,7 +3958,7 @@
       "display_name": "Tall Larkspur",
       "image_url": null,
       "name": "Tall Larkspur",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 317
@@ -3952,7 +3968,7 @@
       "display_name": "Tarweed Fiddleneck",
       "image_url": null,
       "name": "Tarweed Fiddleneck",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 318
@@ -3962,7 +3978,7 @@
       "display_name": "Tarweed Fiddleneck (preemergence)",
       "image_url": null,
       "name": "Tarweed Fiddleneck (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 319
@@ -3972,7 +3988,7 @@
       "display_name": "Thimbleberry",
       "image_url": null,
       "name": "Thimbleberry",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 320
@@ -3982,7 +3998,7 @@
       "display_name": "Tree-of-heaven",
       "image_url": null,
       "name": "Tree-of-heaven",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 321
@@ -3992,7 +4008,7 @@
       "display_name": "Vines (preemergence)",
       "image_url": null,
       "name": "Vines (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 322
@@ -4002,7 +4018,7 @@
       "display_name": "Western Salsify",
       "image_url": null,
       "name": "Western Salsify",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 323
@@ -4012,7 +4028,7 @@
       "display_name": "White Spruce",
       "image_url": null,
       "name": "White Spruce",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 324
@@ -4022,7 +4038,7 @@
       "display_name": "Wild Grape (preemergence)",
       "image_url": null,
       "name": "Wild Grape (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 325
@@ -4032,7 +4048,7 @@
       "display_name": "Wild Iris",
       "image_url": null,
       "name": "Wild Iris",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 326
@@ -4042,7 +4058,7 @@
       "display_name": "Wild Lettuce",
       "image_url": null,
       "name": "Wild Lettuce",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 327
@@ -4052,7 +4068,7 @@
       "display_name": "Wild Lettuce (preemergence)",
       "image_url": null,
       "name": "Wild Lettuce (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 328
@@ -4062,7 +4078,7 @@
       "display_name": "Wild Rose",
       "image_url": null,
       "name": "Wild Rose",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 329
@@ -4072,7 +4088,7 @@
       "display_name": "Wild Rose (preemergence)",
       "image_url": null,
       "name": "Wild Rose (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 330
@@ -4082,7 +4098,7 @@
       "display_name": "Willow",
       "image_url": null,
       "name": "Willow",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 331
@@ -4092,7 +4108,7 @@
       "display_name": "Willow (preemergence)",
       "image_url": null,
       "name": "Willow (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 332
@@ -4102,7 +4118,7 @@
       "display_name": "Woolly Croton",
       "image_url": null,
       "name": "Woolly Croton",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 333
@@ -4112,7 +4128,7 @@
       "display_name": "Woolly Croton (preemergence)",
       "image_url": null,
       "name": "Woolly Croton (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 334
@@ -4122,7 +4138,7 @@
       "display_name": "Yankeeweed",
       "image_url": null,
       "name": "Yankeeweed",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 335
@@ -4132,7 +4148,7 @@
       "display_name": "Yellow Poplar (preemergence)",
       "image_url": null,
       "name": "Yellow Poplar (preemergence)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 336
@@ -4142,7 +4158,7 @@
       "display_name": "Yellow Toadflax",
       "image_url": null,
       "name": "Yellow Toadflax",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 337
@@ -4152,7 +4168,7 @@
       "active_ingredient": 34,
       "brand_name": "DUPONT STREAMLINE HERBICIDE",
       "percentage_active_ingredient": "39.5",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.BrandFormulation",
     "pk": 4
@@ -4162,7 +4178,7 @@
       "active_ingredient": 101,
       "brand_name": "DUPONT STREAMLINE HERBICIDE",
       "percentage_active_ingredient": "12.6",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.BrandFormulation",
     "pk": 5
@@ -4480,7 +4496,7 @@
         337
       ],
       "restricted_use": false,
-      "row_entry_date": "2014-06-26 14:32:54",
+      "row_entry_date": "2014-06-26 14:57:45",
       "special_local_need": false
     },
     "model": "data_manager.Brand",
@@ -4489,7 +4505,7 @@
   {
     "fields": {
       "name": "Campgrounds",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.ApplicationArea",
     "pk": 50
@@ -4497,7 +4513,7 @@
   {
     "fields": {
       "name": "Fencerows (soil Treatment)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.ApplicationArea",
     "pk": 51
@@ -4505,7 +4521,7 @@
   {
     "fields": {
       "name": "Low Volume Application (water Spray)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.ApplicationArea",
     "pk": 52
@@ -4513,7 +4529,7 @@
   {
     "fields": {
       "name": "Roadways (foliar Treatment)",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.ApplicationArea",
     "pk": 53
@@ -4521,7 +4537,7 @@
   {
     "fields": {
       "name": "Uncultivated Agricultural Areas",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.ApplicationArea",
     "pk": 54
@@ -4531,7 +4547,7 @@
       "display_name": "Blackgum",
       "image_url": null,
       "name": "Blackgum",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 338
@@ -4541,7 +4557,7 @@
       "display_name": "Dogwood",
       "image_url": null,
       "name": "Dogwood",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 339
@@ -4551,7 +4567,7 @@
       "display_name": "Ferns",
       "image_url": null,
       "name": "Ferns",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 340
@@ -4561,7 +4577,7 @@
       "display_name": "Hickory",
       "image_url": null,
       "name": "Hickory",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 341
@@ -4571,7 +4587,7 @@
       "display_name": "Hophornbeam",
       "image_url": null,
       "name": "Hophornbeam",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 342
@@ -4581,7 +4597,7 @@
       "display_name": "Knapweed",
       "image_url": null,
       "name": "Knapweed",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 343
@@ -4591,7 +4607,7 @@
       "display_name": "Loco",
       "image_url": null,
       "name": "Loco",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 344
@@ -4601,7 +4617,7 @@
       "display_name": "Oceanspray",
       "image_url": null,
       "name": "Oceanspray",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 345
@@ -4611,7 +4627,7 @@
       "display_name": "Persimmon",
       "image_url": null,
       "name": "Persimmon",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 346
@@ -4621,7 +4637,7 @@
       "display_name": "Purslane",
       "image_url": null,
       "name": "Purslane",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 347
@@ -4631,7 +4647,7 @@
       "display_name": "Sunflower",
       "image_url": null,
       "name": "Sunflower",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 348
@@ -4641,7 +4657,7 @@
       "display_name": "Sweetgum",
       "image_url": null,
       "name": "Sweetgum",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 349
@@ -4651,7 +4667,7 @@
       "display_name": "Thistle",
       "image_url": null,
       "name": "Thistle",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 350
@@ -4661,7 +4677,7 @@
       "display_name": "Woodsorrel",
       "image_url": null,
       "name": "Woodsorrel",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 351
@@ -4671,7 +4687,7 @@
       "display_name": "Yarrow",
       "image_url": null,
       "name": "Yarrow",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.Pest",
     "pk": 352
@@ -4681,7 +4697,7 @@
       "active_ingredient": 102,
       "brand_name": "DUPONT VIEWPOINT HERBICIDE",
       "percentage_active_ingredient": "31.6",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.BrandFormulation",
     "pk": 6
@@ -4691,7 +4707,7 @@
       "active_ingredient": 34,
       "brand_name": "DUPONT VIEWPOINT HERBICIDE",
       "percentage_active_ingredient": "22.8",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.BrandFormulation",
     "pk": 7
@@ -4701,7 +4717,7 @@
       "active_ingredient": 101,
       "brand_name": "DUPONT VIEWPOINT HERBICIDE",
       "percentage_active_ingredient": "7.3",
-      "row_entry_date": "2014-06-26 14:32:54"
+      "row_entry_date": "2014-06-26 14:57:45"
     },
     "model": "data_manager.BrandFormulation",
     "pk": 8
@@ -4908,7 +4924,7 @@
         337
       ],
       "restricted_use": false,
-      "row_entry_date": "2014-06-26 14:32:54",
+      "row_entry_date": "2014-06-26 14:57:45",
       "special_local_need": false
     },
     "model": "data_manager.Brand",
