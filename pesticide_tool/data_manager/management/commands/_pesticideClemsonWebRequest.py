@@ -216,6 +216,8 @@ class Pests(list):
     for pest in json_data:
       pest_obj = Pest()
       pest_obj.name=pest['name']
+      if pest['name'].find("ErrorResult"):
+        pest['name'] = "Unknown"
       pest_obj.display_name=pest['display_name']
       if pest_obj.display_name is None:
         pest_obj.display_name = pest_obj.name
