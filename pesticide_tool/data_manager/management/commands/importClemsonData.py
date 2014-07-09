@@ -7,7 +7,7 @@ from datetime import datetime
 from django.core.management.base import BaseCommand
 from django.db.models import Max
 from ... models import *
-from _pesticideClemsonWebRequest import clemsonWebService,product,application_sites
+from _pesticideClemsonWebRequest import clemsonWebService,clemsonCSVWebData,product
 
 #importClemsonData --ConfigFile=/Users/danramage/Documents/workspace/PesticideProject/pesticide_tool/pesticide_tool/data_manager/management/commands/pesticideDebug.ini --CreateInitialData --StartingActiveIngredient=aminocyclopyrachlor
 logger = logging.getLogger('pesticide_tool')
@@ -19,9 +19,9 @@ def queryClemsonWebService(**kwargs):
 
   webService = clemsonWebService(kwargs['config_file'], 'pesticide_tool')
   if 'starting_ingredient' in kwargs and kwargs['starting_ingredient']:
-    query = ActiveIngredient.objects.filter(name__gte = kwargs['starting_ingredient']).all().order_by('name')
+    query = ActiveIngredient.objects.exclude(relative_potential_ecosystem_hazard__exact='').filter(name__gte = kwargs['starting_ingredient']).all().order_by('name')
   else:
-    query = ActiveIngredient.objects.all().order_by('name')
+    query = ActiveIngredient.objects.exclude(relative_potential_ecosystem_hazard__exact='').all().order_by('name')
   #for layer in Layer.objects.all().order_by('name'):
   for active_ingredient in query:
     if logger:
@@ -31,6 +31,17 @@ def queryClemsonWebService(**kwargs):
   if logger:
     logger.info("FInished active ingredient lookups.")
 
+def queryClemsonCSVData(**kwargs):
+  if logger:
+    logger.info("Starting csv lookups.")
+
+  webService = clemsonCSVWebData(kwargs['config_file'], 'pesticide_tool')
+  query = ActiveIngredient.objects.exclude(relative_potential_ecosystem_hazard__exact='').all().order_by('name')
+  for active_ingredient in query:
+    if logger:
+      logger.debug("%s retrieving info." % (active_ingredient.name))
+    webService.searchByActiveIngredient(active_ingredient.name)
+  return
 
 def build_dict(model_dict, value, ndx):
   if value not in model_dict:
@@ -297,6 +308,7 @@ class Command(BaseCommand):
   option_list = BaseCommand.option_list  + (
       make_option("--ConfigFile", dest="config_file"),
       make_option("--ImportFromWeb", dest="import_from_web", action='store_true', default='false'),
+      make_option("--ImportFromCSV", dest="import_from_csv", action='store_true', default='false'),
       make_option("--StartingActiveIngredient", dest="starting_ingredient", default=None),
       make_option("--CreateInitialData", dest="create_init", action='store_true', default='false'),
   )
@@ -308,6 +320,8 @@ class Command(BaseCommand):
       queryClemsonWebService(config_file = options['config_file'], starting_ingredient=options['starting_ingredient'])
     if options['create_init'] is True:
       createInitialData(config_file = options['config_file'])
+    if options['import_from_csv'] is True:
+      queryClemsonCSVData(config_file = options['config_file'])
     if logger:
       logger.info("Finished processing command")
     return

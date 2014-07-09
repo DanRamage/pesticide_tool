@@ -6,6 +6,8 @@ from bs4 import BeautifulSoup
 import re
 from urlparse import urlparse,parse_qs
 import simplejson as json
+import csv
+
 
 class web_data_collector(object):
   def __init__(self, url, params, logger_name):
@@ -263,6 +265,7 @@ class pests_treated_web_collector(web_data_collector):
 
     web_data_collector.page_results(self, pages)
 
+
 class product(object):
   def __init__(self):
     self.name = None
@@ -490,7 +493,281 @@ class products_web_collector(web_data_collector):
 
     web_data_collector.page_results(self, pages)
 
+class csv_data_collector(object):
+  def __init__(self, logger_name):
+    self.file_obj = None
+    self.filename = None
+    self.csv_reader = None
+    self.logger = None
+    if logger_name:
+      self.logger = logging.getLogger(logger_name)
 
+  def open(self, datafile, headers):
+    self.filename = datafile
+    try:
+      if self.logger:
+        self.logger.debug("Opening file: %s" % (datafile))
+      self.file_obj = open(self.filename, "r")
+      self.csv_reader = csv.DictReader(self.file_obj, headers)
+      return True
+    except Exception,e:
+      if self.logger:
+        self.logger.exception(e)
+    except IOError, e:
+      if self.logger:
+        self.logger.exception(e)
+    return False
+
+  def __del__(self):
+    if self.file_obj:
+      self.file_obj.close()
+
+
+class products_csv_collector(object):
+  def __init__(self, logger_name, **kwargs):
+    if logger_name:
+      self.logger = logging.getLogger(logger_name)
+
+    self.products = []
+    self.pesticide_types_dict = {
+    "01": "Chemosterilant",
+    "02": "Poison, Multiple Dose",
+    "03": "Poison, Single Dose",
+    "04": "Repellent",
+    "05": "Acaricide",
+    "06": "Antibiotic",
+    "07": "Antimicrobial",
+    "09": "Attractant",
+    "10": "Avicide",
+    "11": "Biocide",
+    "12": "Emulsifier",
+    "13": "Feeding Depressant",
+    "14": "Fertilizer",
+    "15": "Fire Retardant",
+    "16": "Intrastate",
+    "17": "Tuberculocide",
+    "18": "Sterilizer",
+    "19": "Sporicide",
+    "20": "Disinfectant",
+    "21": "Sanitizer",
+    "22": "Bacteriostat",
+    "23": "Water Purifier Bacteriostat",
+    "24": "Microbicide ",
+    "25": "Microbistat ",
+    "26": "Fungistat",
+    "27": "Fungicide",
+    "28": "Nematicide",
+    "29": "Fumigant",
+    "30": "Industrial Chemical",
+    "31": "Bacteriocide",
+    "32": "Insect Growth Regulator",
+    "33": "Insecticide Synergist ",
+    "34": "Herbicide",
+    "35": "Algicide",
+    "36": "Defoliant",
+    "37": "Desiccant",
+    "38": "Antifoulant",
+    "39": "Herbicide Terrestria",
+    "40": "Herbicide Aquatic",
+    "41": "Slimacide",
+    "42": "Biochemical Pesticide",
+    "43": "Insecticide",
+    "44": "Miticide",
+    "45": "Tadpole Shrimpicide",
+    "46": "Molluscicide",
+    "47": "Feeding Stimulant",
+    "48": "Mating Disruptant",
+    "49": "Plant Growth Regulator",
+    "50": "Sex Attractant",
+    "51": "Mechanical ",
+    "52": "Microbial Pesticide",
+    "53": "Plant Growth Stimulator",
+    "54": "Rodenticide",
+    "55": "Soil Fumigant",
+    "56": "Termiticide",
+    "57": "Repellent Or Feeding Depressant",
+    "58": "Sex Attractant Or Feeding Stimulant",
+    "59": "Algaecide",
+    "60": "Bacteriocide/bacteriostat",
+    "61": "Molluscicide And Tadpole Shrimp",
+    "62": "Microbicide/microbistat",
+    "63": "Fungicide/fungistat",
+    "64": "Regulator",
+    "65": "Virucide",
+    "66": "Nonviable Microbial/transgenic Plant",
+    "67": "Fungicide And Nematicide",
+    "68": "Antifouling",
+    "69": "Water Purifier Bacteriastatic",
+    "70": "Slimacides",
+    "71": "Water Purifier Bacteriacidal",
+    "72": "Medical Waste Treatment",
+    "73": "Contraceptive" }
+
+    self.products_datafile = kwargs["products_datafile"]
+    self.products_header = kwargs["product_header"]
+    self.pests_datafile = kwargs["pests_datafile"]
+    self.pest_header = kwargs["pest_header"]
+    self.sites_datafile = kwargs["sites_datafile"]
+    self.site_header = kwargs["site_header"]
+    self.labels_datafile = kwargs["labels_datafile"]
+    self.label_header = kwargs["label_header"]
+
+  def get_data(self, **kwargs):
+    try:
+      if self.logger:
+        self.logger.debug("Opening file: %s" % (self.products_datafile))
+      products_file_obj = open(self.products_datafile, "r")
+      products_csv_reader = csv.DictReader(products_file_obj, self.products_header)
+    except IOError, e:
+      if self.logger:
+        self.logger.exception(e)
+    else:
+      ai_name = kwargs['active_ingredient']
+      if self.logger:
+        self.logger.debug("AI: %s searching for products" % (ai_name))
+      row_num = 0
+      for row in products_csv_reader:
+        if row_num > 0:
+          if row["Chemical_Name"] == ai_name:
+            prod = product()
+            prod.name = row["product_name"]
+            prod.epa_registration_number = row["epa_id"]
+            prod.company_name = row["company_name"]
+            prod.company_number = row["Company_EPA_Id"]
+            types = row['Type'].split(',')
+            p_types = [self.pesticide_types_dict[type] for type in types]
+            prod.pesticide_type = ",".join(p_types)
+            prod.special_local_need = row["SLN"]
+
+            prod.pests_treated = self.get_pests(prod.name)
+            if self.logger:
+              self.logger.debug("%s Product: %s %d pests treated" % (ai_name, prod.name, len(prod.pests_treated)))
+
+            prod.application_areas = self.get_sites(prod.name)
+            if self.logger:
+              self.logger.debug("%s Product: %s %d sites" % (ai_name, prod.name, len(prod.application_areas)))
+
+            self.products.append(prod)
+        row_num += 1
+      products_file_obj.close()
+      return
+
+  def get_pests(self, product_name):
+    pests_treated = Pests()
+    try:
+      if self.logger:
+        self.logger.debug("Opening file: %s" % (self.pests_datafile))
+      pests_file_obj = open(self.pests_datafile, "r")
+      pests_csv_reader = csv.DictReader(pests_file_obj, self.pest_header)
+    except IOError, e:
+      if self.logger:
+        self.logger.exception(e)
+    else:
+      row_cnt = 0
+      for row in pests_csv_reader:
+        if row_cnt > 1:
+          if row["product_name"] == product_name:
+            pests_treated.add(name=row["Pest_Name"])
+        row_cnt += 1
+      pests_file_obj.close()
+
+    return pests_treated
+
+  def get_sites(self, product_name):
+    sites_treated = application_sites()
+    try:
+      if self.logger:
+        self.logger.debug("Opening file: %s" % (self.sites_datafile))
+      file_obj = open(self.sites_datafile, "r")
+      csv_reader = csv.DictReader(file_obj, self.site_header)
+    except IOError, e:
+      if self.logger:
+        self.logger.exception(e)
+    else:
+      row_cnt = 0
+      for row in csv_reader:
+        if row_cnt > 1:
+          if row["product_name"] == product_name:
+            sites_treated.append(row["Site_Name"])
+        row_cnt += 1
+      file_obj.close()
+
+    return sites_treated
+
+
+class clemsonCSVWebData(object):
+  def __init__(self, configFilename, logger_name=None):
+    self.logger_name = logger_name
+    if self.logger_name:
+      self.logger = logging.getLogger(logger_name)
+
+    self.configFile = ConfigParser.RawConfigParser()
+    self.configFile.read(configFilename)
+
+    self.product_header = [
+      "product_name",
+      "epa_id",
+      "company_name",
+      "Company_EPA_Id",
+      "Active",
+      "Type",
+      "Pct",
+      "Chemical_Name",
+      "expiration_date",
+      "Form_Code",
+      "RUP",
+      "SLN",
+      "PC_Code",
+      "Synonym",
+      "Nametype"
+    ]
+    self.label_header = [
+      "product_name",
+      "epa_id",
+      "status_date",
+      "file_path"
+    ]
+    self.pest_header = [
+      "product_name",
+      "epa_id",
+      "Pest_Name"
+    ]
+    self.site_header = [
+      "product_name",
+      "epa_id",
+      "Site_Name"
+    ]
+    try:
+      self.products_csv_url = self.configFile.get("csv_settings", "products_url")
+      self.products_datafile = self.configFile.get("csv_settings", "products_file")
+      self.pests_url = self.configFile.get("csv_settings", "pests_url")
+      self.pests_datafile = self.configFile.get("csv_settings", "pests_file")
+      self.sites_url = self.configFile.get("csv_settings", "sites_url")
+      self.sites_datafile = self.configFile.get("csv_settings", "sites_file")
+      self.labels_url = self.configFile.get("csv_settings", "labels_url")
+      self.labels_datafile = self.configFile.get("csv_settings", "labels_file")
+    except ConfigParser.Error, e:
+      if self.logger:
+        self.logger.exception(e)
+
+  def searchByActiveIngredient(self, active_ingredient):
+    if self.logger:
+      self.logger.error("%s searching for active ingredient" % (active_ingredient))
+
+    collector = products_csv_collector(self.logger_name,
+                                       products_datafile=self.products_datafile,
+                                       product_header=self.product_header,
+                                       pests_datafile=self.pests_datafile,
+                                       pest_header=self.pest_header,
+                                       sites_datafile=self.sites_datafile,
+                                       site_header=self.site_header,
+                                       labels_datafile=self.labels_datafile,
+                                       label_header=self.label_header)
+
+    collector.get_data(active_ingredient=active_ingredient)
+
+    if self.logger:
+      self.logger.error("%s finished searching for active ingredient" % (active_ingredient))
 
 
 class clemsonWebService(object):
