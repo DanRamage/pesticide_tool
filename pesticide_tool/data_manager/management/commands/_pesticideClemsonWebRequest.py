@@ -326,8 +326,10 @@ class product(object):
     ais = []
     if self.active_ingredients:
       ais = [rec.__dict__() for rec in self.active_ingredients]
+    pest_list = []
     if self.pests_treated:
       pest_list = self.pests_treated.__dict__()
+    application_areas = []
     if self.application_areas:
       application_areas = self.application_areas.__dict__()
     prod = {'name' : self.name,
