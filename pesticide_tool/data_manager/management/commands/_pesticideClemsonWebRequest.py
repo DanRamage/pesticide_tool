@@ -64,8 +64,9 @@ class application_sites(list):
 
   def __dict__(self):
     sites_dict = []
-    for rec in self:
-      sites_dict.append({'name': rec})
+    if len(self):
+      for rec in self:
+        sites_dict.append({'name': rec})
     return sites_dict
 
 class application_sites_web_collector(web_data_collector):
@@ -161,8 +162,9 @@ class active_ingredients(list):
 
   def __dict__(self):
     ingrs = []
-    for rec in self:
-      ingrs.append(rec.__dict__())
+    if len(self):
+      for rec in self:
+        ingrs.append(rec.__dict__())
     return ingrs
 
 class active_ingredients_web_collector(web_data_collector):
@@ -208,6 +210,7 @@ class Pest(object):
     if pest['display_name'] is None:
       pest['display_name'] = self.name
     return pest
+
 class Pests(list):
   def add(self, **kwargs):
     pest = Pest()
@@ -228,8 +231,9 @@ class Pests(list):
 
   def __dict__(self):
     pest_list = []
-    for rec in self:
-      pest_list.append(rec.__dict__())
+    if len(self):
+      for rec in self:
+        pest_list.append(rec.__dict__())
     return pest_list
 
 class pests_treated_web_collector(web_data_collector):
@@ -322,9 +326,9 @@ class product(object):
     ais = []
     if self.active_ingredients:
       ais = [rec.__dict__() for rec in self.active_ingredients]
-    if self.pests_treated.__dict__():
+    if self.pests_treated:
       pest_list = self.pests_treated.__dict__()
-    if self.application_areas.__dict__():
+    if self.application_areas:
       application_areas = self.application_areas.__dict__()
     prod = {'name' : self.name,
             'label_url': self.label_url,
