@@ -319,8 +319,9 @@ class product(object):
     self.application_areas.load_from_json(json_data["application_areas"])
 
   def __dict__(self):
-
-    ais = [rec.__dict__() for rec in self.active_ingredients]
+    ais = []
+    if self.active_ingredients:
+      ais = [rec.__dict__() for rec in self.active_ingredients]
     pest_list = self.pests_treated.__dict__()
     application_areas = self.application_areas.__dict__()
     prod = {'name' : self.name,
