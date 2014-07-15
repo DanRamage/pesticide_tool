@@ -12,7 +12,7 @@ class LayerAdmin(admin.ModelAdmin):
 class ActiveIngredientAdmin(admin.ModelAdmin):
   list_display = ('name', 'row_id')
   search_fields = ['name']
-  ordering = ('name','row_id')
+  ordering = ('name', 'cumulative_score', 'row_id' )
 
 class CategoryAdmin(admin.ModelAdmin):
   list_display = ('name', 'admin_thumbnail')
