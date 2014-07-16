@@ -53,6 +53,8 @@ MIDDLEWARE_CLASSES = (
 
 ROOT_URLCONF = 'urls'
 
+TEMPLATE_DIRS = ( os.path.realpath(os.path.join(os.path.dirname(__file__), 'templates').replace('\\','/')), )
+
 #WSGI_APPLICATION = 'pesticide_tool.wsgi.application'
 
 
