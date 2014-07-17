@@ -87,18 +87,3 @@ body {
     margin-top: 120px;
 }
 }
-
-#search_types .btn-default {
-    background-image: linear-gradient(to bottom, #fff 0%, #fff 100%);
-    background-repeat: repeat-x;
-    border-color: #ccc;
-    text-shadow: 0 1px 0 #fff;
-}
-#search_types .btn:hover, .btn:focus {
-  color: #333;
-  text-decoration: none;
-}#search_types .btn-default:hover {
-  background-color: #e6e6e6;
-  border-color: #adadad;
-  color: #333;
-}

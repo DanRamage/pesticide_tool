@@ -1,6 +1,10 @@
 {% extends 'base.html' %}
 {% block body %}
   <link href="{{STATIC_URL}}css/carousel.css" rel="stylesheet">
+  <!--
+  Use this bootstrap CSS since it has the flat button look.
+  -->
+  <link href="{{STATIC_URL}}bootstrap/bootstrap.min.css" rel="stylesheet">
 
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
