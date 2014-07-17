@@ -13,23 +13,23 @@
 
 .search_pests
 {
-    background-image: url(../static/images/decision_buttons/pests.jpg);
-    background-image: url(../static/images/decision_buttons/pests.jpg), -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), color-stop(25%, #ffffff), to(#e6e6e6));
-    background-image: url(../static/images/decision_buttons/pests.jpg), -webkit-linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
-    background-image: url(../static/images/decision_buttons/pests.jpg), -moz-linear-gradient(top, #ffffff, #ffffff 25%, #e6e6e6);
-    background-image: url(../static/images/decision_buttons/pests.jpg), -ms-linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
-    background-image: url(../static/images/decision_buttons/pests.jpg), -o-linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
-    background-image: url(../static/images/decision_buttons/pests.jpg), linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
+    background-image: url(../../static/images/decision_buttons/pests.jpg);
+    background-image: url(../../static/images/decision_buttons/pests.jpg), -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), color-stop(25%, #ffffff), to(#e6e6e6));
+    background-image: url(../../static/images/decision_buttons/pests.jpg), -webkit-linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
+    background-image: url(../../static/images/decision_buttons/pests.jpg), -moz-linear-gradient(top, #ffffff, #ffffff 25%, #e6e6e6);
+    background-image: url(../../static/images/decision_buttons/pests.jpg), -ms-linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
+    background-image: url(../../static/images/decision_buttons/pests.jpg), -o-linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
+    background-image: url(../../static/images/decision_buttons/pests.jpg), linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
     filter: none;
 }
 .search_pesticide {
-    background-image: url(../static/images/decision_buttons/pesticide_search.png);
-    background-image: url(../static/images/decision_buttons/pesticide_search.png), -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), color-stop(25%, #ffffff), to(#e6e6e6));
-    background-image: url(../static/images/decision_buttons/pesticide_search.png), -webkit-linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
-    background-image: url(../static/images/decision_buttons/pesticide_search.png), -moz-linear-gradient(top, #ffffff, #ffffff 25%, #e6e6e6);
-    background-image: url(../static/images/decision_buttons/pesticide_search.png), -ms-linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
-    background-image: url(../static/images/decision_buttons/pesticide_search.png), -o-linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
-    background-image: url(../static/images/decision_buttons/pesticide_search.png), linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
+    background-image: url(../../static/images/decision_buttons/pesticide_search.png);
+    background-image: url(../../static/images/decision_buttons/pesticide_search.png), -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), color-stop(25%, #ffffff), to(#e6e6e6));
+    background-image: url(../../static/images/decision_buttons/pesticide_search.png), -webkit-linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
+    background-image: url(../../static/images/decision_buttons/pesticide_search.png), -moz-linear-gradient(top, #ffffff, #ffffff 25%, #e6e6e6);
+    background-image: url(../../static/images/decision_buttons/pesticide_search.png), -ms-linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
+    background-image: url(../../static/images/decision_buttons/pesticide_search.png), -o-linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
+    background-image: url(../../static/images/decision_buttons/pesticide_search.png), linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
     filter: none;
 }
 
