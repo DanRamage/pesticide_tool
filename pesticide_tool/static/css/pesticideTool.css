@@ -1,0 +1,52 @@
+
+
+.pesticide_font {
+  font-family: "Lucida Sans Unicode","Lucida Grande",sans-serif;
+}
+.pesticide_button {
+  width: 200px;
+  height: 250px;
+}
+.pesticide_button_img {
+  width: 200px;
+  height: 200px;
+}
+
+.insect {
+  background-image: url("../images/decision_tool/mosquito_adult_button_200x200.jpg");
+  background-repeat: no-repeat;
+  background-position:center;
+}
+.pesticide_button .weed {
+  background-image: url("../images/decision_tool/weeds_button_200x200.jpg") !important;
+}
+.pesticide_button .algae {
+  background-image: url("../images/decision_tool/algae_button_200x200.jpg") !important;
+}
+.pesticide_button .fungus {
+  background-image: url("../images/decision_tool/disease_button_200x200.jpg") !important;
+}
+
+.concern_button {
+  width: 50px;
+  height: 50px;
+}
+.hazard_low {
+  background-color: #4f6228;
+}
+
+.hazard_moderate {
+  background-color: #92d050;
+}
+
+.hazard_likely {
+  background-color: #ffc000;
+}
+
+#feature-loading
+{
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  background:url(../images/ajax-loader.gif) no-repeat center center;
+}
