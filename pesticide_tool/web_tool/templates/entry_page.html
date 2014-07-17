@@ -3,42 +3,44 @@
 
   <div class="container">
     <!-- Start the tool view-->
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="item active">
-          <img src="{{ STATIC_URL }}images/walkway_sciway.net.jpg">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Pesticide Decision Making Tool</h1>
+    <div class="row">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="item active">
+            <img src="{{ STATIC_URL }}images/walkway_sciway.net.jpg">
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>Pesticide Decision Making Tool</h1>
+              </div>
             </div>
           </div>
         </div>
+        <!--
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+        -->
       </div>
-      <!--
-      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
-      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
-      -->
-    </div>
-    <!-- /.carousel -->
-    <div class="col-lg-4">
-      <img style="width: 140px; height: 140px;" alt="Pest Search" src="{{ STATIC_URL }}/images/decision_buttons/pests.jpg" class="img-circle">
-      <h2>Pest Search</h2>
-      <p>Search for a pest to find the correct pesticide to use.</p>
-      <p>
-        <a role="button" href="#" class="btn btn-default">Pest Search »</a>
-      </p>
-    </div>
-    <div class="col-lg-4">
-      <img style="width: 140px; height: 140px;" alt="Pesticide Search" src="{{ STATIC_URL }}/images/decision_buttons/pesticide_search.jpg" class="img-circle">
-      <h2>Pesticide Search</h2>
-      <p>Search for a pesticide to find the pests it treats as well as toxicity information.</p>
-      <p>
-        <a role="button" href="#" class="btn btn-default">Pesticide Search »</a>
-      </p>
+      <!-- /.carousel -->
+      <div class="col-lg-4">
+        <img style="width: 140px; height: 140px;" alt="Pest Search" src="{{ STATIC_URL }}/images/decision_buttons/pests.jpg" class="img-circle">
+        <h2>Pest Search</h2>
+        <p>Search for a pest to find the correct pesticide to use.</p>
+        <p>
+          <a role="button" href="#" class="btn btn-default">Pest Search »</a>
+        </p>
+      </div>
+      <div class="col-lg-4">
+        <img style="width: 140px; height: 140px;" alt="Pesticide Search" src="{{ STATIC_URL }}/images/decision_buttons/pesticide_search.jpg" class="img-circle">
+        <h2>Pesticide Search</h2>
+        <p>Search for a pesticide to find the pests it treats as well as toxicity information.</p>
+        <p>
+          <a role="button" href="#" class="btn btn-default">Pesticide Search »</a>
+        </p>
+      </div>
     </div>
     <!--
     <div class="row">
