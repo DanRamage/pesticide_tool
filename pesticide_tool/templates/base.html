@@ -38,21 +38,17 @@
         </header>
 
 
-        <div class="container main-container">
-            {% block body %}{% endblock %}
-        </div>  <!-- /container -->
+        {% block body %}{% endblock %}
 
         <footer>
         </footer>
+
         <script src="{{STATIC_URL}}js/jquery/jquery-1.11.1.min.js"></script>
         <!--
         <script>window.jQuery || document.write('<script src="{{STATIC_URL}}js/jquery/jquery-1.11.1.min.js"><\/script>')</script>
         -->
         <script src="{{STATIC_URL}}js/bootstrap/bootstrap-3.1.1/js/bootstrap.js"></script>
 
-        <!-- Google Analytics -->
-        <script type="text/javascript">
-        </script>
         {% block javascript %}
         {% endblock %}
     </body>
