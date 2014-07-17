@@ -94,12 +94,11 @@ body {
     border-color: #ccc;
     text-shadow: 0 1px 0 #fff;
 }
-#search_types .btn-default:hover {
-  background-color: #e6e6e6;
-  border-color: #adadad;
-  color: #333;
-}
 #search_types .btn:hover, .btn:focus {
   color: #333;
   text-decoration: none;
+}#search_types .btn-default:hover {
+  background-color: #e6e6e6;
+  border-color: #adadad;
+  color: #333;
 }
