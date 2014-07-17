@@ -99,3 +99,7 @@ body {
   border-color: #adadad;
   color: #333;
 }
+#search_types .btn:hover, .btn:focus {
+  color: #333;
+  text-decoration: none;
+}
