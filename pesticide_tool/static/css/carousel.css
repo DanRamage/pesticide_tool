@@ -88,7 +88,7 @@ body {
 }
 }
 
-myCarousel .btn-default {
+#myCarousel .btn-default {
     background-repeat: repeat-x;
     border-color: #ccc;
     text-shadow: 0 1px 0 #fff;
