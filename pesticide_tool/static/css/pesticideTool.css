@@ -1,4 +1,15 @@
-
+.imageButton(@imageName, @startColor: @white, @midColor: @white, @colorStop: 25%, @endColor: darken(@white, 10%)) {
+    background-color: mix(@midColor, @endColor, 80%);
+    background-image: url(@imageName);
+    background-image: url(@imageName), -moz-linear-gradient(top, @startColor, @midColor @colorStop, @endColor);
+    background-image: url(@imageName), -ms-linear-gradient(@startColor, @midColor @colorStop, @endColor);
+    background-image: url(@imageName), -webkit-linear-gradient(@startColor, @midColor @colorStop, @endColor);
+    background-image: url(@imageName), -webkit-linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
+    background-image: url(@imageName), -o-linear-gradient(@startColor, @midColor @colorStop, @endColor);
+    background-image: url(@imageName), linear-gradient(@startColor, @midColor @colorStop, @endColor);
+    background-repeat: no-repeat;
+    filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=0)",@startColor,@endColor)); // IE9 and down, gets no color-stop at all for proper fallback
+}
 
 .pesticide_font {
   font-family: "Lucida Sans Unicode","Lucida Grande",sans-serif;
@@ -10,6 +21,13 @@
 .pesticide_button_img {
   width: 200px;
   height: 200px;
+}
+
+.btnAdd .search_pests {
+  .imageButton('../static/images/decision_buttons/pests.jpg');
+}
+.btnAdd .search_pesticide {
+  .imageButton('../static/images/decision_buttons/pesticide_search.png');
 }
 
 .insect {
