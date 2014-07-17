@@ -1,4 +1,4 @@
-.imageButton(@imageName, @startColor: @white, @midColor: @white, @colorStop: 25%, @endColor: darken(@white, 10%)) {
+@mixin .imageButton(@imageName, @startColor: @white, @midColor: @white, @colorStop: 25%, @endColor: darken(@white, 10%)) {
     background-color: mix(@midColor, @endColor, 80%);
     background-image: url(@imageName);
     background-image: url(@imageName), -moz-linear-gradient(top, @startColor, @midColor @colorStop, @endColor);
