@@ -51,11 +51,17 @@
       -->
       <div class="row" data-bind="foreach: categoryModels">
         <div class="col-xs-8 col-md-3">
-          <img style="width: 140px; height: 140px;" data-bind="attr: {src: img()}" class="img-circle thumbnail">
-          <h4><span data-bind="text: name()"></span></h4>
-          <p>
-            <a role="button" data-bind="attr: {href: '#pest_subcategory/' + href()}" class="btn btn-default">Search »</a>
-          </p>
+          <div class="media">
+            <a class="pull-left" href="#">
+              <img class="media-object" data-bind="attr: {src: img()}">
+            </a>
+            <div class="media-body">
+              <h4 class="media-heading">
+                <span data-bind="text: name()"></span>
+              </h4>
+              <a role="button" data-bind="attr: {href: '#pest_subcategory/' + href()}" class="btn btn-default">Search »</a>
+            </div>
+          </div>
 
           <!--
           <a class="btn btn-default pesticide_button thumbnail" data-bind="attr: {href: '#pest_subcategory/' + href()}">
