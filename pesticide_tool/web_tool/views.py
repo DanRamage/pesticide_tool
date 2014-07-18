@@ -16,14 +16,19 @@ from django.core import urlresolvers
 """
 # Create your views here.
 def start_page(request, template='entry_page.html'):
-    #context = {'domain': get_domain(8000), 'domain8010': get_domain()}
-    return render_to_response(template, context_instance=RequestContext(request))
+  #context = {'domain': get_domain(8000), 'domain8010': get_domain()}
+  return render_to_response(template, context_instance=RequestContext(request))
+
+def category(request, template='pest_category.html'):
+  return render_to_response(template, context_instance=RequestContext(request))
+
 """
 def get_categories(request, template='pest_category.html'):
   categories = Category.objects.all().order_by('name')
   context = { 'categories': categories}
   return render_to_response(template, context_instance=RequestContext(request, context))
 """
+
 def get_categories(request):
   json = {
     "categories" : [category.toDict for category in Category.objects.all().order_by('name')]
