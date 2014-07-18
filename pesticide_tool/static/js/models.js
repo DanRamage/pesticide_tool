@@ -129,7 +129,7 @@ function categoriesViewModel()
       {
         $.each(data.categories, function(ndx, categoryNfo) {
           //Construct the categoryModel.
-          var catModel = new categoryModel(categoryName['name'], categoryNfo);
+          var catModel = new categoryModel(categoryNfo['name'], categoryNfo);
           //catModel.buildSubCategories(categoryNfo['sub_category'])
 
           self.categoryModels.push(catModel);
