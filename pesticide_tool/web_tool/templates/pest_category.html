@@ -38,6 +38,7 @@
         <div class="text-center"><h3>Main Categories</h3></div>
         <div class="text-center"><h3>Is your pest a:</h3></div>
       </div>
+      <pre data-bind="text: JSON.stringify(ko.toJS($data), null, 2)"></pre>
       <div class="row">
         <div class="col-lg-12" data-bind="foreach: categoryModels">
           <a class="btn pesticide_button" data-bind="attr: {href: '#pest_subcategory/' + href()}">
