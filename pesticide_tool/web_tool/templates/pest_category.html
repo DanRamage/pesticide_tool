@@ -31,7 +31,14 @@
 {% endblock %}
 
 {% block body %}
-
+  <!--
+  Gets the button text to wrap properly.
+  -->
+  <style>
+    #pest_category .btn {
+      white-space: normal;
+    }
+  </style>
   <!-- Start of Choose your pest category page -->
     <div class="container" data-bind="page: {id: 'pest_category'}">
       <div class="row col-lg-12">
