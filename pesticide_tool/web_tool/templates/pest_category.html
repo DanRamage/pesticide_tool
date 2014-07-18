@@ -1,29 +1,30 @@
 {% extends 'base.html' %}
 {% block javascript %}
-
-  function category_page()
-  {
-    var self = this;
-
-    self.viewModel = null;
-    self.configData = null;
-
-    self.initialize = function()
+  <script type="text/javascript">
+    function category_page()
     {
-      self.viewModel = new categoriesViewModel();
-      self.viewModel.initialize();
-    };
-    //This funciton initlizatizes the pager extension and knockout bindings. Our button data is in a json config file
-    //and we don't want to call this funciton until it the Ajax request in the initialize function above completes.
-    self.initPage = function()
-    {
-      ko.applyBindings(self.viewModel);
-    };
+      var self = this;
 
-    return(self);
-  }
-  app = category_page();
-  app.initialize();
+      self.viewModel = null;
+      self.configData = null;
+
+      self.initialize = function()
+      {
+        self.viewModel = new categoriesViewModel();
+        self.viewModel.initialize();
+      };
+      //This funciton initlizatizes the pager extension and knockout bindings. Our button data is in a json config file
+      //and we don't want to call this funciton until it the Ajax request in the initialize function above completes.
+      self.initPage = function()
+      {
+        ko.applyBindings(self.viewModel);
+      };
+
+      return(self);
+    }
+    app = category_page();
+    app.initialize();
+  </script>
 {% endblock %}
 
 {% block body %}
