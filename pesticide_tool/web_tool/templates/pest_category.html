@@ -49,8 +49,8 @@
       For debugging the knockout data.
       <pre data-bind="text: JSON.stringify(ko.toJS($data), null, 2)"></pre>
       -->
-      <div class="row" data-bind="foreach: categoryModels">
-        <div class="col-xs-8 col-md-3">
+      <div class="row">
+        <div class="col-xs-8 col-md-3" data-bind="foreach: categoryModels">
           <div class="media">
             <a class="pull-left" href="#">
               <img class="media-object" data-bind="attr: {src: img()}">
