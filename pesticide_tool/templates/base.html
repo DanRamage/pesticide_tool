@@ -28,6 +28,8 @@
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
+        {% block javascript %}
+        {% endblock %}
 
         <header>
           <nav class="navbar navbar-default" role="navigation">
@@ -66,7 +68,5 @@
         -->
         <script src="{{STATIC_URL}}js/bootstrap/bootstrap-3.2.0/js/bootstrap.js"></script>
 
-        {% block javascript %}
-        {% endblock %}
     </body>
 </html>
