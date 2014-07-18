@@ -10,7 +10,7 @@ urlpatterns = patterns('',
     # url(r'^blog/', include('blog.urls')),
 
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^tool/', include('web_tool.urls')),
+    url(r'^', include('web_tool.urls')),
 )
 
 if settings.DEBUG:
