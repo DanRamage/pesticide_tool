@@ -3,5 +3,5 @@ from views import *
 
 urlpatterns = patterns('',
     (r'^category', pest_category),
-    (r'^$', start_page),
+    (r'^start', start_page),
 )
