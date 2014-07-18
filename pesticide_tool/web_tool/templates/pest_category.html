@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block body %}
+  <!-- Start of Choose your pest category page -->
+  <div class="container">
+    <div class="row col-lg-12">
+      <div class="text-center"><h3>Main Categories</h3></div>
+      <div class="text-center"><h3>Is your pest a:</h3></div>
+    </div>
+    <div class="row">
+      {% for category in categories %}
+        <div class="col-lg-12">
+          <a class="btn pesticide_button" data-bind="attr: {href: '#pest_subcategory/' + href()}">
+            <img data-bind="attr: {src: img()}"></img>
+            <br />
+            <h4><span data-bind="text: name()"></span></h4>
+          </a>
+        </div>
+      {% endfor categories %}
+    </div>
+    <div class="row-fluid span12">
+      <br />
+    </div>
+  </div>
+  <!-- End of choose your pest page -->
