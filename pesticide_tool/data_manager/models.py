@@ -170,6 +170,7 @@ class Category(models.Model):
 
   sub_categories = models.ManyToManyField('SubCategory', null=True)
 
+
   def __unicode__(self):
     return self.name
 
@@ -181,6 +182,27 @@ class Category(models.Model):
 
   admin_thumbnail.short_description = 'Thumbnail'
   admin_thumbnail.allow_tags = True
+
+  @property
+  def toDict(self):
+    sub_categories = [
+      {
+        'id': sub_cat.row_id,
+        'name': sub_cat.name,
+        'image_url': sub_cat.image_url
+      }
+      for sub_cat in self.sub_categories.all()
+    ]
+    category_dict = {
+        'id': self.row_id,
+        'name': self.name,
+        'image_url': self.image_url,
+        'sub_categories': sub_categories
+    }
+    return category_dict
+
+
+
 
 class SubCategory(models.Model):
   row_id = models.IntegerField(primary_key=True)
