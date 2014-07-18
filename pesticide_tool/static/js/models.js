@@ -134,8 +134,8 @@ function categoriesViewModel()
 
           self.categoryModels.push(catModel);
         });
-
-
+        //Initialize the knockout bindings.
+        app.initPage();
       });
 
   };
