@@ -4,7 +4,7 @@
 from django.template import RequestContext
 from django.shortcuts import render_to_response
 from data_manager.models import *
-import simplejson as json
+import simplejson
 from django.http import HttpResponse
 
 """
@@ -34,4 +34,4 @@ def get_categories(request):
     "categories" : [category.toDict for category in Category.objects.all().order_by('name')],
     "success": True
   }
-  return HttpResponse(json.dumps(json))
+  return HttpResponse(simplejson.dumps(json))
