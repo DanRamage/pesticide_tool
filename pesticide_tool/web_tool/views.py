@@ -31,7 +31,7 @@ def get_categories(request, template='pest_category.html'):
 
 def get_categories(request):
   json = {
-    "categories" : [category.toDict for category in Category.objects.all().order_by('name')]
+    "categories" : [category.toDict for category in Category.objects.all().order_by('name')],
     "success": True
   }
   return HttpResponse(json.dumps(json))
