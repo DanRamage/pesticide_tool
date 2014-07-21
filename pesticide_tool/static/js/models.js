@@ -99,21 +99,23 @@ function subCategoryModel(name, config)
 
   self.pests = [];
 
-  $.each(config.pests, function(ndx, pest)
+  self.buildPests = function(pests)
   {
-    self.pests.push(new pestModel(pest));
-  });
-  self.pests.sort(function(rec1, rec2)
+    $.each(pests, function(ndx, pest)
     {
-      var name1 = rec1.buttonData.name();
-      var name2 = rec2.buttonData.name();
-      if (name1 < name2)
-         return -1;
-      if (name1 > name2)
-        return 1;
-      return 0;
-    }
-  );
+      self.pests.push(new pestModel(pest));
+    });
+  };
+  self.pests.sort(function(rec1, rec2)
+  {
+    var name1 = rec1.buttonData.name();
+    var name2 = rec2.buttonData.name();
+    if (name1 < name2)
+       return -1;
+    if (name1 > name2)
+      return 1;
+    return 0;
+  }
 }
 
 function categoriesViewModel()
