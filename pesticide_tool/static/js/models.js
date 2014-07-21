@@ -75,7 +75,7 @@ function categoryModel(name, config)
     href = name.replace(/ /g, '_');
   self.href = ko.observable(href || "");
 
-  self.subCategories = {};
+  self.subCategories = [];
 
   //Build the subcategories.
   self.buildSubCategories = function(subCategories)
@@ -83,7 +83,7 @@ function categoryModel(name, config)
     $.each(subCategories, function(ndx, subCategoryNfo)
     {
       var subCat = new subCategoryModel(subCategoryNfo['name'], subCategoryNfo);
-      self.subCategories[subCategoryNfo['name']] = subCat;
+      self.subCategories.push(subCat);
     });
   };
 
