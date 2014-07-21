@@ -39,8 +39,6 @@
     app = category_page();
     app.initialize();
 
-    );
-
   </script>
 {% endblock %}
 
@@ -73,7 +71,7 @@
 
   </style>
   <!-- Start of Choose your pest category page -->
-    <div class="container" data-bind="page: {id: 'pest_category'}">
+    <div class="container" data-bind="page: {id: 'pest_category'},visible: showCategories">
       <div class="row col-lg-12">
         <div class="text-center"><h3>Main Categories</h3></div>
         <div class="text-center"><h3>Is your pest a:</h3></div>
