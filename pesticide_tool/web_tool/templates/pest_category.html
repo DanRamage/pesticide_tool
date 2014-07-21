@@ -20,7 +20,7 @@
       //and we don't want to call this funciton until it the Ajax request in the initialize function above completes.
       self.initPage = function()
       {
-        //ko.applyBindings(self.viewModel);
+        ko.applyBindings(self.catViewModel);
         $("[rel='tooltip']").tooltip();
 
         $('#hover-col .thumbnail').hover(
