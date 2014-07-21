@@ -80,8 +80,8 @@ function categoryModel(name, config)
   {
     $.each(subCategories, function(ndx, subCategoryNfo)
     {
-      var subCat = new subCategoryModel(subCategory['name'], subCategoryNfo);
-      self.subCategories[subCategory['name']] = subCat;
+      var subCat = new subCategoryModel(subCategoryNfo['name'], subCategoryNfo);
+      self.subCategories[subCategoryNfo['name']] = subCat;
     });
   };
 
