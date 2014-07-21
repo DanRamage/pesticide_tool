@@ -10,7 +10,6 @@
 
       self.catViewModel = null;
       self.configData = null;
-      self.subCatViewModel = null;
       self.initialize = function()
       {
         self.catViewModel = new categoriesViewModel();
@@ -106,6 +105,7 @@
   </script>
   <!-- End of choose your pest page -->
   <div data-bind="template: { name: 'pest_sub_category_tpl', data: catViewModel }"></div>
+  <script type="text/html" id="pest_sub_category_tpl">
     <!-- Start of Choose your pest sub-category page -->
     <div class="container" data-bind="page: {id: 'pest_sub_category'},visible: showSubCategories">
       <div class="row">
