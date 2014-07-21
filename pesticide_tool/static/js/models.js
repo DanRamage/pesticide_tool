@@ -87,6 +87,7 @@ function categoryModel(name, config)
 
   self.clicked = function(category, event, parent)
   {
+    parent.showCategories(false);
     return;
   };
   return self;
