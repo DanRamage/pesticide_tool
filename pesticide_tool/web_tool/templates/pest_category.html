@@ -10,6 +10,7 @@
 
       self.viewModel = null;
       self.configData = null;
+      self.showCategories = ko.observable(true);
 
       self.initialize = function()
       {
@@ -39,15 +40,6 @@
     app = category_page();
     app.initialize();
 
-    $("[rel='tooltip']").tooltip();
-
-    $('#hover-col .thumbnail').hover(
-        function(){
-            $(this).find('.caption').slideDown(250); //.fadeIn(250)
-        },
-        function(){
-            $(this).find('.caption').slideUp(250); //.fadeOut(205)
-        }
     );
 
   </script>
@@ -82,7 +74,7 @@
 
   </style>
   <!-- Start of Choose your pest category page -->
-    <div class="container" data-bind="page: {id: 'pest_category'}">
+    <div class="container" data-bind="page: {id: 'pest_category'},visible: showCategories">
       <div class="row col-lg-12">
         <div class="text-center"><h3>Main Categories</h3></div>
         <div class="text-center"><h3>Is your pest a:</h3></div>
