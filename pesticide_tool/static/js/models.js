@@ -93,7 +93,7 @@ function subCategoryModel(name, config)
   var self = this;
   //self.buttonData = new buttonModel(name, config.button_img);
   self.name = ko.observable(name);
-  self.img  = ko.observable(config.button_img);
+  self.img  = ko.observable(config['image_url']);
   var href = name.replace(/ /g, '_');
   self.href = ko.observable(href);
 
