@@ -69,7 +69,7 @@ function categoryModel(name, config)
 
   //self.buttonData = new buttonModel(name, config.button_img);
   self.name = ko.observable(name || "");
-  self.img  = ko.observable(config['image_url'] || "");
+  self.img  = ko.observable((config ? config['image_url'] : ""));
   var href = null;
   if(name != null)
     href = name.replace(/ /g, '_');
@@ -94,7 +94,7 @@ function subCategoryModel(name, config)
   var self = this;
   //self.buttonData = new buttonModel(name, config.button_img);
   self.name = ko.observable(name || "");
-  self.img  = ko.observable(config['image_url'] || "");
+  self.img  = ko.observable((config ? config['image_url'] : ""));
   var href = null;
   if(name != null)
     href = name.replace(/ /g, '_');
