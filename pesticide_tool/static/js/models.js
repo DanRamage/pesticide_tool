@@ -78,10 +78,10 @@ function categoryModel(name, config)
   //Build the subcategories.
   self.buildSubCategories = function(subCategories)
   {
-    $.each(subCategories, function(subCategory, subCategoryNfo)
+    $.each(subCategories, function(ndx, subCategoryNfo)
     {
-      var subCat = new subCategoryModel(subCategory, subCategoryNfo);
-      self.subCategories[subCategory] = subCat;
+      var subCat = new subCategoryModel(subCategory['name'], subCategoryNfo);
+      self.subCategories[subCategory['name']] = subCat;
     });
   };
 
