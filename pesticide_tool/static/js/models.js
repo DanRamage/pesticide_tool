@@ -85,7 +85,7 @@ function categoryModel(name, config)
     });
   };
 
-  self.clicked = function(category)
+  self.clicked = function(category, event, parent)
   {
     return;
   };
