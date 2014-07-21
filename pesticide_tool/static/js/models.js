@@ -145,6 +145,7 @@ function categoriesViewModel()
   {
     //Hide the categories button, then build the sub categories.
     self.showCategories(false);
+    location.hash = category['href'];
     return;
   };
 
