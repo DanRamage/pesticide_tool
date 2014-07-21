@@ -68,10 +68,12 @@ function categoryModel(name, config)
 
 
   //self.buttonData = new buttonModel(name, config.button_img);
-  self.name = ko.observable(name);
-  self.img  = ko.observable(config['image_url']);
-  var href = name.replace(/ /g, '_');
-  self.href = ko.observable(href);
+  self.name = ko.observable(name || "");
+  self.img  = ko.observable(config['image_url'] || "");
+  href = null;
+  if name:
+    href = name.replace(/ /g, '_');
+  self.href = ko.observable(href || "");
 
   self.subCategories = {};
 
@@ -91,10 +93,12 @@ function subCategoryModel(name, config)
 {
   var self = this;
   //self.buttonData = new buttonModel(name, config.button_img);
-  self.name = ko.observable(name);
-  self.img  = ko.observable(config['image_url']);
-  var href = name.replace(/ /g, '_');
-  self.href = ko.observable(href);
+  self.name = ko.observable(name || "");
+  self.img  = ko.observable(config['image_url'] || "");
+  href = null;
+  if name:
+    href = name.replace(/ /g, '_');
+  self.href = ko.observable(href || "");
 
   self.pests = [];
 
@@ -124,7 +128,7 @@ function categoriesViewModel()
   self.showSubCategories = ko.observable(false);
 
   self.categoryModels = ko.observableArray([]); //The major categories of pests.
-  self.activeCategory = ko.observable();
+  self.activeCategory = ko.observable(new categoryModel());
 
   self.initialize = function()
   {
