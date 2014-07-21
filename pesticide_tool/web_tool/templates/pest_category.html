@@ -13,14 +13,15 @@
 
       self.initialize = function()
       {
-        self.viewModel = new categoriesViewModel();
-        self.viewModel.initialize();
+        self.catViewModel = new categoriesViewModel();
+        self.catViewModel.initialize();
+        self.subCatViewModel = null;
       };
       //This funciton initlizatizes the pager extension and knockout bindings. Our button data is in a json config file
       //and we don't want to call this funciton until it the Ajax request in the initialize function above completes.
       self.initPage = function()
       {
-        ko.applyBindings(self.viewModel);
+        //ko.applyBindings(self.viewModel);
         $("[rel='tooltip']").tooltip();
 
         $('#hover-col .thumbnail').hover(
@@ -70,7 +71,7 @@
     }
 
   </style>
-  <div data-bind="template: { name: 'pest_category_tpl', data: viewModel }"></div>
+  <div data-bind="template: { name: 'pest_category_tpl', data: catViewModel }"></div>
   <script type="text/html" id="pest_category_tpl">
     <!-- Start of Choose your pest category page -->
     <div class="container" data-bind="page: {id: 'pest_category'},visible: showCategories">
@@ -103,7 +104,9 @@
         </ul>
       </div>
     </div>
+  </script>
     <!-- End of choose your pest page -->
+  <div data-bind="template: { name: 'pest_sub_category_tpl', data: subCatViewModel }"></div>
     <!-- Start of Choose your pest sub-category page -->
     <div class="container" data-bind="page: {id: 'pest_sub_category'},visible: showSubCategories">
       <div class="row">
