@@ -121,8 +121,9 @@ function categoriesViewModel()
 {
   var self = this;
   self.showCategories = ko.observable(true);
+  self.showSubCategories = ko.observable(false);
   self.categoryModels = ko.observableArray([]); //The major categories of pests.
-
+  self.activeCategory = ko.observable();
   self.initialize = function()
   {
     var url = 'http://sccoastalpesticides.org/pesticide_tool/get_categories';
@@ -146,9 +147,14 @@ function categoriesViewModel()
     //Hide the categories button, then build the sub categories.
     self.showCategories(false);
     location.hash = category.href();
+    self.activeCategory(category);
+    self.showSubCategories(true);
     return;
   };
-
+  self.subCategoryClicked = function(category, event)
+  {
+    return;
+  }
 }
 
 function subCategoriesViewModel()
