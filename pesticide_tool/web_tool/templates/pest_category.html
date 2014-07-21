@@ -122,11 +122,11 @@
       <pre data-bind="text: JSON.stringify(ko.toJS($data), null, 2)"></pre>
       -->
       <div class="row">
-        <ul class="thumbnails" id="hover-col" data-bind="foreach: activeCategory.subCategories">
+        <ul class="thumbnails" id="hover-col" data-bind="foreach: activeCategory().subCategories">
           <li class="col-md-3">
             <div class="thumbnail">
               <div class="caption">
-                <h4><span data-bind="text: activeCategory().name()"></span></h4>
+                <h4><span data-bind="text: name()"></span></h4>
                 <p>
                   <a role="button" data-bind="click: subCategoryClicked" class="btn btn-default">Search »</a>
                   <!--
