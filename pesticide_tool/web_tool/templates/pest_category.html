@@ -77,7 +77,7 @@
   <div data-bind="template: { name: 'pest_sub_category_tpl', data: catViewModel }"></div>
   <script type="text/html" id="pest_category_tpl">
     <!-- Start of Choose your pest category page -->
-    <div class="container" id='pest_category' data-bind="enable: showCategories">
+    <div class="container" id='pest_category' data-bind="visible: showCategories">
       <div class="row">
         <div class="col-lg-12">
           <div class="text-center"><h3>Main Categories</h3></div>
@@ -111,7 +111,7 @@
   <!-- End of choose your pest page -->
   <script type="text/html" id="pest_sub_category_tpl">
     <!-- Start of Choose your pest sub-category page -->
-    <div class="container" id='pest_sub_category' data-bind="enable: showSubCategories">
+    <div class="container" id='pest_sub_category' data-bind="visible: showSubCategories">
       <div class="row">
         <div class="col-lg-12">
           <div class="text-center">
