@@ -120,9 +120,9 @@
       <!--
       For debugging the knockout data.
       <pre data-bind="text: JSON.stringify(ko.toJS($data), null, 2)"></pre>
+      <pre data-bind="text: JSON.stringify(ko.toJS(activeCategory()), null, 2)"></pre>
       -->
       <div class="row">
-        <pre data-bind="text: JSON.stringify(ko.toJS(activeCategory()), null, 2)"></pre>
         <ul class="thumbnails" id="hover-col" data-bind="foreach: activeCategory().subCategories">
           <li class="col-md-3">
             <div class="thumbnail">
