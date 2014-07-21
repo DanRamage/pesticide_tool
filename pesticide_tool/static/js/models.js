@@ -85,11 +85,6 @@ function categoryModel(name, config)
     });
   };
 
-  self.clicked = function(category, event, parent)
-  {
-    parent.showCategories(false);
-    return;
-  };
   return self;
 }
 function subCategoryModel(name, config)
@@ -146,6 +141,13 @@ function categoriesViewModel()
       });
 
   };
+  self.categoryClicked = function(category, event)
+  {
+    //Hide the categories button, then build the sub categories.
+    self.showCategories(false);
+    return;
+  };
+
 }
 
 function subCategoriesViewModel()
