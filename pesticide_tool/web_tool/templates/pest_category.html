@@ -74,6 +74,7 @@
 
   </style>
   <div data-bind="template: { name: 'pest_category_tpl', data: catViewModel }"></div>
+  <div data-bind="template: { name: 'pest_sub_category_tpl', data: catViewModel }"></div>
   <script type="text/html" id="pest_category_tpl">
     <!-- Start of Choose your pest category page -->
     <div class="container" data-bind="page: {id: 'pest_category'},visible: showCategories">
@@ -108,7 +109,6 @@
     </div>
   </script>
   <!-- End of choose your pest page -->
-  <div data-bind="template: { name: 'pest_sub_category_tpl', data: catViewModel }"></div>
   <script type="text/html" id="pest_sub_category_tpl">
     <!-- Start of Choose your pest sub-category page -->
     <div class="container" id='pest_sub_category' data-bind="visible: showSubCategories">
@@ -121,11 +121,6 @@
           </div>
         </div>
       </div>
-      <!--
-      For debugging the knockout data.
-      <pre data-bind="text: JSON.stringify(ko.toJS($data), null, 2)"></pre>
-      <pre data-bind="text: JSON.stringify(ko.toJS(activeCategory()), null, 2)"></pre>
-      -->
       <div class="row">
         <ul class="thumbnails" id="sub-hover-col" data-bind="foreach: activeCategory().subCategories">
           <li class="col-md-3">
