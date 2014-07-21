@@ -85,7 +85,10 @@ function categoryModel(name, config)
     });
   };
 
-
+  self.clicked = function(category)
+  {
+    return;
+  };
   return self;
 }
 function subCategoryModel(name, config)
