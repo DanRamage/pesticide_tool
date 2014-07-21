@@ -131,7 +131,7 @@ function categoriesViewModel()
         $.each(data.categories, function(ndx, categoryNfo) {
           //Construct the categoryModel.
           var catModel = new categoryModel(categoryNfo['name'], categoryNfo);
-          //catModel.buildSubCategories(categoryNfo['sub_category'])
+          catModel.buildSubCategories(categoryNfo['sub_categories'])
 
           self.categoryModels.push(catModel);
         });
@@ -140,6 +140,10 @@ function categoriesViewModel()
       });
 
   };
+}
+
+function subCategoriesViewModel()
+{
 
 }
 
