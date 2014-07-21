@@ -119,6 +119,7 @@ function subCategoryModel(name, config)
 function categoriesViewModel()
 {
   var self = this;
+  self.showCategories = ko.observable(true);
   self.categoryModels = ko.observableArray([]); //The major categories of pests.
 
   self.initialize = function()
