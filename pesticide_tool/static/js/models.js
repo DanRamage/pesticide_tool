@@ -71,7 +71,7 @@ function categoryModel(name, config)
   self.name = ko.observable(name || "");
   self.img  = ko.observable(config['image_url'] || "");
   var href = null;
-  if(name != null):
+  if(name != null)
     href = name.replace(/ /g, '_');
   self.href = ko.observable(href || "");
 
@@ -96,7 +96,7 @@ function subCategoryModel(name, config)
   self.name = ko.observable(name || "");
   self.img  = ko.observable(config['image_url'] || "");
   var href = null;
-  if(name != null):
+  if(name != null)
     href = name.replace(/ /g, '_');
   self.href = ko.observable(href || "");
 
