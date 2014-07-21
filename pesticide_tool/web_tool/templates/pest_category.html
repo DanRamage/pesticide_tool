@@ -10,12 +10,11 @@
 
       self.catViewModel = null;
       self.configData = null;
-
+      self.subCatViewModel = null;
       self.initialize = function()
       {
         self.catViewModel = new categoriesViewModel();
         self.catViewModel.initialize();
-        self.subCatViewModel = null;
       };
       //This funciton initlizatizes the pager extension and knockout bindings. Our button data is in a json config file
       //and we don't want to call this funciton until it the Ajax request in the initialize function above completes.
