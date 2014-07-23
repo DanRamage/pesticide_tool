@@ -161,6 +161,18 @@ function categoriesViewModel()
               $(this).find('.caption').slideUp(250); //.fadeOut(205)
             }
           );
+          //Setup the hover functions for sub category buttons.
+          $('#sub-hover-col .thumbnail').hover(
+            function()
+            {
+              $(this).find('.caption').slideDown(250); //.fadeIn(250)
+            },
+            function()
+            {
+              $(this).find('.caption').slideUp(250); //.fadeOut(205)
+            }
+          );
+
           self.check_url();
         });
   };
@@ -202,15 +214,6 @@ function categoriesViewModel()
     location.hash = category.href();
     self.activeCategory(category);
     self.showSubCategories(true);
-    //Setup the hover functions for sub category buttons.
-    $('#sub-hover-col .thumbnail').hover(
-        function(){
-            $(this).find('.caption').slideDown(250); //.fadeIn(250)
-        },
-        function(){
-            $(this).find('.caption').slideUp(250); //.fadeOut(205)
-        }
-    );
 
     return;
   };
