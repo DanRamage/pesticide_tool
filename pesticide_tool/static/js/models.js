@@ -225,7 +225,7 @@ function categoriesViewModel()
     //location.hash = frag;
     //var state = {};
     //state['category'] = hash;
-    $.bbq.pushState(hash);
+    $.bbq.pushState(frag);
 
     self.activeCategory(category);
     self.showSubCategories(true);
@@ -250,7 +250,7 @@ function categoriesViewModel()
     //location.hash = url;
     //var state = {};
     //state['sub_category'] = url;
-    $.bbq.pushState(hash);
+    $.bbq.pushState(frag);
     return;
   };
 
