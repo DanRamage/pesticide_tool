@@ -221,7 +221,9 @@ function categoriesViewModel()
     //Hide the categories button, then build the sub categories.
     self.showCategories(false);
     location.hash = category.href();
-    $.bbq.pushState(category.href());
+    var state = {};
+    state['category'] = category.href();
+    $.bbq.pushState(state);
 
     self.activeCategory(category);
     self.showSubCategories(true);
@@ -241,6 +243,10 @@ function categoriesViewModel()
   };
   self.subCategoryClicked = function(category, event)
   {
+    location.hash = location.hash + 'sub_cat=' + category.href();
+    var state = {};
+    state['sub_category'] = 'sub_cat=' + category.href();
+    $.bbq.pushState(state);
     return;
   };
 
