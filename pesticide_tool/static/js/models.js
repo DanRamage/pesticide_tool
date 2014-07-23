@@ -222,7 +222,7 @@ function categoriesViewModel()
     self.showCategories(false);
     var hash = encodeURIComponent(category.href());
     var frag = $.param.fragment('', hash);
-    location.hash = frag;
+    //location.hash = frag;
     var state = {};
     state['category'] = hash;
     $.bbq.pushState(state);
@@ -246,7 +246,7 @@ function categoriesViewModel()
   self.subCategoryClicked = function(category, event)
   {
     var url = $.param.fragment('', {'sub_cat': category.href()});
-    location.hash = url;
+    //location.hash = url;
     var state = {};
     state['sub_category'] = url;
     $.bbq.pushState(state);
