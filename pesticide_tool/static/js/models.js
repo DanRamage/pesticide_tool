@@ -147,9 +147,6 @@ function categoriesViewModel()
 
             self.categoryModels.push(catModel);
           });
-          //Look at the url to determine if we are on the category page or we're starting
-          //on a specific subcategory.
-          var url = $.param.fragment();
 
           //Setup hover event function for categories.
           $("[rel='tooltip']").tooltip();
@@ -164,8 +161,39 @@ function categoriesViewModel()
               $(this).find('.caption').slideUp(250); //.fadeOut(205)
             }
           );
-
+          self.check_url();
         });
+  };
+  self.findByName = function(name, searchArray)
+  {
+    var retVal = null;
+    $.each(searchArray, function(ndx, object)
+    {
+      if(object.name == name)
+      {
+        retVal = object;
+        return(false);
+      }
+    });
+    return(retVal);
+  };
+
+  self.check_url()
+  {
+    //Look at the url to determine if we are on the category page or we're starting
+    //on a specific subcategory.
+    var url = $.param.fragment();
+    //We're starting at a specific category, so let's update.
+    if(url.length)
+    {
+      var cat = self.findByName(url, self.categoryModels);
+      if(cat) {
+        //Hide the categories button, then build the sub categories.
+        self.showCategories(false);
+        self.activeCategory(cat);
+        self.showSubCategories(true);
+      }
+    }
   };
   self.categoryClicked = function(category, event)
   {
