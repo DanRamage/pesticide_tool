@@ -15,22 +15,18 @@
       {
         self.catViewModel = new categoriesViewModel();
         self.catViewModel.initialize();
+        ko.applyBindings(self.catViewModel);
 
       };
       //This funciton initlizatizes the pager extension and knockout bindings. Our button data is in a json config file
       //and we don't want to call this funciton until it the Ajax request in the initialize function above completes.
       self.initPage = function()
       {
-        ko.applyBindings(self.catViewModel);
       };
       return(self);
     }
-    catViewModel = new categoriesViewModel();
-    catViewModel.initialize();
-    ko.applyBindings(catViewModel);
-
-    //app = category_page();
-    //app.initialize();
+    app = category_page();
+    app.initialize();
 
   </script>
 {% endblock %}
