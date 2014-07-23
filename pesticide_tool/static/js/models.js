@@ -169,7 +169,7 @@ function categoriesViewModel()
     var retVal = null;
     ko.utils.arrayForEach(searchArray(), function(object)
     {
-      if(object.name() === name)
+      if(object.href() === name)
       {
         retVal = object;
         return(false);
