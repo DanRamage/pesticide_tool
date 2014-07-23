@@ -14,6 +14,10 @@
       {
         self.catViewModel = new categoriesViewModel();
         self.catViewModel.initialize();
+
+        // Bind the event.
+        $(window).hashchange(self.hashchanged);
+
       };
       //This funciton initlizatizes the pager extension and knockout bindings. Our button data is in a json config file
       //and we don't want to call this funciton until it the Ajax request in the initialize function above completes.
@@ -31,6 +35,10 @@
             }
         );
 
+      };
+      self.haschanged = function()
+      {
+        var i = 0;
       };
 
       return(self);
