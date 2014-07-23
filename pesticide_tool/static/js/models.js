@@ -206,6 +206,11 @@ function categoriesViewModel()
         self.showSubCategories(true);
       }
     }
+    else
+    {
+      self.showCategories(true);
+      self.showSubCategories(false);
+    }
   };
   self.categoryClicked = function(category, event)
   {
@@ -224,7 +229,7 @@ function categoriesViewModel()
 
   self.hashchanged = function(event)
   {
-    var i = 0;
+    self.check_url();
   };
 
 }
