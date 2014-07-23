@@ -132,6 +132,9 @@ function categoriesViewModel()
 
   self.initialize = function()
   {
+    // Bind the url hash change event.
+    $(window).hashchange(self.hashchanged);
+
     var url = 'http://sccoastalpesticides.org/pesticide_tool/get_categories';
     $.getJSON(url,
       function(data)
@@ -145,6 +148,19 @@ function categoriesViewModel()
         });
         //Initialize the knockout bindings.
         app.initPage();
+
+        //Setup hover event function for categories.
+        $("[rel='tooltip']").tooltip();
+
+        $('#hover-col .thumbnail').hover(
+            function(){
+                $(this).find('.caption').slideDown(250); //.fadeIn(250)
+            },
+            function(){
+                $(this).find('.caption').slideUp(250); //.fadeOut(205)
+            }
+        );
+
       });
 
   };
@@ -155,6 +171,7 @@ function categoriesViewModel()
     location.hash = category.href();
     self.activeCategory(category);
     self.showSubCategories(true);
+    //Setup the hover functions for sub category buttons.
     $('#sub-hover-col .thumbnail').hover(
         function(){
             $(this).find('.caption').slideDown(250); //.fadeIn(250)
@@ -169,7 +186,13 @@ function categoriesViewModel()
   self.subCategoryClicked = function(category, event)
   {
     return;
-  }
+  };
+
+  self.hashchanged = function(event)
+  {
+    var i = 0;
+  };
+
 }
 
 function subCategoriesViewModel()

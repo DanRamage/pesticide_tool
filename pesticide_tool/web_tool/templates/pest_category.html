@@ -2,7 +2,7 @@
 
 {% block javascript %}
   <script type="text/javascript" src="{{STATIC_URL}}js/knockout/knockout-3.1.0.js"></script>
-  <script type="text/javascript" src="{{STATIC_URL}}js/jquery/jquery.ba-hashchange.min.js"></script>
+  <script type="text/javascript" src="{{STATIC_URL}}js/jquery/jquery.ba-bbq.min.js"></script>
   <script type="text/javascript"  src="{{STATIC_URL}}js/models.js"></script>
   <script type="text/javascript">
     function category_page()
@@ -16,8 +16,6 @@
         self.catViewModel = new categoriesViewModel();
         self.catViewModel.initialize();
 
-        // Bind the event.
-        $(window).hashchange(self.hashchanged);
 
       };
       //This funciton initlizatizes the pager extension and knockout bindings. Our button data is in a json config file
@@ -25,23 +23,7 @@
       self.initPage = function()
       {
         ko.applyBindings(self.catViewModel);
-        $("[rel='tooltip']").tooltip();
-
-        $('#hover-col .thumbnail').hover(
-            function(){
-                $(this).find('.caption').slideDown(250); //.fadeIn(250)
-            },
-            function(){
-                $(this).find('.caption').slideUp(250); //.fadeOut(205)
-            }
-        );
-
       };
-      self.hashchanged = function()
-      {
-        var i = 0;
-      };
-
       return(self);
     }
     app = category_page();
