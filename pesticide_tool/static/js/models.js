@@ -178,7 +178,7 @@ function categoriesViewModel()
     return(retVal);
   };
 
-  self.check_url()
+  self.check_url = function()
   {
     //Look at the url to determine if we are on the category page or we're starting
     //on a specific subcategory.
