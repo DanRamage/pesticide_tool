@@ -221,7 +221,7 @@ function categoriesViewModel()
     //Hide the categories button, then build the sub categories.
     self.showCategories(false);
     var hash = encodeURIComponent(category.href());
-    var frag = $.param.fragment('', '#' + hash);
+    var frag = $.param.fragment('', '#' + hash, 2);
     //location.hash = frag;
     //var state = {};
     //state['category'] = hash;
@@ -246,11 +246,11 @@ function categoriesViewModel()
   self.subCategoryClicked = function(category, event)
   {
     var hash = encodeURIComponent(category.href());
-    var frag = $.param.fragment('', '#' + hash);
+    var frag = $.param.fragment('', '#' + hash, 2);
     //location.hash = url;
     //var state = {};
     //state['sub_category'] = url;
-    $.bbq.pushState(frag);
+    $.bbq.pushState(hash);
     return;
   };
 
