@@ -207,6 +207,7 @@ function categoriesViewModel()
 
       }
     }
+    //No subcategory or pest, so we're on the main category.
     else
     {
       self.showCategories(true);
@@ -217,7 +218,8 @@ function categoriesViewModel()
   {
     //Hide the categories button, then build the sub categories.
     self.showCategories(false);
-    location.hash = category.href();
+    //location.hash = 'category=' + category.href();
+    $.bbq.param.querystring(category.href);
     self.activeCategory(category);
     self.showSubCategories(true);
     //Setup the hover functions for sub category buttons.
