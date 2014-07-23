@@ -167,12 +167,12 @@ function categoriesViewModel()
   self.findByName = function(name, searchArray)
   {
     var retVal = null;
-    ko.utils.arrayForEach(searchArray(), function(object)
+    ko.utils.arrayFirst(searchArray(), function(object)
     {
       if(object.href() === name)
       {
         retVal = object;
-        return(false);
+        return(true);
       }
     });
     return(retVal);
