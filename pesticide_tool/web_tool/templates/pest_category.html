@@ -15,9 +15,6 @@
       {
         self.catViewModel = new categoriesViewModel();
         self.catViewModel.initialize();
-        // Bind the url hash change event.
-        $(window).bind('hashchange', self.catViewModel.hashchanged);
-
 
       };
       //This funciton initlizatizes the pager extension and knockout bindings. Our button data is in a json config file
@@ -28,8 +25,12 @@
       };
       return(self);
     }
-    app = category_page();
-    app.initialize();
+    catViewModel = new categoriesViewModel();
+    catViewModel.initialize();
+    ko.applyBindings(catViewModel);
+
+    //app = category_page();
+    //app.initialize();
 
   </script>
 {% endblock %}
