@@ -161,7 +161,7 @@ function categoriesViewModel()
               $(this).find('.caption').slideUp(250); //.fadeOut(205)
             }
           );
-          self.check_url();
+          //self.check_url();
         });
   };
   self.findByName = function(name, searchArray)
