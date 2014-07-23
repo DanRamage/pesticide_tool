@@ -185,7 +185,7 @@ function categoriesViewModel()
 
     //Look at the url to determine if we are on the category page or we're starting
     //on a specific subcategory.
-    var url = $.param.fragment();
+    var url = decodeURIComponent($.param.fragment());
     //We're starting at a specific category, so let's update.
     if(url.length)
     {
@@ -220,10 +220,11 @@ function categoriesViewModel()
   {
     //Hide the categories button, then build the sub categories.
     self.showCategories(false);
-    var frag = $.param.fragment('', category.href());
-    location.hash = category.href();
+    var hash = encodeURIComponent(category.href());
+    var frag = $.param.fragment('', hash);
+    location.hash = frag;
     var state = {};
-    state['category'] = category.href();
+    state['category'] = hash;
     $.bbq.pushState(state);
 
     self.activeCategory(category);
