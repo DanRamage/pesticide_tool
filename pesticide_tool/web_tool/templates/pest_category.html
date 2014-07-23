@@ -16,7 +16,7 @@
         self.catViewModel = new categoriesViewModel();
         self.catViewModel.initialize();
         // Bind the url hash change event.
-        $(window).hashchange(self.catViewModel.hashchanged);
+        $(window).bind('hashchange', self.catViewModel.hashchanged);
 
 
       };
