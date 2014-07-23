@@ -132,8 +132,6 @@ function categoriesViewModel()
 
   self.initialize = function()
   {
-    // Bind the url hash change event.
-    $(window).hashchange(self.hashchanged);
 
     var url = 'http://sccoastalpesticides.org/pesticide_tool/get_categories';
     $.getJSON(url,
