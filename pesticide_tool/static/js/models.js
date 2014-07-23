@@ -147,6 +147,9 @@ function categoriesViewModel()
 
             self.categoryModels.push(catModel);
           });
+          //Look at the url to determine if we are on the category page or we're starting
+          //on a specific subcategory.
+          var url = $.param.fragment();
 
           //Setup hover event function for categories.
           $("[rel='tooltip']").tooltip();
@@ -162,9 +165,6 @@ function categoriesViewModel()
             }
           );
 
-          //Look at the url to determine if we are on the category page or we're starting
-          //on a specific subcategory.
-          var url = $.param.fragment();
         });
   };
   self.categoryClicked = function(category, event)
