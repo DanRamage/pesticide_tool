@@ -223,9 +223,9 @@ function categoriesViewModel()
     var hash = encodeURIComponent(category.href());
     var frag = $.param.fragment('', hash);
     //location.hash = frag;
-    var state = {};
-    state['category'] = hash;
-    $.bbq.pushState(state);
+    //var state = {};
+    //state['category'] = hash;
+    $.bbq.pushState(hash);
 
     self.activeCategory(category);
     self.showSubCategories(true);
@@ -245,11 +245,11 @@ function categoriesViewModel()
   };
   self.subCategoryClicked = function(category, event)
   {
-    var url = $.param.fragment('', {'sub_cat': category.href()});
+    var hash = $.param.fragment('', encodeURIComponent(category.href()));
     //location.hash = url;
-    var state = {};
-    state['sub_category'] = url;
-    $.bbq.pushState(state);
+    //var state = {};
+    //state['sub_category'] = url;
+    $.bbq.pushState(hash);
     return;
   };
 
