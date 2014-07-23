@@ -167,7 +167,7 @@ function categoriesViewModel()
   self.findByName = function(name, searchArray)
   {
     var retVal = null;
-    $.each(searchArray, function(ndx, object)
+    ko.utils.arrayForEach(searchArray(), function(object)
     {
       if(object.name == name)
       {
