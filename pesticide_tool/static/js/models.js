@@ -181,6 +181,8 @@ function categoriesViewModel()
 
   self.check_url = function()
   {
+    var state = $.bbq.getState();
+
     //Look at the url to determine if we are on the category page or we're starting
     //on a specific subcategory.
     var url = $.param.fragment();
@@ -218,8 +220,9 @@ function categoriesViewModel()
   {
     //Hide the categories button, then build the sub categories.
     self.showCategories(false);
-    //location.hash = 'category=' + category.href();
-    $.param.querystring(category.href());
+    location.hash = category.href();
+    var state = {'id' : category.href()};
+    $.bbq.pushState(state);
     self.activeCategory(category);
     self.showSubCategories(true);
     //Setup the hover functions for sub category buttons.
