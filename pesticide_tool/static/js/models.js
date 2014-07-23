@@ -245,11 +245,12 @@ function categoriesViewModel()
   };
   self.subCategoryClicked = function(category, event)
   {
-    var hash = $.param.fragment('', encodeURIComponent(category.href()));
+    var hash = encodeURIComponent(category.href());
+    var frag = $.param.fragment('', hash);
     //location.hash = url;
     //var state = {};
     //state['sub_category'] = url;
-    $.bbq.pushState(hash);
+    $.bbq.pushState(frag);
     return;
   };
 
