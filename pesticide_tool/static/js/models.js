@@ -135,34 +135,37 @@ function categoriesViewModel()
     // Bind the url hash change event.
     $(window).bind('hashchange', self.hashchanged);
 
+    //Query the server for the category data.
     var url = 'http://sccoastalpesticides.org/pesticide_tool/get_categories';
     $.getJSON(url,
-      function(data)
-      {
-        $.each(data.categories, function(ndx, categoryNfo) {
-          //Construct the categoryModel.
-          var catModel = new categoryModel(categoryNfo['name'], categoryNfo);
-          catModel.buildSubCategories(categoryNfo['sub_categories'])
+        function(data)
+        {
+          $.each(data.categories, function(ndx, categoryNfo) {
+            //Construct the categoryModel.
+            var catModel = new categoryModel(categoryNfo['name'], categoryNfo);
+            catModel.buildSubCategories(categoryNfo['sub_categories'])
 
-          self.categoryModels.push(catModel);
-        });
-        //Initialize the knockout bindings.
-        app.initPage();
+            self.categoryModels.push(catModel);
+          });
 
-        //Setup hover event function for categories.
-        $("[rel='tooltip']").tooltip();
+          //Setup hover event function for categories.
+          $("[rel='tooltip']").tooltip();
 
-        $('#hover-col .thumbnail').hover(
-            function(){
-                $(this).find('.caption').slideDown(250); //.fadeIn(250)
+          $('#hover-col .thumbnail').hover(
+            function()
+            {
+              $(this).find('.caption').slideDown(250); //.fadeIn(250)
             },
-            function(){
-                $(this).find('.caption').slideUp(250); //.fadeOut(205)
+            function()
+            {
+              $(this).find('.caption').slideUp(250); //.fadeOut(205)
             }
-        );
+          );
 
-      });
-
+          //Look at the url to determine if we are on the category page or we're starting
+          //on a specific subcategory.
+          var url = $.param.fragment();
+        });
   };
   self.categoryClicked = function(category, event)
   {
