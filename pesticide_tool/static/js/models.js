@@ -218,8 +218,10 @@ function categoriesViewModel()
         {
           //Hide the categories button, then build the sub categories.
           self.showCategories(false);
+          self.visibleList()['category'].visible = false
           self.activeCategory(cat);
           self.showSubCategories(true);
+          self.visibleList()['sub_category'].visible = true
           //Setup the hover functions for sub category buttons.
           $('#sub-hover-col .thumbnail').hover(
             function () {
