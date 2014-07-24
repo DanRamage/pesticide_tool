@@ -188,26 +188,26 @@ function categoriesViewModel()
     //on a specific subcategory.
     var url = decodeURIComponent($.param.fragment());
     //We're starting at a specific category, so let's update.
-    if(url.length && url !== self.currentUrl)
+    if(url.length)
     {
-      var cat = self.findByName(url, self.categoryModels);
-      if(cat) {
-        //Hide the categories button, then build the sub categories.
-        self.showCategories(false);
-        self.activeCategory(cat);
-        self.showSubCategories(true);
-        //Setup the hover functions for sub category buttons.
-        $('#sub-hover-col .thumbnail').hover(
-          function()
-          {
-            $(this).find('.caption').slideDown(250); //.fadeIn(250)
-          },
-          function()
-          {
-            $(this).find('.caption').slideUp(250); //.fadeOut(205)
-          }
-        );
-
+      if(url !== self.currentUrl) {
+        var cat = self.findByName(url, self.categoryModels);
+        if(cat)
+        {
+          //Hide the categories button, then build the sub categories.
+          self.showCategories(false);
+          self.activeCategory(cat);
+          self.showSubCategories(true);
+          //Setup the hover functions for sub category buttons.
+          $('#sub-hover-col .thumbnail').hover(
+            function () {
+              $(this).find('.caption').slideDown(250); //.fadeIn(250)
+            },
+            function () {
+              $(this).find('.caption').slideUp(250); //.fadeOut(205)
+            }
+          );
+        }
       }
     }
     //No subcategory or pest, so we're on the main category.
@@ -247,7 +247,10 @@ function categoriesViewModel()
   };
   self.subCategoryClicked = function(category, event)
   {
-    var hash = encodeURIComponent(category.href());
+    //Get current hash which should represent the category.
+    var url = decodeURIComponent($.param.fragment());
+
+    var hash = encodeURIComponent(url + '/' + category.href());
     var frag = $.param.fragment('', '#' + hash, 2);
     //location.hash = url;
     //var state = {};
