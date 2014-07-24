@@ -214,11 +214,8 @@ function categoriesViewModel()
         if(cat)
         {
           //Hide the categories button, then build the sub categories.
-          self.showCategories(false);
-          self.visibleList()['category'].visible = false;
+          self.setVisible('sub_category');
           self.activeCategory(cat);
-          self.showSubCategories(true);
-          self.visibleList()['sub_category'].visible = true;
           //Setup the hover functions for sub category buttons.
           $('#sub-hover-col .thumbnail').hover(
             function () {
@@ -239,11 +236,24 @@ function categoriesViewModel()
     }
     self.currentUrl = url
   };
+  self.setVisible = function(pageName)
+  {
+    $.each(self.visibleList(), function(ndx, page)
+    {
+      if(pageName === page.page)
+      {
+        page.visible = true;
+      }
+      else
+      {
+        page.visible = false;
+      }
+    });
+  }
   self.categoryClicked = function(category, event)
   {
     //Hide the categories button, then build the sub categories.
-    self.visibleList()['category'].visible = false;
-    self.showCategories(false);
+    self.setVisible('sub_category');
     var hash = encodeURIComponent(category.href());
     var frag = $.param.fragment('', '#' + hash, 2);
     //location.hash = frag;
@@ -252,8 +262,6 @@ function categoriesViewModel()
     $.bbq.pushState(frag);
 
     self.activeCategory(category);
-    self.showSubCategories(true);
-    self.visibleList()['sub_category'].visible = true;
     self.visibleList()['pest'].visible = false;
     //Setup the hover functions for sub category buttons.
     $('#sub-hover-col .thumbnail').hover(
