@@ -145,9 +145,9 @@ function categoriesViewModel()
   //Array to track which parts should be visible.
   self.visibleTracker = ko.observableArray([]);
   self.visibleList = self.visibleTracker.asDictionary('page');
-  self.visibleTracker.push({'page': 'category', 'visible': true});
-  self.visibleTracker.push({'page': 'sub_category', 'visible': false});
-  self.visibleTracker.push({'page': 'pest', 'visible': false});
+  self.visibleTracker.push({page: 'category', visible: true});
+  self.visibleTracker.push({page: 'sub_category', visible: false});
+  self.visibleTracker.push({page: 'pest', visible: false});
 
   self.categoryModels = ko.observableArray([]); //The major categories of pests.
   self.activeCategory = ko.observable(new categoryModel());
