@@ -139,9 +139,6 @@ function subCategoryModel(name, config)
 function categoriesViewModel()
 {
   var self = this;
-  self.showCategories = ko.observable(true);
-  self.showSubCategories = ko.observable(false);
-  self.showPests = ko.observable(false);
   //Array to track which parts should be visible.
   self.visibleTracker = ko.observableArray();
   self.visibleList = self.visibleTracker.asDictionary('page');
@@ -256,7 +253,8 @@ function categoriesViewModel()
 
     self.activeCategory(category);
     self.showSubCategories(true);
-      self.visibleList()['category'].visible = false;
+    self.visibleList()['sub_category'].visible = true;
+    self.visibleList()['pest'].visible = false;
     //Setup the hover functions for sub category buttons.
     $('#sub-hover-col .thumbnail').hover(
       function()
