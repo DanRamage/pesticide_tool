@@ -236,7 +236,7 @@ function categoriesViewModel()
   };
   self.setVisible = function(pageName)
   {
-    $.each(self.visibleTracker(), function(ndx, page)
+    $.each(self.visibleTracker, function(ndx, page)
     {
       if(pageName === page.page)
       {
