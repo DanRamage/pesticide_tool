@@ -244,13 +244,13 @@ function categoriesViewModel()
   {
     $.each(self.visibleTracker, function(ndx, page)
     {
-      if(page[pageName])
+      if(ndx === pageName)
       {
-        page[pageName]().visible(true);
+        page(true);
       }
       else
       {
-        page[ndx]().visible(false);
+        page(false);
       }
     });
   }
