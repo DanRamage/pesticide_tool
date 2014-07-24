@@ -144,12 +144,7 @@ function categoriesViewModel()
     'category': ko.observable(true),
     'sub_category': ko.observable(false),
     'pest': ko.observable(false)
-  }
-
-
-
-
-
+  };
 
   self.categoryModels = ko.observableArray([]); //The major categories of pests.
   self.activeCategory = ko.observable(new categoryModel());
@@ -291,6 +286,11 @@ function categoriesViewModel()
     //var state = {};
     //state['sub_category'] = url;
     $.bbq.pushState(frag);
+    var url = 'http://sccoastalpesticides.org/pesticide_tool/get_pests_for_subcategory';
+    $.getJSON(url,
+        function(data) {
+        }
+    );
     return;
   };
 
