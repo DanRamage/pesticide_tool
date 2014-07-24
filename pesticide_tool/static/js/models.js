@@ -1,4 +1,19 @@
-  pagedObservableArray = function (options)
+ko.observableArray.fn.asDictionary = function (keyName) {
+    return ko.computed(function () {
+        var list = this() || [];    // the internal array
+        var keys = {};              // a place for key/value
+        ko.utils.arrayForEach(list, function (v) {
+            if (keyName) {          // if there is a key
+                keys[v[keyName]] = v;    // use it
+            } else {
+                keys[v] = v;
+            }
+        });
+        return keys;
+    }, this);
+};
+
+pagedObservableArray = function (options)
   {
     var self = this;
     options = options || {};
@@ -126,6 +141,13 @@ function categoriesViewModel()
   var self = this;
   self.showCategories = ko.observable(true);
   self.showSubCategories = ko.observable(false);
+  self.showPests = ko.observable(false);
+  //Array to track which parts should be visible.
+  self.visibleTracker = ko.observableArray();
+  self.visibleList = self.visibleTracker.asDictionary('page');
+  self.visibleTracker.push({'page': 'category', 'visible': true});
+  self.visibleTracker.push({'page': 'sub_category', 'visible': false});
+  self.visibleTracker.push({'page': 'pest', 'visible': false});
 
   self.categoryModels = ko.observableArray([]); //The major categories of pests.
   self.activeCategory = ko.observable(new categoryModel());
@@ -248,9 +270,9 @@ function categoriesViewModel()
   self.subCategoryClicked = function(category, event)
   {
     //Get current hash which should represent the category.
-    var url = decodeURIComponent($.param.fragment());
+    var url = $.param.fragment();
 
-    var hash = encodeURIComponent(url + '/' + category.href());
+    var hash = url + '/' + encodeURIComponent(category.href());
     var frag = $.param.fragment('', '#' + hash, 2);
     //location.hash = url;
     //var state = {};
