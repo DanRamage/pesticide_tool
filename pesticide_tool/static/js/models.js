@@ -286,8 +286,10 @@ function categoriesViewModel()
     //var state = {};
     //state['sub_category'] = url;
     $.bbq.pushState(frag);
+
     var url = 'http://sccoastalpesticides.org/pesticide_tool/get_pests_for_subcategory';
     $.getJSON(url,
+        data: {'sub_category' : category.name()},
         function(data) {
         }
     );
