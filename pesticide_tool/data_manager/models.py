@@ -108,6 +108,17 @@ class Pest(models.Model):
   admin_thumbnail.short_description = 'Thumbnail'
   admin_thumbnail.allow_tags = True
 
+  @property
+  def toDict(self):
+    pest = {
+      'id': self.row_id,
+      'name': self.name,
+      'display_name': self.display_name,
+      'image_url': self.image_url
+    }
+
+    return pest
+
 class ActiveIngredientClass(models.Model):
   row_id = models.IntegerField(primary_key=True)
   row_entry_date = models.DateTimeField(blank=True, null=True)

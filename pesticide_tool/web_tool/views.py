@@ -6,6 +6,9 @@ from django.shortcuts import render_to_response
 from data_manager.models import *
 import simplejson
 from django.http import HttpResponse
+import logging
+
+logger = logging.getLogger(__name__)
 
 """
 from django.http import HttpResponseRedirect, HttpResponsePermanentRedirect
@@ -33,5 +36,19 @@ def get_categories(request):
   json = {
     "categories" : [category.toDict for category in Category.objects.all().order_by('name')],
     "success": True
+  }
+  return HttpResponse(simplejson.dumps(json))
+
+def get_pests_for_subcategory(request, sub_category):
+  search_term = sub_category
+  if(len(search_term) == 0):
+    search_term = request.GET['sub_category']
+  if logger:
+    logger.info("View search param: %s" % (catalog_q))
+    logger.info("Begin get_pests_for_subcategory: %s" % (search_term))
+
+  sub_cat = SubCategory.objects.all().filter(name=sub_category)
+  json = {
+    "pests" : []
   }
   return HttpResponse(simplejson.dumps(json))
