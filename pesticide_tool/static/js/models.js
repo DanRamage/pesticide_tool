@@ -143,11 +143,11 @@ function categoriesViewModel()
   self.showSubCategories = ko.observable(false);
   self.showPests = ko.observable(false);
   //Array to track which parts should be visible.
-  self.visibleTracker = ko.observableArray([]);
-  self.visibleList = self.visibleTracker.asDictionary('page');
-  self.visibleTracker.push({page: 'category', visible: true});
-  self.visibleTracker.push({page: 'sub_category', visible: false});
-  self.visibleTracker.push({page: 'pest', visible: false});
+  self.visibleTracker = ko.observableArray([
+    {'category' : true},
+    {'sub_category': false},
+    {'pest' : false}
+  ]);
 
   self.categoryModels = ko.observableArray([]); //The major categories of pests.
   self.activeCategory = ko.observable(new categoryModel());
@@ -218,10 +218,10 @@ function categoriesViewModel()
         {
           //Hide the categories button, then build the sub categories.
           self.showCategories(false);
-          self.visibleList()['category'].visible = false;
+          self.visibleTracker()['category'] = false;
           self.activeCategory(cat);
           self.showSubCategories(true);
-          self.visibleList()['sub_category'].visible = true;
+          self.visibleTracker()['sub_category'] = true;
           //Setup the hover functions for sub category buttons.
           $('#sub-hover-col .thumbnail').hover(
             function () {
@@ -245,7 +245,7 @@ function categoriesViewModel()
   self.categoryClicked = function(category, event)
   {
     //Hide the categories button, then build the sub categories.
-    self.visibleList()['category'].visible = false;
+    self.visibleTracker()['category'] = false;
     self.showCategories(false);
     var hash = encodeURIComponent(category.href());
     var frag = $.param.fragment('', '#' + hash, 2);
@@ -256,7 +256,7 @@ function categoriesViewModel()
 
     self.activeCategory(category);
     self.showSubCategories(true);
-    self.visibleList()['sub_category'].visible = true;
+    self.visibleTracker()['sub_category'] = true;
     //Setup the hover functions for sub category buttons.
     $('#sub-hover-col .thumbnail').hover(
       function()
