@@ -245,6 +245,7 @@ function categoriesViewModel()
   self.categoryClicked = function(category, event)
   {
     //Hide the categories button, then build the sub categories.
+    self.visibleList()['category'].visible = false;
     self.showCategories(false);
     var hash = encodeURIComponent(category.href());
     var frag = $.param.fragment('', '#' + hash, 2);
@@ -255,6 +256,7 @@ function categoriesViewModel()
 
     self.activeCategory(category);
     self.showSubCategories(true);
+    self.visibleList()['sub_category'].visible = true;
     //Setup the hover functions for sub category buttons.
     $('#sub-hover-col .thumbnail').hover(
       function()
