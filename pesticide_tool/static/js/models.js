@@ -231,8 +231,7 @@ function categoriesViewModel()
     //No subcategory or pest, so we're on the main category.
     else
     {
-      self.showCategories(true);
-      self.showSubCategories(false);
+      self.setVisible('category');
     }
     self.currentUrl = url
   };
