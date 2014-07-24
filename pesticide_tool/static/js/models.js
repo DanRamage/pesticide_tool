@@ -140,8 +140,7 @@ function categoriesViewModel()
 {
   var self = this;
   //Array to track which parts should be visible.
-  self.visibleTracker = ko.observableArray();
-  self.visibleList = self.visibleTracker.asDictionary('page');
+  self.visibleTracker = [];
   self.visibleTracker.push({'page': 'category', 'visible': ko.observable(true)});
   self.visibleTracker.push({'page': 'sub_category', 'visible': ko.observable(false)});
   self.visibleTracker.push({'page': 'pest', 'visible': ko.observable(false)});
