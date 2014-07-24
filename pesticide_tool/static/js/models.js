@@ -140,11 +140,17 @@ function categoriesViewModel()
 {
   var self = this;
   //Array to track which parts should be visible.
-  self.visibleTracker = [
-  {'category': ko.observable(true)},
-  {'sub_category': ko.observable(false)},
-  {'pest': ko.observable(false)}
-  ]
+  self.visibleTracker = {
+    'category': ko.observable(true),
+    'sub_category': ko.observable(false),
+    'pest': ko.observable(false)
+  }
+
+
+
+
+
+
   self.categoryModels = ko.observableArray([]); //The major categories of pests.
   self.activeCategory = ko.observable(new categoryModel());
   self.currentUrl = ''
@@ -238,13 +244,13 @@ function categoriesViewModel()
   {
     $.each(self.visibleTracker, function(ndx, page)
     {
-      if(pageName === page.page)
+      if(page[pageName])
       {
-        page.visible(true);
+        page[pageName]().visible(true);
       }
       else
       {
-        page.visible(false);
+        page[ndx]().visible(false);
       }
     });
   }
