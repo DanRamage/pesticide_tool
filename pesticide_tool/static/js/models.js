@@ -140,11 +140,11 @@ function categoriesViewModel()
 {
   var self = this;
   //Array to track which parts should be visible.
-  self.visibleTracker = [];
-  self.visibleTracker.push({'page': 'category', 'visible': ko.observable(true)});
-  self.visibleTracker.push({'page': 'sub_category', 'visible': ko.observable(false)});
-  self.visibleTracker.push({'page': 'pest', 'visible': ko.observable(false)});
-
+  self.visibleTracker = [
+  {'category': ko.observable(true)},
+  {'sub_category': ko.observable(false)},
+  {'pest': ko.observable(false)}
+  ]
   self.categoryModels = ko.observableArray([]); //The major categories of pests.
   self.activeCategory = ko.observable(new categoryModel());
   self.currentUrl = ''
