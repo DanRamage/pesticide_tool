@@ -236,15 +236,15 @@ function categoriesViewModel()
   };
   self.setVisible = function(pageName)
   {
-    $.each(self.visibleList(), function(ndx, page)
+    $.each(self.visibleTracker(), function(ndx, page)
     {
       if(pageName === page.page)
       {
-        page.visible = true;
+        page.visible(true);
       }
       else
       {
-        page.visible = false;
+        page.visible(false);
       }
     });
   }
@@ -260,7 +260,6 @@ function categoriesViewModel()
     $.bbq.pushState(frag);
 
     self.activeCategory(category);
-    self.visibleList()['pest'].visible = false;
     //Setup the hover functions for sub category buttons.
     $('#sub-hover-col .thumbnail').hover(
       function()
