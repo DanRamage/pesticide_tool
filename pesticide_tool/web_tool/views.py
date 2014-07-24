@@ -44,7 +44,7 @@ def get_pests_for_subcategory(request, sub_category):
   if(len(search_term) == 0):
     search_term = request.GET['sub_category']
   if logger:
-    logger.info("View search param: %s" % (catalog_q))
+    logger.info("View search param: %s" % (sub_category))
     logger.info("Begin get_pests_for_subcategory: %s" % (search_term))
 
   sub_cat = SubCategory.objects.all().filter(name=sub_category)
