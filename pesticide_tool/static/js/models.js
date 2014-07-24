@@ -129,6 +129,7 @@ function categoriesViewModel()
 
   self.categoryModels = ko.observableArray([]); //The major categories of pests.
   self.activeCategory = ko.observable(new categoryModel());
+  self.currentUrl = ''
 
   self.initialize = function()
   {
@@ -187,7 +188,7 @@ function categoriesViewModel()
     //on a specific subcategory.
     var url = decodeURIComponent($.param.fragment());
     //We're starting at a specific category, so let's update.
-    if(url.length)
+    if(url.length && url !== self.currentUrl)
     {
       var cat = self.findByName(url, self.categoryModels);
       if(cat) {
@@ -215,6 +216,7 @@ function categoriesViewModel()
       self.showCategories(true);
       self.showSubCategories(false);
     }
+    self.currentUrl = url
   };
   self.categoryClicked = function(category, event)
   {
