@@ -201,11 +201,15 @@ def createInitialData(**kwargs):
   #pest_ndx = pest_max_row_id['row_id__max'] + 1
   pest_ndx = 1
   #Have to start index past the AIs already in database.
-  ingr_ndx = ai_max_row_id['row_id__max'] + 1
+  ingr_ndx = 1
+  if ai_max_row_id['row_id__max']:
+    ingr_ndx = ai_max_row_id['row_id__max'] + 1
   cmp_ndx = 1
   prod_ndx = 1
   form_ndx = 1
-  type_ndx = p_type_max_row_id['row_id__max'] + 1
+  type_ndx = 1
+  if p_type_max_row_id['row_id__max']:
+    type_ndx = p_type_max_row_id['row_id__max'] + 1
 
   for file in os.listdir(data_dir):
     if file.endswith(".json"):
