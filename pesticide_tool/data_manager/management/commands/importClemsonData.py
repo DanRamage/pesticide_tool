@@ -197,7 +197,7 @@ def createInitialData(**kwargs):
     'ai_models': [],
   }
   brands_with_ai = []
-  #app_ndx = 1
+  app_ndx = 1
   pest_ndx = 1
   if pest_max_row_id['row_id__max']:
     pest_ndx = pest_max_row_id['row_id__max'] + 1
@@ -276,16 +276,18 @@ def createInitialData(**kwargs):
   # We want to get the initial set of pests that have the images for the sub categories
   # and add them in the mix.
   if init_pesticide_obj:
+    #If we have the pest ndx already in the database, don't try and add it again.
+    del_list = []
     for obj in init_pesticide_obj:
       if obj['model'] == 'data_manager.Pest':
         #Change the pk so we don't get duplicate error.
         obj['pk'] = pest_ndx
-        #If we have the pest ndx already in the database, don't try and add it again.
         for ndx, rec in enumerate(models['pest_models']):
           if rec['fields']['name'] == obj['fields']['name']:
-            del rec[ndx]
-            break
-        pest_ndx += 1
+            del_list.append(ndx)
+    if len(del_list):
+      for ndx in del_list:
+        del models['pest_models'][ndx]
   try:
     #Write the initial JSON data for each of the model types. Break them apart since
     #the data is pretty large.
