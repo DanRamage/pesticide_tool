@@ -137,6 +137,7 @@ def createInitialData(**kwargs):
 
   #Pull in the initial data from Lisa's spreadsheet if it is available. We want to
   #integrate the Pests into the output here.
+  """
   try:
     init_pesticide_obj = None
     init_data_filename = config_file.get('initial_data', 'initial_data_file')
@@ -150,6 +151,7 @@ def createInitialData(**kwargs):
   except ConfigParser.Error, e:
     if logger:
       logger.exception(e)
+  """
   #We want to get a list of the active ingredients we have in the database that
   #have the calculations for toxicity so we don't overwrite them. When importing
   #the Clemson data, there are brands with active ingredients we don't have that
@@ -283,6 +285,7 @@ def createInitialData(**kwargs):
 
   # We want to get the initial set of pests that have the images for the sub categories
   # and add them in the mix.
+  """
   if init_pesticide_obj:
     #If we have the pest ndx already in the database, don't try and add it again.
     del_list = []
@@ -296,6 +299,7 @@ def createInitialData(**kwargs):
     if len(del_list):
       for ndx in del_list:
         del models['pest_models'][ndx]
+  """
   try:
     #Write the initial JSON data for each of the model types. Break them apart since
     #the data is pretty large.
