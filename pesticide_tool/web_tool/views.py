@@ -48,7 +48,8 @@ def get_pests_for_subcategory(request, sub_category):
   if logger:
     logger.info("Begin get_pests_for_subcategory: %s" % (search_term))
 
-  sub_cat = SubCategory.objects.filter(name__exact=search_term).prefetch_related('pests')
+  sub_cat = SubCategory.objects.filter(name__exact=search_term)
+  sub_cat = sub_cat.prefetch_related('pests')
   if logger:
     logger.debug(list(sub_cat))
   json = {
