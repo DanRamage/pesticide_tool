@@ -51,7 +51,7 @@ def get_pests_for_subcategory(request, sub_category):
   sub_cat = SubCategory.objects.filter(name__exact=search_term).prefetch_related('pests').all()[:1].get()
   logger.debug(sub_cat)
   json = {
-    "pests" : [pest.toDict for pest in sub_cat.pests],
+    "pests" : [pest.toDict for pest in sub_cat.pests.all()],
     "success": True
   }
   return HttpResponse(simplejson.dumps(json))
