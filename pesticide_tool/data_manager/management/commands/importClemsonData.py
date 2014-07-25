@@ -275,7 +275,16 @@ def createInitialData(**kwargs):
       if obj['model'] == 'data_manager.Pest':
         #Change the pk so we don't get duplicate error.
         obj['pk'] = pest_ndx
-        models['pest_models'].append(obj)
+        append = True
+        #Check to see if the pest already exists in the list, if it does, let's
+        #use it and the image file from the initial data.
+        for pest_model in models['pest_models']:
+          if pest_model['fields']['name'] == obj['fields']['name']:
+            pest_model['fields']['image_url'] = obj['fields']['image_url']
+            append = False
+            break
+        if append:
+          models['pest_models'].append(obj)
         pest_ndx += 1
   try:
     #Write the initial JSON data for each of the model types. Break them apart since
