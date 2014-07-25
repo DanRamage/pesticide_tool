@@ -49,6 +49,8 @@ def get_pests_for_subcategory(request, sub_category):
     logger.info("Begin get_pests_for_subcategory: %s" % (search_term))
 
   sub_cat = SubCategory.objects.all().filter(name=sub_category)
+  if logger:
+    logger.debug(sub_cat.name)
   json = {
     "pests" : [pest.toDict for pest in sub_cat.pests],
     "success": True
