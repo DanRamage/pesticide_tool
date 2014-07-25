@@ -123,8 +123,8 @@ class ActiveIngredientClass(models.Model):
   row_id = models.IntegerField(primary_key=True)
   row_entry_date = models.DateTimeField(blank=True, null=True)
   row_update_date = models.DateTimeField(blank=True, null=True)
-  name = models.CharField(unique=True, max_length=128)
-  display_name = models.CharField(max_length=128)
+  name = models.CharField(unique=True, max_length=256)
+  display_name = models.CharField(max_length=256)
 
   active_ingredient = models.ManyToManyField('ActiveIngredient', blank=True, null=True)
 
@@ -135,7 +135,7 @@ class ApplicationArea(models.Model):
   row_id = models.IntegerField(primary_key=True)
   row_entry_date = models.DateTimeField(blank=True, null=True)
   row_update_date = models.DateTimeField(blank=True, null=True)
-  name = models.CharField(unique=True, max_length=128, blank=False)
+  name = models.CharField(unique=True, max_length=256, blank=False)
 
   #brand = models.ManyToManyField('Brand', blank=True, null=True)
 
