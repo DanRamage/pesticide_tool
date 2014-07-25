@@ -48,10 +48,8 @@ def get_pests_for_subcategory(request, sub_category):
   if logger:
     logger.info("Begin get_pests_for_subcategory: %s" % (search_term))
 
-  sub_cat = SubCategory.objects.filter(name__exact=search_term)
+  sub_cat = SubCategory.objects.filter(name__exact=search_term).prefetch_related('pests')[:1].get()
   sub_cat = sub_cat.prefetch_related('pests').all()
-  for rec in sub_cat:
-    logger.debug('Name: %s Image: %s Pests: %s' % (rec.name, rec.image_url, rec.pests))
   json = {
     "pests" : [pest.toDict for pest in sub_cat.pests],
     "success": True
