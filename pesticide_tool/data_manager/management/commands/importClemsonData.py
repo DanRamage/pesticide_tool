@@ -155,6 +155,7 @@ def createInitialData(**kwargs):
   #the Clemson data, there are brands with active ingredients we don't have that
   #data for but want to add.
   calculated_ais = []
+  existing_pests = []
   #Build the init data for the active ingredient models.
   lookups = {
     'pest_lookup' : {},
@@ -180,6 +181,9 @@ def createInitialData(**kwargs):
   p_type_max_row_id =  pesticide_type_rows.aggregate((Max('row_id')))
 
   pest_rows = Pest.objects.all().order_by('name')
+  for row in pest_rows:
+    existing_pests.append(row.name.lower())
+    build_dict(lookups['pest_lookup'], row.name.lower(), row.row_id)
   pest_max_row_id = pest_rows.aggregate((Max('row_id')))
 
   data_dir = config_file.get('output', 'jsonoutdir')
@@ -239,9 +243,13 @@ def createInitialData(**kwargs):
             app_ndx += 1
         for pest in prod.pests_treated:
           if build_dict(lookups['pest_lookup'], pest.name, pest_ndx) == False:
-            models['pest_models'].append(build_pest_model(pest, pest_ndx, row_entry_date))
-            pest_ndx += 1
-
+            #Pest already in DB?
+            if (pest.name.lower() in existing_pests) == False:
+              models['pest_models'].append(build_pest_model(pest, pest_ndx, row_entry_date))
+              pest_ndx += 1
+            else:
+              if logger:
+                logger.debug("Pest: %s already in database" % (pest.name))
         if build_dict(lookups['type_lookup'], prod.pesticide_type.lower(), type_ndx) == False:
           models['type_models'].append(build_pesticide_type_model(prod.pesticide_type, type_ndx, row_entry_date))
           type_ndx += 1
