@@ -197,9 +197,10 @@ def createInitialData(**kwargs):
     'ai_models': [],
   }
   brands_with_ai = []
-  app_ndx = 1
-  #pest_ndx = pest_max_row_id['row_id__max'] + 1
+  #app_ndx = 1
   pest_ndx = 1
+  if pest_max_row_id['row_id__max']:
+    pest_ndx = pest_max_row_id['row_id__max'] + 1
   #Have to start index past the AIs already in database.
   ingr_ndx = 1
   if ai_max_row_id['row_id__max']:
@@ -279,16 +280,11 @@ def createInitialData(**kwargs):
       if obj['model'] == 'data_manager.Pest':
         #Change the pk so we don't get duplicate error.
         obj['pk'] = pest_ndx
-        append = True
-        #Check to see if the pest already exists in the list, if it does, let's
-        #use it and the image file from the initial data.
-        for pest_model in models['pest_models']:
-          if pest_model['fields']['name'] == obj['fields']['name']:
-            pest_model['fields']['image_url'] = obj['fields']['image_url']
-            append = False
+        #If we have the pest ndx already in the database, don't try and add it again.
+        for ndx, rec in enumerate(models['pest_models']):
+          if rec['fields']['name'] == obj['fields']['name']:
+            del rec[ndx]
             break
-        if append:
-          models['pest_models'].append(obj)
         pest_ndx += 1
   try:
     #Write the initial JSON data for each of the model types. Break them apart since
