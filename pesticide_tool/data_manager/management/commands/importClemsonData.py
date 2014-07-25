@@ -135,6 +135,21 @@ def createInitialData(**kwargs):
   config_file = ConfigParser.RawConfigParser()
   config_file.read(kwargs['config_file'])
 
+  #Pull in the initial data from Lisa's spreadsheet if it is available. We want to
+  #integrate the Pests into the output here.
+  try:
+    init_pesticide_obj = None
+    init_data_filename = config_file.get('initial_data', 'initial_data_file')
+    init_pesticide_data = open(init_data_filename, 'r')
+    #COnvert into object
+    init_pesticide_obj = json.load(init_pesticide_data)
+    init_pesticide_data.close()
+  except IOError,e:
+    if logger:
+      logger.exception(e)
+  except ConfigParser.Error, e:
+    if logger:
+      logger.exception(e)
   #We want to get a list of the active ingredients we have in the database that
   #have the calculations for toxicity so we don't overwrite them. When importing
   #the Clemson data, there are brands with active ingredients we don't have that
@@ -164,6 +179,9 @@ def createInitialData(**kwargs):
     build_dict(lookups['type_lookup'], row.name.lower(), row.row_id)
   p_type_max_row_id =  pesticide_type_rows.aggregate((Max('row_id')))
 
+  pest_rows = Pest.objects.all().order_by('name')
+  pest_max_row_id = pest_rows.aggregate((Max('row_id')))
+
   data_dir = config_file.get('output', 'jsonoutdir')
   initial_json = config_file.get('output', 'initial_json')
   brand_json = config_file.get('output', 'brand_only_init_json')
@@ -180,6 +198,7 @@ def createInitialData(**kwargs):
   }
   brands_with_ai = []
   app_ndx = 1
+  #pest_ndx = pest_max_row_id['row_id__max'] + 1
   pest_ndx = 1
   #Have to start index past the AIs already in database.
   ingr_ndx = ai_max_row_id['row_id__max'] + 1
@@ -249,6 +268,15 @@ def createInitialData(**kwargs):
       if logger:
         logger.info("Finished processing file: %s" % (file))
 
+  # We want to get the initial set of pests that have the images for the sub categories
+  # and add them in the mix.
+  if init_pesticide_obj:
+    for obj in init_pesticide_obj:
+      if obj['model'] == 'data_manager.Pest':
+        #Change the pk so we don't get duplicate error.
+        obj['pk'] = pest_ndx
+        models['pest_models'].append(obj)
+        pest_ndx += 1
   try:
     #Write the initial JSON data for each of the model types. Break them apart since
     #the data is pretty large.
