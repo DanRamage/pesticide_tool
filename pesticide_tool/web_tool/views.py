@@ -8,7 +8,7 @@ import simplejson
 from django.http import HttpResponse
 import logging
 
-logger = logging.getLogger(__name__)
+logger = logging.getLogger("pesticide_tool")
 
 """
 from django.http import HttpResponseRedirect, HttpResponsePermanentRedirect
