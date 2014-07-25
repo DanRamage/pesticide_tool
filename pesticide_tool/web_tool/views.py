@@ -40,15 +40,17 @@ def get_categories(request):
   return HttpResponse(simplejson.dumps(json))
 
 def get_pests_for_subcategory(request, sub_category):
+  if logger:
+    logger.info("View search param: %s" % (sub_category))
   search_term = sub_category
   if(len(search_term) == 0):
     search_term = request.GET['sub_category']
   if logger:
-    logger.info("View search param: %s" % (sub_category))
     logger.info("Begin get_pests_for_subcategory: %s" % (search_term))
 
   sub_cat = SubCategory.objects.all().filter(name=sub_category)
   json = {
-    "pests" : []
+    "pests" : [pest.toDict for pest in sub_cat.pests],
+    "success": True
   }
   return HttpResponse(simplejson.dumps(json))
