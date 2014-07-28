@@ -34,10 +34,10 @@ class ActiveIngredient(models.Model):
       warnings = [warning.toDict for warning in self.warnings.all()]
     pesticide_classes = []
     if self.pesticide_classes:
-      pesticide_classes = [pc.toDict for pc in self.pesticide_classes]
+      pesticide_classes = [pc.toDict for pc in self.pesticide_classes.all()]
     brands = []
     if self.brands:
-      brands = [brand.toDict for brand in self.brands]
+      brands = [brand.toDict for brand in self.brands.all()]
     ai = {
       "id" : self.row_id,
       "name": self.name,
