@@ -29,13 +29,13 @@ class ActiveIngredient(models.Model):
 
   @property
   def toDict(self):
-    warnings = None
+    warnings = []
     if self.warnings:
       warnings = [warning.toDict for warning in self.warnings.all()]
-    pesticide_classes = None
+    pesticide_classes = []
     if self.pesticide_classes:
       pesticide_classes = [pc.toDict for pc in self.pesticide_classes]
-    brands = None
+    brands = []
     if self.brands:
       brands = [brand.toDict for brand in self.brands]
     ai = {
