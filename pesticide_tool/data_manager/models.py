@@ -9,6 +9,9 @@
 # into your database.
 
 from django.db import models
+import logging
+
+logger = logging.getLogger("pesticide_tool")
 
 class ActiveIngredient(models.Model):
   row_id = models.IntegerField(primary_key=True)
