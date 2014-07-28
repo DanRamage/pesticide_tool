@@ -58,7 +58,7 @@ class PesticideClass(models.Model):
   def __unicode__(self):
     return self.name
 
-  @propery
+  @property
   def toDict(self):
     pc = {
       'id': self.row_id,
@@ -104,7 +104,7 @@ class Brand(models.Model):
       'pesticide_type': [pt.toDict for pt in self.pesticide_type],
       'active_ingredients': [ai.toDict for ai in self.active_ingredients],
       'application_areas': [aa.toDict for aa in self.application_areas],
-      'pests_treated': [pests.toDict for pest in self.pests_treated]
+      'pests_treated': [pest.toDict for pest in self.pests_treated]
     }
 
     return brand
@@ -136,7 +136,7 @@ class BrandFormulation(models.Model):
     formulation = {
       'id': self.row_id,
       'brand_name': self.name,
-      'active_ingredient': self.active_ingredient.display_name
+      'active_ingredient': self.active_ingredient.display_name,
       'percent_active_ingredient': self.percentage_active_ingredient
     }
     return formulation
@@ -200,9 +200,9 @@ class ApplicationArea(models.Model):
     return self.name
 
   @property
-  def toDict(self)
+  def toDict(self):
     aa = {
-      'id': row_id,
+      'id': self.row_id,
       'name': self.name
     }
 
