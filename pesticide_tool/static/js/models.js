@@ -331,6 +331,7 @@ function categoriesViewModel()
   }
   self.hashchanged = function(event)
   {
+    $('body').scrollTop(0);
     self.check_url();
   };
 
