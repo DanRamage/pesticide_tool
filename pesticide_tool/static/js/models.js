@@ -293,9 +293,7 @@ function categoriesViewModel()
       $.getJSON(url,
         {'sub_category': subCategory.name()},
         function (data) {
-          $.each(data.pests, function (ndx, pest) {
-            self.activeSubCategory().pests.append(pests);
-          });
+          self.activeSubCategory().buildPests(data.pests);
         }
       );
     }
@@ -324,7 +322,7 @@ function pestModel(config)
 {
   var self = this;
 
-  self.buttonData = new buttonModel(config.name, config.button_img);
+  self.buttonData = new buttonModel(config['display_name'], config['image_url']);
 
 
   /*
