@@ -299,6 +299,7 @@ function categoriesViewModel()
           subCategory.buildPests(data.pests);
           self.activeSubCategory(subCategory);
           self.setVisible('pest');
+          $('body').scrollTop(0);
           //Setup the hover functions for sub category buttons.
           $('#pests-hover-col .thumbnail').hover(
             function()
