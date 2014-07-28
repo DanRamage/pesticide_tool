@@ -142,7 +142,9 @@
       </div>
     </div>
     <div class="row">
-      <ul class="thumbnails" id="sub-hover-col" data-bind="foreach: activeSubCategory().pests">
+      <pre data-bind="text: JSON.stringify(ko.toJS(activeSubCategory().pests()), null, 2)"></pre>
+
+      <ul class="thumbnails" id="sub-hover-col" data-bind="foreach: activeSubCategory().pests()">
         <li class="col-md-3">
           <div class="thumbnail">
             <div class="caption">
