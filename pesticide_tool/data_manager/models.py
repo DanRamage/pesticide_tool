@@ -49,7 +49,7 @@ class ActiveIngredient(models.Model):
       "relative_potential_ecosystem_hazard": self.relative_potential_ecosystem_hazard,
       "warnings": warnings,
       "pesticide_classes": pesticide_classes,
-      "brands": self.brands
+      "brands": brands
     }
     return ai
 
