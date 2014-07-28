@@ -124,7 +124,8 @@ def build_active_ingredient(ingr, ndx, date):
       "name": ingr.active_ingredient,
       "display_name": ingr.active_ingredient,
       "cumulative_score": None,
-      "relative_potential_ecosystem_hazard": None
+      "relative_potential_ecosystem_hazard": None,
+      "brands": []
     }
   })
 
