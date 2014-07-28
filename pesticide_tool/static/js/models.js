@@ -325,8 +325,11 @@ function categoriesViewModel()
     self.setVisible('pest')
     //Get current hash which should represent the category.
     var url = $.param.fragment();
+    var hash = url + '/' + encodeURIComponent(pest.href());
+    var frag = $.param.fragment('', '#' + hash, 2);
+    $.bbq.pushState(frag);
 
-    var url = 'http://sccoastalpesticides.org/pesticide_tool/get_ai_for_pest';
+    url = 'http://sccoastalpesticides.org/pesticide_tool/get_ai_for_pest';
     $.getJSON(url,
       {
         'pest': pest.name()
