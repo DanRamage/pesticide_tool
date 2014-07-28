@@ -62,7 +62,7 @@ def get_ai_for_pest(request, pest):
   if logger:
     logger.info("Begin get_ai_for_pest: %s" % (search_term))
 
-  ai_list = ActiveIngredient.objects.filter(pests_treated__exact=search_term).order_by('cumulative_score')
+  ai_list = ActiveIngredient.objects.filter(pests_treated__display_name__exact=search_term).order_by('cumulative_score')
   json = {
     "ai_list" : [],
     "success": True
