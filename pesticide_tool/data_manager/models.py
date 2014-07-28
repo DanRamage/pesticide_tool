@@ -29,7 +29,15 @@ class ActiveIngredient(models.Model):
 
   @property
   def toDict(self):
-
+    warnings = None
+    if self.warnings:
+      warnings = [warning.toDict for warning in self.warnings.all()]
+    pesticide_classes = None
+    if self.pesticide_classes:
+      pesticide_classes = []
+    brands = None
+    if self.brands:
+      brands = []
     ai = {
       "id" : self.row_id,
       "name": self.name,
@@ -38,7 +46,7 @@ class ActiveIngredient(models.Model):
       "relative_potential_ecosystem_hazard": self.relative_potential_ecosystem_hazard,
 
     }
-
+    return ai
 
 class PesticideClass(models.Model):
   row_id = models.IntegerField(primary_key=True)
@@ -47,6 +55,14 @@ class PesticideClass(models.Model):
   name = models.CharField(unique=True, max_length=128)
   def __unicode__(self):
     return self.name
+
+  @propery
+  def toDict(self):
+    pc = {
+      'id': self.row_id,
+      'name': self.name
+    }
+    return pc
 
 class Brand(models.Model):
   row_id = models.IntegerField(primary_key=True)
@@ -73,6 +89,23 @@ class Brand(models.Model):
   def __unicode__(self):
     return self.name
 
+  @property
+  def toDict(self):
+    brand = {
+      'id': self.row_id,
+      'name': self.name,
+      'label_url': self.label_url,
+      'special_local_need': self.special_local_need,
+      'restricted_use': self.restricted_use,
+      'experimental_use': self.experimental_use,
+      'formulation': self.formulation,
+      'pesticide_type': [pt.toDict for pt in self.pesticide_type],
+      'active_ingredients': [ai.toDict for ai in self.active_ingredients],
+      'application_areas': [aa.toDict for aa in self.application_areas],
+      'pests_treated': [pests.toDict for pest in self.pests_treated]
+    }
+
+    return brand
 class Company(models.Model):
   row_id = models.IntegerField(primary_key=True)
   row_entry_date = models.DateTimeField(blank=True, null=True)
@@ -95,6 +128,16 @@ class BrandFormulation(models.Model):
 
   def __unicode__(self):
     return self.active_ingredient
+
+  @property
+  def toDict(self):
+    formulation = {
+      'id': self.row_id,
+      'brand_name': self.name,
+      'active_ingredient': self.active_ingredient.display_name
+      'percent_active_ingredient': self.percentage_active_ingredient
+    }
+    return formulation
 
 class Pest(models.Model):
   row_id = models.IntegerField(primary_key=True)
@@ -153,6 +196,15 @@ class ApplicationArea(models.Model):
 
   def __unicode__(self):
     return self.name
+
+  @property
+  def toDict(self)
+    aa = {
+      'id': row_id,
+      'name': self.name
+    }
+
+    return aa
 
 class Warning(models.Model):
   row_id = models.IntegerField(primary_key=True)
