@@ -44,7 +44,7 @@ def get_pests_for_subcategory(request, sub_category):
   if(len(search_term) == 0):
     search_term = request.GET['sub_category']
   if logger:
-    logger.info("Begin get_pests_for_subcategory: %s" % (search_term))
+    logger.debug("Begin get_pests_for_subcategory: %s" % (search_term))
 
   sub_cat = SubCategory.objects.filter(name__exact=search_term).prefetch_related('pests').all()[:1].get()
   json = {
@@ -52,7 +52,7 @@ def get_pests_for_subcategory(request, sub_category):
     "success": True
   }
   if logger:
-    logger.info("Finshied get_pests_for_subcategory. Returning %d pests" % (len(json['pests'])))
+    logger.debug("Finshied get_pests_for_subcategory. Returning %d pests" % (len(json['pests'])))
   return HttpResponse(simplejson.dumps(json))
 
 def get_ai_for_pest(request, pest):
@@ -60,7 +60,7 @@ def get_ai_for_pest(request, pest):
   if(len(search_term) == 0):
     search_term = request.GET['pest']
   if logger:
-    logger.info("Begin get_ai_for_pest: %s" % (search_term))
+    logger.debug("Begin get_ai_for_pest: %s" % (search_term))
 
   ai_list = ActiveIngredient.objects.filter(pests_treated__display_name__exact=search_term).order_by('cumulative_score')
   json = {
@@ -68,7 +68,7 @@ def get_ai_for_pest(request, pest):
     "success": True
   }
   if logger:
-    logger.info("Finshied get_ai_for_pest. Returning %d active ingredients" % (len(json['ai_list'])))
-    logger.info("Results: %s" % (ai_list)
+    logger.debug("Finshied get_ai_for_pest. Returning %d active ingredients" % (len(json['ai_list'])))
+    logger.debug("Results: %s" % (ai_list))
   return HttpResponse(simplejson.dumps(json))
 
