@@ -125,8 +125,10 @@ function subCategoryModel(name, config)
     });
     self.pests.sort(function(rec1, rec2)
     {
-      var name1 = rec1.buttonData.name();
-      var name2 = rec2.buttonData.name();
+      var name1 = rec1.name();
+      var name2 = rec2.name();
+      //var name1 = rec1.buttonData.name();
+      //var name2 = rec2.buttonData.name();
       if (name1 < name2)
          return -1;
       if (name1 > name2)
