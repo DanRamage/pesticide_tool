@@ -320,12 +320,20 @@ function categoriesViewModel()
     }
     return;
   };
-  self.pestTypeClicked = function(subCategory, event)
+  self.pestTypeClicked = function(pest, event)
   {
     self.setVisible('pest')
     //Get current hash which should represent the category.
     var url = $.param.fragment();
 
+    var url = 'http://sccoastalpesticides.org/pesticide_tool/get_ai_for_pest';
+    $.getJSON(url,
+      {
+        'pest': pest.name()
+      },
+      function(data) {
+      }
+    );
   }
   self.hashchanged = function(event)
   {
@@ -334,7 +342,7 @@ function categoriesViewModel()
     //the currect page.
     $('body').scrollTop(0);
     self.check_url();
-  };
+  }
 
 }
 

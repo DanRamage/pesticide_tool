@@ -175,7 +175,7 @@ class Warning(models.Model):
   admin_thumbnail.allow_tags = True
 
   @property
-  def toDict:
+  def toDict(self):
     warning = {
       'id': self.row_id,
       'name': self.name,
