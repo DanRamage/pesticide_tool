@@ -115,15 +115,15 @@ function subCategoryModel(name, config)
     href = name.replace(/ /g, '_');
   self.href = ko.observable(href || "");
 
-  self.pests = [];
+  self.pests = ko.ObservableArray([]);
 
   self.buildPests = function(pests)
   {
     $.each(pests, function(ndx, pest)
     {
-      self.pests.push(new pestModel(pest));
+      self.pests().push(new pestModel(pest));
     });
-    self.pests.sort(function(rec1, rec2)
+    self.pests().sort(function(rec1, rec2)
     {
       var name1 = rec1.name();
       var name2 = rec2.name();
