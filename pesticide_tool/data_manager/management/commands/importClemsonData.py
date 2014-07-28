@@ -90,7 +90,7 @@ def build_company_model(prod, ndx, date):
     }
   })
 def active_ingredient(ai_row, row_entry_date):
-  return({
+  ai = {
     "pk": ai_row.row_id,
     "model": "data_manager.ActiveIngredient",
     "fields":
@@ -100,12 +100,20 @@ def active_ingredient(ai_row, row_entry_date):
         "display_name": ai_row.display_name,
         "cumulative_score": ai_row.cumulative_score,
         "relative_potential_ecosystem_hazard": ai_row.relative_potential_ecosystem_hazard,
-        "warnings": [warning.row_id for warning in ai_row.warnings.all()],
-        "pests_treated": [pest.row_id for pest in ai_row.pests_treated.all()],
-        "pesticide_classes": [pc.row_id for pc in ai_row.pesticide_classes.all()],
         "brands": []
       }
-  })
+  }
+  warnings = [warning.row_id for warning in ai_row.warnings.all()]
+  if len(warnings):
+    ai['fields']['warnings'] = warnings
+  pests_treated = [pest.row_id for pest in ai_row.pests_treated.all()]
+  if len(pests_treated):
+    ai['fields']['pests_treated'] = warnings
+  pesticide_classes = [pc.row_id for pc in ai_row.pesticide_classes.all()],
+  if len(pesticide_classes):
+    ai['fields']['pesticide_classes'] = warnings
+
+  return ai
 def build_active_ingredient(ingr, ndx, date):
 
   return({
@@ -116,12 +124,7 @@ def build_active_ingredient(ingr, ndx, date):
       "name": ingr.active_ingredient,
       "display_name": ingr.active_ingredient,
       "cumulative_score": None,
-      "relative_potential_ecosystem_hazard": None,
-      "warnings": [],
-      "pests_treated": [],
-      "pesticide_classes": [],
-      "brands": []
-
+      "relative_potential_ecosystem_hazard": None
     }
   })
 
