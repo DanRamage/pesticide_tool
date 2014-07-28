@@ -296,9 +296,8 @@ function categoriesViewModel()
       $.getJSON(url,
         {'sub_category': subCategory.name()},
         function (data) {
+          subCategory.buildPests(data.pests);
           self.activeSubCategory(subCategory);
-          self.activeSubCategory().buildPests(data.pests);
-          self.setVisible('pest');
         }
       );
     }
@@ -306,8 +305,8 @@ function categoriesViewModel()
     else
     {
       self.activeSubCategory(subCategory);
-      self.setVisible('pest');
     }
+    self.setVisible('pest');
     return;
   };
   self.pestTypeClicked = function(subCategory, event)
