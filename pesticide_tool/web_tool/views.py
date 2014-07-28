@@ -51,4 +51,21 @@ def get_pests_for_subcategory(request, sub_category):
     "pests" : [pest.toDict for pest in sub_cat.pests.all()],
     "success": True
   }
+  if logger:
+    logger.info("Finshied get_pests_for_subcategory. Returning %d pests" % (len(json['pests'])))
   return HttpResponse(simplejson.dumps(json))
+
+def get_ai_for_pest(request, pest):
+  search_term = pest
+  if(len(search_term) == 0):
+    search_term = request.GET['pest']
+  if logger:
+    logger.info("Begin get_ai_for_pest: %s" % (search_term))
+
+  ai_list = ActiveIngredient.objects.filter(pests_treated__exact=search_term).order_by('cumulative_score')
+  json = {
+    "ai_list" : [],
+    "success": True
+  }
+  return HttpResponse(simplejson.dumps(json))
+

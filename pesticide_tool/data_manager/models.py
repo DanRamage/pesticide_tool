@@ -27,6 +27,18 @@ class ActiveIngredient(models.Model):
   def __unicode__(self):
     return self.name
 
+  @property
+  def toDict(self):
+
+    ai = {
+      "id" : self.row_id,
+      "name": self.name,
+      "display_name": self.display_name,
+      "cumulative_score": self.cumulative_score,
+      "relative_potential_ecosystem_hazard": self.relative_potential_ecosystem_hazard,
+
+    }
+
 
 class PesticideClass(models.Model):
   row_id = models.IntegerField(primary_key=True)
@@ -162,6 +174,15 @@ class Warning(models.Model):
   admin_thumbnail.short_description = 'Thumbnail'
   admin_thumbnail.allow_tags = True
 
+  @property
+  def toDict:
+    warning = {
+      'id': self.row_id,
+      'name': self.name,
+      'display_name': self.display_name,
+      'image_url': self.image_url
+    }
+    return warning
 
 class PestType(models.Model):
   row_id = models.IntegerField(primary_key=True)

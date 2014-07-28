@@ -310,7 +310,6 @@ function categoriesViewModel()
               $(this).find('.caption').slideUp(250); //.fadeOut(205)
             }
           );
-
         }
       );
     }
@@ -330,6 +329,9 @@ function categoriesViewModel()
   }
   self.hashchanged = function(event)
   {
+    //Force the page to the top whenever we change pages since most are long lists of pics.
+    //If we don't do this, when using the back key the previous page will pick up where we left
+    //the currect page.
     $('body').scrollTop(0);
     self.check_url();
   };
