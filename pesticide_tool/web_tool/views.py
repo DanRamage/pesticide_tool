@@ -67,5 +67,7 @@ def get_ai_for_pest(request, pest):
     "ai_list" : [ai.toDict for ai in ai_list.all()],
     "success": True
   }
+  if logger:
+    logger.info("Finshied get_ai_for_pest. Returning %d active ingredients" % (len(json['ai_list'])))
   return HttpResponse(simplejson.dumps(json))
 
