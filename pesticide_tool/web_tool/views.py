@@ -64,7 +64,7 @@ def get_ai_for_pest(request, pest):
 
   ai_list = ActiveIngredient.objects.filter(pests_treated__display_name__exact=search_term).order_by('cumulative_score')
   json = {
-    "ai_list" : [],
+    "ai_list" : [ai.toDict for ai in ai_list.all()],
     "success": True
   }
   return HttpResponse(simplejson.dumps(json))
