@@ -6,4 +6,5 @@ urlpatterns = patterns('',
     (r'^start', start_page),
     (r'^get_categories', get_categories),
     (r'^get_pests_for_subcategory/(?P<sub_category>[\w-]*)', get_pests_for_subcategory),
+    (r'^get_ai_for_pest/(?P<pest>[\w-]*)', get_ai_for_pest),
 )
