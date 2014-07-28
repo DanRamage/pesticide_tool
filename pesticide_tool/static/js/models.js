@@ -307,6 +307,18 @@ function categoriesViewModel()
       self.activeSubCategory(subCategory);
     }
     self.setVisible('pest');
+    //Setup the hover functions for sub category buttons.
+    $('#pests-hover-col .thumbnail').hover(
+      function()
+      {
+        $(this).find('.caption').slideDown(250); //.fadeIn(250)
+      },
+      function()
+      {
+        $(this).find('.caption').slideUp(250); //.fadeOut(205)
+      }
+    );
+
     return;
   };
   self.pestTypeClicked = function(subCategory, event)
