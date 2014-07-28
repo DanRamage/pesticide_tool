@@ -89,14 +89,39 @@ def build_company_model(prod, ndx, date):
       "epa_id": prod.company_number
     }
   })
-
+def active_ingredient(ai_row, row_entry_date):
+  return({
+    "pk": ai_row.row_id,
+    "model": "data_manager.ActiveIngredient",
+    "fields":
+      {
+        "row_entry_date": row_entry_date,
+        "name": ai_row.name,
+        "display_name": ai_row.display_name,
+        "cumulative_score": ai_row.cumulative_score,
+        "relative_potential_ecosystem_hazard": ai_row.relative_potential_ecosystem_hazard,
+        "warnings": [warning.row_id for warning in ai_row.warnings.all()],
+        "pests_treated": [pest.row_id for pest in ai_row.pests_treated.all()],
+        "pesticide_classes": [pc.row_id for pc in ai_row.pesticide_classes.all()],
+        "brands": []
+      }
+  })
 def build_active_ingredient(ingr, ndx, date):
+
   return({
     "pk": ndx,
     "model": "data_manager.ActiveIngredient",
     "fields": {
       "row_entry_date": date,
-      "name": ingr.active_ingredient
+      "name": ingr.active_ingredient,
+      "display_name": ingr.active_ingredient,
+      "cumulative_score": None,
+      "relative_potential_ecosystem_hazard": None,
+      "warnings": [],
+      "pests_treated": [],
+      "pesticide_classes": [],
+      "brands": []
+
     }
   })
 
@@ -168,9 +193,12 @@ def createInitialData(**kwargs):
     'form_lookup' : {},
     'type_lookup' :{}
   }
+  row_entry_date = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
-  ai_rows = ActiveIngredient.objects.all().order_by('name')
+  ai_models = {}
+  ai_rows = ActiveIngredient.objects.all().order_by('name').prefetch_related('warnings').prefetch_related('pests_treated').prefetch_related('pesticide_classes')
   for row in ai_rows:
+    ai_models[row.name] = active_ingredient(row, row_entry_date)
     calculated_ais.append(row.name)
     #For the existing AIs, build the lookups.
     build_dict(lookups['ai_lookup'], row.name.lower(), row.row_id)
@@ -191,7 +219,6 @@ def createInitialData(**kwargs):
   data_dir = config_file.get('output', 'jsonoutdir')
   initial_json = config_file.get('output', 'initial_json')
   brand_json = config_file.get('output', 'brand_only_init_json')
-  row_entry_date = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
   models = {
     'type_models': [],
@@ -262,14 +289,20 @@ def createInitialData(**kwargs):
 
         ai_for_brand = []
         for ingr in prod.active_ingredients:
+          """
           if build_dict(lookups['ai_lookup'], ingr.active_ingredient.lower(), ingr_ndx) == False:
             #Check to see if the active ingredient is one we already have in the DB.
-            if (ingr.active_ingredient in calculated_ais) == False:
+            #if (ingr.active_ingredient in calculated_ais) == False:
+            if(ingr.active_ingredient in ai_models) == False:
               models['ai_models'].append(build_active_ingredient(ingr, ingr_ndx, row_entry_date))
               ingr_ndx += 1
+          """
+          if (ingr.active_ingredient in ai_models) == False:
+            ai_models[ingr.active_ingredient] = build_active_ingredient(ingr, ingr_ndx, row_entry_date)
+
 
           #Build the formulation for the brand.
-          build_dict(lookups['form_lookup'],  prod.name + '_' + ingr.active_ingredient.lower(), form_ndx)
+          build_dict(lookups['form_lookup'],  prod.name + '_' + ingr.active_ingredient, form_ndx)
           ai_model = build_formulation(ingr, prod.name, form_ndx, row_entry_date, lookups)
           ai_for_brand.append(ai_model['pk'])
           models['form_models'].append(ai_model)
@@ -277,9 +310,18 @@ def createInitialData(**kwargs):
 
         brand_model = build_brand_model(prod, lookups, prod_ndx, row_entry_date, [])
         models['brand_models'].append(brand_model)
+        #Add the brand ID into the active ingredients.
+        if prod.name == 'ACE GREEN TURF PHOSPHORUS FREE WEED & FEED 29-0-3':
+          i = 0;
+        for ingr in prod.active_ingredients:
+          if ingr.active_ingredient in ai_models:
+            ai_models[ingr.active_ingredient]['fields']['brands'].append(brand_model['pk'])
+
         #Build the brand model that has the AI data.
         brand_model = build_brand_model(prod, lookups, prod_ndx, row_entry_date, ai_for_brand)
         brands_with_ai.append(brand_model)
+        #Build the brand list for the AI.
+        #ai_brands.append(brand)
       if logger:
         logger.info("Finished processing file: %s" % (file))
 
@@ -339,7 +381,7 @@ def createInitialData(**kwargs):
 
     file_name = "%s/active_ingredients.json" % (initial_json)
     out_file = open(file_name, "w")
-    out_file.write(json.dumps(models['ai_models'], sort_keys=True, indent=2 * ' '))
+    out_file.write(json.dumps(ai_models, sort_keys=True, indent=2 * ' '))
     out_file.close()
 
     file_name = "%s/brands.json" % (initial_json)
@@ -362,6 +404,7 @@ class Command(BaseCommand):
       make_option("--ImportFromCSV", dest="import_from_csv", action='store_true', default='false'),
       make_option("--StartingActiveIngredient", dest="starting_ingredient", default=None),
       make_option("--CreateInitialData", dest="create_init", action='store_true', default='false'),
+      make_option("--BuildAIBrands", dest="build_ai_brands", action='store_true', default='false'),
   )
 
   def handle(self, *args, **options):
@@ -373,6 +416,8 @@ class Command(BaseCommand):
       createInitialData(config_file = options['config_file'])
     if options['import_from_csv'] is True:
       queryClemsonCSVData(config_file = options['config_file'])
+    #if options['build_ai_brands'] is True:
+    #  buildBrandsForAIFromDb(config_file = options['config_file'])
     if logger:
       logger.info("Finished processing command")
     return
