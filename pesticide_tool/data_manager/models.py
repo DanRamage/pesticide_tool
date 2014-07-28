@@ -93,6 +93,18 @@ class Brand(models.Model):
 
   @property
   def toDict(self):
+    pt = []
+    if self.pesticide_type:
+      pt = [pt.toDict for pt in self.pesticide_type.all()]
+    ai = []
+    if self.active_ingredients:
+      ai = [ai.toDict for ai in self.active_ingredients.all()]
+    aa = []
+    if self.application_areas:
+      aa = [aa.toDict for aa in self.application_areas.all()]
+    pest = []
+    if self.pests_treated:
+      pest = [pest.toDict for pest in self.pests_treated.all()]
     brand = {
       'id': self.row_id,
       'name': self.name,
@@ -101,12 +113,13 @@ class Brand(models.Model):
       'restricted_use': self.restricted_use,
       'experimental_use': self.experimental_use,
       'formulation': self.formulation,
-      'pesticide_type': [pt.toDict for pt in self.pesticide_type],
-      'active_ingredients': [ai.toDict for ai in self.active_ingredients],
-      'application_areas': [aa.toDict for aa in self.application_areas],
-      'pests_treated': [pest.toDict for pest in self.pests_treated]
+      'pesticide_type': pt,
+      'active_ingredients': ai,
+      'application_areas': aa,
+      'pests_treated': pest
     }
-
+    if logger:
+      logger.debug("Brand: %s" % (brand))
     return brand
 class Company(models.Model):
   row_id = models.IntegerField(primary_key=True)
