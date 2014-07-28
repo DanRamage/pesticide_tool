@@ -69,6 +69,6 @@ def get_ai_for_pest(request, pest):
   }
   if logger:
     logger.debug("Finshied get_ai_for_pest. Returning %d active ingredients" % (len(json['ai_list'])))
-    logger.debug("Results: %s" % (ai_list))
+    logger.debug("Results: %s" % (json['ai_list']))
   return HttpResponse(simplejson.dumps(json))
 
