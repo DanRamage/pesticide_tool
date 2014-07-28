@@ -284,6 +284,7 @@ function categoriesViewModel()
   self.subCategoryClicked = function(subCategory, event)
   {
 
+    self.activeSubCategory(subCategory);
     //Get current hash which should represent the category.
     var url = $.param.fragment();
 
@@ -297,7 +298,7 @@ function categoriesViewModel()
         {'sub_category': subCategory.name()},
         function (data) {
           subCategory.buildPests(data.pests);
-          self.activeSubCategory(subCategory);
+          self.setVisible('pest');
           //Setup the hover functions for sub category buttons.
           $('#pests-hover-col .thumbnail').hover(
             function()
@@ -313,12 +314,10 @@ function categoriesViewModel()
         }
       );
     }
-    //Already asked for the pests for this sub category, so show them.
     else
     {
-      self.activeSubCategory(subCategory);
+      self.setVisible('pest');
     }
-    self.setVisible('pest');
     return;
   };
   self.pestTypeClicked = function(subCategory, event)
