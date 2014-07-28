@@ -119,6 +119,11 @@ function subCategoryModel(name, config)
 
   self.buildPests = function(pests)
   {
+    //Empty the array if there are entries.
+    if(self.activeSubCategory().pests().length)
+    {
+      self.activeSubCategory().pests().splice(0, self.activeSubCategory().pests().length);
+    }
     $.each(pests, function(ndx, pest)
     {
       self.pests().push(new pestModel(pest));
@@ -167,7 +172,7 @@ function categoriesViewModel()
           $.each(data.categories, function(ndx, categoryNfo) {
             //Construct the categoryModel.
             var catModel = new categoryModel(categoryNfo['name'], categoryNfo);
-            catModel.buildSubCategories(categoryNfo['sub_categories'])
+            catModel.buildSubCategories(categoryNfo['sub_categories']);
 
             self.categoryModels.push(catModel);
           });
@@ -279,19 +284,18 @@ function categoriesViewModel()
   self.subCategoryClicked = function(subCategory, event)
   {
 
-    self.activeSubCategory(subCategory);
-
     //Get current hash which should represent the category.
     var url = $.param.fragment();
 
     var hash = url + '/' + encodeURIComponent(subCategory.href());
     var frag = $.param.fragment('', '#' + hash, 2);
     $.bbq.pushState(frag);
-    if( self.activeSubCategory().pests.length == 0) {
+    if( self.activeSubCategory().pests().length == 0) {
       var url = 'http://sccoastalpesticides.org/pesticide_tool/get_pests_for_subcategory';
       $.getJSON(url,
         {'sub_category': subCategory.name()},
         function (data) {
+          self.activeSubCategory(subCategory);
           self.activeSubCategory().buildPests(data.pests);
           self.setVisible('pest');
         }
