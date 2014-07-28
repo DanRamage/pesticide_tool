@@ -135,6 +135,7 @@ function subCategoryModel(name, config)
         return 1;
       return 0;
     });
+    var i = 0;
   };
 }
 
