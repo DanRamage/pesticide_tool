@@ -108,10 +108,10 @@ def active_ingredient(ai_row, row_entry_date):
     ai['fields']['warnings'] = warnings
   pests_treated = [pest.row_id for pest in ai_row.pests_treated.all()]
   if len(pests_treated):
-    ai['fields']['pests_treated'] = warnings
+    ai['fields']['pests_treated'] = pests_treated
   pesticide_classes = [pc.row_id for pc in ai_row.pesticide_classes.all()],
   if len(pesticide_classes):
-    ai['fields']['pesticide_classes'] = warnings
+    ai['fields']['pesticide_classes'] = pesticide_classes
 
   return ai
 def build_active_ingredient(ingr, ndx, date):
