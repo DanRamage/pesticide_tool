@@ -284,7 +284,6 @@ function categoriesViewModel()
   self.subCategoryClicked = function(subCategory, event)
   {
 
-    self.activeSubCategory(subCategory);
     //Get current hash which should represent the category.
     var url = $.param.fragment();
 
@@ -298,6 +297,7 @@ function categoriesViewModel()
         {'sub_category': subCategory.name()},
         function (data) {
           subCategory.buildPests(data.pests);
+          self.activeSubCategory(subCategory);
           self.setVisible('pest');
           //Setup the hover functions for sub category buttons.
           $('#pests-hover-col .thumbnail').hover(
@@ -316,6 +316,7 @@ function categoriesViewModel()
     }
     else
     {
+      self.activeSubCategory(subCategory);
       self.setVisible('pest');
     }
     return;
