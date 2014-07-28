@@ -318,27 +318,9 @@ function subCategoriesViewModel()
 function pestModel(config)
 {
   var self = this;
+  ko.utils.extend(self, new buttonModel(config['display_name'], config['image_url']));
 
-  self.buttonData = new buttonModel(config['display_name'], config['image_url']);
-
-
-  /*
-  self.getPestData = function()
-  {
-    $.ajax({
-        url: app.pestDataQueryUrl,
-        dataType: 'json',
-        success: function(result)
-        {
-          app.configData = result;
-        },
-        error: function(result)
-        {
-        }
-    });
-
-  }
-  */
+  //self.buttonData = new buttonModel(config['display_name'], config['image_url']);
 
   return self;
 }
