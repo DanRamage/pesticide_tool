@@ -115,7 +115,7 @@ function subCategoryModel(name, config)
     href = name.replace(/ /g, '_');
   self.href = ko.observable(href || "");
 
-  self.pests = ko.ObservableArray([]);
+  self.pests = ko.observableArray([]);
 
   self.buildPests = function(pests)
   {
