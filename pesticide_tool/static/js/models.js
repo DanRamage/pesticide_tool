@@ -120,9 +120,9 @@ function subCategoryModel(name, config)
   self.buildPests = function(pests)
   {
     //Empty the array if there are entries.
-    if(self.activeSubCategory().pests().length)
+    if(self.pests().length)
     {
-      self.activeSubCategory().pests().splice(0, self.activeSubCategory().pests().length);
+      self.pests().splice(0, self.pests().length);
     }
     $.each(pests, function(ndx, pest)
     {
