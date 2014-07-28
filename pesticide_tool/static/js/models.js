@@ -290,7 +290,7 @@ function categoriesViewModel()
     var hash = url + '/' + encodeURIComponent(subCategory.href());
     var frag = $.param.fragment('', '#' + hash, 2);
     $.bbq.pushState(frag);
-    if( self.activeSubCategory().pests().length == 0) {
+    if( subCategory.pests().length == 0) {
       var url = 'http://sccoastalpesticides.org/pesticide_tool/get_pests_for_subcategory';
       $.getJSON(url,
         {'sub_category': subCategory.name()},
