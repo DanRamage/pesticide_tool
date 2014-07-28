@@ -256,9 +256,6 @@ function categoriesViewModel()
     self.setVisible('sub_category');
     var hash = encodeURIComponent(category.href());
     var frag = $.param.fragment('', '#' + hash, 2);
-    //location.hash = frag;
-    //var state = {};
-    //state['category'] = hash;
     $.bbq.pushState(frag);
 
     self.activeCategory(category);
@@ -278,7 +275,6 @@ function categoriesViewModel()
   };
   self.subCategoryClicked = function(subCategory, event)
   {
-    self.setVisible('pest');
 
     self.activeSubCategory(subCategory);
 
@@ -294,6 +290,7 @@ function categoriesViewModel()
         {'sub_category': subCategory.name()},
         function (data) {
           self.activeSubCategory().buildPests(data.pests);
+          self.setVisible('pest');
         }
       );
     }
