@@ -130,5 +130,36 @@
     </div>
   </div>
   <!-- End of choose your pest page -->
+  <!-- Start of sub-category pests page -->
+  <div class="container" id='pest_sub_category' data-bind="visible: visibleTracker['pest']()">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="text-center">
+          <h3>
+            <span data-bind="text: activeSubCategory().name"></span>
+          </h3>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <ul class="thumbnails" id="sub-hover-col" data-bind="foreach: activeSubCategory().pests">
+        <li class="col-md-3">
+          <div class="thumbnail">
+            <div class="caption">
+              <h4><span data-bind="text: name()"></span></h4>
+              <p>
+                <a role="button" data-bind="click: $parent.subCategoryClicked" class="btn btn-default">Search »</a>
+                <!--
+                <a role="button" data-bind="attr: {href: '#pest_subcategory/' + href()}" class="btn btn-default">Search »</a>
+                -->
+              </p>
+            </div>
+            <img data-bind="attr: {src: img()}" class="img-responsive">
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- End of choose your pest page -->
 
 {% endblock %}

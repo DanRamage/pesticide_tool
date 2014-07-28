@@ -148,6 +148,7 @@ function categoriesViewModel()
 
   self.categoryModels = ko.observableArray([]); //The major categories of pests.
   self.activeCategory = ko.observable(new categoryModel());
+  self.activeSubCategory = ko.observable(new subCategoryModel());
   self.currentUrl = ''
 
   self.initialize = function()
@@ -275,27 +276,38 @@ function categoriesViewModel()
 
     return;
   };
-  self.subCategoryClicked = function(category, event)
+  self.subCategoryClicked = function(subCategory, event)
   {
+    self.setVisible('pest');
+
+    self.activeSubCategory(subCategory);
+
     //Get current hash which should represent the category.
     var url = $.param.fragment();
 
-    var hash = url + '/' + encodeURIComponent(category.href());
+    var hash = url + '/' + encodeURIComponent(subCategory.href());
     var frag = $.param.fragment('', '#' + hash, 2);
-    //location.hash = url;
-    //var state = {};
-    //state['sub_category'] = url;
     $.bbq.pushState(frag);
-
-    var url = 'http://sccoastalpesticides.org/pesticide_tool/get_pests_for_subcategory';
-    $.getJSON(url,
-        {'sub_category' : category.name()},
-        function(data) {
+    if( self.activeSubCategory.pests.length == 0) {
+      var url = 'http://sccoastalpesticides.org/pesticide_tool/get_pests_for_subcategory';
+      $.getJSON(url,
+        {'sub_category': subCategory.name()},
+        function (data) {
+          $.each(data.pests, function (ndx, pest) {
+            self.activeSubCategory.pests.append(pests);
+          });
         }
-    );
+      );
+    }
     return;
   };
+  self.pestTypeClicked = function(subCategory, event)
+  {
+    self.setVisible('pest')
+    //Get current hash which should represent the category.
+    var url = $.param.fragment();
 
+  }
   self.hashchanged = function(event)
   {
     self.check_url();
