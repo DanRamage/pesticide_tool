@@ -20,7 +20,7 @@ class ActiveIngredient(models.Model):
   name = models.TextField(unique=True)
   display_name = models.TextField(unique=False)
   cumulative_score = models.FloatField(blank=True, null=True)
-  relative_potential_ecosystem_hazard = models.CharField(max_length=50, blank=True)
+  relative_potential_ecosystem_hazard = models.CharField(max_length=50, blank=True, null=True)
 
   warnings = models.ManyToManyField('Warning', blank=True, null=True)
   pests_treated = models.ManyToManyField('Pest')
