@@ -383,9 +383,12 @@ def createInitialData(**kwargs):
     out_file.write(json.dumps(models['form_models'], sort_keys=True, indent=2 * ' '))
     out_file.close()
 
+    for key in ai_models:
+      models['ai_models'].append(ai_models[key])
+
     file_name = "%s/active_ingredients.json" % (initial_json)
     out_file = open(file_name, "w")
-    out_file.write(json.dumps(ai_models, sort_keys=True, indent=2 * ' '))
+    out_file.write(json.dumps(models['ai_models'], sort_keys=True, indent=2 * ' '))
     out_file.close()
 
     file_name = "%s/brands.json" % (initial_json)
