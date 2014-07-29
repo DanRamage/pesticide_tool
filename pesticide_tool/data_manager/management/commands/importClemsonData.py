@@ -264,11 +264,13 @@ def createInitialData(**kwargs):
           prod.load_from_json(brand)
           product_list.append(prod)
 
+      #ADd the AI to our list if it is one that exists in our initial data that Lisa created.
+      if input_active_ingr in models['ai_models']:
+        models['ai_models'].append(ai_models[input_active_ingr])
+
       #Make a pass to build the unique values for the active ingredients, pests, and application
       #sites. In the initial JSON we have to create their models and we need their pk ids to
       #make the relations.
-      models['ai_models'].append(ai_models[input_active_ingr])
-
       for prod in product_list:
         if logger:
           logger.debug("Processing brand: %s" % (prod.name))
