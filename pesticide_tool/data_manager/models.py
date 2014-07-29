@@ -18,7 +18,7 @@ class ActiveIngredient(models.Model):
   row_entry_date = models.DateTimeField(blank=True, null=True)
   row_update_date = models.DateTimeField(blank=True, null=True)
   name = models.TextField(unique=True)
-  display_name = models.CharField(max_length=256, blank=True)
+  display_name = models.TextField(unique=False)
   cumulative_score = models.FloatField(blank=True, null=True)
   relative_potential_ecosystem_hazard = models.CharField(max_length=50, blank=True)
 
