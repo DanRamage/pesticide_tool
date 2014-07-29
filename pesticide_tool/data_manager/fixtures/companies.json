@@ -1,2198 +1,2999 @@
 [
   {
     "fields": {
-      "epa_id": 9688,
-      "name": "CHEMSICO",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 279,
+      "name": "FMC CORP - AG SOLUTIONS",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 1
   },
   {
     "fields": {
-      "epa_id": 9198,
-      "name": "ANDERSONS LAWN FERTILIZER DIV INC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 59639,
+      "name": "VALENT USA CORPORATION",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 2
   },
   {
     "fields": {
-      "epa_id": 81927,
-      "name": "ALLIGARE LLC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 7969,
+      "name": "BASF CORP",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 3
   },
   {
     "fields": {
-      "epa_id": 4,
-      "name": "BONIDE PRODUCTS INC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 524,
+      "name": "MONSANTO CO",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 4
   },
   {
     "fields": {
-      "epa_id": 5905,
-      "name": "HELENA CHEMICAL COMPANY",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 66330,
+      "name": "ARYSTA LIFESCIENCE NORTH AMERICA LLC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 5
   },
   {
     "fields": {
-      "epa_id": 82757,
-      "name": "TURF CARE SUPPLY CORP",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 72155,
+      "name": "BAYER ADVANCED",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 6
   },
   {
     "fields": {
-      "epa_id": 7401,
-      "name": "VOLUNTARY PURCHASING GROUPS",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 85827,
+      "name": "GREEN LIGHT",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 7
   },
   {
     "fields": {
-      "epa_id": 961,
-      "name": "LEBANON SEABOARD CORP",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 73327,
+      "name": "SWISS FARMS PRODUCTS INC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 8
   },
   {
     "fields": {
-      "epa_id": 1381,
-      "name": "WINFIELD SOLUTIONS LLC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 432,
+      "name": "BAYER ENVIRONMENTAL SCIENCE",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 9
   },
   {
     "fields": {
-      "epa_id": 32802,
-      "name": "HOWARD JOHNSON'S ENT INC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 264,
+      "name": "BAYER CROPSCIENCE",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 10
   },
   {
     "fields": {
-      "epa_id": 538,
-      "name": "SCOTTS COMPANY THE",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 9198,
+      "name": "ANDERSONS LAWN FERTILIZER DIV INC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 11
   },
   {
     "fields": {
-      "epa_id": 10404,
-      "name": "LESCO INC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 52287,
+      "name": "HARRELL'S LLC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 12
   },
   {
     "fields": {
-      "epa_id": 228,
-      "name": "NUFARM AMERICAS INC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 7401,
+      "name": "VOLUNTARY PURCHASING GROUPS",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 13
   },
   {
     "fields": {
-      "epa_id": 59144,
-      "name": "GRO TEC INC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 62719,
+      "name": "DOW AGROSCIENCES LLC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 14
   },
   {
     "fields": {
-      "epa_id": 34704,
-      "name": "LOVELAND PRODUCTS INC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 58185,
+      "name": "EVERRIS NA INC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 15
   },
   {
     "fields": {
-      "epa_id": 8845,
-      "name": "SPECTRUM GROUP",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 869,
+      "name": "GREEN LIGHT COMPANY",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 16
   },
   {
     "fields": {
-      "epa_id": 2217,
-      "name": "PBI-GORDON CORP",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 961,
+      "name": "LEBANON SEABOARD CORP",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 17
   },
   {
     "fields": {
-      "epa_id": 73327,
-      "name": "SWISS FARMS PRODUCTS INC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 66222,
+      "name": "MAKHTESHIM AGAN OF NORTH AMERICA INC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 18
   },
   {
     "fields": {
-      "epa_id": 7946,
-      "name": "MAUGET, J J",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 67760,
+      "name": "CHEMINOVA INC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 19
   },
   {
     "fields": {
-      "epa_id": 83979,
-      "name": "ROTAM NORTH AMERICA INC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 829,
+      "name": "SOUTHERN AG INSECTICIDES INC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 20
   },
   {
     "fields": {
-      "epa_id": 83923,
-      "name": "ENSYSTEX IV INC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 83222,
+      "name": "DIRECT AG SOURCE LLC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 21
   },
   {
     "fields": {
-      "epa_id": 66222,
-      "name": "MAKHTESHIM AGAN OF NORTH AMERICA INC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 19713,
+      "name": "DREXEL CHEMICAL COMPANY",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 22
   },
   {
     "fields": {
-      "epa_id": 53883,
-      "name": "CONTROL SOLUTIONS INC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 499,
+      "name": "WHITMIRE MICRO-GEN RESEARCH",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 23
   },
   {
     "fields": {
-      "epa_id": 100,
-      "name": "SYNGENTA CROP PROTECTION LLC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 71058,
+      "name": "INTEGRATED AGRIBUSINESS PROFESSIONALS",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 24
   },
   {
     "fields": {
-      "epa_id": 3095,
-      "name": "PIC CORPORATION",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 55467,
+      "name": "TENKOZ INC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 25
   },
   {
     "fields": {
-      "epa_id": 74779,
-      "name": "RAINBOW TREECARE SCIENTIFIC ADVANCEMENTS",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 5905,
+      "name": "HELENA CHEMICAL COMPANY",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 26
   },
   {
     "fields": {
-      "epa_id": 279,
-      "name": "FMC CORP - AG SOLUTIONS",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 8845,
+      "name": "SPECTRUM GROUP",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 27
   },
   {
     "fields": {
-      "epa_id": 85945,
-      "name": "CROP$MART LLC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 34704,
+      "name": "LOVELAND PRODUCTS INC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 28
   },
   {
     "fields": {
-      "epa_id": 40849,
-      "name": "ZEP COMMERCIAL SALES AND SERVICE",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 8329,
+      "name": "CLARKE MOSQUITO CONTROL PRODUCTS",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 29
   },
   {
     "fields": {
-      "epa_id": 69117,
-      "name": "ARBORSYSTEMS LLC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 228,
+      "name": "NUFARM AMERICAS INC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 30
   },
   {
     "fields": {
-      "epa_id": 73079,
-      "name": "ROCKWELL LABS LTD",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 33658,
+      "name": "GHARDA CHEMICALS LIMITED",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 31
   },
   {
     "fields": {
-      "epa_id": 1001,
-      "name": "CLEARY CHEMICALS LLC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 11930,
+      "name": "GIL MFG INC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 32
   },
   {
     "fields": {
-      "epa_id": 70506,
-      "name": "UNITED PHOSPHORUS INC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 53883,
+      "name": "CONTROL SOLUTIONS INC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 33
   },
   {
     "fields": {
-      "epa_id": 499,
-      "name": "WHITMIRE MICRO-GEN RESEARCH",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 13283,
+      "name": "RAINBOW TECHNOLOGY CORP",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 34
   },
   {
     "fields": {
-      "epa_id": 4822,
-      "name": "JOHNSON, S C & SON INC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 3342,
+      "name": "CAPE FEAR CHEMICALS INC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 35
   },
   {
     "fields": {
-      "epa_id": 59807,
-      "name": "OHP INC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 89391,
+      "name": "INNVICTIS CROP CARE LLC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 36
   },
   {
     "fields": {
-      "epa_id": 82542,
-      "name": "SOURCE DYNAMICS LLC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 39039,
+      "name": "Y-TEX CORPORATION",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 37
   },
   {
     "fields": {
-      "epa_id": 400,
-      "name": "CHEMTURA CORPORATION",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 1381,
+      "name": "WINFIELD SOLUTIONS LLC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 38
   },
   {
     "fields": {
-      "epa_id": 84229,
-      "name": "TIDE INTERNATIONAL USA INC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 352,
+      "name": "DUPONT, E I DE NEMOURS & CO",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 39
   },
   {
     "fields": {
-      "epa_id": 1021,
-      "name": "MCLAUGHLIN GORMLEY KING",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 50932,
+      "name": "WOODSTREAM CORPORATION",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 40
   },
   {
     "fields": {
-      "epa_id": 39039,
-      "name": "Y-TEX CORPORATION",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 1475,
+      "name": "WILLERT HOME PRODUCTS INC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 41
   },
   {
     "fields": {
-      "epa_id": 67760,
-      "name": "CHEMINOVA INC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 86203,
+      "name": "MITSUI CHEMICALS AGRO INC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 42
   },
   {
     "fields": {
-      "epa_id": 74578,
-      "name": "ARBORJET INC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 85581,
+      "name": "SCHUYLER LLC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 43
   },
   {
     "fields": {
-      "epa_id": 85678,
-      "name": "REDEAGLE INTL LLC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 2217,
+      "name": "PBI-GORDON CORP",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 44
   },
   {
     "fields": {
-      "epa_id": 83222,
-      "name": "DIRECT AG SOURCE LLC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 239,
+      "name": "ORTHO GROUP",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 45
   },
   {
     "fields": {
-      "epa_id": 72159,
-      "name": "AGRISEL USA INC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 10163,
+      "name": "GOWAN COMPANY",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 46
   },
   {
     "fields": {
-      "epa_id": 802,
-      "name": "LILLY MILLER BRANDS",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 83399,
+      "name": "CEVA ANIMAL HEALTH",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 47
   },
   {
     "fields": {
-      "epa_id": 89391,
-      "name": "INNVICTIS CROP CARE LLC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 2724,
+      "name": "WELLMARK INT'L",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 48
   },
   {
     "fields": {
-      "epa_id": 5481,
-      "name": "AMVAC CHEMICAL CORP",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 74779,
+      "name": "RAINBOW TREECARE SCIENTIFIC ADVANCEMENTS",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 49
   },
   {
     "fields": {
-      "epa_id": 239,
-      "name": "ORTHO GROUP",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 9688,
+      "name": "CHEMSICO",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 50
   },
   {
     "fields": {
-      "epa_id": 84886,
-      "name": "AGRIUM ADVANCED TECHNOLOGIES US INC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 4,
+      "name": "BONIDE PRODUCTS INC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 51
   },
   {
     "fields": {
-      "epa_id": 55467,
-      "name": "TENKOZ INC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 59144,
+      "name": "GRO TEC INC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 52
   },
   {
     "fields": {
-      "epa_id": 352,
-      "name": "DUPONT, E I DE NEMOURS & CO",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 8378,
+      "name": "KNOX FERTILIZER CO",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 53
   },
   {
     "fields": {
-      "epa_id": 524,
-      "name": "MONSANTO CO",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 32802,
+      "name": "HOWARD JOHNSON'S ENT INC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 54
   },
   {
     "fields": {
-      "epa_id": 72693,
-      "name": "UNIVERSAL CROP PROTECTION ALLIANCE",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 10404,
+      "name": "LESCO INC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 55
   },
   {
     "fields": {
-      "epa_id": 829,
-      "name": "SOUTHERN AG INSECTICIDES INC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 90098,
+      "name": "CENTRAL GARDEN & PET GARDEN DIVISION",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 56
   },
   {
     "fields": {
-      "epa_id": 19713,
-      "name": "DREXEL CHEMICAL COMPANY",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 86793,
+      "name": "INFINITY FERTLIZERS INC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 57
   },
   {
     "fields": {
-      "epa_id": 62719,
-      "name": "DOW AGROSCIENCES LLC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 538,
+      "name": "SCOTTS COMPANY THE",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 58
   },
   {
     "fields": {
-      "epa_id": 7969,
-      "name": "BASF CORP",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 82898,
+      "name": "NUTRIENTS PLUS LLC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 59
   },
   {
     "fields": {
-      "epa_id": 73342,
-      "name": "AMBRANDS",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 82757,
+      "name": "TURF CARE SUPPLY CORP",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 60
   },
   {
     "fields": {
-      "epa_id": 60063,
-      "name": "SIPCAM AGRO USA INC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 2293,
+      "name": "DAVEY TREE EXPERT CO",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 61
   },
   {
     "fields": {
-      "epa_id": 9404,
-      "name": "SUNNILAND CORP",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 86064,
+      "name": "UNITED TURF ALLIANCE",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 62
   },
   {
     "fields": {
-      "epa_id": 10163,
-      "name": "GOWAN COMPANY",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 100,
+      "name": "SYNGENTA CROP PROTECTION LLC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 63
   },
   {
     "fields": {
-      "epa_id": 86064,
-      "name": "UNITED TURF ALLIANCE",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 88774,
+      "name": "WATER ENVIRONMENTAL TECHNOLOGIES INC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 64
   },
   {
     "fields": {
-      "epa_id": 39967,
-      "name": "LANXESS CORP",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 82866,
+      "name": "GREENLEAF CHEMICAL LLC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 65
   },
   {
     "fields": {
-      "epa_id": 89442,
-      "name": "PRIME SOURCE LLC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 81943,
+      "name": "PHOENIX ENVIRONMENTAL CARE LLC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 66
   },
   {
     "fields": {
-      "epa_id": 85579,
-      "name": "GULFSTREAM HOME AND GARDEN",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 67690,
+      "name": "SEPRO CORPORATION",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 67
   },
   {
     "fields": {
-      "epa_id": 264,
-      "name": "BAYER CROPSCIENCE",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 59807,
+      "name": "OHP INC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 68
   },
   {
     "fields": {
-      "epa_id": 87290,
-      "name": "WILLOWOOD LLC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 82917,
+      "name": "FINE AMERICAS INC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 69
   },
   {
     "fields": {
-      "epa_id": 85827,
-      "name": "GREEN LIGHT",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 80697,
+      "name": "ZHEJIANG TIDE CROPSCIENCE CO LTD",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 70
   },
   {
     "fields": {
-      "epa_id": 52287,
-      "name": "HARRELL'S LLC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 2935,
+      "name": "WILBUR-ELLIS COMPANY",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 71
   },
   {
     "fields": {
-      "epa_id": 869,
-      "name": "GREEN LIGHT COMPANY",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 73342,
+      "name": "AMBRANDS",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 72
   },
   {
     "fields": {
-      "epa_id": 534,
-      "name": "GROWMARK INC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 88783,
+      "name": "SUMMIT AGRO USA LLC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 73
   },
   {
     "fields": {
-      "epa_id": 38167,
-      "name": "SETRE CHEMICAL CO",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 81927,
+      "name": "ALLIGARE LLC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 74
   },
   {
     "fields": {
-      "epa_id": 2749,
-      "name": "ACETO AGRICULTURAL CHEMICALS CORP",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 34913,
+      "name": "SSI MAXIM CO INC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 75
   },
   {
     "fields": {
-      "epa_id": 346,
-      "name": "ALPHARMA LLC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 84009,
+      "name": "RAGAN AND MASSEY INC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 76
   },
   {
     "fields": {
-      "epa_id": 432,
-      "name": "BAYER ENVIRONMENTAL SCIENCE",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 89442,
+      "name": "PRIME SOURCE LLC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 77
   },
   {
     "fields": {
-      "epa_id": 66330,
-      "name": "ARYSTA LIFESCIENCE NORTH AMERICA LLC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 70506,
+      "name": "UNITED PHOSPHORUS INC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 78
   },
   {
     "fields": {
-      "epa_id": 68543,
-      "name": "BENGAL PRODUCTS",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 270,
+      "name": "FARNAM COMPANIES INC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 79
   },
   {
     "fields": {
-      "epa_id": 3008,
-      "name": "OSMOSE INC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 36272,
+      "name": "MYSTIC CHEMICAL PRODUCTS CO",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 80
   },
   {
     "fields": {
-      "epa_id": 83520,
-      "name": "TACOMA AG LLC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 8119,
+      "name": "MATSON LLC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 81
   },
   {
     "fields": {
-      "epa_id": 48234,
-      "name": "REGAL CHEMICAL COMPANY",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 71004,
+      "name": "TECHPAC LLC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 82
   },
   {
     "fields": {
-      "epa_id": 84009,
-      "name": "RAGAN AND MASSEY INC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 72112,
+      "name": "PROKOZ INC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 83
   },
   {
     "fields": {
-      "epa_id": 55809,
-      "name": "CRC INDUSTRIES INC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 61842,
+      "name": "TESSENDERLO KERLEY INC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 84
   },
   {
     "fields": {
-      "epa_id": 87245,
-      "name": "FERTI TECHNOLOGIES",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 89333,
+      "name": "AGRIA CANADA INC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 85
   },
   {
     "fields": {
-      "epa_id": 71004,
-      "name": "TECHPAC LLC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 1001,
+      "name": "CLEARY CHEMICALS LLC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 86
   },
   {
     "fields": {
-      "epa_id": 1663,
-      "name": "GRANT LABORATORIES INC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 89459,
+      "name": "CENTRAL GARDEN & PET COMPANY",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 87
   },
   {
     "fields": {
-      "epa_id": 75111,
-      "name": "MAID BRANDS INC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 2596,
+      "name": "HARTZ MOUNTAIN CORPORATION",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 88
   },
   {
     "fields": {
-      "epa_id": 83996,
-      "name": "NATURCHEM INC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 65331,
+      "name": "MERIAL LIMITED",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 89
   },
   {
     "fields": {
-      "epa_id": 73748,
-      "name": "UNIVAR ENVIRONMENTAL SCIENCES",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 2517,
+      "name": "SERGEANT'S PET CARE PRODUCTS INC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 90
   },
   {
     "fields": {
-      "epa_id": 81824,
-      "name": "ENSYSTEX II INC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 12281,
+      "name": "DURVET INC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 91
   },
   {
     "fields": {
-      "epa_id": 85342,
-      "name": "WET AND FORGET USA",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 83333,
+      "name": "TRADE WINDS INC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 92
   },
   {
     "fields": {
-      "epa_id": 54705,
-      "name": "LAWN & GARDEN PRODUCTS INC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 71327,
+      "name": "VEREENS STORES",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 93
   },
   {
     "fields": {
-      "epa_id": 75341,
-      "name": "OSMOSE UTILITIES SERVICES INC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 83070,
+      "name": "ADVAN LLC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 94
   },
   {
     "fields": {
-      "epa_id": 86417,
-      "name": "AGRA-MED INTERNATIONAL",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 11556,
+      "name": "BAYER HEALTHCARE",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 95
   },
   {
     "fields": {
-      "epa_id": 2517,
-      "name": "SERGEANT'S PET CARE PRODUCTS INC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 72113,
+      "name": "SPECKOZ INC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 96
   },
   {
     "fields": {
-      "epa_id": 7138,
-      "name": "SOUTHERN STATES COOPERATIVE",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 72159,
+      "name": "AGRISEL USA INC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 97
   },
   {
     "fields": {
-      "epa_id": 72113,
-      "name": "SPECKOZ INC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 83851,
+      "name": "AMTIDE LLC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 98
   },
   {
     "fields": {
-      "epa_id": 3342,
-      "name": "CAPE FEAR CHEMICALS INC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 400,
+      "name": "CHEMTURA CORPORATION",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 99
   },
   {
     "fields": {
-      "epa_id": 86656,
-      "name": "LIGHTHOUSE PRODUCT SERVICES",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 1021,
+      "name": "MCLAUGHLIN GORMLEY KING",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 100
   },
   {
     "fields": {
-      "epa_id": 59639,
-      "name": "VALENT USA CORPORATION",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 83923,
+      "name": "ENSYSTEX IV INC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 101
   },
   {
     "fields": {
-      "epa_id": 62190,
-      "name": "ARCH WOOD PROTECTION INC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 3008,
+      "name": "OSMOSE INC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 102
   },
   {
     "fields": {
-      "epa_id": 64405,
-      "name": "NISUS CORPORATION",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 83997,
+      "name": "VIANCE LLC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 103
   },
   {
     "fields": {
-      "epa_id": 48377,
-      "name": "AP & G INC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 86417,
+      "name": "AGRA-MED INTERNATIONAL",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 104
   },
   {
     "fields": {
-      "epa_id": 71653,
-      "name": "GENICS INC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 86417,
+      "name": "AGRA-MED INTERNATIONAL LLC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 105
   },
   {
     "fields": {
-      "epa_id": 1677,
-      "name": "ECOLAB INC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 69117,
+      "name": "ARBORSYSTEMS LLC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 106
   },
   {
     "fields": {
-      "epa_id": 1475,
-      "name": "WILLERT HOME PRODUCTS INC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 87276,
+      "name": "ENVINCIO LLC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 107
   },
   {
     "fields": {
-      "epa_id": 68362,
-      "name": "BUGS ETC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 40940,
+      "name": "ASPEN VETERINARY RESOURCES LTD",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 108
   },
   {
     "fields": {
-      "epa_id": 65527,
-      "name": "FLEA STOPPERS",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 87245,
+      "name": "FERTI TECHNOLOGIES",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 109
   },
   {
     "fields": {
-      "epa_id": 65161,
-      "name": "EVERGREEN PET SUPPLY INC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 54705,
+      "name": "LAWN & GARDEN PRODUCTS INC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 110
   },
   {
     "fields": {
-      "epa_id": 3,
-      "name": "HARRIS, P F MFG CO",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 73748,
+      "name": "UNIVAR ENVIRONMENTAL SCIENCES",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 111
   },
   {
     "fields": {
-      "epa_id": 75269,
-      "name": "RUTGERS ORGANICS GMBH",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 74578,
+      "name": "ARBORJET INC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 112
   },
   {
     "fields": {
-      "epa_id": 56,
-      "name": "REGGUIDE",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 7946,
+      "name": "MAUGET, J J",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 113
   },
   {
     "fields": {
-      "epa_id": 70227,
-      "name": "DIACON TECHNOLOGIES LTD",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 73079,
+      "name": "ROCKWELL LABS LTD",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 114
   },
   {
     "fields": {
-      "epa_id": 1624,
-      "name": "U S BORAX INC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 72500,
+      "name": "SCIMETRICS LTD CORP",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 115
   },
   {
     "fields": {
-      "epa_id": 70106,
-      "name": "US GREENFIBER INC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 83979,
+      "name": "ROTAM NORTH AMERICA INC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 116
   },
   {
     "fields": {
-      "epa_id": 4972,
-      "name": "PROTEXALL PRODUCTS INC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 42750,
+      "name": "ALBAUGH INC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 117
   },
   {
     "fields": {
-      "epa_id": 3487,
-      "name": "BACON PRODUCTS CORPORATION",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 64014,
+      "name": "TREE TECH",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 118
   },
   {
     "fields": {
-      "epa_id": 9608,
-      "name": "COPPER BRITE INC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 83529,
+      "name": "SHARDA USA LLC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 119
   },
   {
     "fields": {
-      "epa_id": 59111,
-      "name": "RX FOR FLEAS INC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 88747,
+      "name": "BRAZEN BULL LLC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 120
   },
   {
     "fields": {
-      "epa_id": 83896,
-      "name": "PEST CONTROL INSULATION SYSTEMS",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 39967,
+      "name": "LANXESS CORP",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 121
   },
   {
     "fields": {
-      "epa_id": 149,
-      "name": "SENORET CHEMICAL",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 88975,
+      "name": "PRIMERATURF INC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 122
   },
   {
     "fields": {
-      "epa_id": 51311,
-      "name": "HBC CHEMICAL CO",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 89819,
+      "name": "NPK INDUSTRIES",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 123
   },
   {
     "fields": {
-      "epa_id": 44757,
-      "name": "INCIDE TECHNOLOGIES INC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 82957,
+      "name": "ENSYSTEX III INC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 124
   },
   {
     "fields": {
-      "epa_id": 270,
-      "name": "FARNAM COMPANIES INC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 87290,
+      "name": "WILLOWOOD LLC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 125
   },
   {
     "fields": {
-      "epa_id": 36272,
-      "name": "MYSTIC CHEMICAL PRODUCTS CO",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 43419,
+      "name": "AEROXON INC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 126
   },
   {
     "fields": {
-      "epa_id": 72155,
-      "name": "BAYER ADVANCED",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 86656,
+      "name": "LIGHTHOUSE PRODUCT SERVICES",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 127
   },
   {
     "fields": {
-      "epa_id": 8119,
-      "name": "MATSON LLC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 534,
+      "name": "GROWMARK INC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 128
   },
   {
     "fields": {
-      "epa_id": 72112,
-      "name": "PROKOZ INC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 38167,
+      "name": "SETRE CHEMICAL CO",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 129
   },
   {
     "fields": {
-      "epa_id": 61842,
-      "name": "TESSENDERLO KERLEY INC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 2749,
+      "name": "ACETO AGRICULTURAL CHEMICALS CORP",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 130
   },
   {
     "fields": {
-      "epa_id": 2935,
-      "name": "WILBUR-ELLIS COMPANY",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 68543,
+      "name": "BENGAL PRODUCTS",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 131
   },
   {
     "fields": {
-      "epa_id": 67071,
-      "name": "THOR SPECIALTIES INC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 47332,
+      "name": "WALLA WALLA ENVIRONMENTAL INC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 132
   },
   {
     "fields": {
-      "epa_id": 73884,
-      "name": "FIBERLOCK TECHNOLOGIES INC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 67867,
+      "name": "BUGG PRODUCTS LLC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 133
   },
   {
     "fields": {
-      "epa_id": 769,
-      "name": "VALUE GARDEN SUPPLY LLC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 498,
+      "name": "CHASE PRODUCTS COMPANY",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 134
   },
   {
     "fields": {
-      "epa_id": 1448,
-      "name": "BUCKMAN LABORATORIES",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 3487,
+      "name": "BACON PRODUCTS CORPORATION",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 135
   },
   {
     "fields": {
-      "epa_id": 42519,
-      "name": "LUXEMBOURG-PAMOL INC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 40849,
+      "name": "ZEP COMMERCIAL SALES AND SERVICE",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 136
   },
   {
     "fields": {
-      "epa_id": 37686,
-      "name": "CHEM NUT INC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 3,
+      "name": "HARRIS, P F MFG CO",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 137
   },
   {
     "fields": {
-      "epa_id": 1258,
-      "name": "ARCH CHEMICALS INC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 56,
+      "name": "REGGUIDE",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 138
   },
   {
     "fields": {
-      "epa_id": 1529,
-      "name": "INTERNATIONAL SPECIALTY PRODUCTS",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 10807,
+      "name": "AMREP INC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 139
   },
   {
     "fields": {
-      "epa_id": 74075,
-      "name": "INTACE",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 69587,
+      "name": "RUST-OLEUM CORP",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 140
   },
   {
     "fields": {
-      "epa_id": 71581,
-      "name": "ISK BIOCIDES INC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 4822,
+      "name": "JOHNSON, S C & SON INC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 141
   },
   {
     "fields": {
-      "epa_id": 81943,
-      "name": "PHOENIX ENVIRONMENTAL CARE LLC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 54382,
+      "name": "INTERVET INC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 142
   },
   {
     "fields": {
-      "epa_id": 73220,
-      "name": "FARMSAVER.COM LLC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 149,
+      "name": "SENORET CHEMICAL",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 143
   },
   {
     "fields": {
-      "epa_id": 83070,
-      "name": "ADVAN LLC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 1270,
+      "name": "ZEP INC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 144
   },
   {
     "fields": {
-      "epa_id": 71058,
-      "name": "INTEGRATED AGRIBUSINESS PROFESSIONALS",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 67071,
+      "name": "THOR SPECIALTIES INC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 145
   },
   {
     "fields": {
-      "epa_id": 8329,
-      "name": "CLARKE MOSQUITO CONTROL PRODUCTS",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 60063,
+      "name": "SIPCAM AGRO USA INC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 146
   },
   {
     "fields": {
-      "epa_id": 33658,
-      "name": "GHARDA CHEMICALS LIMITED",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 73884,
+      "name": "FIBERLOCK TECHNOLOGIES INC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 147
   },
   {
     "fields": {
-      "epa_id": 11930,
-      "name": "GIL MFG INC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 769,
+      "name": "VALUE GARDEN SUPPLY LLC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 148
   },
   {
     "fields": {
-      "epa_id": 13283,
-      "name": "RAINBOW TECHNOLOGY CORP",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 62190,
+      "name": "ARCH WOOD PROTECTION INC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 149
   },
   {
     "fields": {
-      "epa_id": 42750,
-      "name": "ALBAUGH INC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 1448,
+      "name": "BUCKMAN LABORATORIES",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 150
   },
   {
     "fields": {
-      "epa_id": 11556,
-      "name": "BAYER HEALTHCARE",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 42519,
+      "name": "LUXEMBOURG-PAMOL INC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 151
   },
   {
     "fields": {
-      "epa_id": 47000,
-      "name": "CHEM-TECH LTD",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 37686,
+      "name": "CHEM NUT INC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 152
   },
   {
     "fields": {
-      "epa_id": 1543,
-      "name": "YOUNG, W F INC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 72693,
+      "name": "UNIVERSAL CROP PROTECTION ALLIANCE",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 153
   },
   {
     "fields": {
-      "epa_id": 79533,
-      "name": "WISCONSIN PHARMACAL CO",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 48234,
+      "name": "REGAL CHEMICAL COMPANY",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 154
   },
   {
     "fields": {
-      "epa_id": 79529,
-      "name": "BLACK FLAG BRANDS",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 1258,
+      "name": "ARCH CHEMICALS INC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 155
   },
   {
     "fields": {
-      "epa_id": 84151,
-      "name": "MANNA PRO PRODUCTS LLC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 1529,
+      "name": "INTERNATIONAL SPECIALTY PRODUCTS",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 156
   },
   {
     "fields": {
-      "epa_id": 478,
-      "name": "REALEX",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 74075,
+      "name": "INTACE",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 157
   },
   {
     "fields": {
-      "epa_id": 50830,
-      "name": "TEC LABS INC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 71581,
+      "name": "ISK BIOCIDES INC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 158
   },
   {
     "fields": {
-      "epa_id": 10350,
-      "name": "3M",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 7138,
+      "name": "SOUTHERN STATES COOPERATIVE",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 159
   },
   {
     "fields": {
-      "epa_id": 56575,
-      "name": "TENDER CORP",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 85588,
+      "name": "AGSURF CORP",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 160
   },
   {
     "fields": {
-      "epa_id": 11861,
-      "name": "PRO CHEM INC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 83520,
+      "name": "TACOMA AG LLC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 161
   },
   {
     "fields": {
-      "epa_id": 1553,
-      "name": "MOMAR INC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 85945,
+      "name": "CROP$MART LLC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 162
   },
   {
     "fields": {
-      "epa_id": 7754,
-      "name": "ARI",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 84229,
+      "name": "TIDE INTERNATIONAL USA INC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 163
   },
   {
     "fields": {
-      "epa_id": 74289,
-      "name": "CORETEX PRODUCTS INC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 64240,
+      "name": "COMBAT INSECT CONTROL SYSTEMS",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 164
   },
   {
     "fields": {
-      "epa_id": 56058,
-      "name": "DIHOMA INC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 70585,
+      "name": "NOVARTIS ANIMAL HEALTH US INC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 165
   },
   {
     "fields": {
-      "epa_id": 40208,
-      "name": "LAWSON PRODUCTS INC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 84742,
+      "name": "MERIDIAN ANIMAL HEALTH",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 166
   },
   {
     "fields": {
-      "epa_id": 498,
-      "name": "CHASE PRODUCTS COMPANY",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 2382,
+      "name": "VIRBAC AH INC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 167
   },
   {
     "fields": {
-      "epa_id": 121,
-      "name": "SPECTRUM - CUTTER",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 88967,
+      "name": "STASON ANIMAL HEALTH INC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 168
   },
   {
     "fields": {
-      "epa_id": 51147,
-      "name": "VERTELLUS PERFORMANCE MATERIALS INC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 88832,
+      "name": "PETMED EXPRESS INC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 169
   },
   {
     "fields": {
-      "epa_id": 13051,
-      "name": "ATCO INTERNATIONAL",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 3134,
+      "name": "VETOQUINOL USA INC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 170
   },
   {
     "fields": {
-      "epa_id": 48139,
-      "name": "HILTON HEAD LABORATORIES INC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 88966,
+      "name": "TRU PRODIGY",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 171
   },
   {
     "fields": {
-      "epa_id": 58188,
-      "name": "SAWYER PRODUCTS",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 88082,
+      "name": "American Vet Sciences LLC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 172
   },
   {
     "fields": {
-      "epa_id": 10807,
-      "name": "AMREP INC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 84886,
+      "name": "AGRIUM ADVANCED TECHNOLOGIES US INC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 173
   },
   {
     "fields": {
-      "epa_id": 1270,
-      "name": "ZEP INC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 35512,
+      "name": "HOWARD FERTILIZER & CHEMICAL",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 174
   },
   {
     "fields": {
-      "epa_id": 11694,
-      "name": "ITW PROFESSIONAL BRANDS",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 83558,
+      "name": "MAKHTESHIM AGAN OF N AMERICA INC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 175
   },
   {
     "fields": {
-      "epa_id": 54326,
-      "name": "CHROMATE INDUSTRIAL CORP",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 83984,
+      "name": "BULLOCH FERTILIZER CO INC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 176
   },
   {
     "fields": {
-      "epa_id": 11547,
-      "name": "SHARE CORP",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 86869,
+      "name": "SELECT SOURCE LLC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 177
   },
   {
     "fields": {
-      "epa_id": 305,
-      "name": "WPC BRANDS INC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 25,
+      "name": "ADVANTIS TECHNOLOGIES INC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 178
   },
   {
     "fields": {
-      "epa_id": 66114,
-      "name": "CHECK-MARK",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 3095,
+      "name": "PIC CORPORATION",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 179
   },
   {
     "fields": {
-      "epa_id": 10900,
-      "name": "SHERWIN WILLIAMS",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 82542,
+      "name": "SOURCE DYNAMICS LLC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 180
   },
   {
     "fields": {
-      "epa_id": 47332,
-      "name": "WALLA WALLA ENVIRONMENTAL INC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 48813,
+      "name": "BRANDT CONSOLIDATED INC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 181
   },
   {
     "fields": {
-      "epa_id": 67867,
-      "name": "BUGG PRODUCTS LLC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 83598,
+      "name": "ESPOMA CO",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 182
   },
   {
     "fields": {
-      "epa_id": 2724,
-      "name": "WELLMARK INT'L",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 67425,
+      "name": "ECOSMART",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 183
   },
   {
     "fields": {
-      "epa_id": 69587,
-      "name": "RUST-OLEUM CORP",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 72642,
+      "name": "ELANCO ANIMAL HEALTH",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 184
   },
   {
     "fields": {
-      "epa_id": 54382,
-      "name": "INTERVET INC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 6665,
+      "name": "GRO GREEN INC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 185
   },
   {
     "fields": {
-      "epa_id": 8378,
-      "name": "KNOX FERTILIZER CO",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 68562,
+      "name": "TOTAL SOLUTIONS",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 186
   },
   {
     "fields": {
-      "epa_id": 90098,
-      "name": "CENTRAL GARDEN & PET GARDEN DIVISION",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 88050,
+      "name": "SMARTVET USA PTY LTD",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 187
   },
   {
     "fields": {
-      "epa_id": 86793,
-      "name": "INFINITY FERTLIZERS INC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 121,
+      "name": "SPECTRUM - CUTTER",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 188
   },
   {
     "fields": {
-      "epa_id": 82898,
-      "name": "NUTRIENTS PLUS LLC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 74530,
+      "name": "HELM AGRO US INC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 189
   },
   {
     "fields": {
-      "epa_id": 87346,
-      "name": "SPRA-GREEN LAWN FERT LLC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 73006,
+      "name": "LG INTERNATIONAL AMERICA INC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 190
   },
   {
     "fields": {
-      "epa_id": 86203,
-      "name": "MITSUI CHEMICALS AGRO INC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 85579,
+      "name": "GULFSTREAM HOME AND GARDEN",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 191
   },
   {
     "fields": {
-      "epa_id": 85581,
-      "name": "SCHUYLER LLC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 478,
+      "name": "REALEX",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 192
   },
   {
     "fields": {
-      "epa_id": 83399,
-      "name": "CEVA ANIMAL HEALTH",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 305,
+      "name": "WPC BRANDS INC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 193
   },
   {
     "fields": {
-      "epa_id": 71327,
-      "name": "VEREENS STORES",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 86153,
+      "name": "DEVGEN US",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 194
   },
   {
     "fields": {
-      "epa_id": 35512,
-      "name": "HOWARD FERTILIZER & CHEMICAL",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 1543,
+      "name": "YOUNG, W F INC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 195
   },
   {
     "fields": {
-      "epa_id": 89459,
-      "name": "CENTRAL GARDEN & PET COMPANY",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 82123,
+      "name": "ALLERGY TECHNOLOGIES LLC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 196
   },
   {
     "fields": {
-      "epa_id": 2596,
-      "name": "HARTZ MOUNTAIN CORPORATION",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 81824,
+      "name": "ENSYSTEX II INC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 197
   },
   {
     "fields": {
-      "epa_id": 65331,
-      "name": "MERIAL LIMITED",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 84813,
+      "name": "UNIVERSAL PEST SOLUTIONS LP",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 198
   },
   {
     "fields": {
-      "epa_id": 12281,
-      "name": "DURVET INC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 5481,
+      "name": "AMVAC CHEMICAL CORP",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 199
   },
   {
     "fields": {
-      "epa_id": 83333,
-      "name": "TRADE WINDS INC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 38505,
+      "name": "UNITED CHEMICAL & SUPPLY CO INC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 200
   },
   {
     "fields": {
-      "epa_id": 64240,
-      "name": "COMBAT INSECT CONTROL SYSTEMS",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 86291,
+      "name": "PRECISION CONTROL TECHNOLOGY INC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 201
   },
   {
     "fields": {
-      "epa_id": 70585,
-      "name": "NOVARTIS ANIMAL HEALTH US INC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 89974,
+      "name": "TOYOTA MOTOR SALES USA INC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 202
   },
   {
     "fields": {
-      "epa_id": 84742,
-      "name": "MERIDIAN ANIMAL HEALTH",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 1553,
+      "name": "MOMAR INC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 203
   },
   {
     "fields": {
-      "epa_id": 2382,
-      "name": "VIRBAC AH INC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 13051,
+      "name": "ATCO INTERNATIONAL",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 204
   },
   {
     "fields": {
-      "epa_id": 88967,
-      "name": "STASON ANIMAL HEALTH INC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 13103,
+      "name": "AERO CHEMICAL CO",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 205
   },
   {
     "fields": {
-      "epa_id": 88832,
-      "name": "PETMED EXPRESS INC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 10637,
+      "name": "GRAINGER W W INC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 206
   },
   {
     "fields": {
-      "epa_id": 3134,
-      "name": "VETOQUINOL USA INC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 56575,
+      "name": "TENDER CORP",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 207
   },
   {
     "fields": {
-      "epa_id": 88966,
-      "name": "TRU PRODIGY",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 11861,
+      "name": "PRO CHEM INC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 208
   },
   {
     "fields": {
-      "epa_id": 88082,
-      "name": "American Vet Sciences LLC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 15297,
+      "name": "BIO-DERM LABORATORIES",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 209
   },
   {
     "fields": {
-      "epa_id": 67690,
-      "name": "SEPRO CORPORATION",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 79529,
+      "name": "BLACK FLAG BRANDS",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 210
   },
   {
     "fields": {
-      "epa_id": 25,
-      "name": "ADVANTIS TECHNOLOGIES INC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 82440,
+      "name": "UNISOURCE WORLDWIDE INC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 211
   },
   {
     "fields": {
-      "epa_id": 84237,
-      "name": "SOLERA ATO LLC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 74621,
+      "name": "BUG STOMPER",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 212
   },
   {
     "fields": {
-      "epa_id": 88783,
-      "name": "SUMMIT AGRO USA LLC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 81021,
+      "name": "STAR HORSE PRODUCTS NV INC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 213
   },
   {
     "fields": {
-      "epa_id": 34913,
-      "name": "SSI MAXIM CO INC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 6959,
+      "name": "CESSCO INC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 214
   },
   {
     "fields": {
-      "epa_id": 83851,
-      "name": "AMTIDE LLC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 706,
+      "name": "CLAIRE MANUFACTURING CO",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 215
   },
   {
     "fields": {
-      "epa_id": 58185,
-      "name": "EVERRIS NA INC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 79533,
+      "name": "WISCONSIN PHARMACAL CO",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 216
   },
   {
     "fields": {
-      "epa_id": 83997,
-      "name": "VIANCE LLC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 73992,
+      "name": "VALUE SMART PRODUCTS",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 217
   },
   {
     "fields": {
-      "epa_id": 86417,
-      "name": "AGRA-MED INTERNATIONAL LLC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 5741,
+      "name": "SPARTAN CHEMICAL COMPANY INC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 218
   },
   {
     "fields": {
-      "epa_id": 87276,
-      "name": "ENVINCIO LLC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 55809,
+      "name": "CRC INDUSTRIES INC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 219
   },
   {
     "fields": {
-      "epa_id": 40940,
-      "name": "ASPEN VETERINARY RESOURCES LTD",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 65544,
+      "name": "CUT HEAL ANIMAL CARE PRODUCTS INC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 220
   },
   {
     "fields": {
-      "epa_id": 72500,
-      "name": "SCIMETRICS LTD CORP",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 71,
+      "name": "PERRIGO L CO",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 221
   },
   {
     "fields": {
-      "epa_id": 64014,
-      "name": "TREE TECH",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 56783,
+      "name": "ECOHEALTH INC.",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 222
   },
   {
     "fields": {
-      "epa_id": 83529,
-      "name": "SHARDA USA LLC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 2781,
+      "name": "HAPPY JACK INC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 223
   },
   {
     "fields": {
-      "epa_id": 88747,
-      "name": "BRAZEN BULL LLC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 1769,
+      "name": "NCH CORPORATION",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 224
   },
   {
     "fields": {
-      "epa_id": 88975,
-      "name": "PRIMERATURF INC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 75111,
+      "name": "MAID BRANDS INC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 225
   },
   {
     "fields": {
-      "epa_id": 89819,
-      "name": "NPK INDUSTRIES",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 8856,
+      "name": "SPRAYWAY INC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 226
   },
   {
     "fields": {
-      "epa_id": 82957,
-      "name": "ENSYSTEX III INC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 50404,
+      "name": "SCIENTIFIC COORDINATION",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 227
   },
   {
     "fields": {
-      "epa_id": 43419,
-      "name": "AEROXON INC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 1007,
+      "name": "PFIZER INC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 228
   },
   {
     "fields": {
-      "epa_id": 12455,
-      "name": "BELL LABORATORIES",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 1677,
+      "name": "ECOLAB INC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 229
   },
   {
     "fields": {
-      "epa_id": 86153,
-      "name": "DEVGEN US",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 44446,
+      "name": "QUESTVAPCO CORP",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 230
   },
   {
     "fields": {
-      "epa_id": 88050,
-      "name": "SMARTVET USA PTY LTD",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 66963,
+      "name": "ESPREE ANIMAL PRODUCTS INC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 231
   },
   {
     "fields": {
-      "epa_id": 74530,
-      "name": "HELM AGRO US INC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 81041,
+      "name": "BIKEL INTL INC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 232
   },
   {
     "fields": {
-      "epa_id": 86869,
-      "name": "SELECT SOURCE LLC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 64405,
+      "name": "NISUS CORPORATION",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 233
   },
   {
     "fields": {
-      "epa_id": 73006,
-      "name": "LG INTERNATIONAL AMERICA INC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 13799,
+      "name": "FOUR PAWS PRODUCTS",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 234
   },
   {
     "fields": {
-      "epa_id": 89333,
-      "name": "AGRIA CANADA INC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 20686,
+      "name": "REESE PHARMACEUTICAL CO",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 235
   },
   {
     "fields": {
-      "epa_id": 85588,
-      "name": "AGSURF CORP",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 80203,
+      "name": "STARENSIER INC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 236
   },
   {
     "fields": {
-      "epa_id": 50932,
-      "name": "WOODSTREAM CORPORATION",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 1663,
+      "name": "GRANT LABORATORIES INC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 237
   },
   {
     "fields": {
-      "epa_id": 83558,
-      "name": "MAKHTESHIM AGAN OF N AMERICA INC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 66114,
+      "name": "CHECK-MARK",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 238
   },
   {
     "fields": {
-      "epa_id": 83984,
-      "name": "BULLOCH FERTILIZER CO INC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 59613,
+      "name": "EARTH CITY RESOURCES",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 239
   },
   {
     "fields": {
-      "epa_id": 2293,
-      "name": "DAVEY TREE EXPERT CO",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 402,
+      "name": "HILL MFG CO INC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 240
   },
   {
     "fields": {
-      "epa_id": 88774,
-      "name": "WATER ENVIRONMENTAL TECHNOLOGIES INC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 74843,
+      "name": "INSECT SHIELD LLC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 241
   },
   {
     "fields": {
-      "epa_id": 82866,
-      "name": "GREENLEAF CHEMICAL LLC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 7754,
+      "name": "ARI",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 242
   },
   {
     "fields": {
-      "epa_id": 82917,
-      "name": "FINE AMERICAS INC",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 10320,
+      "name": "HANDI-CLEAN PRODUCTS INC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 243
   },
   {
     "fields": {
-      "epa_id": 80697,
-      "name": "ZHEJIANG TIDE CROPSCIENCE CO LTD",
-      "row_entry_date": "2014-06-26 18:58:33"
+      "epa_id": 73103,
+      "name": "DAIRY SOLUTIONS INC",
+      "row_entry_date": "2014-07-29 19:26:42"
     },
     "model": "data_manager.Company",
     "pk": 244
+  },
+  {
+    "fields": {
+      "epa_id": 40208,
+      "name": "LAWSON PRODUCTS INC",
+      "row_entry_date": "2014-07-29 19:26:42"
+    },
+    "model": "data_manager.Company",
+    "pk": 245
+  },
+  {
+    "fields": {
+      "epa_id": 48665,
+      "name": "SHOO-FLY",
+      "row_entry_date": "2014-07-29 19:26:42"
+    },
+    "model": "data_manager.Company",
+    "pk": 246
+  },
+  {
+    "fields": {
+      "epa_id": 3862,
+      "name": "ABC COMPOUNDING CO INC",
+      "row_entry_date": "2014-07-29 19:26:42"
+    },
+    "model": "data_manager.Company",
+    "pk": 247
+  },
+  {
+    "fields": {
+      "epa_id": 55392,
+      "name": "MANNA PRO CORP",
+      "row_entry_date": "2014-07-29 19:26:42"
+    },
+    "model": "data_manager.Company",
+    "pk": 248
+  },
+  {
+    "fields": {
+      "epa_id": 45745,
+      "name": "MIDLAB INC",
+      "row_entry_date": "2014-07-29 19:26:42"
+    },
+    "model": "data_manager.Company",
+    "pk": 249
+  },
+  {
+    "fields": {
+      "epa_id": 6218,
+      "name": "SUMMIT CHEMICAL CO",
+      "row_entry_date": "2014-07-29 19:26:42"
+    },
+    "model": "data_manager.Company",
+    "pk": 250
+  },
+  {
+    "fields": {
+      "epa_id": 75406,
+      "name": "INSIGHT PHARMACEUTICALS CORP",
+      "row_entry_date": "2014-07-29 19:26:42"
+    },
+    "model": "data_manager.Company",
+    "pk": 251
+  },
+  {
+    "fields": {
+      "epa_id": 83588,
+      "name": "INT'L TEXTILE GROUP",
+      "row_entry_date": "2014-07-29 19:26:42"
+    },
+    "model": "data_manager.Company",
+    "pk": 252
+  },
+  {
+    "fields": {
+      "epa_id": 65516,
+      "name": "NU-CALGON",
+      "row_entry_date": "2014-07-29 19:26:42"
+    },
+    "model": "data_manager.Company",
+    "pk": 253
+  },
+  {
+    "fields": {
+      "epa_id": 44084,
+      "name": "VEDCO INC",
+      "row_entry_date": "2014-07-29 19:26:42"
+    },
+    "model": "data_manager.Company",
+    "pk": 254
+  },
+  {
+    "fields": {
+      "epa_id": 82392,
+      "name": "PINEBELT PROCESSING INC",
+      "row_entry_date": "2014-07-29 19:26:42"
+    },
+    "model": "data_manager.Company",
+    "pk": 255
+  },
+  {
+    "fields": {
+      "epa_id": 21165,
+      "name": "PYRANHA INC",
+      "row_entry_date": "2014-07-29 19:26:42"
+    },
+    "model": "data_manager.Company",
+    "pk": 256
+  },
+  {
+    "fields": {
+      "epa_id": 51463,
+      "name": "PERSONAL CARE PRODUCTS INC",
+      "row_entry_date": "2014-07-29 19:26:42"
+    },
+    "model": "data_manager.Company",
+    "pk": 257
+  },
+  {
+    "fields": {
+      "epa_id": 655,
+      "name": "PRENTISS LLC",
+      "row_entry_date": "2014-07-29 19:26:42"
+    },
+    "model": "data_manager.Company",
+    "pk": 258
+  },
+  {
+    "fields": {
+      "epa_id": 84151,
+      "name": "MANNA PRO PRODUCTS LLC",
+      "row_entry_date": "2014-07-29 19:26:42"
+    },
+    "model": "data_manager.Company",
+    "pk": 259
+  },
+  {
+    "fields": {
+      "epa_id": 47000,
+      "name": "CHEM-TECH LTD",
+      "row_entry_date": "2014-07-29 19:26:42"
+    },
+    "model": "data_manager.Company",
+    "pk": 260
+  },
+  {
+    "fields": {
+      "epa_id": 10900,
+      "name": "SHERWIN WILLIAMS",
+      "row_entry_date": "2014-07-29 19:26:42"
+    },
+    "model": "data_manager.Company",
+    "pk": 261
+  },
+  {
+    "fields": {
+      "epa_id": 54326,
+      "name": "CHROMATE INDUSTRIAL CORP",
+      "row_entry_date": "2014-07-29 19:26:42"
+    },
+    "model": "data_manager.Company",
+    "pk": 262
+  },
+  {
+    "fields": {
+      "epa_id": 1190,
+      "name": "DALEY INTERNATIONAL",
+      "row_entry_date": "2014-07-29 19:26:42"
+    },
+    "model": "data_manager.Company",
+    "pk": 263
+  },
+  {
+    "fields": {
+      "epa_id": 58188,
+      "name": "SAWYER PRODUCTS",
+      "row_entry_date": "2014-07-29 19:26:42"
+    },
+    "model": "data_manager.Company",
+    "pk": 264
+  },
+  {
+    "fields": {
+      "epa_id": 86110,
+      "name": "PULCRA CHEMICAL LLC",
+      "row_entry_date": "2014-07-29 19:26:42"
+    },
+    "model": "data_manager.Company",
+    "pk": 265
+  },
+  {
+    "fields": {
+      "epa_id": 9404,
+      "name": "SUNNILAND CORP",
+      "row_entry_date": "2014-07-29 19:26:42"
+    },
+    "model": "data_manager.Company",
+    "pk": 266
+  },
+  {
+    "fields": {
+      "epa_id": 11547,
+      "name": "SHARE CORP",
+      "row_entry_date": "2014-07-29 19:26:42"
+    },
+    "model": "data_manager.Company",
+    "pk": 267
+  },
+  {
+    "fields": {
+      "epa_id": 86352,
+      "name": "INNOVATIVE TEXTILE SOLUTIONS INC",
+      "row_entry_date": "2014-07-29 19:26:42"
+    },
+    "model": "data_manager.Company",
+    "pk": 268
+  },
+  {
+    "fields": {
+      "epa_id": 506,
+      "name": "WALCO LINCK CO",
+      "row_entry_date": "2014-07-29 19:26:42"
+    },
+    "model": "data_manager.Company",
+    "pk": 269
+  },
+  {
+    "fields": {
+      "epa_id": 11694,
+      "name": "ITW PROFESSIONAL BRANDS",
+      "row_entry_date": "2014-07-29 19:26:42"
+    },
+    "model": "data_manager.Company",
+    "pk": 270
+  },
+  {
+    "fields": {
+      "epa_id": 9250,
+      "name": "UNITED LABORATORIES INC",
+      "row_entry_date": "2014-07-29 19:26:42"
+    },
+    "model": "data_manager.Company",
+    "pk": 271
+  },
+  {
+    "fields": {
+      "epa_id": 13344,
+      "name": "TARGET",
+      "row_entry_date": "2014-07-29 19:26:42"
+    },
+    "model": "data_manager.Company",
+    "pk": 272
+  },
+  {
+    "fields": {
+      "epa_id": 1658,
+      "name": "HILLYARD INC",
+      "row_entry_date": "2014-07-29 19:26:42"
+    },
+    "model": "data_manager.Company",
+    "pk": 273
+  },
+  {
+    "fields": {
+      "epa_id": 9838,
+      "name": "CONTINENTAL RESEARCH CORP",
+      "row_entry_date": "2014-07-29 19:26:42"
+    },
+    "model": "data_manager.Company",
+    "pk": 274
+  },
+  {
+    "fields": {
+      "epa_id": 75101,
+      "name": "ARCH WOOD PROTECTION (NZ) LIMITED",
+      "row_entry_date": "2014-07-29 19:26:42"
+    },
+    "model": "data_manager.Company",
+    "pk": 275
+  },
+  {
+    "fields": {
+      "epa_id": 38090,
+      "name": "AMERICAN INDUSTRIES INC",
+      "row_entry_date": "2014-07-29 19:26:42"
+    },
+    "model": "data_manager.Company",
+    "pk": 276
+  },
+  {
+    "fields": {
+      "epa_id": 70799,
+      "name": "STATE INDUSTRIAL PRODUCTS",
+      "row_entry_date": "2014-07-29 19:26:42"
+    },
+    "model": "data_manager.Company",
+    "pk": 277
+  },
+  {
+    "fields": {
+      "epa_id": 81584,
+      "name": "UNITED PET GROUP INC",
+      "row_entry_date": "2014-07-29 19:26:42"
+    },
+    "model": "data_manager.Company",
+    "pk": 278
+  },
+  {
+    "fields": {
+      "epa_id": 29909,
+      "name": "CARDINAL LABORATORIES",
+      "row_entry_date": "2014-07-29 19:26:42"
+    },
+    "model": "data_manager.Company",
+    "pk": 279
+  },
+  {
+    "fields": {
+      "epa_id": 29055,
+      "name": "SYSCO CORPORATION",
+      "row_entry_date": "2014-07-29 19:26:42"
+    },
+    "model": "data_manager.Company",
+    "pk": 280
+  },
+  {
+    "fields": {
+      "epa_id": 39858,
+      "name": "ASPEN",
+      "row_entry_date": "2014-07-29 19:26:42"
+    },
+    "model": "data_manager.Company",
+    "pk": 281
+  },
+  {
+    "fields": {
+      "epa_id": 50591,
+      "name": "DAVIS MANUFACTURING",
+      "row_entry_date": "2014-07-29 19:26:42"
+    },
+    "model": "data_manager.Company",
+    "pk": 282
+  },
+  {
+    "fields": {
+      "epa_id": 72804,
+      "name": "ULTRASOL INDUSTRIES LTD",
+      "row_entry_date": "2014-07-29 19:26:42"
+    },
+    "model": "data_manager.Company",
+    "pk": 283
+  },
+  {
+    "fields": {
+      "epa_id": 1015,
+      "name": "DOUGLAS PRODUCTS & PACKAGING",
+      "row_entry_date": "2014-07-29 19:26:42"
+    },
+    "model": "data_manager.Company",
+    "pk": 284
+  },
+  {
+    "fields": {
+      "epa_id": 10772,
+      "name": "CHURCH & DWIGHT CO INC",
+      "row_entry_date": "2014-07-29 19:26:42"
+    },
+    "model": "data_manager.Company",
+    "pk": 285
+  },
+  {
+    "fields": {
+      "epa_id": 40391,
+      "name": "ENTECH SYSTEMS CORP",
+      "row_entry_date": "2014-07-29 19:26:42"
+    },
+    "model": "data_manager.Company",
+    "pk": 286
+  },
+  {
+    "fields": {
+      "epa_id": 1117,
+      "name": "FORT DODGE ANIMAL HEALTH",
+      "row_entry_date": "2014-07-29 19:26:42"
+    },
+    "model": "data_manager.Company",
+    "pk": 287
+  },
+  {
+    "fields": {
+      "epa_id": 9816,
+      "name": "FIEBING COMPANY INC",
+      "row_entry_date": "2014-07-29 19:26:42"
+    },
+    "model": "data_manager.Company",
+    "pk": 288
+  },
+  {
+    "fields": {
+      "epa_id": 72586,
+      "name": "JARDEN CONSUMER SOLUTIONS",
+      "row_entry_date": "2014-07-29 19:26:42"
+    },
+    "model": "data_manager.Company",
+    "pk": 289
+  },
+  {
+    "fields": {
+      "epa_id": 71996,
+      "name": "UNITED COMPOST & ORGANICS INC",
+      "row_entry_date": "2014-07-29 19:26:42"
+    },
+    "model": "data_manager.Company",
+    "pk": 290
+  },
+  {
+    "fields": {
+      "epa_id": 39609,
+      "name": "SCHULTZ COMPANY",
+      "row_entry_date": "2014-07-29 19:26:42"
+    },
+    "model": "data_manager.Company",
+    "pk": 291
+  },
+  {
+    "fields": {
+      "epa_id": 51232,
+      "name": "HORSEMAN'S DREAM INC",
+      "row_entry_date": "2014-07-29 19:26:42"
+    },
+    "model": "data_manager.Company",
+    "pk": 292
+  },
+  {
+    "fields": {
+      "epa_id": 7546,
+      "name": "U S CHEMICAL CORP",
+      "row_entry_date": "2014-07-29 19:26:42"
+    },
+    "model": "data_manager.Company",
+    "pk": 293
+  },
+  {
+    "fields": {
+      "epa_id": 70385,
+      "name": "PRORESTORE PRODUCTS",
+      "row_entry_date": "2014-07-29 19:26:42"
+    },
+    "model": "data_manager.Company",
+    "pk": 294
+  },
+  {
+    "fields": {
+      "epa_id": 62355,
+      "name": "MIRACLE-GRO LAWN PRODUCTS INC",
+      "row_entry_date": "2014-07-29 19:26:42"
+    },
+    "model": "data_manager.Company",
+    "pk": 295
+  },
+  {
+    "fields": {
+      "epa_id": 59906,
+      "name": "PRO TECH LIVESTOCK CORPORATION",
+      "row_entry_date": "2014-07-29 19:26:42"
+    },
+    "model": "data_manager.Company",
+    "pk": 296
+  },
+  {
+    "fields": {
+      "epa_id": 802,
+      "name": "LILLY MILLER BRANDS",
+      "row_entry_date": "2014-07-29 19:26:42"
+    },
+    "model": "data_manager.Company",
+    "pk": 297
+  },
+  {
+    "fields": {
+      "epa_id": 43576,
+      "name": "GPS GROUP",
+      "row_entry_date": "2014-07-29 19:26:42"
+    },
+    "model": "data_manager.Company",
+    "pk": 298
+  },
+  {
+    "fields": {
+      "epa_id": 82768,
+      "name": "OUTDOOR SOLUTIONS INC",
+      "row_entry_date": "2014-07-29 19:26:42"
+    },
+    "model": "data_manager.Company",
+    "pk": 299
+  },
+  {
+    "fields": {
+      "epa_id": 70627,
+      "name": "DIVERSEY INC",
+      "row_entry_date": "2014-07-29 19:26:42"
+    },
+    "model": "data_manager.Company",
+    "pk": 300
+  },
+  {
+    "fields": {
+      "epa_id": 87703,
+      "name": "UNITED PET GROUP, INC.",
+      "row_entry_date": "2014-07-29 19:26:42"
+    },
+    "model": "data_manager.Company",
+    "pk": 301
+  },
+  {
+    "fields": {
+      "epa_id": 50830,
+      "name": "TEC LABS INC",
+      "row_entry_date": "2014-07-29 19:26:42"
+    },
+    "model": "data_manager.Company",
+    "pk": 302
+  },
+  {
+    "fields": {
+      "epa_id": 10350,
+      "name": "3M",
+      "row_entry_date": "2014-07-29 19:26:42"
+    },
+    "model": "data_manager.Company",
+    "pk": 303
+  },
+  {
+    "fields": {
+      "epa_id": 74289,
+      "name": "CORETEX PRODUCTS INC",
+      "row_entry_date": "2014-07-29 19:26:42"
+    },
+    "model": "data_manager.Company",
+    "pk": 304
+  },
+  {
+    "fields": {
+      "epa_id": 56058,
+      "name": "DIHOMA INC",
+      "row_entry_date": "2014-07-29 19:26:42"
+    },
+    "model": "data_manager.Company",
+    "pk": 305
+  },
+  {
+    "fields": {
+      "epa_id": 51147,
+      "name": "VERTELLUS PERFORMANCE MATERIALS INC",
+      "row_entry_date": "2014-07-29 19:26:42"
+    },
+    "model": "data_manager.Company",
+    "pk": 306
+  },
+  {
+    "fields": {
+      "epa_id": 48139,
+      "name": "HILTON HEAD LABORATORIES INC",
+      "row_entry_date": "2014-07-29 19:26:42"
+    },
+    "model": "data_manager.Company",
+    "pk": 307
+  },
+  {
+    "fields": {
+      "epa_id": 57076,
+      "name": "PARAGON PROFESSIONAL PRODUCTS",
+      "row_entry_date": "2014-07-29 19:26:42"
+    },
+    "model": "data_manager.Company",
+    "pk": 308
+  },
+  {
+    "fields": {
+      "epa_id": 48377,
+      "name": "AP & G INC",
+      "row_entry_date": "2014-07-29 19:26:42"
+    },
+    "model": "data_manager.Company",
+    "pk": 309
+  },
+  {
+    "fields": {
+      "epa_id": 71653,
+      "name": "GENICS INC",
+      "row_entry_date": "2014-07-29 19:26:42"
+    },
+    "model": "data_manager.Company",
+    "pk": 310
+  },
+  {
+    "fields": {
+      "epa_id": 68362,
+      "name": "BUGS ETC",
+      "row_entry_date": "2014-07-29 19:26:42"
+    },
+    "model": "data_manager.Company",
+    "pk": 311
+  },
+  {
+    "fields": {
+      "epa_id": 65527,
+      "name": "FLEA STOPPERS",
+      "row_entry_date": "2014-07-29 19:26:42"
+    },
+    "model": "data_manager.Company",
+    "pk": 312
+  },
+  {
+    "fields": {
+      "epa_id": 65161,
+      "name": "EVERGREEN PET SUPPLY INC",
+      "row_entry_date": "2014-07-29 19:26:42"
+    },
+    "model": "data_manager.Company",
+    "pk": 313
+  },
+  {
+    "fields": {
+      "epa_id": 75269,
+      "name": "RUTGERS ORGANICS GMBH",
+      "row_entry_date": "2014-07-29 19:26:42"
+    },
+    "model": "data_manager.Company",
+    "pk": 314
+  },
+  {
+    "fields": {
+      "epa_id": 70227,
+      "name": "DIACON TECHNOLOGIES LTD",
+      "row_entry_date": "2014-07-29 19:26:42"
+    },
+    "model": "data_manager.Company",
+    "pk": 315
+  },
+  {
+    "fields": {
+      "epa_id": 1624,
+      "name": "U S BORAX INC",
+      "row_entry_date": "2014-07-29 19:26:42"
+    },
+    "model": "data_manager.Company",
+    "pk": 316
+  },
+  {
+    "fields": {
+      "epa_id": 70106,
+      "name": "US GREENFIBER INC",
+      "row_entry_date": "2014-07-29 19:26:42"
+    },
+    "model": "data_manager.Company",
+    "pk": 317
+  },
+  {
+    "fields": {
+      "epa_id": 75341,
+      "name": "OSMOSE UTILITIES SERVICES INC",
+      "row_entry_date": "2014-07-29 19:26:42"
+    },
+    "model": "data_manager.Company",
+    "pk": 318
+  },
+  {
+    "fields": {
+      "epa_id": 4972,
+      "name": "PROTEXALL PRODUCTS INC",
+      "row_entry_date": "2014-07-29 19:26:42"
+    },
+    "model": "data_manager.Company",
+    "pk": 319
+  },
+  {
+    "fields": {
+      "epa_id": 9608,
+      "name": "COPPER BRITE INC",
+      "row_entry_date": "2014-07-29 19:26:42"
+    },
+    "model": "data_manager.Company",
+    "pk": 320
+  },
+  {
+    "fields": {
+      "epa_id": 59111,
+      "name": "RX FOR FLEAS INC",
+      "row_entry_date": "2014-07-29 19:26:42"
+    },
+    "model": "data_manager.Company",
+    "pk": 321
+  },
+  {
+    "fields": {
+      "epa_id": 83896,
+      "name": "PEST CONTROL INSULATION SYSTEMS",
+      "row_entry_date": "2014-07-29 19:26:42"
+    },
+    "model": "data_manager.Company",
+    "pk": 322
+  },
+  {
+    "fields": {
+      "epa_id": 51311,
+      "name": "HBC CHEMICAL CO",
+      "row_entry_date": "2014-07-29 19:26:42"
+    },
+    "model": "data_manager.Company",
+    "pk": 323
+  },
+  {
+    "fields": {
+      "epa_id": 44757,
+      "name": "INCIDE TECHNOLOGIES INC",
+      "row_entry_date": "2014-07-29 19:26:42"
+    },
+    "model": "data_manager.Company",
+    "pk": 324
+  },
+  {
+    "fields": {
+      "epa_id": 87346,
+      "name": "SPRA-GREEN LAWN FERT LLC",
+      "row_entry_date": "2014-07-29 19:26:42"
+    },
+    "model": "data_manager.Company",
+    "pk": 325
+  },
+  {
+    "fields": {
+      "epa_id": 81883,
+      "name": "WHITETAIL INSTITUTE",
+      "row_entry_date": "2014-07-29 19:26:42"
+    },
+    "model": "data_manager.Company",
+    "pk": 326
+  },
+  {
+    "fields": {
+      "epa_id": 346,
+      "name": "ALPHARMA LLC",
+      "row_entry_date": "2014-07-29 19:26:42"
+    },
+    "model": "data_manager.Company",
+    "pk": 327
+  },
+  {
+    "fields": {
+      "epa_id": 83996,
+      "name": "NATURCHEM INC",
+      "row_entry_date": "2014-07-29 19:26:42"
+    },
+    "model": "data_manager.Company",
+    "pk": 328
+  },
+  {
+    "fields": {
+      "epa_id": 85342,
+      "name": "WET AND FORGET USA",
+      "row_entry_date": "2014-07-29 19:26:42"
+    },
+    "model": "data_manager.Company",
+    "pk": 329
+  },
+  {
+    "fields": {
+      "epa_id": 84237,
+      "name": "SOLERA ATO LLC",
+      "row_entry_date": "2014-07-29 19:26:42"
+    },
+    "model": "data_manager.Company",
+    "pk": 330
+  },
+  {
+    "fields": {
+      "epa_id": 12455,
+      "name": "BELL LABORATORIES",
+      "row_entry_date": "2014-07-29 19:26:42"
+    },
+    "model": "data_manager.Company",
+    "pk": 331
+  },
+  {
+    "fields": {
+      "epa_id": 85678,
+      "name": "REDEAGLE INTL LLC",
+      "row_entry_date": "2014-07-29 19:26:42"
+    },
+    "model": "data_manager.Company",
+    "pk": 332
+  },
+  {
+    "fields": {
+      "epa_id": 58185,
+      "name": "SCOTTS-SIERRA CROP PROTECTION CO",
+      "row_entry_date": "2014-07-29 19:26:42"
+    },
+    "model": "data_manager.Company",
+    "pk": 333
   }
 ]
