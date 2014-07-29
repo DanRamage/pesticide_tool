@@ -142,7 +142,15 @@ def build_formulation(ingr, brand_name, ndx, date, lookups):
     }
   })
 def build_brand_model(prod, lookups, ndx, date, ai_for_brand):
-  return({
+  pests_treated = []
+  for rec in prod.pests_treated:
+    if rec.name in lookups['pest_lookup']:
+      pests_treated.append(lookups['pest_lookup'][rec.name])
+  app_areas = []
+  for rec in prod.application_areas:
+    if rec in lookups['site_lookup']:
+      app_areas.append(lookups['site_lookup'][rec])
+  bm = {
     "pk": ndx,
     "model": "data_manager.Brand",
     "fields": {
@@ -156,11 +164,12 @@ def build_brand_model(prod, lookups, ndx, date, ai_for_brand):
       "company_name" : [lookups['company_lookup'][prod.company_name]],
       "company_number": prod.company_number,
       "pesticide_type": [lookups['type_lookup'][prod.pesticide_type.lower()]],
-      "pests_treated": [lookups['pest_lookup'][rec.name] for rec in prod.pests_treated],
-      "application_areas": [lookups['site_lookup'][rec] for rec in prod.application_areas],
+      "pests_treated":pests_treated ,
+      "application_areas": app_areas,
       "active_ingredients": ai_for_brand
     }
-  })
+  }
+  return bm
 def createInitialData(**kwargs):
   config_file = ConfigParser.RawConfigParser()
   config_file.read(kwargs['config_file'])
@@ -215,7 +224,7 @@ def createInitialData(**kwargs):
     build_dict(lookups['type_lookup'], row.name.lower(), row.row_id)
   p_type_max_row_id =  pesticide_type_rows.aggregate((Max('row_id')))
 
-  pest_rows = Pest.objects.all().order_by('name')
+  pest_rows = Pest.objects.all().exclude(image_url__isnull = True).order_by('name')
   for row in pest_rows:
     existing_pests.append(row.name.lower())
     build_dict(lookups['pest_lookup'], row.name.lower(), row.row_id)
@@ -264,8 +273,8 @@ def createInitialData(**kwargs):
           prod.load_from_json(brand)
           product_list.append(prod)
 
-      #ADd the AI to our list if it is one that exists in our initial data that Lisa created.
-      if input_active_ingr in models['ai_models']:
+      #ADd the AI to our list if it is one that exists in our initial data that Lisa created.:q
+      if input_active_ingr in ai_models:
         models['ai_models'].append(ai_models[input_active_ingr])
 
       #Make a pass to build the unique values for the active ingredients, pests, and application
