@@ -137,7 +137,7 @@ def build_formulation(ingr, brand_name, ndx, date, lookups):
     "fields": {
       "row_entry_date": date,
       "brand_name": brand_name,
-      "active_ingredient": lookups['ai_lookup'][ingr.active_ingredient.lower()],
+      "active_ingredient": lookups['ai_lookup'][ingr.active_ingredient],
       "percentage_active_ingredient": ingr.percentage_active_ingredient
     }
   })
@@ -201,12 +201,12 @@ def createInitialData(**kwargs):
   row_entry_date = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
   ai_models = {}
-  ai_rows = ActiveIngredient.objects.all().order_by('name').prefetch_related('warnings').prefetch_related('pests_treated').prefetch_related('pesticide_classes')
+  ai_rows = ActiveIngredient.objects.all().exclude(relative_potential_ecosystem_hazard__isnull = True).exclude(relative_potential_ecosystem_hazard__exact = "").order_by('name').prefetch_related('warnings').prefetch_related('pests_treated').prefetch_related('pesticide_classes')
   for row in ai_rows:
     ai_models[row.name] = active_ingredient(row, row_entry_date)
     calculated_ais.append(row.name)
     #For the existing AIs, build the lookups.
-    build_dict(lookups['ai_lookup'], row.name.lower(), row.row_id)
+    build_dict(lookups['ai_lookup'], row.name, row.row_id)
   ai_max_row_id = ai_rows.aggregate((Max('row_id')))
 
   #Build the lookups for the pesticide types we already have in db.
@@ -255,10 +255,10 @@ def createInitialData(**kwargs):
       if logger:
         logger.info("Processing file: %s" % (file))
       file_obj = open("%s/%s" % (data_dir,file), "r")
-      json_data = json.load(file_obj)
+      file_input_json_data = json.load(file_obj)
       product_list = []
-      for active_ingr in json_data.keys():
-        brands = json_data[active_ingr]
+      for input_active_ingr in file_input_json_data.keys():
+        brands = file_input_json_data[input_active_ingr]
         for brand in brands:
           prod = product()
           prod.load_from_json(brand)
@@ -267,7 +267,11 @@ def createInitialData(**kwargs):
       #Make a pass to build the unique values for the active ingredients, pests, and application
       #sites. In the initial JSON we have to create their models and we need their pk ids to
       #make the relations.
+      models['ai_models'].append(ai_models[input_active_ingr])
+
       for prod in product_list:
+        if logger:
+          logger.debug("Processing brand: %s" % (prod.name))
         if build_dict(lookups['company_lookup'], prod.company_name, cmp_ndx) == False:
           models['comp_models'].append(build_company_model(prod, cmp_ndx, row_entry_date))
           cmp_ndx += 1
@@ -291,19 +295,21 @@ def createInitialData(**kwargs):
 
         if build_dict(lookups['brand_lookup'], prod.name, prod_ndx) == False:
           prod_ndx += 1
-
         ai_for_brand = []
+
         for ingr in prod.active_ingredients:
-          """
-          if build_dict(lookups['ai_lookup'], ingr.active_ingredient.lower(), ingr_ndx) == False:
+          if logger:
+            logger.debug("Searching for AI: %s" % (ingr.active_ingredient))
+          if build_dict(lookups['ai_lookup'], ingr.active_ingredient, ingr_ndx) == False:
             #Check to see if the active ingredient is one we already have in the DB.
             #if (ingr.active_ingredient in calculated_ais) == False:
             if(ingr.active_ingredient in ai_models) == False:
               models['ai_models'].append(build_active_ingredient(ingr, ingr_ndx, row_entry_date))
+              if logger:
+                logger.debug("AI: %s adding to DB" % (ingr.active_ingredient))
               ingr_ndx += 1
-          """
-          if (ingr.active_ingredient in ai_models) == False:
-            ai_models[ingr.active_ingredient] = build_active_ingredient(ingr, ingr_ndx, row_entry_date)
+          #if (ingr.active_ingredient in ai_models) == False:
+          #  ai_models[ingr.active_ingredient] = build_active_ingredient(ingr, ingr_ndx, row_entry_date)
 
 
           #Build the formulation for the brand.
@@ -316,17 +322,32 @@ def createInitialData(**kwargs):
         brand_model = build_brand_model(prod, lookups, prod_ndx, row_entry_date, [])
         models['brand_models'].append(brand_model)
         #Add the brand ID into the active ingredients.
-        if prod.name == 'ACE GREEN TURF PHOSPHORUS FREE WEED & FEED 29-0-3':
-          i = 0;
+        found_input_ai_name = False
         for ingr in prod.active_ingredients:
-          if ingr.active_ingredient in ai_models:
-            ai_models[ingr.active_ingredient]['fields']['brands'].append(brand_model['pk'])
-
+          if input_active_ingr == ingr.active_ingredient:
+            found_input_ai_name = True
+          for ai in models['ai_models']:
+            if ai['fields']['name'] == ingr.active_ingredient:
+              ai['fields']['brands'].append(brand_model['pk'])
+              break
+        #Due to the incosistent naming of the active ingredients from the source data,
+        #we need to make sure we add the brand ID to the active ingredient name we used.
+        #THe issue is the Clemson data uses multiple synonyms for an active ingredient
+        #and while our active ingredient name is what was used in the inital data query
+        #it might not actually show up in the formulation(active ingredient recipe) for
+        #a brand.
+        if found_input_ai_name == False:
+          for ai in models['ai_models']:
+            if ai['fields']['name'] == input_active_ingr:
+              ai['fields']['brands'].append(brand_model['pk'])
+              break
         #Build the brand model that has the AI data.
         brand_model = build_brand_model(prod, lookups, prod_ndx, row_entry_date, ai_for_brand)
         brands_with_ai.append(brand_model)
         #Build the brand list for the AI.
         #ai_brands.append(brand)
+        if logger:
+          logger.debug("Finished brand: %s" % (prod.name))
       if logger:
         logger.info("Finished processing file: %s" % (file))
 
@@ -383,9 +404,6 @@ def createInitialData(**kwargs):
     out_file = open(file_name, "w")
     out_file.write(json.dumps(models['form_models'], sort_keys=True, indent=2 * ' '))
     out_file.close()
-
-    for key in ai_models:
-      models['ai_models'].append(ai_models[key])
 
     file_name = "%s/active_ingredients.json" % (initial_json)
     out_file = open(file_name, "w")
