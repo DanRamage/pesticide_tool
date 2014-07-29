@@ -212,10 +212,10 @@ def createInitialData(**kwargs):
   ai_models = {}
   ai_rows = ActiveIngredient.objects.all().exclude(relative_potential_ecosystem_hazard__isnull = True).exclude(relative_potential_ecosystem_hazard__exact = "").order_by('name').prefetch_related('warnings').prefetch_related('pests_treated').prefetch_related('pesticide_classes')
   for row in ai_rows:
-    ai_models[row.name] = active_ingredient(row, row_entry_date)
-    calculated_ais.append(row.name)
+    ai_models[row.name.lower()] = active_ingredient(row, row_entry_date)
+    calculated_ais.append(row.name.lower())
     #For the existing AIs, build the lookups.
-    build_dict(lookups['ai_lookup'], row.name, row.row_id)
+    build_dict(lookups['ai_lookup'], row.name.lower(), row.row_id)
   ai_max_row_id = ai_rows.aggregate((Max('row_id')))
 
   #Build the lookups for the pesticide types we already have in db.
@@ -274,8 +274,8 @@ def createInitialData(**kwargs):
           product_list.append(prod)
 
       #ADd the AI to our list if it is one that exists in our initial data that Lisa created.:q
-      if input_active_ingr in ai_models:
-        models['ai_models'].append(ai_models[input_active_ingr])
+      if input_active_ingr.lower() in ai_models:
+        models['ai_models'].append(ai_models[input_active_ingr.lower()])
 
       #Make a pass to build the unique values for the active ingredients, pests, and application
       #sites. In the initial JSON we have to create their models and we need their pk ids to
@@ -310,14 +310,14 @@ def createInitialData(**kwargs):
 
         for ingr in prod.active_ingredients:
           if logger:
-            logger.debug("Searching for AI: %s" % (ingr.active_ingredient))
-          if build_dict(lookups['ai_lookup'], ingr.active_ingredient, ingr_ndx) == False:
+            logger.debug("Searching for AI: %s" % (ingr.active_ingredient.lower()))
+          if build_dict(lookups['ai_lookup'], ingr.active_ingredient.lower(), ingr_ndx) == False:
             #Check to see if the active ingredient is one we already have in the DB.
             #if (ingr.active_ingredient in calculated_ais) == False:
-            if(ingr.active_ingredient in ai_models) == False:
+            if(ingr.active_ingredient.lower() in ai_models) == False:
               models['ai_models'].append(build_active_ingredient(ingr, ingr_ndx, row_entry_date))
               if logger:
-                logger.debug("AI: %s adding to DB" % (ingr.active_ingredient))
+                logger.debug("AI: %s adding to DB" % (ingr.active_ingredient.lower()))
               ingr_ndx += 1
           #if (ingr.active_ingredient in ai_models) == False:
           #  ai_models[ingr.active_ingredient] = build_active_ingredient(ingr, ingr_ndx, row_entry_date)
@@ -335,10 +335,10 @@ def createInitialData(**kwargs):
         #Add the brand ID into the active ingredients.
         found_input_ai_name = False
         for ingr in prod.active_ingredients:
-          if input_active_ingr == ingr.active_ingredient:
+          if input_active_ingr.lower() == ingr.active_ingredient.lower():
             found_input_ai_name = True
           for ai in models['ai_models']:
-            if ai['fields']['name'] == ingr.active_ingredient:
+            if ai['fields']['name'].lower() == ingr.active_ingredient.lower():
               if logger:
                 logger.debug("Adding brand: %s(%d) to AI: %s" % (brand_model['fields']['name'], brand_model['pk'], ai['fields']['name']))
               ai['fields']['brands'].append(brand_model['pk'])
@@ -351,7 +351,7 @@ def createInitialData(**kwargs):
         #a brand.
         if found_input_ai_name == False:
           for ai in models['ai_models']:
-            if ai['fields']['name'] == input_active_ingr:
+            if ai['fields']['name'].lower() == input_active_ingr.lower():
               if logger:
                 logger.debug("Adding brand: %s(%d) to AI: %s" % (brand_model['fields']['name'], brand_model['pk'], ai['fields']['name']))
               ai['fields']['brands'].append(brand_model['pk'])
