@@ -137,7 +137,7 @@ def build_formulation(ingr, brand_name, ndx, date, lookups):
     "fields": {
       "row_entry_date": date,
       "brand_name": brand_name,
-      "active_ingredient": lookups['ai_lookup'][ingr.active_ingredient],
+      "active_ingredient": lookups['ai_lookup'][ingr.active_ingredient.lower()],
       "percentage_active_ingredient": ingr.percentage_active_ingredient
     }
   })
