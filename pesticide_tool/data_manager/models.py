@@ -151,7 +151,7 @@ class BrandFormulation(models.Model):
   def toDict(self):
     formulation = {
       'id': self.row_id,
-      'brand_name': self.name,
+      'brand_name': self.brand_name,
       'active_ingredient': self.active_ingredient.display_name,
       'percent_active_ingredient': self.percentage_active_ingredient
     }
