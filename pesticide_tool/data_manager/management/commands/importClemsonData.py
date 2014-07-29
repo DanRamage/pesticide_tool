@@ -339,6 +339,8 @@ def createInitialData(**kwargs):
             found_input_ai_name = True
           for ai in models['ai_models']:
             if ai['fields']['name'] == ingr.active_ingredient:
+              if logger:
+                logger.debug("Adding brand: %s(%d) to AI: %s" % (brand_model['fields']['name'], brand_model['pk'], ai['fields']['name']))
               ai['fields']['brands'].append(brand_model['pk'])
               break
         #Due to the incosistent naming of the active ingredients from the source data,
@@ -350,6 +352,8 @@ def createInitialData(**kwargs):
         if found_input_ai_name == False:
           for ai in models['ai_models']:
             if ai['fields']['name'] == input_active_ingr:
+              if logger:
+                logger.debug("Adding brand: %s(%d) to AI: %s" % (brand_model['fields']['name'], brand_model['pk'], ai['fields']['name']))
               ai['fields']['brands'].append(brand_model['pk'])
               break
         #Build the brand model that has the AI data.
