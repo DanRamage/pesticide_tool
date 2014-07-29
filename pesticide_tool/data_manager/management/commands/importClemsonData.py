@@ -103,13 +103,14 @@ def active_ingredient(ai_row, row_entry_date):
         "brands": []
       }
   }
+
   warnings = [warning.row_id for warning in ai_row.warnings.all()]
   if len(warnings):
     ai['fields']['warnings'] = warnings
   pests_treated = [pest.row_id for pest in ai_row.pests_treated.all()]
   if len(pests_treated):
     ai['fields']['pests_treated'] = pests_treated
-  pesticide_classes = [pc.row_id for pc in ai_row.pesticide_classes.all()],
+  pesticide_classes = [pc.row_id for pc in ai_row.pesticide_classes.all()]
   if len(pesticide_classes):
     ai['fields']['pesticide_classes'] = pesticide_classes
 
