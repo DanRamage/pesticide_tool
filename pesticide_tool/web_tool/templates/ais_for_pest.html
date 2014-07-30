@@ -42,9 +42,16 @@
           <h3 class="panel-title" data-bind="text: display_name"></h3>
         </div>
         <div class="panel-body">
+          <!--
           <dl class="dl-horizontal">
-           <dt>Potential Ecosystem Hazard</dt>
-           <dd data-bind="text:relative_potential_ecosystem_hazard"></dd>
+          -->
+          <dl>
+            <dt>Potential Ecosystem Hazard</dt>
+            <dd data-bind="text:relative_potential_ecosystem_hazard"></dd>
+            <dt>Concern</dt>
+            <dd data-bind="foreach: warnings">
+              <img class="concern_button img-circle" data-bind='attr: {src: image_url},alt: {"name"}'></img>
+            </dd>
           </dl>
         </div>
       </div>
