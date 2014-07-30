@@ -373,6 +373,16 @@ function activeIngredientsForPestViewModel()
       },
       function(data) {
         self.ai_results(data.ai_list);
+        $('#warnings-hover .thumbnail').hover(
+          function()
+          {
+            $(this).find('.caption').slideDown(250); //.fadeIn(250)
+          },
+          function()
+          {
+            $(this).find('.caption').slideUp(250); //.fadeOut(205)
+          }
+        );
       }
     );
   };

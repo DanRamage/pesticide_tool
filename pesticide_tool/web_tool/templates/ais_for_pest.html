@@ -49,7 +49,14 @@
             <dd data-bind="text:relative_potential_ecosystem_hazard"></dd>
             <dt>Concern</dt>
             <dd data-bind="foreach: warnings">
-              <img class="concern_button img-circle" data-bind='attr: {src: image_url, alt: name}'></img>
+              <!--
+              Hover over image to get text
+              -->
+              <img id="warnings-hover" class="concern_button img-circle" data-bind='attr: {src: image_url, alt: name}'></img>
+              <div class="caption">
+                <h4><span data-bind="text: name"></span></h4>
+              </div>
+
             </dd>
           </dl>
           <p>
