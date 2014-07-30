@@ -29,8 +29,13 @@
 {% block body %}
   <div class="container">
     <div class="text-center">
-      <h3>Pest: <span data-bind="pest_name()"></span></h3>
+      <h3>Pest: <span data-bind="text: pest_name()"></span></h3>
     </div>
+    <!--
+    For debugging the knockout data.
+    -->
+    <pre data-bind="text: JSON.stringify(ko.toJS($data), null, 2)"></pre>
+
     <div data-bind="foreach: ai_results">
       <div class="panel panel-default">
         <div class="panel-heading">
