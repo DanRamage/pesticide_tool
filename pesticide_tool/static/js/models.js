@@ -359,6 +359,8 @@ function activeIngredientsForPestViewModel()
 {
   var self = this;
 
+  self.pest_name = ko.observable('');
+  self.ai_results = ko.observableArray([]);
   self.initialize = function()
   {
     //Get url parameters so we can see what the pest name is.
@@ -369,6 +371,7 @@ function activeIngredientsForPestViewModel()
         'pest': pest_url.pest_name
       },
       function(data) {
+        self.ai_results(data.ai_list);
       }
     );
 

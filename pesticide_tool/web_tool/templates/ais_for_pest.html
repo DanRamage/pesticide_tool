@@ -26,9 +26,25 @@
 {% endblock %}
 
 
-
 {% block body %}
-
+  <div class="container">
+    <div class="text-center">
+      <h3>Pest: <span data-bind="pest_name()"></span></h3>
+    </div>
+    <div data-bind="foreach: ai_results">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title" data-bind="text: display_name"></h3>
+        </div>
+        <div class="panel-body">
+          <dl class="dl-horizontal">
+           <dt>Potential Ecosystem Hazard</dt>
+           <dd data-bind="text:relative_potential_ecosystem_hazard"></dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </div>
 
 {% endblock %}
 
