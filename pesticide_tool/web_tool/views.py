@@ -67,12 +67,10 @@ def get_ai_for_pest(request, pest):
     .prefetch_related('warnings')\
     .prefetch_related('pesticide_classes')\
     .order_by('cumulative_score').all()
-  if logger:
-    logger.debug("Building return data")
   ret_data = []
   for ai in ai_list:
     brand_data = []
-    for brand in ai.brands.all():
+    for brand in ai.brands:
       brand_data.append({
         'name': brand.name,
         'label_url': brand.label_url
@@ -82,8 +80,8 @@ def get_ai_for_pest(request, pest):
       'display_name': ai.display_name,
       'cumulative_score': ai.cumulative_score,
       'relative_potential_ecosystem_hazard': ai.relative_potential_ecosystem_hazard,
-      'pesticide_classes': [pc.toDict for pc in ai.pesticide_classes.all()],
-      'warnings': [warning.toDict for warning in ai.warnings.all()],
+      'pesticide_classes': [pc.toDict for pc in ai.pesticide_classes],
+      'warnings': [warning.toDict for warning in ai.warnings],
       'brands': brand_data
     })
 
