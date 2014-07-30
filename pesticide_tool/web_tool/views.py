@@ -25,7 +25,12 @@ def start_page(request, template='entry_page.html'):
 def pest_category(request, template='pest_category.html'):
   return render_to_response(template, context_instance=RequestContext(request))
 
-def pest_ai_page(request, template='ais_for_pest.html'):
+def pest_ai_page(request, pest_name, template='ais_for_pest.html'):
+  search_term = pest_name
+  if(len(search_term) == 0):
+    search_term = request.GET['pest_name']
+  if logger:
+    logger.debug("Begin pest_ai_page for pest: %s" % (search_term))
   return render_to_response(template, context_instance=RequestContext(request))
 
 """

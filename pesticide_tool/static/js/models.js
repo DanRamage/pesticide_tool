@@ -157,6 +157,7 @@ function categoriesViewModel()
   self.categoryModels = ko.observableArray([]); //The major categories of pests.
   self.activeCategory = ko.observable(new categoryModel());
   self.activeSubCategory = ko.observable(new subCategoryModel());
+  self.aisForPestPage = ko.observable('');
   self.currentUrl = ''
 
   self.initialize = function()
@@ -322,6 +323,9 @@ function categoriesViewModel()
   };
   self.pestTypeClicked = function(pest, event)
   {
+    var url = 'pest_ai_page/' + encodeURIComponent(pest.href());
+    self.aisForPestPage(url);
+    /*
     self.setVisible('pest')
     //Get current hash which should represent the category.
     var url = $.param.fragment();
@@ -337,6 +341,7 @@ function categoriesViewModel()
       function(data) {
       }
     );
+    */
   }
   self.hashchanged = function(event)
   {
