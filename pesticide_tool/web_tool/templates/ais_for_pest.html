@@ -37,7 +37,7 @@
     -->
 
     <div data-bind="foreach: ai_results">
-      <div data-bind="attr: {class: function(relative_potential_ecosystem_hazard){getPanelClass(relative_potential_ecosystem_hazard)}">
+      <div data-bind="attr: {class: function(relative_potential_ecosystem_hazard){ $root.getPanelClass(relative_potential_ecosystem_hazard)}">
         <div class="panel-heading">
           <h3 class="panel-title" data-bind="text: display_name"></h3>
         </div>
