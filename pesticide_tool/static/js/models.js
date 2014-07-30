@@ -375,7 +375,7 @@ function activeIngredientsForPestViewModel()
         self.ai_results(data.ai_list);
       }
     );
-  }
+  };
   self.getPanelClass = function(hazard_level)
   {
     var css = "panel panel-default";
@@ -392,6 +392,10 @@ function activeIngredientsForPestViewModel()
       css = "panel panel-danger";
     }
     return(css);
+  };
+  self.testFunc = function()
+  {
+    var i = 0;
   }
 }
 
