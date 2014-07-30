@@ -365,6 +365,7 @@ function activeIngredientsForPestViewModel()
   {
     //Get url parameters so we can see what the pest name is.
     var pest_url = $.deparam.querystring();
+     self.pest_name(pest_url.pest_name);
     url = 'http://sccoastalpesticides.org/pesticide_tool/get_ai_for_pest';
     $.getJSON(url,
       {
