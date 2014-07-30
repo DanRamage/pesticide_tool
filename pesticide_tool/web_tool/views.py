@@ -70,7 +70,7 @@ def get_ai_for_pest(request, pest):
   ret_data = []
   for ai in ai_list:
     brand_data = []
-    for brand in ai.brands:
+    for brand in ai.brands.all():
       brand_data.append({
         'name': brand.name,
         'label_url': brand.label_url
