@@ -81,8 +81,8 @@ def get_ai_for_pest(request, pest):
       'display_name': ai.display_name,
       'cumulative_score': ai.cumulative_score,
       'relative_potential_ecosystem_hazard': ai.relative_potential_ecosystem_hazard,
-      'pesticide_classes': [pc.toDict for pc in ai.pesticide_classes],
-      'warnings': [warning.toDict for warning in ai.warnings],
+      'pesticide_classes': [pc.toDict for pc in ai.pesticide_classes.all()],
+      'warnings': [warning.toDict for warning in ai.warnings.all()],
       'brands': brand_data
     })
 
