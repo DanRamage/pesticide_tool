@@ -80,7 +80,7 @@ def get_ai_for_pest(request, pest):
     brands = models.ManyToManyField('Brand')
     """
     brand_data = []
-    for brand in ai.brandsa.all():
+    for brand in ai.brands.all():
       brand_data.append({
         'name': brand.name,
         'label_url': brand.label_url
