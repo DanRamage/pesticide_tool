@@ -62,7 +62,10 @@ def get_ai_for_pest(request, pest):
   if logger:
     logger.debug("Begin get_ai_for_pest: %s" % (search_term))
 
-  ai_list = ActiveIngredient.objects.defer("brands__pests_treated").defer("brands__application_areas").filter(pests_treated__display_name__exact=search_term).order_by('cumulative_score').prefetch_related('brands')
+  ai_list = ActiveIngredient.objects.filter(pests_treated__display_name__exact=search_term)\
+    .prefetch_related('brands').defer("brands__pests_treated").defer("brands__application_areas")\
+    .order_by('cumulative_score')
+
   ret_data = []
   for ai in ai_list.all():
     """
