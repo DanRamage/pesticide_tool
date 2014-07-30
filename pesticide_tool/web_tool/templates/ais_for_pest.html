@@ -37,22 +37,28 @@
     -->
 
     <div data-bind="foreach: ai_results">
-      <div class="panel panel-default">
-        <div class="panel-heading">
-          <h3 class="panel-title" data-bind="text: display_name"></h3>
-        </div>
-        <div class="panel-body">
-          <!--
-          <dl class="dl-horizontal">
-          -->
-          <dl>
-            <dt>Potential Ecosystem Hazard</dt>
-            <dd data-bind="text:relative_potential_ecosystem_hazard"></dd>
-            <dt>Concern</dt>
-            <dd data-bind="foreach: warnings">
-              <img class="concern_button img-circle" data-bind='attr: {src: image_url, alt: name}'></img>
-            </dd>
-          </dl>
+      <div data-bind="if: relative_potential_ecosystem_hazard == 'low'">
+        <div class="panel panel-default panel-success">
+      <div data-bind="if: relative_potential_ecosystem_hazard == 'moderate'">
+        <div class="panel panel-default panel-warning">
+      <div data-bind="if: relative_potential_ecosystem_hazard == 'likely'">
+        <div class="panel panel-default panel-danger">
+          <div class="panel-heading">
+            <h3 class="panel-title" data-bind="text: display_name"></h3>
+          </div>
+          <div class="panel-body">
+            <!--
+            <dl class="dl-horizontal">
+            -->
+            <dl>
+              <dt>Potential Ecosystem Hazard</dt>
+              <dd data-bind="text:relative_potential_ecosystem_hazard"></dd>
+              <dt>Concern</dt>
+              <dd data-bind="foreach: warnings">
+                <img class="concern_button img-circle img-responsive" data-bind='attr: {src: image_url, alt: name}'></img>
+              </dd>
+            </dl>
+          </div>
         </div>
       </div>
     </div>
