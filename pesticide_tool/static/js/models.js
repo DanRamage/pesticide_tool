@@ -362,7 +362,7 @@ function activeIngredientsForPestViewModel()
   self.initialize = function()
   {
     //Get current hash which should represent the category.
-    var pest_url = $.param.querystring();
+    var pest_url = $.deparam.querystring();
     url = 'http://sccoastalpesticides.org/pesticide_tool/get_ai_for_pest';
     $.getJSON(url,
       {
