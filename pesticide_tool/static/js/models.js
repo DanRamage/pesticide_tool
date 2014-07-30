@@ -323,7 +323,7 @@ function categoriesViewModel()
   };
   self.pestTypeClicked = function(pest, event)
   {
-    var url = 'pest_ai_page/' + encodeURIComponent(pest.href());
+    var url = 'pest_ai_page#' + encodeURIComponent(pest.href());
     self.aisForPestPage(url);
     return(true);
     /*
