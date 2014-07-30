@@ -325,6 +325,7 @@ function categoriesViewModel()
   {
     var url = 'pest_ai_page/' + encodeURIComponent(pest.href());
     self.aisForPestPage(url);
+    return(true);
     /*
     self.setVisible('pest')
     //Get current hash which should represent the category.
