@@ -63,11 +63,11 @@ def get_ai_for_pest(request, pest):
     logger.debug("Begin get_ai_for_pest: %s" % (search_term))
 
   ai_list = ActiveIngredient.objects.filter(pests_treated__display_name__exact=search_term)\
-    .prefetch_related('brands').defer("brands__pests_treated").defer("brands__application_areas")\
+    .prefetch_related('brands').only("brands__name", "brands__label_url")\
     .order_by('cumulative_score')
 
   ret_data = []
-  for ai in ai_list.all():
+  for ai in ai_list:
     """
     name = models.TextField(unique=True)
     display_name = models.TextField(unique=False)
@@ -78,16 +78,26 @@ def get_ai_for_pest(request, pest):
     pests_treated = models.ManyToManyField('Pest')
     pesticide_classes = models.ManyToManyField('PesticideClass')
     brands = models.ManyToManyField('Brand')
+    """
+    brand_data = []
+    for brand in ai.brands:
+      brand_data.append({
+        'name': brand.name,
+        'label_url': brand.label_url
+      })
+    for brand in brands.defer("brands__pests_treated").defer("brands__application_areas")
     ret_data.append({
       'name': ai.name,
       'display_name': ai.display_name,
       'cumulative_score': ai.cumulative_score,
       'relative_potential_ecosystem_hazard': ai.relative_potential_ecosystem_hazard,
-
+      'pesticide_classes': [pc.toDict for pc in ai.pesticide_classes.all()],
+      'warnings': [warning.toDict for warning in ai.warnings.all()],
+      'brands': brand_data
     })
-    """
+
   json = {
-    "ai_list" : [ai.toDict for ai in ai_list.all()],
+    "ai_list" : ret_data,
     "success": True
   }
   if logger:
