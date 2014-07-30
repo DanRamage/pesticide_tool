@@ -68,15 +68,19 @@
             <dt>Potential Ecosystem Hazard</dt>
             <dd data-bind="text:relative_potential_ecosystem_hazard"></dd>
             <dt>Concern</dt>
-            <dd data-bind="foreach: warnings">
-              <!--
-              Hover over image to get text
-              -->
-              <div class="thumbnail">
-                <div class="caption">
-                  <h4><span data-bind="text: name"></span></h4>
+          </dl>
+            <dd>
+              <div class="row" data-bind="foreach: warnings">
+                <div class="col-md-1">
+                <!--
+                Hover over image to get text
+                -->
+                <div class="thumbnail">
+                  <div class="caption">
+                    <h4><span data-bind="text: name"></span></h4>
+                  </div>
+                  <img id="warnings-hover" class="concern_button img-circle" data-bind='attr: {src: image_url, alt: name}'></img>
                 </div>
-                <img id="warnings-hover" class="concern_button img-circle" data-bind='attr: {src: image_url, alt: name}'></img>
               </div>
             </dd>
           </dl>
