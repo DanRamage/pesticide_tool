@@ -151,7 +151,8 @@
             <div class="caption">
               <h4><span data-bind="text: name()"></span></h4>
               <p>
-                <a role="button" href= "$parent.aisForPestPage()" data-bind="click: $parent.pestTypeClicked" class="btn btn-default">Find Treatments »</a>
+                pest_ai_page
+                <a role="button" data-bind="click: $parent.pestTypeClicked, attr: {href: $parent.aisForPestPage()}" class="btn btn-default">Search »</a>
                 <!--
                 <a role="button" data-bind="click: $parent.pestTypeClicked" class="btn btn-default">Find Treatments »</a>
                 -->
