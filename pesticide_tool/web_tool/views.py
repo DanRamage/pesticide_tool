@@ -63,10 +63,11 @@ def get_ai_for_pest(request, pest):
     logger.debug("Begin get_ai_for_pest: %s" % (search_term))
 
   ai_list = ActiveIngredient.objects.filter(pests_treated__display_name__exact=search_term)\
+    .order_by('cumulative_score').all()\
     .prefetch_related('brands').only("brands__name", "brands__label_url")\
     .prefetch_related('warnings')\
-    .prefetch_related('pesticide_classes')\
-    .order_by('cumulative_score').all()
+    .prefetch_related('pesticide_classes')
+
   ret_data = []
   for ai in ai_list:
     brand_data = []
