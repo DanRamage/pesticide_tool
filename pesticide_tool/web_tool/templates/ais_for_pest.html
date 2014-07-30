@@ -33,10 +33,11 @@
     </div>
     <!--
     For debugging the knockout data.
-    <pre data-bind="text: JSON.stringify(ko.toJS($data), null, 2)"></pre>
     -->
 
     <div data-bind="foreach: ai_results">
+      <pre data-bind="text: JSON.stringify(ko.toJS($root), null, 2)"></pre>
+      <pre data-bind="text: JSON.stringify(ko.toJS($data), null, 2)"></pre>
       <div data-bind="attr: {class: $root.getPanelClass.bind($data.relative_potential_ecosystem_hazard)}">
         <div class="panel-heading">
           <h3 class="panel-title" data-bind="text: display_name"></h3>
