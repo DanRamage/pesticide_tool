@@ -85,7 +85,6 @@ def get_ai_for_pest(request, pest):
         'name': brand.name,
         'label_url': brand.label_url
       })
-    for brand in brands.defer("brands__pests_treated").defer("brands__application_areas")
     ret_data.append({
       'name': ai.name,
       'display_name': ai.display_name,
