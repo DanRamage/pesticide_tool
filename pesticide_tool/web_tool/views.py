@@ -25,6 +25,9 @@ def start_page(request, template='entry_page.html'):
 def pest_category(request, template='pest_category.html'):
   return render_to_response(template, context_instance=RequestContext(request))
 
+def pest_ai_page(request, template='ais_for_pest.html'):
+  return render_to_response(template, context_instance=RequestContext(request))
+
 """
 def get_categories(request, template='pest_category.html'):
   categories = Category.objects.all().order_by('name')
@@ -74,6 +77,7 @@ def get_ai_for_pest(request, pest):
     for brand in ai.brands.all():
       brand_data.append({
         'name': brand.name,
+        'label_url': brand.label_url
         'label_url': brand.label_url
       })
     ret_data.append({

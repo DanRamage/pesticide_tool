@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% block javascript %}
+  <script type="text/javascript" src="{{STATIC_URL}}js/knockout/knockout-3.1.0.js"></script>
+  <script type="text/javascript" src="{{STATIC_URL}}js/jquery/jquery.ba-bbq.min.js"></script>
+  <script type="text/javascript"  src="{{STATIC_URL}}js/models.js"></script>
+  <script type="text/javascript">
+    function ais_for_pest_page()
+    {
+      var self = this;
+
+      self.viewModel = null;
+      self.configData = null;
+      self.initialize = function()
+      {
+        self.viewModel = new activeIngredientsForPestViewModel();
+        self.viewModel.initialize();
+        ko.applyBindings(self.viewModel);
+
+      };
+      return(self);
+    }
+    app = ais_for_pest_page();
+    app.initialize();
+
+  </script>
+{% endblock %}
+
+
+
+{% block body %}
+
+
+{% endblock %}
+

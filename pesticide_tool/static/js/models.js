@@ -349,9 +349,16 @@ function categoriesViewModel()
 
 }
 
-function subCategoriesViewModel()
+function activeIngredientsForPestViewModel()
 {
+  var self = this;
 
+  self.initialize = function()
+  {
+    //Get current hash which should represent the category.
+    var url = $.param.fragment();
+
+  }
 }
 
 function pestModel(config)
