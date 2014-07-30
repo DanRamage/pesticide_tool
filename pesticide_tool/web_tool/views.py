@@ -83,7 +83,6 @@ def get_ai_for_pest(request, pest):
       brand_data.append({
         'name': brand.name,
         'label_url': brand.label_url
-        'label_url': brand.label_url
       })
     ret_data.append({
       'name': ai.name,
