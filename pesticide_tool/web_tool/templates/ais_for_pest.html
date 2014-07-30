@@ -29,7 +29,7 @@
 {% block body %}
   <div class="container">
     <div class="text-center">
-      <h3>Pest: <span data-bind="text: pest_name(), attr: {class: function('low'){ getPanelClass('low') }}"></span></h3>
+      <h3>Pest: <span data-bind="text: pest_name()"></span></h3>
     </div>
     <!--
     For debugging the knockout data.
@@ -37,7 +37,7 @@
     -->
 
     <div data-bind="foreach: ai_results">
-      <div data-bind="attr: {class: getPanelClass('low')">
+      <div data-bind="attr: {class: function(relative_potential_ecosystem_hazard){getPanelClass(relative_potential_ecosystem_hazard)}">
         <div class="panel-heading">
           <h3 class="panel-title" data-bind="text: display_name"></h3>
         </div>
