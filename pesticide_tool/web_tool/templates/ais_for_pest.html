@@ -36,7 +36,7 @@
       <pre data-bind="text: JSON.stringify(ko.toJS($parent), null, 2)"></pre>
     -->
     <div data-bind="foreach: ai_results">
-      <div data-bind="attr: {class: $root.getPanelClass()}">
+      <div data-bind="attr: {class: $root.getPanelClass($data.relative_potential_ecosystem_hazard)}">
         <div class="panel-heading">
           <h3 class="panel-title" data-bind="text: display_name"></h3>
         </div>
@@ -49,7 +49,7 @@
             <dd data-bind="text:relative_potential_ecosystem_hazard"></dd>
             <dt>Concern</dt>
             <dd data-bind="foreach: warnings">
-              <img class="concern_button img-circle img-responsive" data-bind='attr: {src: image_url, alt: name}'></img>
+              <img class="concern_button img-circle" data-bind='attr: {src: image_url, alt: name}'></img>
             </dd>
           </dl>
         </div>
