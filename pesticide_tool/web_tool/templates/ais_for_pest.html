@@ -27,6 +27,26 @@
 
 
 {% block body %}
+  <style>
+
+    #warnings-hover .thumbnail {
+        position:relative;
+        overflow:hidden;
+    }
+    .caption {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: rgba(0,0,0,0.4);
+      width: 100%;
+      height: 100%;
+      color:#fff !important;
+      text-align: center;
+    }
+
+  </style>
+
   <div class="container">
     <div class="text-center">
       <h3>Pest: <span data-bind="text: pest_name()"></span></h3>
