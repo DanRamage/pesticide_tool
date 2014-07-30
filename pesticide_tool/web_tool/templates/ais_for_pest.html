@@ -70,7 +70,7 @@
             <dt>Concern</dt>
           </dl>
             <dd>
-              <div class="row" data-bind="foreach: warnings">
+              <div id="warnings-hover" class="row" data-bind="foreach: warnings">
                 <div class="col-xs-2">
                 <!--
                 Hover over image to get text
@@ -79,7 +79,7 @@
                   <div class="caption">
                     <h4><span data-bind="text: name"></span></h4>
                   </div>
-                  <img id="warnings-hover" class="concern_button img-circle" data-bind='attr: {src: image_url, alt: name}'></img>
+                  <img class="concern_button img-circle" data-bind='attr: {src: image_url, alt: name}'></img>
                 </div>
               </div>
             </dd>
