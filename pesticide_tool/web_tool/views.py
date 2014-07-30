@@ -67,7 +67,8 @@ def get_ai_for_pest(request, pest):
     .prefetch_related('warnings')\
     .prefetch_related('pesticide_classes')\
     .order_by('cumulative_score').all()
-
+  if logger:
+    logger.debug("Building return data")
   ret_data = []
   for ai in ai_list:
     brand_data = []
