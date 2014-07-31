@@ -103,11 +103,30 @@
       <div class="row">
         <h4 data-bind="text: 'Products containting ' + activeAI()"></h4>
         <ul class="list-group" data-bind="foreach: activeBrands">
-          <li class="list-group-item" data-bind="text: name">
+          <li class="list-group-item"  href="#" data-toggle="modal" data-target="#brand_info_popup" data-bind="text: name">
           </li>
         </ul>
       </div>
       <!--End Brands List-->
+      <!-- Brand info popup -->
+      <div class="modal fade" id="brand_info_popup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+              <h4 class="modal-title" id="myModalLabel" data-bind="text: 'Brand Info"></h4>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- End Brand Info popup -->
       <!--Brands popup-->
       <div class="modal fade" id="brands_popup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
