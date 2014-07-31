@@ -433,7 +433,9 @@ function activeIngredientsForPestViewModel()
     }
     else
     {
-      self.activeBrands(['No brands found']);
+      var no_brands = [];
+      no_brands.push('No brands found')
+      self.activeBrands(no_brands);
     }
 
     return(true);
