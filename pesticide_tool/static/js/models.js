@@ -366,6 +366,7 @@ function activeIngredientsForPestViewModel()
 
   self.pest_name = ko.observable('');
   self.ai_results = ko.observableArray([]);
+  self.activeAI = ko.observable();
   self.activeBrands = ko.observable([]);
   self.initialize = function()
   {
@@ -421,6 +422,7 @@ function activeIngredientsForPestViewModel()
   };
   self.showProducts = function(ai, event)
   {
+    self.activeAI(ai.display_name);
     //Empty the curent brands.
     self.activeBrands([]);
     //ADd the brands from the selected AI.
