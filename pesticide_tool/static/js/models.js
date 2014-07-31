@@ -426,7 +426,7 @@ function activeIngredientsForPestViewModel()
     //Empty the curent brands.
     self.activeBrands([]);
     //ADd the brands from the selected AI.
-    self.activeBrands(ai.brands);
+    self.activeBrands(ai.brands.sort());
 
     return(true);
   }
