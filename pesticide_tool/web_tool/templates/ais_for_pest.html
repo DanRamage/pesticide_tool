@@ -103,7 +103,7 @@
       <div class="row">
         <h4 data-bind="text: 'Products containting ' + activeAI()"></h4>
         <div class="btn-group btn-group-justified" data-bind="foreach: activeBrands">
-          <a class="list-group-item" data-toggle="modal" data-target="#brand_info_popup" href="#" data-bind="text: name, click: function(ai, event) { $parent.showProducts(ai, event); }"></a>
+          <a class="list-group-item" data-toggle="modal" data-target="#brand_info_popup" href="#" data-bind="text: name, click: function(ai, event) { $parent.showBrandInfo(ai, event); }"></a>
         </div>
         <!--
         <div class="list-group" data-bind="foreach: activeBrands">
@@ -119,10 +119,22 @@
           <div class="modal-content">
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-              <h4 class="modal-title" id="myModalLabel" data-bind="text: 'Brand Info"></h4>
+              <h4 class="modal-title" id="myModalLabel">Brand Information</h4>
             </div>
             <div class="modal-body">
-              ...
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h3 class="panel-title" data-bind="text: activeBrand().name"></h3>
+                </div>
+                <div class="panel-body">
+                  <dl>
+                    <dt>Product Label:</dt>
+                    <dd>
+                      <a data-bind="attr: {href: activeBrand().label_url}">Label Link</a>
+                    </dd>
+                  </dl>
+                </div>
+              </div>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
