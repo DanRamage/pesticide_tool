@@ -366,6 +366,7 @@ function activeIngredientsForPestViewModel()
 
   self.pest_name = ko.observable('');
   self.ai_results = ko.observableArray([]);
+  self.activeBrands = ko.observable([]);
   self.initialize = function()
   {
     //Get url parameters so we can see what the pest name is.
@@ -418,9 +419,12 @@ function activeIngredientsForPestViewModel()
     }
     return(css);
   };
-  self.showProducts = function(ai, event, data)
+  self.showProducts = function(ai, event)
   {
-    var i = 0;
+    //Empty the curent brands.
+   self.activeBrand([]);
+   //ADd the brands from the selected AI.
+   self.activeBrands(ai.brands);
   }
 }
 

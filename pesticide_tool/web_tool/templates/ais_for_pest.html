@@ -86,7 +86,7 @@
               </dd>
             </dl>
             <p>
-              <a role="button" href="#" class="btn btn-default" data-bind="click: function(ai, event) { $parent.showProducts(ai, event, $data); }">Products »</a>
+              <a role="button" href="#" class="btn btn-default" data-bind="page-href: 'brands_popup',click: function(ai, event) { $parent.showProducts(ai, event); }">Products »</a>
             </p>
           </div>
         </div>
@@ -94,7 +94,7 @@
     </div>
     <!--End active ingredient listing page-->
     <!--Brands popup-->
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal fade" id="brands_popup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
@@ -102,7 +102,9 @@
             <h4 class="modal-title" id="myModalLabel" data-bind="'Products containting ' + selectedAI()"></h4>
           </div>
           <div class="modal-body">
-            ...
+            <ul class="list-group" data-bind="foreach: activeBrands">
+              <li class="list-group-item" data-bind="text: name"></li>
+            </ul>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
