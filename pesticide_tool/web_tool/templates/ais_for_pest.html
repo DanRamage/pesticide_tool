@@ -51,73 +51,77 @@
     <!--
     Active ingredient listing page
     -->
-    <div class="row" data-bind="visible: visibleTracker['active_ingredients']">
-      <div class="text-center">
-        <h3>Pest: <span data-bind="text: pest_name()"></span></h3>
-      </div>
-      <!--
-      For debugging the knockout data.
-        <pre data-bind="text: JSON.stringify(ko.toJS($parent), null, 2)"></pre>
-      -->
-    </div>
-    <div data-bind="foreach: ai_results">
+    <div data-bind="visible: visibleTracker['active_ingredients']">
       <div class="row">
-        <div data-bind="attr: {class: $root.getPanelClass($data.relative_potential_ecosystem_hazard)}">
-          <div class="panel-heading">
-            <h3 class="panel-title" data-bind="text: 'Active Ingredient: ' + display_name"></h3>
-          </div>
-          <div class="panel-body">
-            <!--
-            <dl class="dl-horizontal">
-            -->
-            <dl>
-              <dt>Potential Ecosystem Hazard</dt>
-              <dd data-bind="text:relative_potential_ecosystem_hazard"></dd>
-              <dt>Concern</dt>
-            </dl>
-              <dd>
-                <div id="warnings-hover" class="row" data-bind="foreach: warnings">
-                  <div class="col-xs-3 col-sm-2 col-md-1">
-                    <a href="#" class="btn btn-lg" data-toggle="popover" data-bind="attr: {id: name, 'data-content': display_name}">
-                      <img class="concern_button img-circle" data-bind='attr: {src: image_url, alt: name}'>
-                    </a>
-                  </div>
-                </div>
-              </dd>
-            </dl>
-            <p>
-              <a role="button" href="#" class="btn btn-default" data-bind="click: function(ai, event) { $parent.showProducts(ai, event); }">Products »</a>
+        <div class="text-center">
+          <h3>Pest: <span data-bind="text: pest_name()"></span></h3>
+        </div>
+        <!--
+        For debugging the knockout data.
+          <pre data-bind="text: JSON.stringify(ko.toJS($parent), null, 2)"></pre>
+        -->
+      </div>
+      <div data-bind="foreach: ai_results">
+        <div class="row">
+          <div data-bind="attr: {class: $root.getPanelClass($data.relative_potential_ecosystem_hazard)}">
+            <div class="panel-heading">
+              <h3 class="panel-title" data-bind="text: 'Active Ingredient: ' + display_name"></h3>
+            </div>
+            <div class="panel-body">
               <!--
-              <a role="button" href="#" class="btn btn-default" data-toggle="modal" data-target="#brands_popup" data-bind="click: function(ai, event) { $parent.showProducts(ai, event); }">Products »</a>
+              <dl class="dl-horizontal">
               -->
-            </p>
+              <dl>
+                <dt>Potential Ecosystem Hazard</dt>
+                <dd data-bind="text:relative_potential_ecosystem_hazard"></dd>
+                <dt>Concern</dt>
+              </dl>
+                <dd>
+                  <div id="warnings-hover" class="row" data-bind="foreach: warnings">
+                    <div class="col-xs-3 col-sm-2 col-md-1">
+                      <a href="#" class="btn btn-lg" data-toggle="popover" data-bind="attr: {id: name, 'data-content': display_name}">
+                        <img class="concern_button img-circle" data-bind='attr: {src: image_url, alt: name}'>
+                      </a>
+                    </div>
+                  </div>
+                </dd>
+              </dl>
+              <p>
+                <a role="button" href="#" class="btn btn-default" data-bind="click: function(ai, event) { $parent.showProducts(ai, event); }">Products »</a>
+                <!--
+                <a role="button" href="#" class="btn btn-default" data-toggle="modal" data-target="#brands_popup" data-bind="click: function(ai, event) { $parent.showProducts(ai, event); }">Products »</a>
+                -->
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </div>
     <!--End active ingredient listing page-->
     <!--Brands List-->
-    <div class="row" data-bind="visible: visibleTracker('brands')">
-      <ul class="list-group" data-bind="foreach: activeBrands">
-        <li class="list-group-item" data-bind="text: name"></li>
-      </ul>
-    </div>
-    <!--End Brands List-->
-    <!--Brands popup-->
-    <div class="modal fade" id="brands_popup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-            <h4 class="modal-title" id="myModalLabel" data-bind="text: 'Products containting ' + activeAI()"></h4>
-          </div>
-          <div class="modal-body">
-            <ul class="list-group" data-bind="foreach: activeBrands">
-              <li class="list-group-item" data-bind="text: name"></li>
-            </ul>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+    <div data-bind="visible: visibleTracker['brands']">
+      <div class="row">
+        <ul class="list-group" data-bind="foreach: activeBrands">
+          <li class="list-group-item" data-bind="text: name"></li>
+        </ul>
+      </div>
+      <!--End Brands List-->
+      <!--Brands popup-->
+      <div class="modal fade" id="brands_popup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+              <h4 class="modal-title" id="myModalLabel" data-bind="text: 'Products containting ' + activeAI()"></h4>
+            </div>
+            <div class="modal-body">
+              <ul class="list-group" data-bind="foreach: activeBrands">
+                <li class="list-group-item" data-bind="text: name"></li>
+              </ul>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
           </div>
         </div>
       </div>
