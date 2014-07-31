@@ -103,7 +103,7 @@
       <div class="row">
         <h4 data-bind="text: 'Products containting ' + activeAI()"></h4>
         <div class="btn-group btn-group-justified" data-bind="foreach: activeBrands">
-          <a class="list-group-item" href="#" data-bind="text: name"></a>
+          <a class="list-group-item" data-toggle="modal" data-target="#brand_info_popup" href="#" data-bind="text: name"></a>
         </div>
           <!--
         <div class="list-group" data-bind="foreach: activeBrands">
