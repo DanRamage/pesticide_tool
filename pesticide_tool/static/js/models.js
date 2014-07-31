@@ -423,7 +423,7 @@ function activeIngredientsForPestViewModel()
   };
   self.showProducts = function(ai, event)
   {
-    self.visibleTracker('brands');
+    self.setVisible('brands');
     self.activeAI(ai.display_name);
     //Empty the curent brands.
     self.activeBrands([]);
