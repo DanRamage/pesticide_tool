@@ -72,15 +72,20 @@
             <dd>
               <div id="warnings-hover" class="row" data-bind="foreach: warnings">
                 <div class="col-xs-4 col-sm-4 col-md-2">
+                  <a href="#" class="btn btn-lg" data-toggle="popover" data-bind="attr: {id: name, data-content: display_name}">
+                    <img class="concern_button img-circle" data-bind='attr: {src: image_url, alt: name}'></img>
+                  </a>
                 <!--
                 Hover over image to get text
                 -->
+                <!--
                 <div class="thumbnail">
                   <div class="caption">
                     <h6><span data-bind="text: display_name"></span></h6>
                   </div>
                   <img class="concern_button img-circle" data-bind='attr: {src: image_url, alt: name}'></img>
                 </div>
+                -->
               </div>
             </dd>
           </dl>

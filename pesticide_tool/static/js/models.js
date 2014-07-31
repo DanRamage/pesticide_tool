@@ -373,6 +373,11 @@ function activeIngredientsForPestViewModel()
       },
       function(data) {
         self.ai_results(data.ai_list);
+        $('[data-toggle="popover"]').popover({
+          trigger: 'hover',
+          'placement': 'top'
+        });
+        /*
         $('#warnings-hover .thumbnail').hover(
           function()
           {
@@ -382,7 +387,8 @@ function activeIngredientsForPestViewModel()
           {
             $(this).find('.caption').slideUp(250); //.fadeOut(205)
           }
-        );
+        );*/
+
       }
     );
   };
