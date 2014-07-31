@@ -151,7 +151,6 @@ function categoriesViewModel()
   self.visibleTracker = {
     'category': ko.observable(true),
     'sub_category': ko.observable(false),
-    'pest': ko.observable(false)
   };
 
   self.categoryModels = ko.observableArray([]); //The major categories of pests.
@@ -258,7 +257,7 @@ function categoriesViewModel()
         page(false);
       }
     });
-  }
+  };
   self.categoryClicked = function(category, event)
   {
     //Hide the categories button, then build the sub categories.
@@ -359,6 +358,12 @@ function activeIngredientsForPestViewModel()
 {
   var self = this;
 
+    //Array to track which parts should be visible.
+  self.visibleTracker = {
+    'active_ingredients': ko.observable(true),
+    'brand': ko.observable(false),
+  };
+
   self.pest_name = ko.observable('');
   self.ai_results = ko.observableArray([]);
   self.initialize = function()
@@ -377,21 +382,24 @@ function activeIngredientsForPestViewModel()
           trigger: 'hover',
           'placement': 'top'
         });
-        /*
-        $('#warnings-hover .thumbnail').hover(
-          function()
-          {
-            $(this).find('.caption').slideDown(250); //.fadeIn(250)
-          },
-          function()
-          {
-            $(this).find('.caption').slideUp(250); //.fadeOut(205)
-          }
-        );*/
-
       }
     );
   };
+  self.setVisible = function(pageName)
+  {
+    $.each(self.visibleTracker, function(ndx, page)
+    {
+      if(ndx === pageName)
+      {
+        page(true);
+      }
+      else
+      {
+        page(false);
+      }
+    });
+  };
+
   self.getPanelClass = function(hazard_level)
   {
     var css = "panel panel-default";
@@ -410,7 +418,7 @@ function activeIngredientsForPestViewModel()
     }
     return(css);
   };
-  self.testFunc = function()
+  self.showProducts = function(ai, event, data)
   {
     var i = 0;
   }
