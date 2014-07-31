@@ -362,7 +362,7 @@ function activeIngredientsForPestViewModel()
     //Array to track which parts should be visible.
   self.visibleTracker = {
     'active_ingredients': ko.observable(true),
-    'brand': ko.observable(false),
+    'brands': ko.observable(false),
   };
 
   self.pest_name = ko.observable('');
