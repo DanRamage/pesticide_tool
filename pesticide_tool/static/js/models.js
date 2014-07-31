@@ -151,6 +151,7 @@ function categoriesViewModel()
   self.visibleTracker = {
     'category': ko.observable(true),
     'sub_category': ko.observable(false),
+    'pest': ko.observable(false)
   };
 
   self.categoryModels = ko.observableArray([]); //The major categories of pests.
