@@ -422,7 +422,7 @@ function activeIngredientsForPestViewModel()
   self.showProducts = function(ai, event)
   {
     //Empty the curent brands.
-   self.activeBrand([]);
+   self.activeBrands([]);
    //ADd the brands from the selected AI.
    self.activeBrands(ai.brands);
   }
