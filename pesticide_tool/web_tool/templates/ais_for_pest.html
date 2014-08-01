@@ -130,22 +130,24 @@
               <h4 class="modal-title" id="myModalLabel">Brand Information</h4>
             </div>
             <div class="modal-body">
-              <div class="panel panel-default">
-                <div class="panel-heading">
-                  <h3 class="panel-title" data-bind="text: activeBrand().name"></h3>
-                </div>
-                <div class="panel-body">
-                  <div class="row" id="brand_nfo_spinner"></div>
-                  <dl>
-                    <dt>Restricted Use:</dt>
-                    <dd data-bind="text: activeBrand().restricted_use"></dd>
-                    <dt>Forumation:</dt>
-                    <data-bind="text: activeBrand().forumation"></dd>
-                    <dt>Product Label:</dt>
-                    <dd>
-                      <a data-bind="attr: {href: activeBrand().label_url}">Label Link</a>
-                    </dd>
-                  </dl>
+              <div data-bind="foreach: activeBrand">
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h3 class="panel-title" data-bind="text: name"></h3>
+                  </div>
+                  <div class="panel-body">
+                    <div class="row" id="brand_nfo_spinner"></div>
+                    <dl>
+                      <dt>Restricted Use:</dt>
+                      <dd data-bind="text: restricted_use"></dd>
+                      <dt>Forumation:</dt>
+                      <data-bind="text: forumation"></dd>
+                      <dt>Product Label:</dt>
+                      <dd>
+                        <a data-bind="attr: {href: label_url}">Label Link</a>
+                      </dd>
+                    </dl>
+                  </div>
                 </div>
               </div>
             </div>

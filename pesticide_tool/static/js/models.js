@@ -374,8 +374,8 @@ function activeIngredientsForPestViewModel()
   self.pest_name = ko.observable('');
   self.ai_results = ko.observableArray([]);
   self.activeAI = ko.observable();
-  self.activeBrands = ko.observable([]);
-  self.activeBrand = ko.observable();
+  self.activeBrands = ko.observableArray([]);
+  self.activeBrand = ko.observableArray([]);
   self.spinner = null;
 
   self.initialize = function()
@@ -462,7 +462,7 @@ function activeIngredientsForPestViewModel()
       },
       function(data) {
         self.spinner.stop();
-        self.activeBrand(data.brand_info);
+        self.activeBrand([data.brand_info]);
       }
     );
 
