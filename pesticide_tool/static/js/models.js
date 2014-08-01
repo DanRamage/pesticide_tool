@@ -462,7 +462,7 @@ function activeIngredientsForPestViewModel()
       },
       function(data) {
         self.spinner.stop();
-        self.activeBrand(data.brand);
+        self.activeBrand(data.brand_info);
       }
     );
 
