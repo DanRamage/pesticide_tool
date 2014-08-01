@@ -123,93 +123,34 @@
         </ul>
           -->
       </div>
-      <!--End Brands List-->
-      <!-- Brand Info -->
-      <div data-bind="foreach: activeBrand, visible: visibleTracker['brand_info']">
-        <div class="row">
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              <h3 class="panel-title" data-bind="text: 'Brand: ' + name"></h3>
-            </div>
-            <div class="panel-body">
-              <div class="row">
-                <span id="brand_nfo_spinner"></span>
-              </div>
-              <dl class="dl-horizontal">
-                <dt>Restricted Use:</dt>
-                <dd data-bind="text: restricted_use"></dd>
-                <dt>Formulation:</dt>
-                <dd data-bind="text: formulation"></dd>
-                <dt>Product Label:</dt>
-                <dd>
-                  <a data-bind="attr: {href: label_url}">Label Link</a>
-                </dd>
-              </dl>
-            </div>
+    </div>
+    <!--End Brands List-->
+    <!-- Brand Info -->
+    <div data-bind="foreach: activeBrand, visible: visibleTracker['brand_info']">
+      <div class="row">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title" data-bind="text: 'Brand: ' + name"></h3>
           </div>
-        </div>
-      </div>
-      <!-- End Brand -->
-      <!-- Brand info popup -->
-      <div class="modal fade" id="brand_info_popup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-              <h4 class="modal-title" id="myModalLabel">Brand Information</h4>
+          <div class="panel-body">
+            <div class="row">
+              <span id="brand_nfo_spinner"></span>
             </div>
-            <div class="modal-body">
-              <div data-bind="foreach: activeBrand">
-                <div class="panel panel-default">
-                  <div class="panel-heading">
-                    <h3 class="panel-title" data-bind="text: name"></h3>
-                  </div>
-                  <div class="panel-body">
-                    <div class="row">
-                      <span id="brand_nfo_spinner"></span>
-                    </div>
-                    <dl class="dl-horizontal">
-                      <dt>Restricted Use:</dt>
-                      <dd data-bind="text: restricted_use"></dd>
-                      <dt>Formulation:</dt>
-                      <dd data-bind="text: formulation"></dd>
-                      <dt>Product Label:</dt>
-                      <dd>
-                        <a data-bind="attr: {href: label_url}">Label Link</a>
-                      </dd>
-                    </dl>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- End Brand Info popup -->
-      <!--Brands popup-->
-      <div class="modal fade" id="brands_popup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-              <h4 class="modal-title" id="myModalLabel" data-bind="text: 'Products containting ' + activeAI()"></h4>
-            </div>
-            <div class="modal-body">
-              <ul class="list-group" data-bind="foreach: activeBrands">
-                <li class="list-group-item" data-bind="text: name"></li>
-              </ul>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
+            <dl class="dl-horizontal">
+              <dt>Restricted Use:</dt>
+              <dd data-bind="text: restricted_use"></dd>
+              <dt>Formulation:</dt>
+              <dd data-bind="text: formulation"></dd>
+              <dt>Product Label:</dt>
+              <dd>
+                <a data-bind="attr: {href: label_url}">Label Link</a>
+              </dd>
+            </dl>
           </div>
         </div>
       </div>
     </div>
+    <!-- End Brand -->
   </div>
 
 {% endblock %}
