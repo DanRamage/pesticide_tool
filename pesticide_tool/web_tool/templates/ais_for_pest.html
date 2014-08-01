@@ -111,7 +111,10 @@
       <div class="row">
         <h4 data-bind="text: 'Products containting ' + activeAI()"></h4>
         <div class="btn-group btn-group-justified" data-bind="foreach: activeBrands">
+          <a class="list-group-item" data-bind="text: name, click: function(ai, event) { $parent.showBrandInfo(ai, event); }"></a>
+          <!--
           <a class="list-group-item" data-toggle="modal" data-target="#brand_info_popup" href="#" data-bind="text: name, click: function(ai, event) { $parent.showBrandInfo(ai, event); }"></a>
+          -->
         </div>
         <!--
         <div class="list-group" data-bind="foreach: activeBrands">
@@ -121,6 +124,31 @@
           -->
       </div>
       <!--End Brands List-->
+      <!-- Brand Info -->
+      <div data-bind="foreach: activeBrand, visible: visibleTracker['brand_info']">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title" data-bind="text: 'Brand: ' + name"></h3>
+          </div>
+          <div class="panel-body">
+            <div class="row">
+              <span id="brand_nfo_spinner"></span>
+            </div>
+            <dl class="dl-horizontal">
+              <dt>Restricted Use:</dt>
+              <dd data-bind="text: restricted_use"></dd>
+              <dt>Formulation:</dt>
+              <dd data-bind="text: formulation"></dd>
+              <dt>Product Label:</dt>
+              <dd>
+                <a data-bind="attr: {href: label_url}">Label Link</a>
+              </dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+
+      <!-- End Brand -->
       <!-- Brand info popup -->
       <div class="modal fade" id="brand_info_popup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">

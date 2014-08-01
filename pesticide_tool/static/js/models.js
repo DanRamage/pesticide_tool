@@ -368,7 +368,8 @@ function activeIngredientsForPestViewModel()
     //Array to track which parts should be visible.
   self.visibleTracker = {
     'active_ingredients': ko.observable(true),
-    'brands': ko.observable(false)
+    'brands': ko.observable(false),
+    'brand_info': ko.observable(false)
   };
   self.showSpinner = ko.observable(false);
   self.pest_name = ko.observable('');
@@ -453,6 +454,8 @@ function activeIngredientsForPestViewModel()
   };
   self.showBrandInfo = function(brand, event)
   {
+    self.setVisible('brand_info');
+
     self.activeBrand([]);
     var target = document.getElementById('brand_nfo_spinner');
     self.spinner.spin(target);
