@@ -72,7 +72,7 @@ def get_ai_for_pest(request, pest):
 
   ai_list = ActiveIngredient.objects.filter(pests_treated__display_name__exact=search_term)\
     .order_by('cumulative_score').all()\
-    .prefetch_related('brands').only("brands__name", "brands__label_url")\
+    .prefetch_related('brands').only("brands__name")\
     .prefetch_related('warnings')\
     .prefetch_related('pesticide_classes')
 
@@ -80,10 +80,10 @@ def get_ai_for_pest(request, pest):
   for ai in ai_list:
     brand_data = []
     for brand in ai.brands.all():
-      brand_data.append({
-        'name': brand.name,
-        'label_url': brand.label_url
-      })
+      pass
+    brand_data.append({
+      'name': brand.name
+    })
     ret_data.append({
       'name': ai.name,
       'display_name': ai.display_name,
@@ -100,6 +100,21 @@ def get_ai_for_pest(request, pest):
   }
   if logger:
     logger.debug("Finshied get_ai_for_pest. Returning %d active ingredients" % (len(json['ai_list'])))
-    #logger.debug("Results: %s" % (json['ai_list']))
   return HttpResponse(simplejson.dumps(json))
 
+def get_info_for_brand(request, brand):
+  search_term = brand
+  if(len(search_term) == 0):
+    search_term = request.GET['brand']
+  if logger:
+    logger.debug("Begin get_info_for_brand: %s" % (search_term))
+
+  brand_info = Brand.objects.filter(name__iexact=brand).all()[:1].get()
+  json =
+  {
+    'brand_info': [brand.toDict for brand in brand_info],
+    'success': True
+  }
+  if logger:
+    logger.debug("End get_info_for_brand")
+  return HttpResponse(simplejson.dumps(json))

@@ -1,8 +1,10 @@
 {% extends 'base.html' %}
-
+  <link rel="stylesheet" href="{{STATIC_URL}}js/ladda-bootstrap/dist/ladda-themeless.min.css">
 {% block javascript %}
   <script type="text/javascript" src="{{STATIC_URL}}js/knockout/knockout-3.1.0.js"></script>
   <script type="text/javascript" src="{{STATIC_URL}}js/jquery/jquery.ba-bbq.min.js"></script>
+  <script src="{{STATIC_URL}}js/ladda-bootstrap/dist/spin.min.js"></script>
+  <script src="{{STATIC_URL}}js/ladda-bootstrap/dist/ladda.min.js"></script>
   <script type="text/javascript"  src="{{STATIC_URL}}js/models.js"></script>
   <script type="text/javascript">
     function category_page()
