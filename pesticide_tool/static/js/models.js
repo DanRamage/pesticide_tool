@@ -349,23 +349,6 @@ function categoriesViewModel()
     var url = 'pest_ai_page?pest_name=' + encodeURIComponent(pest.name());
     self.aisForPestPage(url);
     return(true);
-    /*
-    self.setVisible('pest')
-    //Get current hash which should represent the category.
-    var url = $.param.fragment();
-    var hash = url + '/' + encodeURIComponent(pest.href());
-    var frag = $.param.fragment('', '#' + hash, 2);
-    $.bbq.pushState(frag);
-
-    url = 'http://sccoastalpesticides.org/pesticide_tool/get_ai_for_pest';
-    $.getJSON(url,
-      {
-        'pest': pest.name()
-      },
-      function(data) {
-      }
-    );
-    */
   }
   self.hashchanged = function(event)
   {
@@ -393,12 +376,13 @@ function activeIngredientsForPestViewModel()
   self.activeAI = ko.observable();
   self.activeBrands = ko.observable([]);
   self.activeBrand = ko.observable();
+  self.spinner = null;
 
   self.initialize = function()
   {
     self.showSpinner(true);
     var target = document.getElementById('spinner');
-    var spinner = new Spinner(spinner_opts).spin(target);
+    self.spinner = new Spinner(spinner_opts).spin(target);
 
     //Get url parameters so we can see what the pest name is.
     var pest_url = $.deparam.querystring();
@@ -410,6 +394,7 @@ function activeIngredientsForPestViewModel()
         'pest': pest_url.pest_name
       },
       function(data) {
+        spinner.stop();
         self.showSpinner(false);
         self.ai_results(data.ai_list);
         $('[data-toggle="popover"]').popover({
@@ -473,7 +458,20 @@ function activeIngredientsForPestViewModel()
   };
   self.showBrandInfo = function(brand, event)
   {
-    self.activeBrand(brand);
+    var target = document.getElementById('brand_nfo_spinner');
+    self.spinner.spin(target);
+
+    var url = 'http://sccoastalpesticides.org/pesticide_tool/get_info_for_brand';
+    $.getJSON(url,
+      {
+        'brand': brand.name;
+      },
+      function(data) {
+        self.spinner.stop();
+        self.activeBrand(data.brand);
+      }
+    );
+
 
     return(true);
   }
