@@ -446,7 +446,8 @@ function activeIngredientsForPestViewModel()
     //ADd the brands from the selected AI.
     if(ai.brands.length)
     {
-      self.activeBrands(ai.brands.sort());
+      var sorted_brands = ai.brands.sort();
+      self.activeBrands(sorted_brands);
     }
     return(true);
   };
