@@ -3,7 +3,6 @@
   <script type="text/javascript" src="{{STATIC_URL}}js/knockout/knockout-3.1.0.js"></script>
   <script type="text/javascript" src="{{STATIC_URL}}js/jquery/jquery.ba-bbq.min.js"></script>
   <script src="{{STATIC_URL}}js/ladda-bootstrap/dist/spin.js"></script>
-  <script src="{{STATIC_URL}}js/ladda-bootstrap/dist/ladda.js"></script>
   <script type="text/javascript"  src="{{STATIC_URL}}js/models.js"></script>
   <script type="text/javascript">
     function category_page()
@@ -33,8 +32,9 @@
 {% endblock %}
 
 {% block body %}
+  <!--
   <link rel="stylesheet" href="{{STATIC_URL}}js/ladda-bootstrap/dist/ladda-themeless.min.css">
-
+  -->
   <!--
   Gets the button text to wrap properly.
   -->
@@ -122,8 +122,8 @@
               <p>
                 <a role="button" href="#"
                    data-bind="attr: {id: href()}, click: $parent.subCategoryClicked"
-                   class="btn btn-default ladda-button" data-style="contract" >
-                  <span class="ladda-label">Search »</span>
+                   class="btn btn-default" >
+                  <span>Search »</span>
                 </a>
                 <!--
                 <a role="button" data-bind="attr: {href: '#pest_subcategory/' + href()}" class="btn btn-default">Search »</a>
@@ -160,9 +160,8 @@
               <p>
                 <a role="button"
                    data-bind="click: $parent.pestTypeClicked, attr: {href: $parent.aisForPestPage()}"
-                   class="btn btn-default ladda-button"
-                   data-style="contract">
-                  <span class="ladda-label">Search »</span>
+                   class="btn btn-default">
+                  <span>Search »</span>
                 </a>
                 <!--
                 <a role="button" data-bind="click: $parent.pestTypeClicked" class="btn btn-default">Find Treatments »</a>

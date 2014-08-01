@@ -304,9 +304,9 @@ function categoriesViewModel()
   {
 
     //Create and show out loading indicator in the button.
-    var btn = document.querySelector("#" + subCategory.href());
-    var ladda_loading = Ladda.create(btn);
-    ladda_loading.start();
+    //var btn = document.querySelector("#" + subCategory.href());
+    //var ladda_loading = Ladda.create(btn);
+    //ladda_loading.start();
     //Get current hash which should represent the category.
     var url = $.param.fragment();
 
@@ -320,7 +320,7 @@ function categoriesViewModel()
         {'sub_category': subCategory.name()},
         function (data) {
           subCategory.buildPests(data.pests);
-          ladda_loading.stop();
+          //ladda_loading.stop();
           self.activeSubCategory(subCategory);
           self.setVisible('pest');
           //Setup the hover functions for sub category buttons.
