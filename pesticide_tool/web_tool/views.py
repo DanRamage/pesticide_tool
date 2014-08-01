@@ -108,7 +108,7 @@ def get_info_for_brand(request, brand):
   if logger:
     logger.debug("Begin get_info_for_brand: %s" % (search_term))
 
-  brand_info = Brand.objects.filter(name__iexact=search_term).all()[:1].get()
+  brand_info = Brand.objects.filter(name__iexact=search_term).all().order_by(application_areas__name).order_by(pests_treated__name)[:1].get()
   json = {
     'brand_info': brand_info.toDict,
     'success': True
