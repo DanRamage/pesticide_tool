@@ -56,6 +56,13 @@
         <div class="text-center">
           <h3>Pest: <span data-bind="text: pest_name()"></span></h3>
         </div>
+
+        <!--Place holder for the loading spinner-->
+        <div class="row" data-bind="visible: showSpinner">
+          <span id="spinner"></span>
+        </div>
+        <!--End spinner-->
+
         <!--
         For debugging the knockout data.
           <pre data-bind="text: JSON.stringify(ko.toJS($parent), null, 2)"></pre>

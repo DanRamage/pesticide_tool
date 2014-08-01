@@ -12,6 +12,24 @@ ko.observableArray.fn.asDictionary = function (keyName) {
         return keys;
     }, this);
 };
+var spinner_opts = {
+  lines: 13, // The number of lines to draw
+  length: 37, // The length of each line
+  width: 10, // The line thickness
+  radius: 26, // The radius of the inner circle
+  corners: 1, // Corner roundness (0..1)
+  rotate: 0, // The rotation offset
+  direction: 1, // 1: clockwise, -1: counterclockwise
+  color: '#000', // #rgb or #rrggbb or array of colors
+  speed: 0.8, // Rounds per second
+  trail: 60, // Afterglow percentage
+  shadow: false, // Whether to render a shadow
+  hwaccel: false, // Whether to use hardware acceleration
+  className: 'spinner', // The CSS class to assign to the spinner
+  zIndex: 2e9, // The z-index (defaults to 2000000000)
+  top: '50%', // Top position relative to parent
+  left: '50%' // Left position relative to parent
+};
 
 pagedObservableArray = function (options)
   {
@@ -367,9 +385,9 @@ function activeIngredientsForPestViewModel()
     //Array to track which parts should be visible.
   self.visibleTracker = {
     'active_ingredients': ko.observable(true),
-    'brands': ko.observable(false),
+    'brands': ko.observable(false)
   };
-
+  self.showSpinner = ko.observable(false);
   self.pest_name = ko.observable('');
   self.ai_results = ko.observableArray([]);
   self.activeAI = ko.observable();
@@ -378,8 +396,13 @@ function activeIngredientsForPestViewModel()
 
   self.initialize = function()
   {
+    self.showSpinner(true);
+    var target = document.getElementById('spinner');
+    var spinner = new Spinner(spinner_opts).spin(target);
+
     //Get url parameters so we can see what the pest name is.
     var pest_url = $.deparam.querystring();
+
     self.pest_name(pest_url.pest_name);
     url = 'http://sccoastalpesticides.org/pesticide_tool/get_ai_for_pest';
     $.getJSON(url,
@@ -387,6 +410,7 @@ function activeIngredientsForPestViewModel()
         'pest': pest_url.pest_name
       },
       function(data) {
+        self.showSpinner(false);
         self.ai_results(data.ai_list);
         $('[data-toggle="popover"]').popover({
           trigger: 'hover',
@@ -461,198 +485,6 @@ function pestModel(config)
   ko.utils.extend(self, new buttonModel(config['display_name'], config['image_url']));
 
   //self.buttonData = new buttonModel(config['display_name'], config['image_url']);
-
-  return self;
-}
-
-function modelContainer(modelName, templateId, configData)
-{
-  this.key = key;
-  this.template = ko.observable(template);
-  this.data = data;
-}
-
-function pestSearchResultModel(config)
-{
-  var self = this;
-
-  ko.mapping.fromJS(config, {}, self);
-
-
-}
-
-function selectionViewModel(config)
-{
-  var self = this;
-
-  self.layoutMapping = null;
-  self.models = ko.observableArray([]);         //The container for all the view models on the page: Category, Sub Category, Pests, Results.
-
-  self.categoryModels = ko.observableArray([]); //The major categories of pests.
-  self.subCategory = ko.observableArray([]);    //Inside a category, these are the pest types;
-  self.activeCategory = ko.observable();    //The active major category name.
-  self.activeCategoryName = ko.observable();    //The active major category name.
-  self.activeSubCategoryName = ko.observable();    //The active sub category name.
-  self.activePestName = ko.observable();        //The specific pest name.
-  self.pestList = ko.observableArray([]);       //The list of pest types chosen from selecting a subcategory.
-
-  self.pesticideSearchRec = ko.observableArray([]);
-  self.brandsForSelectedIngredient = ko.observableArray([]);
-  self.searching = ko.observable(false);
-  //self.pestListPaged = null;
-
-  //Called before the specific category page gets loaded. Use this to scan the href to figure out which category
-  //is being requested.
-  self.setCategory = function(pageObj)
-  {
-    var page = pageObj.page;
-    //Empty the previous selection.
-    self.subCategory.removeAll();
-    //Reset the active category name.
-    self.activeCategoryName('');
-    if(page.currentId === 'pest_subcategory')
-    {
-      var subCategoryName = page.route[0];
-      $.each(self.categoryModels(), function(ndx, category)
-        {
-          if(category.href() === subCategoryName)
-          {
-            self.activeCategory(category);
-            self.activeCategoryName(category.name());
-            $.each(category.subCategories, function(ndx, subCategory)
-              {
-                self.subCategory.push(subCategory);
-              });
-
-            return(false);
-          }
-        });
-
-    }
-  };
-  self.pestTypeButtonClick = function(subCategoryName, toUrl)
-  {
-    // Deactivate the pest_type section.
-    $('#pest_subcategory').removeClass();
-
-    //Set the selected sub category name, then loop through to find the subcategory so we can get the pest list.
-    self.activeSubCategoryName(subCategoryName);
-    $.each(self.subCategory(), function(ndx, subCategory)
-      {
-        if(subCategory.name() === subCategoryName)
-        {
-          self.pestList(subCategory.pests);
-          return(false);
-        }
-      });
-    // Activate the pest_selected section where we'll populate the query results.
-    $('#pest_type').addClass('active');
-    //Change the URL.
-    window.location.href = toUrl;
-  };
-
-  self.pestButtonClick = function(pestName, toUrl)
-  {
-    self.activePestName(pestName);
-    // Deactivate the pest_type section.
-    $('#pest_type').removeClass();
-    // Activate the pest_selected section where we'll populate the query results.
-    $('#pest_selected').addClass('active');
-    //Change the URL.
-    window.location.href = toUrl;
-    var searchType = 'pest';
-    var pestType = self.activeCategoryName();
-    var pestName = pestName;
-
-    self.pesticideSearchRec([]);
-
-    self.searching(true);
-
-    $.ajax({
-        url: app.pestDataQueryUrl,
-        dataType: 'json',
-        data : {'name' : pestName, 'searchtype' : 'pest', 'pesttype' : pestType},
-        success: function(result)
-        {
-          self.searching(false);
-          self.pesticideSearchRec(result.data);
-        },
-        error: function(result)
-        {
-          self.searching(false);
-        }
-    });
-  };
-  self.setActiveIngredient = function(activeIngredient)
-  {
-    //Clear the observable of the previous data.
-    self.brandsForSelectedIngredient([]);
-    //Given the active ingredient name parameter, find it in the pesticide search data.
-    $.each(self.pesticideSearchRec(), function(ndx, pesticideRec)
-    {
-      if(pesticideRec['name'] === activeIngredient['name'])
-      {
-        self.brandsForSelectedIngredient(pesticideRec['brandList']);
-        return(false);
-      }
-    });
-    return(true);
-  };
-
-  self.getHazardColor = function(hazardLevel)
-  {
-    var colorCls = '.hazard_likely';
-    if(hazardLevel === 'low')
-    {
-      colorCls = '.hazard_low';
-    }
-    else if(hazardLevel === 'moderate')
-    {
-      colorCls = '.hazard_moderate';
-    }
-    return(colorCls);
-  }
-  self.loadConfigurationData = function(data)
-  {
-
-    //self.layoutMapping = ko.mapping.fromJS(data.layout);
-
-    $.each(data.layout.pest_categories, function(categoryName, categoryNfo) {
-      //Construct the categoryModel.
-      var catModel = new categoryModel(categoryName, categoryNfo);
-      catModel.buildSubCategories(categoryNfo['sub_category'])
-
-      self.categoryModels.push(catModel);
-    });
-
-    //Got the initialization data now initialize the page bindings.
-    app.initPage();
-
-    return(true);
-  };
-
-  /*
-  self.dumpContext = ko.computed(function()
-    {
-      return(JSON.stringify(ko.toJS(self), null, 2));
-    }
-    );
-  */
-  //Click handler when someone chooses the type of pest they want to drill down into.
-  //We load up the sub categories of the selection for the page.
-  self.activateCategory = function(category)
-  {
-    //Empty the previous selection.
-    app.viewModel.subCategory.removeAll();
-    //Clear out the current categories for the new selection.
-    app.viewModel.activeCategory(category);
-    $.each(category.subCategories, function(ndx, subCategory)
-      {
-        app.viewModel.subCategory.push(subCategory);
-      });
-    //For the pager.js paging to work properly, this function needs to return true. It's the click event handler.
-    return(true);
-  };
 
   return self;
 }
