@@ -111,7 +111,7 @@ def get_info_for_brand(request, brand):
 
   brand_info = Brand.objects.filter(name__iexact=search_term).all()[:1].get()
   json = {
-    'brand_info': [brand.toDict for brand in brand_info],
+    'brand_info': brand_info.toDict,
     'success': True
   }
   if logger:
