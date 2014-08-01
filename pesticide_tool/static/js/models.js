@@ -488,12 +488,12 @@ function activeIngredientsForPestViewModel()
     self.showApplicationAreas = function(brand_nfo, event)
     {
       self.listName("Application Areas");
-      self.activeList([brand_nfo.application_areas]);
+      self.activeList(brand_nfo.application_areas);
     };
     self.showPestsTreated = function(brand_nfo, event)
     {
       self.listName("Pests Treated");
-      self.activeList([brand_nfo.pests_treated]);
+      self.activeList(brand_nfo.pests_treated);
     };
 
     return(true);
