@@ -122,7 +122,7 @@
     <!-- Brand Info -->
     <div data-bind="foreach: activeBrand, visible: visibleTracker['brand_info']">
       <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-12 vcenter">
           <div class="panel panel-default">
             <div class="panel-heading">
               <h3 class="panel-title" data-bind="text: 'Brand: ' + name"></h3>
@@ -136,7 +136,7 @@
                   <div class="col-md-3">
                     <h3>Restricted Use:</h3>
                   </div>
-                  <div class="col-md-6 vcenter">
+                  <div class="col-md-6">
                     <span data-bind="text: restricted_use"></span>
                   </div>
                 </div>
@@ -144,7 +144,7 @@
                   <div class="col-md-3">
                     <h3>Formulation:</h3>
                   </div>
-                  <div class="col-md-6 vcenter" >
+                  <div class="col-md-6" >
                     <span data-bind="text: formulation"></span>
                   </div>
                 </div>
@@ -152,7 +152,7 @@
                   <div class="col-md-3">
                     <h3>Product Label:</h3>
                   </div>
-                  <div class="col-md-6 vcenter">
+                  <div class="col-md-6">
                     <span>
                       <a data-bind="attr: {href: label_url}">Label Link</a>
                     </span>
