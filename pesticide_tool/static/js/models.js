@@ -394,7 +394,7 @@ function activeIngredientsForPestViewModel()
         'pest': pest_url.pest_name
       },
       function(data) {
-        spinner.stop();
+        self.spinner.stop();
         self.showSpinner(false);
         self.ai_results(data.ai_list);
         $('[data-toggle="popover"]').popover({
