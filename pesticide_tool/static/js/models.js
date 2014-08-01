@@ -377,6 +377,7 @@ function activeIngredientsForPestViewModel()
   self.activeAI = ko.observable();
   self.activeBrands = ko.observableArray([]);
   self.activeBrand = ko.observableArray([]);
+  self.activeList = ko.observableArray([]);
   self.spinner = null;
 
   self.initialize = function()
@@ -404,6 +405,18 @@ function activeIngredientsForPestViewModel()
         });
       }
     );
+  };
+  self.hashchanged = function(event)
+  {
+    //Force the page to the top whenever we change pages since most are long lists of pics.
+    //If we don't do this, when using the back key the previous page will pick up where we left
+    //the currect page.
+    $('body').scrollTop(0);
+    self.check_url();
+  };
+  self.check_url = function()
+  {
+    var state = $.bbq.getState();
   };
   self.setVisible = function(pageName)
   {
@@ -471,6 +484,14 @@ function activeIngredientsForPestViewModel()
       }
     );
 
+    self.showApplicationAreas = function(brand_nfo, event)
+    {
+      self.activeList([]);
+    };
+    self.showPestsTreated = function(brand_nfo, event)
+    {
+      self.activeList([]);
+    };
 
     return(true);
   }
