@@ -104,10 +104,10 @@ class Brand(models.Model):
       ai = [ai.toDict for ai in self.active_ingredients.all()]
     aa = []
     if self.application_areas:
-      aa = [aa.toDict for aa in self.application_areas.all()]
+      aa = [aa.toDict for aa in self.application_areas.order_by('name').all()]
     pest = []
     if self.pests_treated:
-      pest = [pest.toDict for pest in self.pests_treated.all()]
+      pest = [pest.toDict for pest in self.pests_treated.order_by('name').all()]
     brand = {
       'id': self.row_id,
       'name': self.name,
