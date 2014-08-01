@@ -134,7 +134,7 @@
               <h3 class="panel-title" data-bind="text: 'Brand: ' + name"></h3>
             </div>
             <div class="panel-body">
-              <div class="container center-block">
+              <div class="container">
                 <div class="row">
                   <span id="brand_nfo_spinner"></span>
                 </div>
@@ -142,14 +142,16 @@
                   <div class="col-md-3">
                     <h3>Restricted Use:</h3>
                   </div>
-                  <div class="col-md-6" data-bind="text: restricted_use">
+                  <div class="col-md-6">
+                    <span data-bind="text: restricted_use"></span>
                   </div>
                 </div>
                 <div class="row">
                   <div class="col-md-3">
                     <h3>Formulation:</h3>
                   </div>
-                  <div class="col-md-6" data-bind="text: formulation">
+                  <div class="col-md-6" >
+                    <span data-bind="text: formulation"></span>
                   </div>
                 </div>
                 <div class="row">
@@ -157,7 +159,9 @@
                     <h3>Product Label:</h3>
                   </div>
                   <div class="col-md-6">
-                    <a data-bind="attr: {href: label_url}">Label Link</a>
+                    <span>
+                      <a data-bind="attr: {href: label_url}">Label Link</a>
+                    </span>
                   </div>
                 </div>
                 <div class="row">
