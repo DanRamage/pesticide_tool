@@ -452,6 +452,7 @@ function activeIngredientsForPestViewModel()
   };
   self.showBrandInfo = function(brand, event)
   {
+    self.activeBrand([]);
     var target = document.getElementById('brand_nfo_spinner');
     self.spinner.spin(target);
 
