@@ -464,7 +464,7 @@ function activeIngredientsForPestViewModel()
     var url = 'http://sccoastalpesticides.org/pesticide_tool/get_info_for_brand';
     $.getJSON(url,
       {
-        'brand': brand.name;
+        'brand': brand.name
       },
       function(data) {
         self.spinner.stop();
