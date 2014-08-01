@@ -285,6 +285,9 @@ function categoriesViewModel()
   self.subCategoryClicked = function(subCategory, event)
   {
 
+    //Create and show out loading indicator in the button.
+    var ladda_loading = Ladda.create(this);
+    ladda_loading.start();
     //Get current hash which should represent the category.
     var url = $.param.fragment();
 
@@ -298,6 +301,7 @@ function categoriesViewModel()
         {'sub_category': subCategory.name()},
         function (data) {
           subCategory.buildPests(data.pests);
+          ladda_loading.stop();
           self.activeSubCategory(subCategory);
           self.setVisible('pest');
           //Setup the hover functions for sub category buttons.
