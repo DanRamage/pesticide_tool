@@ -286,7 +286,7 @@ function categoriesViewModel()
   {
 
     //Create and show out loading indicator in the button.
-    var btn = $("#" + subCategory.href());
+    var btn = document.querySelector("#" + subCategory.href());
     var ladda_loading = Ladda.create(btn);
     ladda_loading.start();
     //Get current hash which should represent the category.

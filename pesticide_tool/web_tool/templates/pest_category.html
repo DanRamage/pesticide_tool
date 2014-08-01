@@ -120,7 +120,11 @@
             <div class="caption">
               <h4><span data-bind="text: name()"></span></h4>
               <p>
-                <a role="button" href="#" data-bind="attr: {id: href()}, click: $parent.subCategoryClicked" class="btn btn-default ladda-button" data-style="contract" ><span class="ladda-label">Search »</span></a>
+                <a role="button" href="#"
+                   data-bind="attr: {id: href()}, click: $parent.subCategoryClicked"
+                   class="btn btn-default ladda-button" data-style="contract" >
+                  <span class="ladda-label">Search »</span>
+                </a>
                 <!--
                 <a role="button" data-bind="attr: {href: '#pest_subcategory/' + href()}" class="btn btn-default">Search »</a>
                 -->
