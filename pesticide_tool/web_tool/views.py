@@ -80,10 +80,9 @@ def get_ai_for_pest(request, pest):
   for ai in ai_list:
     brand_data = []
     for brand in ai.brands.all():
-      pass
-    brand_data.append({
-      'name': brand.name
-    })
+      brand_data.append({
+        'name': brand.name
+      })
     ret_data.append({
       'name': ai.name,
       'display_name': ai.display_name,
