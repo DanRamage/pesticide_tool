@@ -286,7 +286,7 @@ function categoriesViewModel()
   {
 
     //Create and show out loading indicator in the button.
-    var ladda_loading = Ladda.create(subCategory.name());
+    var ladda_loading = Ladda.create($.(subCategory.href()));
     ladda_loading.start();
     //Get current hash which should represent the category.
     var url = $.param.fragment();
