@@ -448,12 +448,6 @@ function activeIngredientsForPestViewModel()
     {
       self.activeBrands(ai.brands.sort());
     }
-    else
-    {
-      var no_brands = [];
-      no_brands.push('No brands found')
-      self.activeBrands(no_brands);
-    }
     return(true);
   };
   self.showBrandInfo = function(brand, event)
