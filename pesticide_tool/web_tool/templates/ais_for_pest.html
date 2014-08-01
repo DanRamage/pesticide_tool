@@ -52,8 +52,8 @@
     <!--
     Active ingredient listing page
     -->
-    <div data-bind="visible: visibleTracker['active_ingredients']">
-      <div class="row">
+    <div class="row">
+      <div data-bind="visible: visibleTracker['active_ingredients']">
         <div class="text-center">
           <h3>Pest: <span data-bind="text: pest_name()"></span></h3>
         </div>
@@ -107,8 +107,8 @@
     </div>
     <!--End active ingredient listing page-->
     <!--Brands List-->
-    <div data-bind="visible: visibleTracker['brands']">
-      <div class="row">
+    <div class="row">
+      <div data-bind="visible: visibleTracker['brands']">
         <h4 data-bind="text: 'Products containting ' + activeAI()"></h4>
         <div class="btn-group btn-group-justified" data-bind="foreach: activeBrands">
           <a class="list-group-item" data-bind="text: name, click: function(ai, event) { $parent.showBrandInfo(ai, event); }"></a>
@@ -125,29 +125,30 @@
       </div>
       <!--End Brands List-->
       <!-- Brand Info -->
-      <div data-bind="foreach: activeBrand, visible: visibleTracker['brand_info']">
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <h3 class="panel-title" data-bind="text: 'Brand: ' + name"></h3>
-          </div>
-          <div class="panel-body">
-            <div class="row">
-              <span id="brand_nfo_spinner"></span>
+      <div class="row">
+        <div data-bind="foreach: activeBrand, visible: visibleTracker['brand_info']">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title" data-bind="text: 'Brand: ' + name"></h3>
             </div>
-            <dl class="dl-horizontal">
-              <dt>Restricted Use:</dt>
-              <dd data-bind="text: restricted_use"></dd>
-              <dt>Formulation:</dt>
-              <dd data-bind="text: formulation"></dd>
-              <dt>Product Label:</dt>
-              <dd>
-                <a data-bind="attr: {href: label_url}">Label Link</a>
-              </dd>
-            </dl>
+            <div class="panel-body">
+              <div class="row">
+                <span id="brand_nfo_spinner"></span>
+              </div>
+              <dl class="dl-horizontal">
+                <dt>Restricted Use:</dt>
+                <dd data-bind="text: restricted_use"></dd>
+                <dt>Formulation:</dt>
+                <dd data-bind="text: formulation"></dd>
+                <dt>Product Label:</dt>
+                <dd>
+                  <a data-bind="attr: {href: label_url}">Label Link</a>
+                </dd>
+              </dl>
+            </div>
           </div>
         </div>
       </div>
-
       <!-- End Brand -->
       <!-- Brand info popup -->
       <div class="modal fade" id="brand_info_popup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
