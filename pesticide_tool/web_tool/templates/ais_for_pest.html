@@ -173,7 +173,7 @@
           <h4 class="modal-title" id="myModalLabel" data-bind="text: listName"></h4>
         </div>
         <div class="modal-body">
-          <ul class="list-group">
+          <ul class="list-group" data-bind="foreach: activeList">
             <li class="list-group-item" data-bind="text: name"></li>
           </ul>
         </div>

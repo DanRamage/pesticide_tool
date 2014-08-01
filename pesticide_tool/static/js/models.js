@@ -377,6 +377,7 @@ function activeIngredientsForPestViewModel()
   self.activeAI = ko.observable();
   self.activeBrands = ko.observableArray([]);
   self.activeBrand = ko.observableArray([]);
+  self.listName = ko.observable("");
   self.activeList = ko.observableArray([]);
   self.spinner = null;
 
@@ -486,10 +487,12 @@ function activeIngredientsForPestViewModel()
 
     self.showApplicationAreas = function(brand_nfo, event)
     {
+      self.listName("Application Areas");
       self.activeList([brand_nfo.application_areas]);
     };
     self.showPestsTreated = function(brand_nfo, event)
     {
+      self.listName("Pests Treated");
       self.activeList([brand_nfo.pests_treated]);
     };
 
