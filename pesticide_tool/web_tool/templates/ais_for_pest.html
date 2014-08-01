@@ -52,8 +52,8 @@
     <!--
     Active ingredient listing page
     -->
-    <div class="row">
-      <div data-bind="visible: visibleTracker['active_ingredients']">
+    <div data-bind="visible: visibleTracker['active_ingredients']">
+      <div class="row">
         <div class="text-center">
           <h3>Pest: <span data-bind="text: pest_name()"></span></h3>
         </div>
@@ -107,8 +107,8 @@
     </div>
     <!--End active ingredient listing page-->
     <!--Brands List-->
-    <div class="row">
-      <div data-bind="visible: visibleTracker['brands']">
+    <div data-bind="visible: visibleTracker['brands']">
+      <div class="row">
         <h4 data-bind="text: 'Products containting ' + activeAI()"></h4>
         <div class="btn-group btn-group-justified" data-bind="foreach: activeBrands">
           <a class="list-group-item" data-bind="text: name, click: function(ai, event) { $parent.showBrandInfo(ai, event); }"></a>
@@ -125,8 +125,8 @@
       </div>
       <!--End Brands List-->
       <!-- Brand Info -->
-      <div class="row">
-        <div data-bind="foreach: activeBrand, visible: visibleTracker['brand_info']">
+      <div data-bind="foreach: activeBrand, visible: visibleTracker['brand_info']">
+        <div class="row">
           <div class="panel panel-default">
             <div class="panel-heading">
               <h3 class="panel-title" data-bind="text: 'Brand: ' + name"></h3>
