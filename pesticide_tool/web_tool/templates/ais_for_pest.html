@@ -29,7 +29,14 @@
 
 {% block body %}
   <style>
-    .row-eq-height {
+  #brand_info .col-md-6, .col-md-3, .col-md-2 {
+      float:none;
+      display:inline-block;
+      vertical-align:middle;
+      margin-right:-4px;
+    }
+  /*
+  .row-eq-height {
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -40,6 +47,7 @@
       vertical-align: middle;
       float: none;
   }
+  */
   </style>
 
   <div class="container">
@@ -121,7 +129,7 @@
     <!--End Brands List-->
     <!-- Brand Info -->
     <div data-bind="foreach: activeBrand, visible: visibleTracker['brand_info']">
-      <div class="row">
+      <div id="brand_info" class="row">
         <div class="col-md-12 vcenter">
           <div class="panel panel-default">
             <div class="panel-heading">
