@@ -512,7 +512,6 @@ function pesticideSearchViewModel()
   {
     $.getJSON('http://sccoastalpesticides.org/pesticide_tool/get_pestcide_names',
       function(data) {
-        self.spinner.stop();
         $("#pesticide_names").typeahead({ source: data.pesticides });
       }
     );
