@@ -510,7 +510,9 @@ function pesticideSearchViewModel()
     'ai_info': ko.observable(false)
   };
   self.spinner = null;
+  self.showSpinner = ko.observable(false);
   self.activeBrand = ko.observableArray([]);
+  self.activeAI = ko.observableArray([]);
 
   //self.pesticide_names = ko.observableArray([]);
   //self.ai_names = ko.observableArray([]);
