@@ -560,8 +560,8 @@ function pesticideSearchViewModel()
 
     var url = $.param.fragment();
 
-    var hash = url + '/' + encodeURIComponent(brand_name);
-    var frag = $.param.fragment('', '#' + hash, 2);
+    var hash = url + '/#' + encodeURIComponent(brand_name);
+    var frag = $.param.fragment('', hash, 2);
     $.bbq.pushState(frag);
 
     self.setVisible('brand_info');
