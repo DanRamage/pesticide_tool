@@ -539,6 +539,14 @@ function pesticideSearchViewModel()
   self.check_url = function()
   {
     var state = $.bbq.getState();
+    var url = decodeURIComponent($.param.fragment());
+    //We're starting at a specific category, so let's update.
+    if(url.length) {
+    }
+    else
+    {
+
+    }
   };
   self.setVisible = function(pageName)
   {
@@ -592,7 +600,29 @@ function pesticideSearchViewModel()
 
   self.activeIngredientSearch = function(name, event)
   {
+    var ai_name = $('#ai_names').val();
+
+    var url = $.param.fragment();
+
+    var hash = url + '/#' + encodeURIComponent(ai_name);
+    var frag = $.param.fragment('', hash, 2);
+    $.bbq.pushState(frag);
+
     self.setVisible('ai_info');
+    self.activeAI([]);
+    var target = document.getElementById('brand_nfo_spinner');
+    self.spinner.spin(target);
+    var url = 'http://sccoastalpesticides.org/pesticide_tool/get_ai';
+    $.getJSON(url,
+      {
+        'brand': ai_name
+      },
+      function(data) {
+        self.spinner.stop();
+        self.activeAI([data.ai_list]);
+      }
+    );
+
   }
 
 };

@@ -45,18 +45,42 @@ def get_pestcide_ai_names(request):
 
   return HttpResponse(simplejson.dumps(json))
 
-def get_ai_names(request):
+def get_ai(request, name):
+  search_term = name
+  if(len(search_term) == 0):
+    search_term = request.GET['name']
   if logger:
-    logger.debug("Begin get_ai_names")
-  ais = ActiveIngredient.objects.all().only('display_name').order_by('display_name')
+    logger.debug("Begin get_ai: %s" % (search_term))
+
+  ai_list = ActiveIngredient.objects.filter(display_name__exact=search_term)\
+    .all()\
+    .prefetch_related('brands').only("brands__name")\
+    .prefetch_related('warnings')\
+    .prefetch_related('pesticide_classes')
+
+  ret_data = []
+  for ai in ai_list:
+    brand_data = []
+    for brand in ai.brands.all():
+      brand_data.append({
+        'name': brand.name
+      })
+    ret_data.append({
+      'name': ai.name,
+      'display_name': ai.display_name,
+      'cumulative_score': ai.cumulative_score,
+      'relative_potential_ecosystem_hazard': ai.relative_potential_ecosystem_hazard.capitalize(),
+      'pesticide_classes': [pc.toDict for pc in ai.pesticide_classes.all()],
+      'warnings': [warning.toDict for warning in ai.warnings.all()],
+      'brands': brand_data
+    })
 
   json = {
-    'active_ingredients': [rec.name for rec in ais]
+    "ai_list" : ret_data,
+    "success": True
   }
-
   if logger:
-    logger.debug("End get_ai_names, returning %d names." % (len(json['active_ingredients'])))
-
+    logger.debug("Finshied get_ai. Returning %d active ingredients" % (len(json['ai_list'])))
   return HttpResponse(simplejson.dumps(json))
 
 

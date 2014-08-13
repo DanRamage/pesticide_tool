@@ -145,7 +145,41 @@
     <!--End brand info-->
     <!--Start ai info-->
     <div class="row" data-bind="visible: visibleTracker['ai_info']()">
-      AI
+      <div data-bind="foreach: active_ai">
+        <div class="row">
+          <div data-bind="attr: {class: $root.getPanelClass($data.relative_potential_ecosystem_hazard)}">
+            <div class="panel-heading">
+              <h3 class="panel-title" data-bind="text: 'Active Ingredient: ' + display_name"></h3>
+            </div>
+            <div class="panel-body">
+              <!--
+              <dl class="dl-horizontal">
+              -->
+              <dl>
+                <dt>Potential Ecosystem Hazard</dt>
+                <dd data-bind="text:relative_potential_ecosystem_hazard"></dd>
+                <dt>Concern</dt>
+              </dl>
+                <dd>
+                  <div id="warnings-hover" class="row" data-bind="foreach: warnings">
+                    <div class="col-xs-3 col-sm-2 col-md-1">
+                      <a href="#" class="btn btn-lg" data-toggle="popover" data-bind="attr: {id: name, 'data-content': display_name}">
+                        <img class="concern_button img-circle" data-bind='attr: {src: image_url, alt: name}'>
+                      </a>
+                    </div>
+                  </div>
+                </dd>
+              </dl>
+              <p>
+                <a role="button" href="#" class="btn btn-default" data-bind="click: function(ai, event) { $parent.showProducts(ai, event); }">Products »</a>
+                <!--
+                <a role="button" href="#" class="btn btn-default" data-toggle="modal" data-target="#brands_popup" data-bind="click: function(ai, event) { $parent.showProducts(ai, event); }">Products »</a>
+                -->
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <!--End ai info-->
     <!-- List modal -->
