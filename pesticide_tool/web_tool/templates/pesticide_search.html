@@ -47,7 +47,12 @@
         <p>Have a pesticide product? Search here to find information on it.
           Starting typing your brand name below.</p>
         <p>
-          <input id="pesticide_names" data-provide="typeahead" autocomplete="off" type="text" placeholder="Pesticide Search..." class="input-xlarge">
+          <div class="input-group">
+            <input id="pesticide_names" data-provide="typeahead" autocomplete="off" type="text" placeholder="Pesticide Search..." class="form-control">
+            <span class="input-group-btn">
+              <button class="btn btn-default" type="button">Go!</button>
+            </span>
+          </div><!-- /input-group -->
         </p>
       </div>
       <div class="col-lg-4">
