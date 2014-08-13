@@ -27,13 +27,16 @@ def pest_category(request, template='pest_category.html'):
 
 def pesticide_search(request, template='pesticide_search.html'):
   active_ingredients = []
+  return render_to_response(template, context_instance=RequestContext(request))
+
+def get_pestcide_names(request):
   pesticides = Brand.objects.all().only('name').order_by('name')
 
-  context = {
-    'pesticides': [rec.name for rec in pesticides],
-    'active_ingredients': active_ingredients
+  json = {
+    'pesticides': [rec.name for rec in pesticides]
   }
-  return render_to_response(template, context_instance=RequestContext(request, context))
+  return HttpResponse(simplejson.dumps(json))
+
 
 def pest_ai_page(request, pest_name, template='ais_for_pest.html'):
   search_term = pest_name

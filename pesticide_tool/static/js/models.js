@@ -500,6 +500,53 @@ function activeIngredientsForPestViewModel()
   }
 };
 
+function pesticideSearchViewModel()
+{
+  var self = this;
+
+  self.visibleTracker = {
+  };
+  //self.pesticide_names = ko.observableArray([]);
+  //self.ai_names = ko.observableArray([]);
+  self.initialize()
+  {
+    $.getJSON('http://sccoastalpesticides.org/pesticide_tool/get_pestcide_names',
+      function(data) {
+        self.spinner.stop();
+        $("#pesticide_names").typeahead({ source: data.pesticides });
+      }
+    );
+  };
+  self.hashchanged = function(event)
+  {
+    //Force the page to the top whenever we change pages since most are long lists of pics.
+    //If we don't do this, when using the back key the previous page will pick up where we left
+    //the currect page.
+    $('body').scrollTop(0);
+    self.check_url();
+  };
+  self.check_url = function()
+  {
+    var state = $.bbq.getState();
+  };
+  self.setVisible = function(pageName)
+  {
+    $.each(self.visibleTracker, function(ndx, page)
+    {
+      if(ndx === pageName)
+      {
+        page(true);
+      }
+      else
+      {
+        page(false);
+      }
+    });
+  };
+
+
+};
+
 function pestModel(config)
 {
   var self = this;
