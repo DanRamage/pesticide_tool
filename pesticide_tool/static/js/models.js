@@ -619,7 +619,7 @@ function pesticideSearchViewModel()
       },
       function(data) {
         self.spinner.stop();
-        self.activeAI([data.ai_list]);
+        self.activeAI(data.ai_list);
         $('[data-toggle="popover"]').popover({
           trigger: 'hover',
           'placement': 'top'
