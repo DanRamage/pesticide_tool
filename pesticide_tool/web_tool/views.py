@@ -27,7 +27,7 @@ def pest_category(request, template='pest_category.html'):
 
 def pesticide_search(request, template='pesticide_search.html'):
   active_ingredients = []
-  pesticides = Brand.object.all().only('name').order_by('name')
+  pesticides = Brand.objects.all().only('name').order_by('name')
 
   context = {
     'pesticides': [rec.name for rec in pesticides],
