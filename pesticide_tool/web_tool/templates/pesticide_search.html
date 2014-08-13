@@ -145,7 +145,7 @@
     <!--End brand info-->
     <!--Start ai info-->
     <div class="row" data-bind="visible: visibleTracker['ai_info']()">
-      <div data-bind="foreach: active_ai">
+      <div data-bind="foreach: activeAI">
         <div class="row">
           <div data-bind="attr: {class: $root.getPanelClass($data.relative_potential_ecosystem_hazard)}">
             <div class="panel-heading">
