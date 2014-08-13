@@ -47,7 +47,7 @@
         <p>Have a pesticide product? Search here to find information on it.
           Starting typing your brand name below.</p>
         <p>
-          <input type="text" placeholder="Pesticide Search..." class="input-xlarge">
+          <input data-bind="attr: {'data-src': pesticide_lookahead}" data-provide="typeahead" autocomplete="off" type="text" placeholder="Pesticide Search..." class="input-xlarge">
         </p>
       </div>
       <div class="col-lg-4">
