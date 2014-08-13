@@ -615,7 +615,7 @@ function pesticideSearchViewModel()
     var url = 'http://sccoastalpesticides.org/pesticide_tool/get_ai';
     $.getJSON(url,
       {
-        'brand': ai_name
+        'ai': ai_name
       },
       function(data) {
         self.spinner.stop();

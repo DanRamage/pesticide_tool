@@ -45,10 +45,10 @@ def get_pestcide_ai_names(request):
 
   return HttpResponse(simplejson.dumps(json))
 
-def get_ai(request, name):
-  search_term = name
+def get_ai(request, ai):
+  search_term = ai
   if(len(search_term) == 0):
-    search_term = request.GET['name']
+    search_term = request.GET['ai']
   if logger:
     logger.debug("Begin get_ai: %s" % (search_term))
 
