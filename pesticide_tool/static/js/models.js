@@ -508,7 +508,7 @@ function pesticideSearchViewModel()
   };
   //self.pesticide_names = ko.observableArray([]);
   //self.ai_names = ko.observableArray([]);
-  self.initialize()
+  self.initialize = function()
   {
     $.getJSON('http://sccoastalpesticides.org/pesticide_tool/get_pestcide_names',
       function(data) {
