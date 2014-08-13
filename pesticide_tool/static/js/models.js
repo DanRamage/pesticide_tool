@@ -509,12 +509,17 @@ function pesticideSearchViewModel()
     'brand_info': ko.observable(false),
     'ai_info': ko.observable(false)
   };
+  self.spinner = null;
   self.activeBrand = ko.observableArray([]);
 
   //self.pesticide_names = ko.observableArray([]);
   //self.ai_names = ko.observableArray([]);
   self.initialize = function()
   {
+    self.showSpinner(true);
+    var target = document.getElementById('spinner');
+    self.spinner = new Spinner(spinner_opts).spin(target);
+
     $.getJSON('http://sccoastalpesticides.org/pesticide_tool/get_pestcide_ai_names',
       function(data) {
         $("#pesticide_names").typeahead({ source: data.pesticides });
