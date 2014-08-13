@@ -29,17 +29,19 @@ def pesticide_search(request, template='pesticide_search.html'):
   active_ingredients = []
   return render_to_response(template, context_instance=RequestContext(request))
 
-def get_pestcide_names(request):
+def get_pestcide_ai_names(request):
   if logger:
     logger.debug("Begin get_pestcide_names")
   pesticides = Brand.objects.all().only('name').order_by('name')
+  ais = ActiveIngredient.objects.all().only('display_name').order_by('display_name')
 
   json = {
-    'pesticides': [rec.name for rec in pesticides]
+    'pesticides': [rec.name for rec in pesticides],
+    'active_ingredients': [rec.name for rec in ais]
   }
 
   if logger:
-    logger.debug("End get_pestcide_names, returning %d names." % (len(json['pesticides'])))
+    logger.debug("End get_pestcide_names. Pesticides: %d AIs: %d." % (len(json['pesticides']), len(json['active_ingredients'])))
 
   return HttpResponse(simplejson.dumps(json))
 

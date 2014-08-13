@@ -12,6 +12,6 @@ urlpatterns = patterns('',
     (r'^get_ai_for_pest/(?P<pest>[\w-]*)', get_ai_for_pest),
 
     (r'^get_categories', get_categories),
-    (r'^get_pestcide_names', get_pestcide_names),
+    (r'^get_pestcide_ai_names', get_pestcide_ai_names),
 
 )
