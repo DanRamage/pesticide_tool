@@ -304,9 +304,6 @@ function categoriesViewModel()
   {
 
     //Create and show out loading indicator in the button.
-    //var btn = document.querySelector("#" + subCategory.href());
-    //var ladda_loading = Ladda.create(btn);
-    //ladda_loading.start();
     //Get current hash which should represent the category.
     var url = $.param.fragment();
 
@@ -559,11 +556,18 @@ function pesticideSearchViewModel()
   };
   self.brandSearch = function(name, event)
   {
+    var brand_name = $('#pesticide_names').val();
+
+    var url = $.param.fragment();
+
+    var hash = url + '/' + encodeURIComponent(brand_name);
+    var frag = $.param.fragment('', '#' + hash, 2);
+    $.bbq.pushState(frag);
+
     self.setVisible('brand_info');
     self.activeBrand([]);
     var target = document.getElementById('brand_nfo_spinner');
     self.spinner.spin(target);
-    var brand_name = $('#pesticide_names').val();
     var url = 'http://sccoastalpesticides.org/pesticide_tool/get_info_for_brand';
     $.getJSON(url,
       {
