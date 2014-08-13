@@ -76,10 +76,6 @@
   <!-- End the pesticide search view-->
   <!--Start brand info-->
   <div class="container" data-bind="visible: visibleTracker['brand_info']()">
-  </div>
-  <!--End brand info-->
-  <!--Start ai info-->
-  <div class="container" data-bind="visible: visibleTracker['ai_info']()">
     <div data-bind="foreach: activeBrand">
       <div id="brand_info" class="row">
         <div class="col-md-12">
@@ -144,6 +140,10 @@
         </div>
       </div>
     </div>
+  </div>
+  <!--End brand info-->
+  <!--Start ai info-->
+  <div class="container" data-bind="visible: visibleTracker['ai_info']()">
 
   </div>
   <!--End ai info-->
