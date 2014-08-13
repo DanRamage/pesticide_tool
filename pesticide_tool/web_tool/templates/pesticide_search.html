@@ -61,7 +61,12 @@
         <p>Want to find out more information about the active ingredient in a pesticide, search here.
           Starting typing your active ingredient below.</p>
         <p>
-          <input id="ai_names" data-provide="typeahead" autocomplete="off" type="text" placeholder="Active Ingredient Search..." class="input-xlarge">
+          <div class="input-group">
+            <input id="ai_names" data-provide="typeahead" autocomplete="off" type="text" placeholder="Active Ingredient Search..." class="input-xlarge">
+            <span class="input-group-btn">
+              <button class="btn btn-default" type="button">Go!</button>
+            </span>
+          </div><!-- /input-group -->
         </p>
       </div>
       <div class="col-lg-2">
