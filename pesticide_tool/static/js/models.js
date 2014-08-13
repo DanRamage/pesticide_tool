@@ -434,18 +434,17 @@ function activeIngredientsForPestViewModel()
   self.getPanelClass = function(hazard_level)
   {
     var css = "panel panel-default";
-    var lc_level = hazard_level.toLowerCase();
-    if(lc_level == 'low')
-    {
-      css = "panel panel-success";
-    }
-    else if(lc_level == 'moderate')
-    {
-      css = "panel panel-warning";
-    }
-    else if(lc_level == 'likely')
-    {
-      css = "panel panel-danger";
+    if(hazard_level !== undefined) {
+      var lc_level = hazard_level.toLowerCase();
+      if (lc_level == 'low') {
+        css = "panel panel-success";
+      }
+      else if (lc_level == 'moderate') {
+        css = "panel panel-warning";
+      }
+      else if (lc_level == 'likely') {
+        css = "panel panel-danger";
+      }
     }
     return(css);
   };
