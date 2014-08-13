@@ -25,6 +25,10 @@ def start_page(request, template='entry_page.html'):
 def pest_category(request, template='pest_category.html'):
   return render_to_response(template, context_instance=RequestContext(request))
 
+def pesticide_search(request, template='pesticide_search.html'):
+  #context = {'domain': get_domain(8000), 'domain8010': get_domain()}
+  return render_to_response(template, context_instance=RequestContext(request))
+
 def pest_ai_page(request, pest_name, template='ais_for_pest.html'):
   search_term = pest_name
   if(len(search_term) == 0):
