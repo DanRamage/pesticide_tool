@@ -513,6 +513,8 @@ function pesticideSearchViewModel()
   self.showSpinner = ko.observable(false);
   self.activeBrand = ko.observableArray([]);
   self.activeAI = ko.observableArray([]);
+  self.listName = ko.observable('');
+  self.activeList = ko.observableArray([]);
 
   //self.pesticide_names = ko.observableArray([]);
   //self.ai_names = ko.observableArray([]);
@@ -572,8 +574,18 @@ function pesticideSearchViewModel()
         self.activeBrand([data.brand_info]);
       }
     );
-
   };
+  self.showApplicationAreas = function(brand_nfo, event)
+  {
+    self.listName("Application Areas");
+    self.activeList(brand_nfo.application_areas);
+  };
+  self.showPestsTreated = function(brand_nfo, event)
+  {
+    self.listName("Pests Treated");
+    self.activeList(brand_nfo.pests_treated);
+  };
+
   self.activeIngredientSearch = function(name, event)
   {
     self.setVisible('ai_info');
