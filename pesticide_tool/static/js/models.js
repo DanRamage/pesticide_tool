@@ -566,6 +566,10 @@ function pesticideSearchViewModel()
       }
     );
 
+  };
+  self.activeIngredientSearch = function(name, event)
+  {
+    self.setVisible('ai_info');
   }
 
 };
