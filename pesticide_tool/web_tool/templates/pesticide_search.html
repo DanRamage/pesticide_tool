@@ -36,7 +36,7 @@
 {% block body %}
   <link href="{{STATIC_URL}}css/carousel.css" rel="stylesheet">
 
-  <div class="container marketing">
+  <div class="container marketing" data-bind="visible: visibleTracker['pesticide_ai_search']()">
     <!-- Start the pesticide search view-->
     <div class="row" id="search_types">
       <div class="col-lg-2">
@@ -50,7 +50,7 @@
           <div class="input-group">
             <input id="pesticide_names" data-provide="typeahead" autocomplete="off" type="text" placeholder="Pesticide Search..." class="form-control">
             <span class="input-group-btn">
-              <button class="btn btn-default" type="button">Go!</button>
+              <button class="btn btn-default" type="button" data-bind="click: brandSearch">Go!</button>
             </span>
           </div><!-- /input-group -->
         </p>
@@ -64,7 +64,7 @@
           <div class="input-group">
             <input id="ai_names" data-provide="typeahead" autocomplete="off" type="text" placeholder="Active Ingredient Search..." class="form-control">
             <span class="input-group-btn">
-              <button class="btn btn-default" type="button">Go!</button>
+              <button class="btn btn-default" type="button" data-bind="click: activeIngredientSearch">Go!</button>
             </span>
           </div><!-- /input-group -->
         </p>
@@ -74,5 +74,77 @@
     </div>
   </div>
   <!-- End the pesticide search view-->
+  <!--Start brand info-->
+  <div class="container" data-bind="visible: visibleTracker['brand_info']()">
+  </div>
+  <!--End brand info-->
+  <!--Start ai info-->
+  <div class="container" data-bind="visible: visibleTracker['ai_info']()">
+    <div data-bind="foreach: activeBrand">
+      <div id="brand_info" class="row">
+        <div class="col-md-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title" data-bind="text: 'Brand: ' + name"></h3>
+            </div>
+            <div class="panel-body">
+              <div class="container">
+                <div class="row">
+                  <span id="brand_nfo_spinner"></span>
+                </div>
+                <div class="row">
+                  <div class="col-md-3">
+                    <h3 class="text-right">Restricted Use:</h3>
+                  </div>
+                  <div class="col-md-3 col-xs-6">
+                    <span data-bind="text: restricted_use"></span>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-3">
+                    <h3  class="text-right">Formulation:</h3>
+                  </div>
+                  <div class="col-md-3" >
+                    <span data-bind="text: formulation"></span>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-3">
+                    <h3 class="text-right">Product Label:</h3>
+                  </div>
+                  <div class="col-md-2">
+                    <a class="list-group-item btn btn-default" data-bind="attr: {href: label_url}">
+                      Open Link »
+                    </a>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-3">
+                    <h3 class="text-right">Application Areas:</h3>
+                  </div>
+                  <div class="col-md-2">
+                    <a class="list-group-item btn btn-default" data-toggle="modal" data-target="#list_modal" href="#" data-bind="click: function(aa, event) { $parent.showApplicationAreas(aa, event); }">
+                      Show »
+                    </a>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-3">
+                    <h3 class="text-right">Pests Treated:</h3>
+                  </div>
+                  <div class="col-md-2">
+                    <a class="list-group-item btn btn-default" data-toggle="modal" data-target="#list_modal" href="#" data-bind="click: function(aa, event) { $parent.showPestsTreated(aa, event); }">
+                      Show »
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
+  </div>
+  <!--End ai info-->
 {% endblock %}

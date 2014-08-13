@@ -505,7 +505,12 @@ function pesticideSearchViewModel()
   var self = this;
 
   self.visibleTracker = {
+    'pesticide_ai_search': ko.observable(true),
+    'brand_info': ko.observable(false),
+    'ai_info': ko.observable(false)
   };
+  self.activeBrand = ko.observableArray([]);
+
   //self.pesticide_names = ko.observableArray([]);
   //self.ai_names = ko.observableArray([]);
   self.initialize = function()
@@ -543,7 +548,25 @@ function pesticideSearchViewModel()
       }
     });
   };
+  self.brandSearch = function(name, event)
+  {
+    self.setVisible('brand_info');
+    self.activeBrand([]);
+    var target = document.getElementById('brand_nfo_spinner');
+    self.spinner.spin(target);
 
+    var url = 'http://sccoastalpesticides.org/pesticide_tool/get_info_for_brand';
+    $.getJSON(url,
+      {
+        'brand': name
+      },
+      function(data) {
+        self.spinner.stop();
+        self.activeBrand([data.brand_info]);
+      }
+    );
+
+  }
 
 };
 
