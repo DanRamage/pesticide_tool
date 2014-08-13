@@ -43,6 +43,21 @@ def get_pestcide_names(request):
 
   return HttpResponse(simplejson.dumps(json))
 
+def get_ai_names(request):
+  if logger:
+    logger.debug("Begin get_ai_names")
+  ais = ActiveIngredient.objects.all().only('display_name').order_by('display_name')
+
+  json = {
+    'active_ingredients': [rec.name for rec in ais]
+  }
+
+  if logger:
+    logger.debug("End get_ai_names, returning %d names." % (len(json['active_ingredients'])))
+
+  return HttpResponse(simplejson.dumps(json))
+
+
 
 def pest_ai_page(request, pest_name, template='ais_for_pest.html'):
   search_term = pest_name
