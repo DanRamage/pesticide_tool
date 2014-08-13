@@ -561,11 +561,11 @@ function pesticideSearchViewModel()
     self.activeBrand([]);
     var target = document.getElementById('brand_nfo_spinner');
     self.spinner.spin(target);
-
+    var brand_name = $('#pesticide_names').val();
     var url = 'http://sccoastalpesticides.org/pesticide_tool/get_info_for_brand';
     $.getJSON(url,
       {
-        'brand': name
+        'brand': brand_name
       },
       function(data) {
         self.spinner.stop();
