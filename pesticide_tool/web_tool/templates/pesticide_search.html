@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+{% block javascript %}
+  <script type="text/javascript" src="{{STATIC_URL}}js/knockout/knockout-3.1.0.js"></script>
+  <script type="text/javascript" src="{{STATIC_URL}}js/jquery/jquery.ba-bbq.min.js"></script>
+  <script src="{{STATIC_URL}}js/ladda-bootstrap/dist/spin.js"></script>
+  <script type="text/javascript"  src="{{STATIC_URL}}js/models.js"></script>
+  <script type="text/javascript">
+    function pesticide_search_page()
+    {
+      var self = this;
+
+      self.viewModel = null;
+      self.configData = null;
+      self.initialize = function()
+      {
+        self.viewModel = new pesticideSearchViewModel();
+        self.viewModel.initialize();
+        ko.applyBindings(self.viewModel);
+
+      };
+      //This funciton initlizatizes the pager extension and knockout bindings. Our button data is in a json config file
+      //and we don't want to call this funciton until it the Ajax request in the initialize function above completes.
+      self.initPage = function()
+      {
+      };
+      return(self);
+    }
+    app = pesticide_search_page();
+    app.initialize();
+
+  </script>
+{% endblock %}
+
+{% block body %}
+  <div class="container marketing">
+    <!-- Start the pesticide search view-->
+    <div class="row" id="search_types">
+      <div class="col-lg-4">
+        <img style="width: 140px; height: 140px;" alt="Pest Search" src="{{ STATIC_URL }}/images/decision_buttons/pests.jpg" class="img-circle">
+        <h2>Brand Search</h2>
+        <p>Have a pesticide product? Search here to find information on it.</p>
+        <p>
+          <a role="button" href="/pesticide_tool/category" class="btn btn-default">Pesticide Search »</a>
+        </p>
+      </div>
+      <div class="col-lg-4">
+        <img style="width: 140px; height: 140px;" alt="Pesticide Search" src="{{ STATIC_URL }}/images/decision_buttons/pesticide_search.jpg" class="img-circle">
+        <h2>Acitve Ingredient Search</h2>
+        <p>Want to find out more information about the active ingredient in a pesticide, search here</p>
+        <p>
+          <a role="button" href="#" class="btn btn-default">Active Ingredient Search »</a>
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- End the pesticide search view-->
+
+{% endblock %}
