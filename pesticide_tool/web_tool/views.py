@@ -30,11 +30,17 @@ def pesticide_search(request, template='pesticide_search.html'):
   return render_to_response(template, context_instance=RequestContext(request))
 
 def get_pestcide_names(request):
+  if logger:
+    logger.debug("Begin get_pestcide_names")
   pesticides = Brand.objects.all().only('name').order_by('name')
 
   json = {
     'pesticides': [rec.name for rec in pesticides]
   }
+
+  if logger:
+    logger.debug("End get_pestcide_names, returning %d names." % (len(json['pesticides'])))
+
   return HttpResponse(simplejson.dumps(json))
 
 
