@@ -365,17 +365,17 @@ function activeIngredientsForPestViewModel()
     //Array to track which parts should be visible.
   self.visibleTracker = {
     'active_ingredients': ko.observable(true),
-    'brands': ko.observable(false),
-    'brand_info': ko.observable(false)
+    'brands': ko.observable(false)
+    //'brand_info': ko.observable(false)
   };
   self.showSpinner = ko.observable(false);
   self.pest_name = ko.observable('');
   self.ai_results = ko.observableArray([]);
   self.activeAI = ko.observable();
   self.activeBrands = ko.observableArray([]);
-  self.activeBrand = ko.observableArray([]);
-  self.listName = ko.observable("");
-  self.activeList = ko.observableArray([]);
+  //self.activeBrand = ko.observableArray([]);
+  //self.listName = ko.observable("");
+  //self.activeList = ko.observableArray([]);
   self.spinner = null;
 
   self.initialize = function()

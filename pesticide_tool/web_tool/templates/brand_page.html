@@ -86,9 +86,14 @@
                     <h3 class="text-right">Product Label:</h3>
                   </div>
                   <div class="col-md-2">
-                    <a class="list-group-item btn btn-default" data-bind="attr: {href: label_url}">
-                      Open Link »
-                    </a>
+                    <div data-bind="if: label_url">
+                      <a class="list-group-item btn btn-default" data-bind="attr: {href: label_url}">
+                        Open Link »
+                      </a>
+                    </div>
+                    <div data-bind="ifnot: label_url">
+                      No Product Label Link
+                    </div>
                   </div>
                 </div>
                 <div class="row">
