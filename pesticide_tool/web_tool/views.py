@@ -65,7 +65,7 @@ def brand_page(request, brand_name, template='brand_page.html'):
   return render_to_response(template, {'brand_info': brand_json}, context_instance=RequestContext(request))
 
 
-
+"""
 def get_ai(request, ai):
   search_term = ai
   if(len(search_term) == 0):
@@ -103,7 +103,7 @@ def get_ai(request, ai):
   if logger:
     logger.debug("Finshied get_ai. Returning %d active ingredients" % (len(json['ai_list'])))
   return HttpResponse(simplejson.dumps(json))
-
+"""
 
 
 def pest_ai_page(request, pest_name, template='ais_for_pest.html'):
@@ -137,6 +137,7 @@ def get_pests_for_subcategory(request, sub_category):
   if logger:
     logger.debug("Finshied get_pests_for_subcategory. Returning %d pests" % (len(json['pests'])))
   return HttpResponse(simplejson.dumps(json))
+
 
 def ai_info_page(request, ai_name, template="ai_page.html"):
   search_term = ai_name
@@ -177,6 +178,43 @@ def ai_info_page(request, ai_name, template="ai_page.html"):
     logger.debug("Finshied get_ai. Returning %d active ingredients" % (len(ret_data)))
   return render_to_response(template, {'ai_list': ai_list}, context_instance=RequestContext(request))
 
+def get_ai_for_pest(request, pest_name, template="ai_page.html"):
+  search_term = pest_name
+  if(len(search_term) == 0):
+    search_term = request.GET['pest_name']
+  if logger:
+    logger.debug("Begin get_ai_for_pest: %s" % (search_term))
+
+  ai_list = ActiveIngredient.objects.filter(pests_treated__display_name__exact=search_term)\
+    .order_by('cumulative_score').all()\
+    .prefetch_related('brands').only("brands__name")\
+    .prefetch_related('warnings')\
+    .prefetch_related('pesticide_classes')
+
+  ret_data = []
+  for ai in ai_list:
+    brand_data = []
+    for brand in ai.brands.all():
+      brand_data.append({
+        'name': brand.name
+      })
+    ret_data.append({
+      'name': ai.name,
+      'display_name': ai.display_name,
+      'cumulative_score': ai.cumulative_score,
+      'relative_potential_ecosystem_hazard': ai.relative_potential_ecosystem_hazard.capitalize(),
+      'pesticide_classes': [pc.toDict for pc in ai.pesticide_classes.all()],
+      'warnings': [warning.toDict for warning in ai.warnings.all()],
+      'brands': brand_data
+    })
+
+    ai_list = simplejson.dumps(ret_data)
+
+  if logger:
+    logger.debug("Finished get_ai_for_pest. Returning %d active ingredients" % (len(ai_list)))
+
+  return render_to_response(template, {'ai_list': ai_list}, context_instance=RequestContext(request))
+"""
 def get_ai_for_pest(request, pest):
   search_term = pest
   if(len(search_term) == 0):
@@ -230,3 +268,4 @@ def get_info_for_brand(request, brand):
   if logger:
     logger.debug("End get_info_for_brand")
   return HttpResponse(simplejson.dumps(json))
+"""
