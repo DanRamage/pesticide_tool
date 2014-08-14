@@ -252,7 +252,7 @@ def get_ai_for_pest(request, pest):
   if logger:
     logger.debug("Finshied get_ai_for_pest. Returning %d active ingredients" % (len(json['ai_list'])))
   return HttpResponse(simplejson.dumps(json))
-
+"""
 def get_info_for_brand(request, brand):
   search_term = brand
   if(len(search_term) == 0):
@@ -268,4 +268,3 @@ def get_info_for_brand(request, brand):
   if logger:
     logger.debug("End get_info_for_brand")
   return HttpResponse(simplejson.dumps(json))
-"""
