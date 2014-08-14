@@ -472,39 +472,7 @@ function activeIngredientsForPestViewModel()
   {
     var brand_page = '/pesticide_tool/brand?brand_name=' + encodeURIComponent(brand.name);
     window.location.href = brand_page;
-    /*
-    self.setVisible('brand_info');
-
-    self.activeBrand([]);
-    var target = document.getElementById('brand_nfo_spinner');
-    self.spinner.spin(target);
-
-    var url = 'http://sccoastalpesticides.org/pesticide_tool/get_info_for_brand';
-    $.getJSON(url,
-      {
-        'brand': brand.name
-      },
-      function(data) {
-        self.spinner.stop();
-        self.activeBrand([data.brand_info]);
-      }
-
-    );
-    return(true);
-    */
   }
-  /*
-  self.showApplicationAreas = function(brand_nfo, event)
-  {
-    self.listName("Application Areas");
-    self.activeList(brand_nfo.application_areas);
-  };
-  self.showPestsTreated = function(brand_nfo, event)
-  {
-    self.listName("Pests Treated");
-    self.activeList(brand_nfo.pests_treated);
-  };
-  */
 
 };
 
@@ -616,7 +584,7 @@ function pesticideSearchViewModel()
   };
   self.showBrandInfo = function(brand, event)
   {
-    var brand_page = '/pesticide_tool/brand?brand_name=' + encodeURIComponent(brand.name);
+    var brand_page = '/pesticide_tool/brand_name/' + encodeURIComponent(brand.name);
     window.location.href = brand_page;
   };
 
