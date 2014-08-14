@@ -56,7 +56,7 @@ def brand_page(request, brand_name, template='brand_page.html'):
   if logger:
     logger.debug("End brand_page")
 
-  return render_to_response(template, context_instance=RequestContext(request, serializers.serialize(context)))
+  return render_to_response(template, context_instance=RequestContext(request, serializers.serialize("json", context)))
 
 
 
