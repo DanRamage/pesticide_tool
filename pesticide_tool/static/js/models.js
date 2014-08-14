@@ -651,7 +651,10 @@ function brandViewModel(config)
 
   self.initialize = function()
   {
-
+    $('[data-toggle="popover"]').popover({
+      trigger: 'hover',
+      'placement': 'top'
+    });
   };
   self.getRestrictedUseText = function(use)
   {
@@ -678,6 +681,55 @@ function brandViewModel(config)
   {
     self.listName("Pests Treated");
     self.activeList(brand_nfo.pests_treated);
+  };
+
+};
+
+function brandViewModel(config) {
+  var self = this;
+
+  self.activeAI = ko.observable();
+  self.ai_results = ko.observableArray(config);
+
+  self.initialize = function()
+  {
+
+  };
+  self.getPanelClass = function(hazard_level)
+  {
+    var css = "panel panel-default";
+    if(hazard_level !== undefined) {
+      var lc_level = hazard_level.toLowerCase();
+      if (lc_level == 'low') {
+        css = "panel panel-success";
+      }
+      else if (lc_level == 'moderate') {
+        css = "panel panel-warning";
+      }
+      else if (lc_level == 'likely') {
+        css = "panel panel-danger";
+      }
+    }
+    return(css);
+  };
+  self.showProducts = function(ai, event)
+  {
+    self.setVisible('brands');
+    self.activeAI(ai.display_name);
+    //Empty the curent brands.
+    self.activeBrands([]);
+    //ADd the brands from the selected AI.
+    if(ai.brands.length)
+    {
+      var sorted_brands = ai.brands.sort();
+      self.activeBrands(sorted_brands);
+    }
+    return(true);
+  };
+  self.showBrandInfo = function(brand, event)
+  {
+    var brand_page = '/pesticide_tool/brand?brand_name=' + encodeURIComponent(brand.name);
+    window.location.href = brand_page;
   };
 
 };

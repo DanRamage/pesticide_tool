@@ -112,12 +112,6 @@ def pest_ai_page(request, pest_name, template='ais_for_pest.html'):
     logger.debug("Begin pest_ai_page for pest: %s" % (search_term))
   return render_to_response(template, context_instance=RequestContext(request))
 
-"""
-def get_categories(request, template='pest_category.html'):
-  categories = Category.objects.all().order_by('name')
-  context = { 'categories': categories}
-  return render_to_response(template, context_instance=RequestContext(request, context))
-"""
 
 def get_categories(request):
   json = {
@@ -141,6 +135,45 @@ def get_pests_for_subcategory(request, sub_category):
   if logger:
     logger.debug("Finshied get_pests_for_subcategory. Returning %d pests" % (len(json['pests'])))
   return HttpResponse(simplejson.dumps(json))
+
+def ai_info_page(request, ai_name, template="ai_page.html"):
+  search_term = ai_name
+  if(len(search_term) == 0):
+    search_term = request.GET['ai_name']
+  if logger:
+    logger.debug("Begin ai_info_page: %s" % (search_term))
+  try:
+    ai_list = ActiveIngredient.objects.filter(display_name__exact=search_term)\
+      .all()\
+      .prefetch_related('brands').only("brands__name")\
+      .prefetch_related('warnings')\
+      .prefetch_related('pesticide_classes')
+
+    ret_data = []
+    for ai in ai_list:
+      brand_data = []
+      for brand in ai.brands.all():
+        brand_data.append({
+          'name': brand.name
+        })
+      ret_data.append({
+        'name': ai.name,
+        'display_name': ai.display_name,
+        'cumulative_score': ai.cumulative_score,
+        'relative_potential_ecosystem_hazard': ai.relative_potential_ecosystem_hazard.capitalize(),
+        'pesticide_classes': [pc.toDict for pc in ai.pesticide_classes.all()],
+        'warnings': [warning.toDict for warning in ai.warnings.all()],
+        'brands': brand_data
+      })
+
+    ai_list = simplejson.dumps(ret_data)
+  except DoesNotExist, e:
+    if logger:
+      logger.exception(e)
+
+  if logger:
+    logger.debug("Finshied get_ai. Returning %d active ingredients" % (len(ret_data)))
+  return render_to_response(template, {'ai_list': ai_list}, context_instance=RequestContext(request))
 
 def get_ai_for_pest(request, pest):
   search_term = pest
