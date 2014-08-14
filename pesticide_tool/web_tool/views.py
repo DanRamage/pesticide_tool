@@ -29,6 +29,8 @@ def get_pestcide_ai_names(request):
   if logger:
     logger.debug("Begin get_pestcide_names")
   pesticides = Brand.objects.all().only('name').order_by('name')
+  #Get the active ingredients that have the cumulative ranking. The database contains
+  #most of the AI's from the clemson db, however we only have a portion of them scored.
   ais = ActiveIngredient.objects.exclude(cumulative_score__isnull=True).only('display_name').order_by('display_name')
 
   json = {

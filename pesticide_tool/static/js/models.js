@@ -575,7 +575,10 @@ function pesticideSearchViewModel()
   self.activeIngredientSearch = function(name, event)
   {
     var ai_name = $('#ai_names').val();
+    var ai_page = '/pesticide_tool/active_ingredient?ai_name=' + encodeURIComponent(ai_name);
+    window.location.href = ai_page;
 
+    /*
     var url = $.param.fragment();
 
     var hash = url + '/#' + encodeURIComponent(ai_name);
@@ -601,6 +604,7 @@ function pesticideSearchViewModel()
 
       }
     );
+    */
   };
   self.getPanelClass = function(hazard_level)
   {
