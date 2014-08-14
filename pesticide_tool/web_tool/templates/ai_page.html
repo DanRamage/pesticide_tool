@@ -16,6 +16,10 @@
         self.viewModel = new aiViewModel(config);
         self.viewModel.initialize();
         ko.applyBindings(self.viewModel);
+        $('[data-toggle="popover"]').popover({
+          trigger: 'hover',
+          'placement': 'top'
+        });
 
       };
       return(self);

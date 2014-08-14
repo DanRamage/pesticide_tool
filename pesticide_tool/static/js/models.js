@@ -693,10 +693,6 @@ function aiViewModel(config) {
 
   self.initialize = function()
   {
-    $('[data-toggle="popover"]').popover({
-      trigger: 'hover',
-      'placement': 'top'
-    });
   };
   self.getPanelClass = function(hazard_level)
   {
