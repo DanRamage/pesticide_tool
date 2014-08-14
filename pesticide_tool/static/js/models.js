@@ -515,7 +515,8 @@ function pesticideSearchViewModel()
   self.spinner = null;
   self.showSpinner = ko.observable(false);
   self.activeBrands = ko.observableArray([]);
-  self.activeAI = ko.observableArray([]);
+  self.activeAI = ko.observable();
+  self.ai_results = ko.observableArray([]);
 
   self.initialize = function()
   {
@@ -582,7 +583,7 @@ function pesticideSearchViewModel()
     $.bbq.pushState(frag);
 
     self.setVisible('ai_info');
-    self.activeAI([]);
+    self.ai_results([]);
     var target = document.getElementById('brand_nfo_spinner');
     self.spinner.spin(target);
     var url = 'http://sccoastalpesticides.org/pesticide_tool/get_ai';
@@ -592,7 +593,7 @@ function pesticideSearchViewModel()
       },
       function(data) {
         self.spinner.stop();
-        self.activeAI(data.ai_list);
+        self.ai_results(data.ai_list);
         $('[data-toggle="popover"]').popover({
           trigger: 'hover',
           'placement': 'top'

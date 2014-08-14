@@ -77,7 +77,7 @@
     <!-- End the pesticide search view-->
     <!--Start ai info-->
     <div class="row" data-bind="visible: visibleTracker['ai_info']()">
-      <div data-bind="foreach: activeAI">
+      <div data-bind="foreach: ai_results">
         <div class="row">
           <div data-bind="attr: {class: $root.getPanelClass($data.relative_potential_ecosystem_hazard)}">
             <div class="panel-heading">
