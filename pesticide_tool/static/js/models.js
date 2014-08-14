@@ -645,19 +645,16 @@ function pesticideSearchViewModel()
 
 };
 
-function aiViewModel(config)
+function brandViewModel(config)
 {
   var self = this;
 
+  self.activeBrand = ko.observableArray([config]);
   self.listName = ko.observable('');
-  self.activeList = ko.observableArray(config);
+  self.activeList = ko.observableArray([]);
 
   self.initialize = function()
   {
-    $('[data-toggle="popover"]').popover({
-      trigger: 'hover',
-      'placement': 'top'
-    });
   };
   self.getRestrictedUseText = function(use)
   {
@@ -688,15 +685,18 @@ function aiViewModel(config)
 
 };
 
-function brandViewModel(config) {
+function aiViewModel(config) {
   var self = this;
 
   self.activeAI = ko.observable();
-  self.ai_results = ko.observableArray(config);
+  self.activeList = ko.observableArray(config);
 
   self.initialize = function()
   {
-
+    $('[data-toggle="popover"]').popover({
+      trigger: 'hover',
+      'placement': 'top'
+    });
   };
   self.getPanelClass = function(hazard_level)
   {
