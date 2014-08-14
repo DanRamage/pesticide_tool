@@ -649,6 +649,19 @@ function pesticideSearchViewModel()
 
 };
 
+function brandViewModel(config)
+{
+  var self = this;
+
+  self.activeBrand = ko.observableArray([config]);
+
+  self.initialize = function()
+  {
+
+  };
+
+};
+
 function pestModel(config)
 {
   var self = this;

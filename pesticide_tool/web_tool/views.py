@@ -45,6 +45,25 @@ def get_pestcide_ai_names(request):
 
   return HttpResponse(simplejson.dumps(json))
 
+def brand_page(request, brand_name, template='brand_page.html'):
+  search_term = brand_name
+  if(len(search_term) == 0):
+    search_term = request.GET['brand_name']
+  if logger:
+    logger.debug("Begin brand_page: %s" % (search_term))
+
+  brand_info = Brand.objects.filter(name__iexact=search_term).all()[:1].get()
+  context = {
+    'brand_info': brand_info.toDict
+  }
+
+  if logger:
+    logger.debug("End brand_page")
+
+  return render_to_response(template, context_instance=RequestContext(request, context))
+
+
+
 def get_ai(request, ai):
   search_term = ai
   if(len(search_term) == 0):

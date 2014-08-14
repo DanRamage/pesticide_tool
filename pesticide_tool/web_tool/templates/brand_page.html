@@ -1,0 +1,168 @@
+{% extends 'base.html' %}
+{% block javascript %}
+  <script type="text/javascript" src="{{STATIC_URL}}js/knockout/knockout-3.1.0.js"></script>
+  <script type="text/javascript" src="{{STATIC_URL}}js/jquery/jquery.ba-bbq.min.js"></script>
+  <script src="{{STATIC_URL}}js/ladda-bootstrap/dist/spin.js"></script>
+  <script type="text/javascript"  src="{{STATIC_URL}}js/models.js"></script>
+  <script type="text/javascript">
+    function brand_page()
+    {
+      var self = this;
+
+      self.viewModel = null;
+      self.configData = null;
+      self.initialize = function()
+      {
+        self.viewModel = new brandViewModel({{ brand_info }});
+        self.viewModel.initialize();
+        ko.applyBindings(self.viewModel);
+
+      };
+      return(self);
+    }
+    app = brand_page();
+    app.initialize();
+
+  </script>
+{% endblock %}
+
+
+{% block body %}
+  <style>
+  #brand_info .col-md-6, .col-md-3, .col-md-2 {
+      float:none;
+      display:inline-block;
+      vertical-align:middle;
+      margin-right:-4px;
+    }
+  /*
+  .row-eq-height {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display:         flex;
+    }
+  .vcenter {
+      display: inline-block;
+      vertical-align: middle;
+      float: none;
+  }
+  */
+  </style>
+
+  <div class="container">
+    <!-- Brand Info -->
+    <div data-bind="foreach: activeBrand">
+      <div id="brand_info" class="row">
+        <div class="col-md-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title" data-bind="text: 'Brand: ' + name"></h3>
+            </div>
+            <div class="panel-body">
+              <div class="container">
+                <div class="row">
+                  <span id="brand_nfo_spinner"></span>
+                </div>
+                <div class="row">
+                  <div class="col-md-3">
+                    <h3 class="text-right">Restricted Use:</h3>
+                  </div>
+                  <div class="col-md-3 col-xs-6">
+                    <span data-bind="text: restricted_use"></span>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-3">
+                    <h3  class="text-right">Formulation:</h3>
+                  </div>
+                  <div class="col-md-3" >
+                    <span data-bind="text: formulation"></span>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-3">
+                    <h3 class="text-right">Product Label:</h3>
+                  </div>
+                  <div class="col-md-2">
+                    <a class="list-group-item btn btn-default" data-bind="attr: {href: label_url}">
+                      Open Link »
+                    </a>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-3">
+                    <h3 class="text-right">Application Areas:</h3>
+                  </div>
+                  <div class="col-md-2">
+                    <a class="list-group-item btn btn-default" data-toggle="modal" data-target="#list_modal" href="#" data-bind="click: function(aa, event) { $parent.showApplicationAreas(aa, event); }">
+                      Show »
+                    </a>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-3">
+                    <h3 class="text-right">Pests Treated:</h3>
+                  </div>
+                  <div class="col-md-2">
+                    <a class="list-group-item btn btn-default" data-toggle="modal" data-target="#list_modal" href="#" data-bind="click: function(aa, event) { $parent.showPestsTreated(aa, event); }">
+                      Show »
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!--
+              <dl class="dl-horizontal">
+                <dt>Restricted Use:</dt>
+                <dd data-bind="text: restricted_use"></dd>
+                <dt>Formulation:</dt>
+                <dd data-bind="text: formulation"></dd>
+                <dt>Product Label:</dt>
+                <dd>
+                  <a data-bind="attr: {href: label_url}">Label Link</a>
+                </dd>
+                <dt>Application Areas:</dt>
+                <dd>
+                  <a class="list-group-item btn btn-default" data-toggle="modal" data-target="#list_modal" href="#" data-bind="click: function(aa, event) { $parent.showApplicationAreas(aa, event); }">
+                    Show »
+                  </a>
+                </dd>
+                <dt>Pests Treated:</dt>
+                <dd>
+                  <a class="list-group-item btn btn-default" data-toggle="modal" data-target="#list_modal" href="#" data-bind="click: function(aa, event) { $parent.showPestsTreated(aa, event); }">
+                    Show »
+                  </a>
+                </dd>
+              </dl>
+              -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Brand -->
+  <!-- List modal -->
+  <div class="modal fade" id="list_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+          <h4 class="modal-title" id="myModalLabel" data-bind="text: listName"></h4>
+        </div>
+        <div class="modal-body">
+          <ul class="list-group" data-bind="foreach: activeList">
+            <li class="list-group-item" data-bind="text: name"></li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End list modal -->
+
+  </div>
+
+{% endblock %}
+
