@@ -33,7 +33,7 @@ def get_pestcide_ai_names(request):
 
   json = {
     'pesticides': [rec.name for rec in pesticides],
-    'active_ingredients': [rec.display_name for rec in ais.all()]
+    'active_ingredients': [rec.display_name for rec in ais]
   }
 
   if logger:
