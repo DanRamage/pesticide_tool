@@ -3,6 +3,8 @@
 
 from django.template import RequestContext
 from django.shortcuts import render_to_response
+from django.core import serializers
+
 from data_manager.models import *
 import simplejson
 from django.http import HttpResponse
@@ -10,13 +12,7 @@ import logging
 
 logger = logging.getLogger("pesticide_tool")
 
-"""
-from django.http import HttpResponseRedirect, HttpResponsePermanentRedirect
-from django.db.models.base import ModelBase
-from django.db.models.manager import Manager
-from django.db.models.query import QuerySet
-from django.core import urlresolvers
-"""
+
 # Create your views here.
 def start_page(request, template='entry_page.html'):
   #context = {'domain': get_domain(8000), 'domain8010': get_domain()}
@@ -60,7 +56,7 @@ def brand_page(request, brand_name, template='brand_page.html'):
   if logger:
     logger.debug("End brand_page")
 
-  return render_to_response(template, context_instance=RequestContext(request, context))
+  return render_to_response(template, context_instance=RequestContext(request, serializers.serialize(context)))
 
 
 
