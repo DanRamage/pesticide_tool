@@ -510,8 +510,6 @@ function pesticideSearchViewModel()
   self.showSpinner = ko.observable(false);
   self.activeBrand = ko.observableArray([]);
   self.activeAI = ko.observableArray([]);
-  self.listName = ko.observable('');
-  self.activeList = ko.observableArray([]);
 
   //self.pesticide_names = ko.observableArray([]);
   //self.ai_names = ko.observableArray([]);
@@ -565,7 +563,9 @@ function pesticideSearchViewModel()
   self.brandSearch = function(name, event)
   {
     var brand_name = $('#pesticide_names').val();
-
+    var brand_page = '/pesticide_tool/brand?brand_name=' + encodeURIComponent(brand_name);
+    window.location.href = brand_page;
+    /*
     var url = $.param.fragment();
 
     var hash = url + '/#' + encodeURIComponent(brand_name);
@@ -586,18 +586,8 @@ function pesticideSearchViewModel()
         self.activeBrand([data.brand_info]);
       }
     );
+    */
   };
-  self.showApplicationAreas = function(brand_nfo, event)
-  {
-    self.listName("Application Areas");
-    self.activeList(brand_nfo.application_areas);
-  };
-  self.showPestsTreated = function(brand_nfo, event)
-  {
-    self.listName("Pests Treated");
-    self.activeList(brand_nfo.pests_treated);
-  };
-
   self.activeIngredientSearch = function(name, event)
   {
     var ai_name = $('#ai_names').val();
@@ -654,10 +644,22 @@ function brandViewModel(config)
   var self = this;
 
   self.activeBrand = ko.observableArray([config]);
+  self.listName = ko.observable('');
+  self.activeList = ko.observableArray([]);
 
   self.initialize = function()
   {
 
+  };
+  self.showApplicationAreas = function(brand_nfo, event)
+  {
+    self.listName("Application Areas");
+    self.activeList(brand_nfo.application_areas);
+  };
+  self.showPestsTreated = function(brand_nfo, event)
+  {
+    self.listName("Pests Treated");
+    self.activeList(brand_nfo.pests_treated);
   };
 
 };
