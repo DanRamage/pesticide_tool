@@ -343,9 +343,14 @@ function categoriesViewModel()
   };
   self.pestTypeClicked = function(pest, event)
   {
+    var ai_page = '/pesticide_tool/active_ingredient?pest_name=' + encodeURIComponent(pest.name());
+    window.location.href = ai_page;
+
+    /*
     var url = 'pest_ai_page?pest_name=' + encodeURIComponent(pest.name());
     self.aisForPestPage(url);
     return(true);
+    */
   }
   self.hashchanged = function(event)
   {
@@ -577,34 +582,6 @@ function pesticideSearchViewModel()
     var ai_name = $('#ai_names').val();
     var ai_page = '/pesticide_tool/active_ingredient?ai_name=' + encodeURIComponent(ai_name);
     window.location.href = ai_page;
-
-    /*
-    var url = $.param.fragment();
-
-    var hash = url + '/#' + encodeURIComponent(ai_name);
-    var frag = $.param.fragment('', hash, 2);
-    $.bbq.pushState(frag);
-
-    self.setVisible('ai_info');
-    self.ai_results([]);
-    var target = document.getElementById('brand_nfo_spinner');
-    self.spinner.spin(target);
-    var url = 'http://sccoastalpesticides.org/pesticide_tool/get_ai';
-    $.getJSON(url,
-      {
-        'ai': ai_name
-      },
-      function(data) {
-        self.spinner.stop();
-        self.ai_results(data.ai_list);
-        $('[data-toggle="popover"]').popover({
-          trigger: 'hover',
-          'placement': 'top'
-        });
-
-      }
-    );
-    */
   };
   self.getPanelClass = function(hazard_level)
   {
