@@ -635,6 +635,19 @@ function brandViewModel(config)
   {
 
   };
+  self getRestrictedUseText = function(use)
+  {
+    var ret_val = "Unknown";
+    if(use == 'true')
+    {
+      ret_val = "Yes";
+    }
+    else if(use == 'false')
+    {
+      ret_val = "No"
+    }
+    return(retVal);
+  };
   self.showApplicationAreas = function(brand_nfo, event)
   {
     self.listName("Application Areas");

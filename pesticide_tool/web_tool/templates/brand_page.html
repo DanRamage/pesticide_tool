@@ -70,7 +70,7 @@
                     <h3 class="text-right">Restricted Use:</h3>
                   </div>
                   <div class="col-md-3 col-xs-6">
-                    <span data-bind="text: restricted_use"></span>
+                    <span data-bind="text: $root.getRestrictedUseText($data.restricted_use)}"></span>
                   </div>
                 </div>
                 <div class="row">
