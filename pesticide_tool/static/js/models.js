@@ -645,13 +645,12 @@ function pesticideSearchViewModel()
 
 };
 
-function brandViewModel(config)
+function aiViewModel(config)
 {
   var self = this;
 
-  self.activeBrand = ko.observableArray([config]);
   self.listName = ko.observable('');
-  self.activeList = ko.observableArray([]);
+  self.activeList = ko.observableArray(config);
 
   self.initialize = function()
   {

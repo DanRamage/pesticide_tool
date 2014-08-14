@@ -30,7 +30,7 @@
 
 {% block body %}
   <div class="container">
-    <div data-bind="foreach: ai_results">
+    <div data-bind="foreach: activeList">
       <div class="row">
         <div data-bind="attr: {class: $root.getPanelClass($data.relative_potential_ecosystem_hazard)}">
           <div class="panel-heading">
