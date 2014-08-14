@@ -53,6 +53,7 @@ def brand_page(request, brand_name, template='brand_page.html'):
   if logger:
     logger.debug("End brand_page: %s" % (brand_json))
 
+
   return render_to_response(template, {'brand_info': []}, context_instance=RequestContext(request))
 
 
