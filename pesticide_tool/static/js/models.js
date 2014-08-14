@@ -343,7 +343,7 @@ function categoriesViewModel()
   };
   self.pestTypeClicked = function(pest, event)
   {
-    var ai_page = '/pesticide_tool/active_ingredient?pest_name=' + encodeURIComponent(pest.name());
+    var ai_page = '/pesticide_tool/active_ingredient_from_pest?pest_name=' + encodeURIComponent(pest.name());
     window.location.href = ai_page;
 
     /*
