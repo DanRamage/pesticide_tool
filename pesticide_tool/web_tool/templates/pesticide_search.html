@@ -75,76 +75,6 @@
       </div>
     </div>
     <!-- End the pesticide search view-->
-    <!--Start brand info-->
-    <!--
-    <div class="row" data-bind="visible: visibleTracker['brand_info']()">
-      <div data-bind="foreach: activeBrand">
-        <div id="brand_info" class="row">
-          <div class="col-md-12">
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <h3 class="panel-title" data-bind="text: 'Brand: ' + name"></h3>
-              </div>
-              <div class="panel-body">
-                <div class="container">
-                  <div class="row">
-                    <span id="brand_nfo_spinner"></span>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-3">
-                      <h3 class="text-right">Restricted Use:</h3>
-                    </div>
-                    <div class="col-md-3 col-xs-6">
-                      <span data-bind="text: restricted_use"></span>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-3">
-                      <h3  class="text-right">Formulation:</h3>
-                    </div>
-                    <div class="col-md-3" >
-                      <span data-bind="text: formulation"></span>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-3">
-                      <h3 class="text-right">Product Label:</h3>
-                    </div>
-                    <div class="col-md-2">
-                      <a class="list-group-item btn btn-default" data-bind="attr: {href: label_url}">
-                        Open Link »
-                      </a>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-3">
-                      <h3 class="text-right">Application Areas:</h3>
-                    </div>
-                    <div class="col-md-2">
-                      <a class="list-group-item btn btn-default" data-toggle="modal" data-target="#list_modal" href="#" data-bind="click: function(aa, event) { $parent.showApplicationAreas(aa, event); }">
-                        Show »
-                      </a>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-3">
-                      <h3 class="text-right">Pests Treated:</h3>
-                    </div>
-                    <div class="col-md-2">
-                      <a class="list-group-item btn btn-default" data-toggle="modal" data-target="#list_modal" href="#" data-bind="click: function(aa, event) { $parent.showPestsTreated(aa, event); }">
-                        Show »
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    -->
-    <!--End brand info-->
     <!--Start ai info-->
     <div class="row" data-bind="visible: visibleTracker['ai_info']()">
       <div data-bind="foreach: activeAI">
@@ -184,29 +114,6 @@
       </div>
     </div>
     <!--End ai info-->
-    <!-- List modal -->
-    <!--
-    <div class="modal fade" id="list_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-            <h4 class="modal-title" id="myModalLabel" data-bind="text: listName"></h4>
-          </div>
-          <div class="modal-body">
-            <ul class="list-group" data-bind="foreach: activeList">
-              <li class="list-group-item" data-bind="text: name"></li>
-            </ul>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    -->
-    <!-- End list modal -->
-
   </div>
   <!--container-->
 {% endblock %}

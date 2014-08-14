@@ -465,6 +465,9 @@ function activeIngredientsForPestViewModel()
   };
   self.showBrandInfo = function(brand, event)
   {
+    var brand_page = '/pesticide_tool/brand?brand_name=' + encodeURIComponent(brand.name);
+    window.location.href = brand_page;
+    /*
     self.setVisible('brand_info');
 
     self.activeBrand([]);
@@ -480,21 +483,24 @@ function activeIngredientsForPestViewModel()
         self.spinner.stop();
         self.activeBrand([data.brand_info]);
       }
+
     );
-
-    self.showApplicationAreas = function(brand_nfo, event)
-    {
-      self.listName("Application Areas");
-      self.activeList(brand_nfo.application_areas);
-    };
-    self.showPestsTreated = function(brand_nfo, event)
-    {
-      self.listName("Pests Treated");
-      self.activeList(brand_nfo.pests_treated);
-    };
-
     return(true);
+    */
   }
+  /*
+  self.showApplicationAreas = function(brand_nfo, event)
+  {
+    self.listName("Application Areas");
+    self.activeList(brand_nfo.application_areas);
+  };
+  self.showPestsTreated = function(brand_nfo, event)
+  {
+    self.listName("Pests Treated");
+    self.activeList(brand_nfo.pests_treated);
+  };
+  */
+
 };
 
 function pesticideSearchViewModel()
@@ -565,28 +571,6 @@ function pesticideSearchViewModel()
     var brand_name = $('#pesticide_names').val();
     var brand_page = '/pesticide_tool/brand?brand_name=' + encodeURIComponent(brand_name);
     window.location.href = brand_page;
-    /*
-    var url = $.param.fragment();
-
-    var hash = url + '/#' + encodeURIComponent(brand_name);
-    var frag = $.param.fragment('', hash, 2);
-    $.bbq.pushState(frag);
-
-    self.setVisible('brand_info');
-    self.activeBrand([]);
-    var target = document.getElementById('brand_nfo_spinner');
-    self.spinner.spin(target);
-    var url = 'http://sccoastalpesticides.org/pesticide_tool/get_info_for_brand';
-    $.getJSON(url,
-      {
-        'brand': brand_name
-      },
-      function(data) {
-        self.spinner.stop();
-        self.activeBrand([data.brand_info]);
-      }
-    );
-    */
   };
   self.activeIngredientSearch = function(name, event)
   {
