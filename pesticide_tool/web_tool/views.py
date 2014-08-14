@@ -49,7 +49,7 @@ def brand_page(request, brand_name, template='brand_page.html'):
     logger.debug("Begin brand_page: %s" % (search_term))
 
   brand_info = Brand.objects.filter(name__iexact=search_term).all()[:1].get()
-  brand_json = serializers.serialize("json", brand_info.toDict)
+  brand_json = simplejson.dumps(brand_info.toDict)
   if logger:
     logger.debug("End brand_page: %s" % (brand_json))
 
