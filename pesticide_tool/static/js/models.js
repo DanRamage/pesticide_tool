@@ -667,6 +667,7 @@ function aiViewModel(config) {
 
   self.activeAI = ko.observable();
   self.activeList = ko.observableArray(config);
+  self.activeBrands = ko.observableArray([]);
 
   self.initialize = function()
   {
