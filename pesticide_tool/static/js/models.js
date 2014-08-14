@@ -343,7 +343,7 @@ function categoriesViewModel()
   };
   self.pestTypeClicked = function(pest, event)
   {
-    var ai_page = '/pesticide_tool/active_ingredient_from_pest?pest_name=' + encodeURIComponent(pest.name());
+    var ai_page = '/pesticide_tool/active_ingredient/pest_name/' + encodeURIComponent(pest.name());
     window.location.href = ai_page;
 
     /*
@@ -580,7 +580,7 @@ function pesticideSearchViewModel()
   self.activeIngredientSearch = function(name, event)
   {
     var ai_name = $('#ai_names').val();
-    var ai_page = '/pesticide_tool/active_ingredient?ai_name=' + encodeURIComponent(ai_name);
+    var ai_page = '/pesticide_tool/active_ingredient/ai_name/' + encodeURIComponent(ai_name);
     window.location.href = ai_page;
   };
   self.getPanelClass = function(hazard_level)
