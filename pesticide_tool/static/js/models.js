@@ -638,15 +638,18 @@ function brandViewModel(config)
   self.getRestrictedUseText = function(use)
   {
     var ret_val = "Unknown";
-    if(use == 'true')
+    if(use !== undefined)
     {
-      ret_val = "Yes";
+      if (use)
+      {
+        ret_val = "Yes";
+      }
+      else
+      {
+        ret_val = "No"
+      }
     }
-    else if(use == 'false')
-    {
-      ret_val = "No"
-    }
-    return(retVal);
+    return(ret_val);
   };
   self.showApplicationAreas = function(brand_nfo, event)
   {
