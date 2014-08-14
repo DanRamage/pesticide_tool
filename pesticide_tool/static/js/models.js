@@ -635,7 +635,7 @@ function brandViewModel(config)
   {
 
   };
-  self getRestrictedUseText = function(use)
+  self.getRestrictedUseText = function(use)
   {
     var ret_val = "Unknown";
     if(use == 'true')
