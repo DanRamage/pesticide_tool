@@ -574,7 +574,7 @@ function pesticideSearchViewModel()
   self.brandSearch = function(name, event)
   {
     var brand_name = $('#pesticide_names').val();
-    var brand_page = '/pesticide_tool/brand?brand_name=' + encodeURIComponent(brand_name);
+    var brand_page = '/pesticide_tool/brand_name/' + encodeURIComponent(brand_name);
     window.location.href = brand_page;
   };
   self.activeIngredientSearch = function(name, event)
@@ -704,7 +704,7 @@ function aiViewModel(config) {
   };
   self.showBrandInfo = function(brand, event)
   {
-    var brand_page = '/pesticide_tool/brand?brand_name=' + encodeURIComponent(brand.name);
+    var brand_page = '/pesticide_tool/brand_name/' + encodeURIComponent(brand.name);
     window.location.href = brand_page;
   };
 
