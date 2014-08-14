@@ -114,6 +114,17 @@
       </div>
     </div>
     <!--End ai info-->
+    <!--Brands List-->
+    <div data-bind="visible: visibleTracker['brands']">
+      <div class="row">
+        <h4 data-bind="text: 'Products containting ' + activeAI()"></h4>
+        <div class="btn-group btn-group-justified" data-bind="foreach: activeBrands">
+          <a class="list-group-item" data-bind="text: name, click: function(ai, event) { $parent.showBrandInfo(ai, event); }"></a>
+        </div>
+      </div>
+    </div>
+    <!--End Brands List-->
+
   </div>
   <!--container-->
 {% endblock %}

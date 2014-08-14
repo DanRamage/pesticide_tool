@@ -509,22 +509,21 @@ function pesticideSearchViewModel()
 
   self.visibleTracker = {
     'pesticide_ai_search': ko.observable(true),
-    'brand_info': ko.observable(false),
+    'brands': ko.observable(false),
     'ai_info': ko.observable(false)
   };
   self.spinner = null;
   self.showSpinner = ko.observable(false);
-  self.activeBrand = ko.observableArray([]);
+  self.activeBrands = ko.observableArray([]);
   self.activeAI = ko.observableArray([]);
 
-  //self.pesticide_names = ko.observableArray([]);
-  //self.ai_names = ko.observableArray([]);
   self.initialize = function()
   {
     self.showSpinner(true);
     var target = document.getElementById('spinner');
     self.spinner = new Spinner(spinner_opts).spin(target);
 
+    //Server query to get the names we use in the typeahead.
     $.getJSON('http://sccoastalpesticides.org/pesticide_tool/get_pestcide_ai_names',
       function(data) {
         $("#pesticide_names").typeahead({ source: data.pesticides });
@@ -618,6 +617,20 @@ function pesticideSearchViewModel()
       }
     }
     return(css);
+  };
+  self.showProducts = function(ai, event)
+  {
+    self.setVisible('brands');
+    self.activeAI(ai.display_name);
+    //Empty the curent brands.
+    self.activeBrands([]);
+    //ADd the brands from the selected AI.
+    if(ai.brands.length)
+    {
+      var sorted_brands = ai.brands.sort();
+      self.activeBrands(sorted_brands);
+    }
+    return(true);
   };
 
 
