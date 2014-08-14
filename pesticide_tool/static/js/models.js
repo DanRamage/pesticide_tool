@@ -665,6 +665,11 @@ function brandViewModel(config)
 function aiViewModel(config) {
   var self = this;
 
+  self.visibleTracker = {
+    'ai_info': ko.observable(true),
+    'brands': ko.observable(false)
+  };
+
   self.activeAI = ko.observable();
   self.activeList = ko.observableArray(config);
   self.activeBrands = ko.observableArray([]);
@@ -672,6 +677,21 @@ function aiViewModel(config) {
   self.initialize = function()
   {
   };
+  self.setVisible = function(pageName)
+  {
+    $.each(self.visibleTracker, function(ndx, page)
+    {
+      if(ndx === pageName)
+      {
+        page(true);
+      }
+      else
+      {
+        page(false);
+      }
+    });
+  };
+
   self.getPanelClass = function(hazard_level)
   {
     var css = "panel panel-default";

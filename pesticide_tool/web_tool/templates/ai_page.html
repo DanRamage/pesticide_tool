@@ -33,7 +33,8 @@
 
 {% block body %}
   <div class="container">
-    <div data-bind="foreach: activeList">
+    <!--AI Info start-->
+    <div data-bind="foreach: activeList, visible:: visibleTracker['ai_info']()">
       <div class="row">
         <div data-bind="attr: {class: $root.getPanelClass($data.relative_potential_ecosystem_hazard)}">
           <div class="panel-heading">
@@ -68,6 +69,18 @@
         </div>
       </div>
     </div>
+  <!--End AI Info-->
+  <!--Brands List-->
+  <div data-bind="visible: visibleTracker['brands']">
+    <div class="row">
+      <h4 data-bind="text: 'Products containting ' + activeAI()"></h4>
+      <div class="btn-group btn-group-justified" data-bind="foreach: activeBrands">
+        <a class="list-group-item" data-bind="text: name, click: function(ai, event) { $parent.showBrandInfo(ai, event); }"></a>
+      </div>
+    </div>
+  </div>
+  <!--End Brands List-->
+
   </div>
 
 {% endblock %}
