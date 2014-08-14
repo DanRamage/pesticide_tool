@@ -29,11 +29,11 @@ def get_pestcide_ai_names(request):
   if logger:
     logger.debug("Begin get_pestcide_names")
   pesticides = Brand.objects.all().only('name').order_by('name')
-  ais = ActiveIngredient.objects.exclude(cumulative_score__is_null=True).all().only('display_name').order_by('display_name')
+  ais = ActiveIngredient.objects.exclude(cumulative_score__is_null=True).only('display_name').order_by('display_name')
 
   json = {
     'pesticides': [rec.name for rec in pesticides],
-    'active_ingredients': [rec.display_name for rec in ais]
+    'active_ingredients': [rec.display_name for rec in ais.all()]
   }
 
   if logger:
