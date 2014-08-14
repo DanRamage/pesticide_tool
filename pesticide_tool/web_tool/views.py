@@ -180,8 +180,8 @@ def ai_info_page(request, ai_name, template="ai_page.html"):
 
 def get_ai_for_pest(request, pest_name, template="ai_page.html"):
   search_term = pest_name
-  #if(len(search_term) == 0):
-  #  search_term = request.GET['pest_name']
+  if(len(search_term) == 0):
+    search_term = request.GET['pest_name']
   if logger:
     logger.debug("Begin get_ai_for_pest: %s" % (search_term))
 
