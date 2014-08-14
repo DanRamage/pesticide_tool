@@ -515,7 +515,7 @@ function pesticideSearchViewModel()
   self.spinner = null;
   self.showSpinner = ko.observable(false);
   self.activeBrands = ko.observableArray([]);
-  self.activeAI = ko.observableArray([]);
+  self.activeAI = ko.observable();
 
   self.initialize = function()
   {
