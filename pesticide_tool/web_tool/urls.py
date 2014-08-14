@@ -9,7 +9,7 @@ urlpatterns = patterns('',
     (r'^active_ingredient/(?P<ai_name>[\w-]*)', ai_info_page),
     (r'^active_ingredient_from_pest/(?P<pest_name>[\w-]*)', get_ai_for_pest),
     (r'^active_ingredient_test/(?P<ai_name>\w+)', ai_info_page),
-    (r'^active_ingredient_test/(?P<pest_name>\w+)', get_ai_for_pest),
+    (r'^active_ingredient_test/pest_name/(?P<pest_name>\w+)', get_ai_for_pest),
 
     (r'^pest_ai_page/(?P<pest_name>[\w-]*)', pest_ai_page),
     (r'^get_info_for_brand/(?P<brand>[\w-]*)', get_info_for_brand),
