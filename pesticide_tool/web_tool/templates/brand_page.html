@@ -5,7 +5,7 @@
   <script src="{{STATIC_URL}}js/ladda-bootstrap/dist/spin.js"></script>
   <script type="text/javascript"  src="{{STATIC_URL}}js/models.js"></script>
   <script type="text/javascript">
-    function brand_page()
+    function brand_page(config)
     {
       var self = this;
 
@@ -13,14 +13,15 @@
       self.configData = null;
       self.initialize = function()
       {
-        self.viewModel = new brandViewModel({{ brand_info }});
+        self.viewModel = new brandViewModel(config);
         self.viewModel.initialize();
         ko.applyBindings(self.viewModel);
 
       };
       return(self);
     }
-    app = brand_page();
+    var brand_info = '{{ brand_info }}';
+    app = brand_page(brand_info);
     app.initialize();
 
   </script>
