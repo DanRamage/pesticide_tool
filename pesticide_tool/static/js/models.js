@@ -633,7 +633,11 @@ function pesticideSearchViewModel()
     }
     return(true);
   };
-
+  self.showBrandInfo = function(brand, event)
+  {
+    var brand_page = '/pesticide_tool/brand?brand_name=' + encodeURIComponent(brand.name);
+    window.location.href = brand_page;
+  };
 
 };
 
