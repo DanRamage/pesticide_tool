@@ -5,13 +5,13 @@
   <script src="{{STATIC_URL}}js/ladda-bootstrap/dist/spin.js"></script>
   <script type="text/javascript"  src="{{STATIC_URL}}js/models.js"></script>
   <script type="text/javascript">
-    function brand_page(config)
+    function brand_page()
     {
       var self = this;
 
       self.viewModel = null;
       self.configData = null;
-      self.initialize = function()
+      self.initialize = function(config)
       {
         self.viewModel = new brandViewModel(config);
         self.viewModel.initialize();
@@ -21,8 +21,8 @@
       return(self);
     }
     var brand_info = '{{ brand_info }}';
-    app = brand_page(brand_info);
-    app.initialize();
+    app = brand_page();
+    app.initialize(brand_info);
 
   </script>
 {% endblock %}
