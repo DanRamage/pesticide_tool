@@ -20,7 +20,7 @@
       };
       return(self);
     }
-    var brand_info = $.parseJSON({{ brand_info }});
+    var brand_info = $.parseJSON('{{ brand_info }}');
     app = brand_page();
     app.initialize(brand_info);
 
