@@ -52,7 +52,7 @@ def brand_page(request, brand_name, template='brand_page.html'):
   brand_json = [];
   try:
     brand_info = Brand.objects.filter(name__iexact=search_term).all()[:1].get()
-    brand_json = brand_info.toDict;
+    brand_json.append(brand_info.toDict);
   except Exception, e:
     if logger:
       logger.exception(e)
