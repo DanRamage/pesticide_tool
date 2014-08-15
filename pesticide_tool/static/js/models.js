@@ -418,10 +418,10 @@ function brandViewModel(config)
   self.getPanelClass = function(restricted_use)
   {
     var css = "panel panel-default";
-;
-    if(use !== undefined)
+
+    if(restricted_use !== undefined)
     {
-      if(use)
+      if(restricted_use)
       {
         css = "panel panel-danger";
       }
