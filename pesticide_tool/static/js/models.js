@@ -362,7 +362,7 @@ function categoriesViewModel()
   }
 
 }
-
+/*
 function activeIngredientsForPestViewModel()
 {
   var self = this;
@@ -475,7 +475,7 @@ function activeIngredientsForPestViewModel()
   }
 
 };
-
+*/
 function pesticideSearchViewModel()
 {
   var self = this;
