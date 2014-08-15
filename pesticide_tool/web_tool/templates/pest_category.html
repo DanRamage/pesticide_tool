@@ -64,7 +64,7 @@
       color:#fff !important;
       text-align: center;
     }
-    .caption .h4 {
+    #cat_caption h4 {
       background: rgba(0,0,0,0.4);
 
     }
@@ -89,7 +89,7 @@
       <ul class="thumbnails" id="hover-col" data-bind="foreach: categoryModels">
         <li class="col-md-3">
           <div class="thumbnail">
-            <div class="caption">
+            <div id="cat_caption" class="caption">
               <h4><span data-bind="text: name()"></span></h4>
               <p>
                 <a role="button" data-bind="click: function(category, event) { $parent.categoryClicked(category, event, $parent); }" class="btn btn-default">Search »</a>
