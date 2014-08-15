@@ -72,110 +72,111 @@
   <div data-bind="template: { name: 'pest_category_tpl', data: catViewModel }"></div>
   <div data-bind="template: { name: 'pest_sub_category_tpl', data: catViewModel }"></div>
   -->
+  <div class="container">
   <!-- Start of Choose your pest category page -->
-  <div class="container" id='pest_category' data-bind="visible: visibleTracker['category']()">
-    <div class="row">
-      <div class="col-lg-12">
-        <div class="text-center"><h3>Main Categories</h3></div>
-        <div class="text-center"><h3>Is your pest a:</h3></div>
-      </div>
-    </div>
-    <!--
-    For debugging the knockout data.
-    <pre data-bind="text: JSON.stringify(ko.toJS($data), null, 2)"></pre>
-    -->
-    <div class="row">
-      <ul class="thumbnails" id="hover-col" data-bind="foreach: categoryModels">
-        <li class="col-md-3">
-          <div class="thumbnail">
-            <div class="caption">
-              <h4 id="cat_caption"><span data-bind="text: name()"></span></h4>
-              <p>
-                <a role="button" data-bind="click: function(category, event) { $parent.categoryClicked(category, event, $parent); }" class="btn btn-default">Search »</a>
-                <!--
-                <a role="button" data-bind="attr: {href: '#pest_subcategory/' + href()}" class="btn btn-default">Search »</a>
-                -->
-              </p>
-            </div>
-            <img data-bind="attr: {src: img()}" class="img-responsive">
-          </div>
-        </li>
-      </ul>
-    </div>
-  </div>
-  <!-- End of choose your pest page -->
-  <!-- Start of Choose your pest sub-category page -->
-  <div class="container" id='pest_sub_category' data-bind="visible: visibleTracker['sub_category']()">
-    <div class="row">
-      <div class="col-lg-12">
-        <div class="text-center">
-          <h3>
-            <span data-bind="text: activeCategory().name"></span>
-          </h3>
+    <div id='pest_category' data-bind="visible: visibleTracker['category']()">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="text-center"><h3>Main Categories</h3></div>
+          <div class="text-center"><h3>Is your pest a:</h3></div>
         </div>
       </div>
-    </div>
-    <div class="row">
-      <ul class="thumbnails" id="sub-hover-col" data-bind="foreach: activeCategory().subCategories">
-        <li class="col-md-3">
-          <div class="thumbnail">
-            <div class="caption">
-              <h4 id="cat_caption"><span data-bind="text: name()"></span></h4>
-              <p>
-                <a role="button" href="#"
-                   data-bind="attr: {id: href()}, click: $parent.subCategoryClicked"
-                   class="btn btn-default" >
-                  <span>Search »</span>
-                </a>
-                <!--
-                <a role="button" data-bind="attr: {href: '#pest_subcategory/' + href()}" class="btn btn-default">Search »</a>
-                -->
-              </p>
-            </div>
-            <img data-bind="attr: {src: img()}" class="img-responsive">
-          </div>
-        </li>
-      </ul>
-    </div>
-  </div>
-  <!-- End of choose your pest page -->
-  <!-- Start of sub-category pests page -->
-  <div class="container" id='pest_sub_category' data-bind="visible: visibleTracker['pest']()">
-    <div class="row">
-      <div class="col-lg-12">
-        <div class="text-center">
-          <h3>
-            <span data-bind="text: activeSubCategory().name"></span>
-          </h3>
-        </div>
-      </div>
-    </div>
-    <div class="row">
       <!--
-      <pre data-bind="text: JSON.stringify(ko.toJS(activeSubCategory()), null, 2)"></pre>
+      For debugging the knockout data.
+      <pre data-bind="text: JSON.stringify(ko.toJS($data), null, 2)"></pre>
       -->
-      <ul class="thumbnails" id="pests-hover-col" data-bind="foreach: activeSubCategory().pests()">
-        <li class="col-md-3">
-          <div class="thumbnail">
-            <div class="caption">
-              <h4 id="cat_caption"><span data-bind="text: name()"></span></h4>
-              <p>
-                <a role="button"
-                   data-bind="click: $parent.pestTypeClicked, attr: {href: $parent.aisForPestPage()}"
-                   class="btn btn-default">
-                  <span>Search »</span>
-                </a>
-                <!--
-                <a role="button" data-bind="click: $parent.pestTypeClicked" class="btn btn-default">Find Treatments »</a>
-                -->
-              </p>
+      <div class="row">
+        <ul class="thumbnails" id="hover-col" data-bind="foreach: categoryModels">
+          <li class="col-md-3">
+            <div class="thumbnail">
+              <div class="caption">
+                <h4 id="cat_caption"><span data-bind="text: name()"></span></h4>
+                <p>
+                  <a role="button" data-bind="click: function(category, event) { $parent.categoryClicked(category, event, $parent); }" class="btn btn-default">Search »</a>
+                  <!--
+                  <a role="button" data-bind="attr: {href: '#pest_subcategory/' + href()}" class="btn btn-default">Search »</a>
+                  -->
+                </p>
+              </div>
+              <img data-bind="attr: {src: img()}" class="img-responsive">
             </div>
-            <img data-bind="attr: {src: img()}" class="img-responsive">
-          </div>
-        </li>
-      </ul>
+          </li>
+        </ul>
+      </div>
     </div>
+    <!-- End of choose your pest page -->
+    <!-- Start of Choose your pest sub-category page -->
+    <div id='pest_sub_category' data-bind="visible: visibleTracker['pest']()">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="text-center">
+            <h3>
+              <span data-bind="text: activeSubCategory().name"></span>
+            </h3>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <!--
+        <pre data-bind="text: JSON.stringify(ko.toJS(activeSubCategory()), null, 2)"></pre>
+        -->
+        <ul class="thumbnails" id="pests-hover-col" data-bind="foreach: activeSubCategory().pests()">
+          <li class="col-md-3">
+            <div class="thumbnail">
+              <div class="caption">
+                <h4 id="cat_caption"><span data-bind="text: name()"></span></h4>
+                <p>
+                  <a role="button"
+                     data-bind="click: $parent.pestTypeClicked, attr: {href: $parent.aisForPestPage()}"
+                     class="btn btn-default">
+                    <span>Search »</span>
+                  </a>
+                  <!--
+                  <a role="button" data-bind="click: $parent.pestTypeClicked" class="btn btn-default">Find Treatments »</a>
+                  -->
+                </p>
+              </div>
+              <img data-bind="attr: {src: img()}" class="img-responsive">
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- End of choose your pest page -->
+    <!-- Start of sub-category pests page -->
+    <div id='pest_sub_category' data-bind="visible: visibleTracker['sub_category']()">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="text-center">
+            <h3>
+              <span data-bind="text: activeCategory().name"></span>
+            </h3>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <ul class="thumbnails" id="sub-hover-col" data-bind="foreach: activeCategory().subCategories">
+          <li class="col-md-3">
+            <div class="thumbnail">
+              <div class="caption">
+                <h4 id="cat_caption"><span data-bind="text: name()"></span></h4>
+                <p>
+                  <a role="button" href="#"
+                     data-bind="attr: {id: href()}, click: $parent.subCategoryClicked"
+                     class="btn btn-default" >
+                    <span>Search »</span>
+                  </a>
+                  <!--
+                  <a role="button" data-bind="attr: {href: '#pest_subcategory/' + href()}" class="btn btn-default">Search »</a>
+                  -->
+                </p>
+              </div>
+              <img data-bind="attr: {src: img()}" class="img-responsive">
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- End of choose your pest page -->
   </div>
-  <!-- End of choose your pest page -->
-
 {% endblock %}
