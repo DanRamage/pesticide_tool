@@ -37,44 +37,46 @@
   <link href="{{STATIC_URL}}css/carousel.css" rel="stylesheet">
 
   <div class="container">
-    <div class="marketing" data-bind="visible: visibleTracker['pesticide_ai_search']()">
-      <!-- Start the pesticide search view-->
-      <div class="row" id="search_types">
-        <div class="col-lg-2">
-        </div>
-        <div class="col-lg-4">
-          <img style="width: 140px; height: 140px;" alt="Pesticide Search" src="{{ STATIC_URL }}/images/decision_buttons/pesticide_search.jpg" class="img-circle">
-          <h2>Brand Search</h2>
-          <p>Have a pesticide product? Search here to find information on it.
-            Starting typing your brand name below.</p>
-          <p>
-            <div class="input-group">
-              <input id="pesticide_names" data-provide="typeahead" autocomplete="off" type="text" placeholder="Pesticide Search..." class="form-control">
-              <span class="input-group-btn">
-                <button class="btn btn-default" type="button" data-bind="click: brandSearch">Go!</button>
-              </span>
-            </div><!-- /input-group -->
-          </p>
-        </div>
-        <div class="col-lg-4">
-          <img style="width: 140px; height: 140px;" alt="Pesticide Search" src="{{ STATIC_URL }}/images/decision_tool/Glyphosate-3D-balls.png" class="img-circle">
-          <h2>Acitve Ingredient Search</h2>
-          <p>Want to find out more information about the active ingredient in a pesticide, search here.
-            Starting typing your active ingredient below.</p>
-          <p>
-            <div class="input-group">
-              <input id="ai_names" data-provide="typeahead" autocomplete="off" type="text" placeholder="Active Ingredient Search..." class="form-control">
-              <span class="input-group-btn">
-                <button class="btn btn-default" type="button" data-bind="click: activeIngredientSearch">Go!</button>
-              </span>
-            </div><!-- /input-group -->
-          </p>
-        </div>
-        <div class="col-lg-2">
+    <div class="well">
+      <div class="marketing" data-bind="visible: visibleTracker['pesticide_ai_search']()">
+        <!-- Start the pesticide search view-->
+        <div class="row" id="search_types">
+          <div class="col-lg-2">
+          </div>
+          <div class="col-lg-4">
+            <img style="width: 140px; height: 140px;" alt="Pesticide Search" src="{{ STATIC_URL }}/images/decision_buttons/pesticide_search.jpg" class="img-circle">
+            <h2>Brand Search</h2>
+            <p>Have a pesticide product? Search here to find information on it.
+              Starting typing your brand name below.</p>
+            <p>
+              <div class="input-group">
+                <input id="pesticide_names" data-provide="typeahead" autocomplete="off" type="text" placeholder="Pesticide Search..." class="form-control">
+                <span class="input-group-btn">
+                  <button class="btn btn-default" type="button" data-bind="click: brandSearch">Go!</button>
+                </span>
+              </div><!-- /input-group -->
+            </p>
+          </div>
+          <div class="col-lg-4">
+            <img style="width: 140px; height: 140px;" alt="Pesticide Search" src="{{ STATIC_URL }}/images/decision_tool/Glyphosate-3D-balls.png" class="img-circle">
+            <h2>Acitve Ingredient Search</h2>
+            <p>Want to find out more information about the active ingredient in a pesticide, search here.
+              Starting typing your active ingredient below.</p>
+            <p>
+              <div class="input-group">
+                <input id="ai_names" data-provide="typeahead" autocomplete="off" type="text" placeholder="Active Ingredient Search..." class="form-control">
+                <span class="input-group-btn">
+                  <button class="btn btn-default" type="button" data-bind="click: activeIngredientSearch">Go!</button>
+                </span>
+              </div><!-- /input-group -->
+            </p>
+          </div>
+          <div class="col-lg-2">
+          </div>
         </div>
       </div>
+      <!-- End the pesticide search view-->
     </div>
-    <!-- End the pesticide search view-->
   </div>
   <!--container-->
 {% endblock %}
