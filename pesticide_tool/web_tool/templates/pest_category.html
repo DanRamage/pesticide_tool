@@ -64,9 +64,8 @@
       color:#fff !important;
       text-align: center;
     }
-    .caption h4 .h4 {
-      background: rgba(0,0,0,0.4);
-
+    #cat_caption {
+      color: #fff;
     }
   </style>
   <!--
@@ -90,7 +89,7 @@
         <li class="col-md-3">
           <div class="thumbnail">
             <div class="caption">
-              <h4><span data-bind="text: name()"></span></h4>
+              <h4 id="cat_caption"><span data-bind="text: name()"></span></h4>
               <p>
                 <a role="button" data-bind="click: function(category, event) { $parent.categoryClicked(category, event, $parent); }" class="btn btn-default">Search »</a>
                 <!--
@@ -121,7 +120,7 @@
         <li class="col-md-3">
           <div class="thumbnail">
             <div class="caption">
-              <h4><span data-bind="text: name()"></span></h4>
+              <h4 id="cat_caption"><span data-bind="text: name()"></span></h4>
               <p>
                 <a role="button" href="#"
                    data-bind="attr: {id: href()}, click: $parent.subCategoryClicked"
@@ -159,7 +158,7 @@
         <li class="col-md-3">
           <div class="thumbnail">
             <div class="caption">
-              <h4><span data-bind="text: name()"></span></h4>
+              <h4 id="cat_caption"><span data-bind="text: name()"></span></h4>
               <p>
                 <a role="button"
                    data-bind="click: $parent.pestTypeClicked, attr: {href: $parent.aisForPestPage()}"
