@@ -49,6 +49,7 @@ def brand_page(request, brand_name, template='brand_page.html'):
     search_term = request.GET['brand_name']
   if logger:
     logger.debug("Begin brand_page: %s" % (search_term))
+  brand_json = ''
   try:
     brand_info = Brand.objects.filter(name__iexact=search_term).all()[:1].get()
     brand_json = simplejson.dumps(brand_info.toDict)
@@ -150,6 +151,7 @@ def ai_info_page(request, ai_name, template="ai_page.html"):
       .prefetch_related('pesticide_classes')
 
     ret_data = []
+    ai_list = ''
     for ai in ai_list:
       brand_data = []
       for brand in ai.brands.all():
