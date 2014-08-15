@@ -276,7 +276,7 @@ function categoriesViewModel()
   };
   self.pestTypeClicked = function(pest, event)
   {
-    var ai_page = '/pesticide_tool/active_ingredient/pest_name/' + encodeURIComponent(pest.name());
+    var ai_page = '/pesticide_tool/active_ingredient/pest_name/' + pest.name();
     window.location.href = ai_page;
   }
   self.hashchanged = function(event)
@@ -356,13 +356,13 @@ function pesticideSearchViewModel()
   self.brandSearch = function(name, event)
   {
     var brand_name = $('#pesticide_names').val();
-    var brand_page = '/pesticide_tool/brand_name/' + encodeURIComponent(brand_name);
+    var brand_page = '/pesticide_tool/brand_name/' + brand_name;
     window.location.href = brand_page;
   };
   self.activeIngredientSearch = function(name, event)
   {
     var ai_name = $('#ai_names').val();
-    var ai_page = '/pesticide_tool/active_ingredient/ai_name/' + encodeURIComponent(ai_name);
+    var ai_page = '/pesticide_tool/active_ingredient/ai_name/' + ai_name;
     window.location.href = ai_page;
   };
   self.getPanelClass = function(hazard_level)
@@ -398,7 +398,7 @@ function pesticideSearchViewModel()
   };
   self.showBrandInfo = function(brand, event)
   {
-    var brand_page = '/pesticide_tool/brand_name/' + encodeURIComponent(brand.name);
+    var brand_page = '/pesticide_tool/brand_name/' + brand.name;
     window.location.href = brand_page;
   };
 
@@ -520,7 +520,7 @@ function aiViewModel(config) {
   };
   self.showBrandInfo = function(brand, event)
   {
-    var brand_page = '/pesticide_tool/brand_name/' + encodeURIComponent(brand.name);
+    var brand_page = '/pesticide_tool/brand_name/' + brand.name;
     window.location.href = brand_page;
   };
 
