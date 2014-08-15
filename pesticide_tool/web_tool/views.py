@@ -52,9 +52,6 @@ def brand_page(request, brand_name, template='brand_page.html'):
   try:
     brand_info = Brand.objects.filter(name__iexact=search_term).all()[:1].get()
     brand_json = simplejson.dumps(brand_info.toDict)
-  except DoesNotExist, e:
-    if logger:
-      logger.exception(e)
   except Exception, e:
     if logger:
       logger.exception(e)
@@ -170,7 +167,7 @@ def ai_info_page(request, ai_name, template="ai_page.html"):
       })
 
     ai_list = simplejson.dumps(ret_data)
-  except DoesNotExist, e:
+  except Exception, e:
     if logger:
       logger.exception(e)
 
