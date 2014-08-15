@@ -54,99 +54,116 @@
 
   <div class="container">
     <!-- Brand Info -->
-    <div data-bind="foreach: activeBrand">
-      <div id="brand_info" class="row">
-        <div class="col-md-12">
-          <div data-bind="attr: {class: $root.getPanelClass($data.restricted_use)}">
-            <div class="panel-heading">
-              <h3 class="panel-title" data-bind="text: 'Brand: ' + name"></h3>
-            </div>
-            <div class="panel-body">
-              <div class="container">
-                <div class="row">
-                  <span id="brand_nfo_spinner"></span>
-                </div>
-                <div class="row">
-                  <div class="col-md-3">
-                    <h3 class="text-right">Restricted Use:</h3>
+    <!-- ko if: activeBrand().length -->
+      <div data-bind="foreach: activeBrand">
+        <div id="brand_info" class="row">
+          <div class="col-md-12">
+            <div data-bind="attr: {class: $root.getPanelClass($data.restricted_use)}">
+              <div class="panel-heading">
+                <h3 class="panel-title" data-bind="text: 'Brand: ' + name"></h3>
+              </div>
+              <div class="panel-body">
+                <div class="container">
+                  <div class="row">
+                    <span id="brand_nfo_spinner"></span>
                   </div>
-                  <div class="col-md-3 col-xs-6">
-                    <span data-bind="text: $root.getRestrictedUseText($data.restricted_use)"></span>
+                  <div class="row">
+                    <div class="col-md-3">
+                      <h3 class="text-right">Restricted Use:</h3>
+                    </div>
+                    <div class="col-md-3 col-xs-6">
+                      <span data-bind="text: $root.getRestrictedUseText($data.restricted_use)"></span>
+                    </div>
                   </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-3">
-                    <h3  class="text-right">Formulation:</h3>
+                  <div class="row">
+                    <div class="col-md-3">
+                      <h3  class="text-right">Formulation:</h3>
+                    </div>
+                    <div class="col-md-3" >
+                      <span data-bind="text: formulation"></span>
+                    </div>
                   </div>
-                  <div class="col-md-3" >
-                    <span data-bind="text: formulation"></span>
+                  <div class="row">
+                    <div class="col-md-3">
+                      <h3 class="text-right">Product Label:</h3>
+                    </div>
+                    <div class="col-md-2">
+                      <div data-bind="if: label_url">
+                        <a class="list-group-item btn btn-default" data-bind="attr: {href: label_url}">
+                          Open Link »
+                        </a>
+                      </div>
+                      <div data-bind="ifnot: label_url">
+                        No Product Label Link
+                      </div>
+                    </div>
                   </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-3">
-                    <h3 class="text-right">Product Label:</h3>
-                  </div>
-                  <div class="col-md-2">
-                    <div data-bind="if: label_url">
-                      <a class="list-group-item btn btn-default" data-bind="attr: {href: label_url}">
-                        Open Link »
+                  <div class="row">
+                    <div class="col-md-3">
+                      <h3 class="text-right">Application Areas:</h3>
+                    </div>
+                    <div class="col-md-2">
+                      <a class="list-group-item btn btn-default" data-toggle="modal" data-target="#list_modal" href="#" data-bind="click: function(aa, event) { $parent.showApplicationAreas(aa, event); }">
+                        Show »
                       </a>
                     </div>
-                    <div data-bind="ifnot: label_url">
-                      No Product Label Link
+                  </div>
+                  <div class="row">
+                    <div class="col-md-3">
+                      <h3 class="text-right">Pests Treated:</h3>
+                    </div>
+                    <div class="col-md-2">
+                      <a class="list-group-item btn btn-default" data-toggle="modal" data-target="#list_modal" href="#" data-bind="click: function(aa, event) { $parent.showPestsTreated(aa, event); }">
+                        Show »
+                      </a>
                     </div>
                   </div>
                 </div>
-                <div class="row">
-                  <div class="col-md-3">
-                    <h3 class="text-right">Application Areas:</h3>
-                  </div>
-                  <div class="col-md-2">
+                <!--
+                <dl class="dl-horizontal">
+                  <dt>Restricted Use:</dt>
+                  <dd data-bind="text: restricted_use"></dd>
+                  <dt>Formulation:</dt>
+                  <dd data-bind="text: formulation"></dd>
+                  <dt>Product Label:</dt>
+                  <dd>
+                    <a data-bind="attr: {href: label_url}">Label Link</a>
+                  </dd>
+                  <dt>Application Areas:</dt>
+                  <dd>
                     <a class="list-group-item btn btn-default" data-toggle="modal" data-target="#list_modal" href="#" data-bind="click: function(aa, event) { $parent.showApplicationAreas(aa, event); }">
                       Show »
                     </a>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-3">
-                    <h3 class="text-right">Pests Treated:</h3>
-                  </div>
-                  <div class="col-md-2">
+                  </dd>
+                  <dt>Pests Treated:</dt>
+                  <dd>
                     <a class="list-group-item btn btn-default" data-toggle="modal" data-target="#list_modal" href="#" data-bind="click: function(aa, event) { $parent.showPestsTreated(aa, event); }">
                       Show »
                     </a>
-                  </div>
-                </div>
+                  </dd>
+                </dl>
+                -->
               </div>
-              <!--
-              <dl class="dl-horizontal">
-                <dt>Restricted Use:</dt>
-                <dd data-bind="text: restricted_use"></dd>
-                <dt>Formulation:</dt>
-                <dd data-bind="text: formulation"></dd>
-                <dt>Product Label:</dt>
-                <dd>
-                  <a data-bind="attr: {href: label_url}">Label Link</a>
-                </dd>
-                <dt>Application Areas:</dt>
-                <dd>
-                  <a class="list-group-item btn btn-default" data-toggle="modal" data-target="#list_modal" href="#" data-bind="click: function(aa, event) { $parent.showApplicationAreas(aa, event); }">
-                    Show »
-                  </a>
-                </dd>
-                <dt>Pests Treated:</dt>
-                <dd>
-                  <a class="list-group-item btn btn-default" data-toggle="modal" data-target="#list_modal" href="#" data-bind="click: function(aa, event) { $parent.showPestsTreated(aa, event); }">
-                    Show »
-                  </a>
-                </dd>
-              </dl>
-              -->
             </div>
           </div>
         </div>
       </div>
+    <!-- /ko -->
+    <!-- ko if: activeBrand().length == 0-->
+    <div class="col-md-12">
+      <div data-bind="attr: {class: $root.getPanelClass($data.restricted_use)}">
+        <div class="panel-heading">
+          <h3 class="panel-title" data-bind="text: 'Brand: ' + name"></h3>
+        </div>
+        <div class="panel-body">
+          <div class="container">
+            <h3>No Brand(s) Found</h3>
+          </div>
+        </div>
+      </div>
     </div>
+    <!-- /ko -->
+
     <!-- End Brand -->
   <!-- List modal -->
   <div class="modal fade" id="list_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
