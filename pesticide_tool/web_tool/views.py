@@ -49,10 +49,10 @@ def brand_page(request, brand_name, template='brand_page.html'):
     search_term = request.GET['brand_name']
   if logger:
     logger.debug("Begin brand_page: %s" % (search_term))
-  brand_json = [];
+  brand_json = {};
   try:
     brand_info = Brand.objects.filter(name__iexact=search_term).all()[:1].get()
-    brand_json.append(brand_info.toDict);
+    brand_json = brand_info.toDict;
   except Exception, e:
     if logger:
       logger.exception(e)
