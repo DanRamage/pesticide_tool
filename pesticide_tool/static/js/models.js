@@ -365,36 +365,6 @@ function pesticideSearchViewModel()
     var ai_page = '/pesticide_tool/active_ingredient/ai_name/' + ai_name;
     window.location.href = ai_page;
   };
-  self.getPanelClass = function(hazard_level)
-  {
-    var css = "panel panel-default";
-    if(hazard_level !== undefined) {
-      var lc_level = hazard_level.toLowerCase();
-      if (lc_level == 'low') {
-        css = "panel panel-success";
-      }
-      else if (lc_level == 'moderate') {
-        css = "panel panel-warning";
-      }
-      else if (lc_level == 'likely') {
-        css = "panel panel-danger";
-      }
-    }
-    return(css);
-  };
-  self.showProducts = function(ai, event)
-  {
-    self.setVisible('brands');
-    self.activeAI(ai.display_name);
-    //Empty the curent brands.
-    self.activeBrands([]);
-    //ADd the brands from the selected AI.
-    if(ai.brands.length)
-    {
-      self.activeBrands(ai.brands);
-    }
-    return(true);
-  };
   self.showBrandInfo = function(brand, event)
   {
     var brand_page = '/pesticide_tool/brand_name/' + brand.name;
@@ -512,8 +482,7 @@ function aiViewModel(config) {
     //ADd the brands from the selected AI.
     if(ai.brands.length)
     {
-      var sorted_brands = ai.brands.sort();
-      self.activeBrands(sorted_brands);
+      self.activeBrands(ai.brands);
     }
     return(true);
   };
