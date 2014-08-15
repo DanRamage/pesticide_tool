@@ -186,7 +186,7 @@ def get_ai_for_pest(request, pest_name, template="ai_page.html"):
 
   ai_list = ActiveIngredient.objects.filter(pests_treated__display_name__exact=search_term)\
     .order_by('cumulative_score').all()\
-    .prefetch_related('brands').only("brands__name")\
+    .prefetch_related('brands').only("brands__name").order_by('brands__name')\
     .prefetch_related('warnings')\
     .prefetch_related('pesticide_classes')
 
