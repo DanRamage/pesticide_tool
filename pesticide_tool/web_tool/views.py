@@ -159,6 +159,7 @@ def ai_info_page(request, ai_name, template="ai_page.html"):
         brand_data.append({
           'name': brand.name
         })
+      brand_data.sort()
       ret_data.append({
         'name': ai.name,
         'display_name': ai.display_name,
