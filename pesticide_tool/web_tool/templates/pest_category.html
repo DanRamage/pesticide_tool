@@ -89,8 +89,8 @@
       <ul class="thumbnails" id="hover-col" data-bind="foreach: categoryModels">
         <li class="col-md-3">
           <div class="thumbnail">
-            <div id="cat_caption" class="caption">
-              <h4><span data-bind="text: name()"></span></h4>
+            <div class="caption">
+              <h4 id="cat_caption"><span data-bind="text: name()"></span></h4>
               <p>
                 <a role="button" data-bind="click: function(category, event) { $parent.categoryClicked(category, event, $parent); }" class="btn btn-default">Search »</a>
                 <!--
