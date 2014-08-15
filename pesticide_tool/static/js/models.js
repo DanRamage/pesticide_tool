@@ -1,17 +1,4 @@
-ko.observableArray.fn.asDictionary = function (keyName) {
-    return ko.computed(function () {
-        var list = this() || [];    // the internal array
-        var keys = {};              // a place for key/value
-        ko.utils.arrayForEach(list, function (v) {
-            if (keyName) {          // if there is a key
-                keys[v[keyName]] = v;    // use it
-            } else {
-                keys[v] = v;
-            }
-        });
-        return keys;
-    }, this);
-};
+
 var spinner_opts = {
   lines: 13, // The number of lines to draw
   length: 37, // The length of each line
@@ -30,60 +17,6 @@ var spinner_opts = {
   top: '50%', // Top position relative to parent
   left: '50%' // Left position relative to parent
 };
-
-pagedObservableArray = function (options)
-  {
-    var self = this;
-    options = options || {};
-    if ($.isArray(options))
-        options = { data: options };
-
-
-    //the complete data collection
-    self.allData = ko.observableArray(options.data || [])
-
-    //the size of the pages to display
-    self.pageSize = ko.observable(options.pageSize || 10)
-
-    //the index of the current page
-    self.pageIndex = ko.observable(0);
-
-    //the current page data
-    self.page = ko.computed(function () {
-        var pageSize = self.pageSize(),
-            pageIndex = self.pageIndex(),
-            startIndex = pageSize * pageIndex,
-            endIndex = pageSize * (pageIndex + 1);
-
-        return self.allData().slice(startIndex, endIndex);
-    },
-    this,
-    {deferEvaluation: true});
-
-    //the number of pages
-    self.pageCount = ko.computed(function () {
-        return Math.ceil(self.allData().length / self.pageSize()) || 1;
-    });
-
-    //move to the next page
-    self.nextPage = function () {
-        if (self.pageIndex() < (self.pageCount() - 1))
-            self.pageIndex(self.pageIndex() + 1);
-    };
-
-    //move to the previous page
-    self.previousPage = function () {
-        if (self.pageIndex() > 0)
-            self.pageIndex(self.pageIndex() - 1);
-    };
-
-    //reset page index when page size changes
-    self.pageSize.subscribe(function () { self.pageIndex(0); });
-    self.allData.subscribe(function () { self.pageIndex(0); });
-
-
-    return(self);
-  };
 
 function buttonModel(name, img)
 {
@@ -345,12 +278,6 @@ function categoriesViewModel()
   {
     var ai_page = '/pesticide_tool/active_ingredient/pest_name/' + encodeURIComponent(pest.name());
     window.location.href = ai_page;
-
-    /*
-    var url = 'pest_ai_page?pest_name=' + encodeURIComponent(pest.name());
-    self.aisForPestPage(url);
-    return(true);
-    */
   }
   self.hashchanged = function(event)
   {
@@ -362,120 +289,7 @@ function categoriesViewModel()
   }
 
 }
-/*
-function activeIngredientsForPestViewModel()
-{
-  var self = this;
 
-    //Array to track which parts should be visible.
-  self.visibleTracker = {
-    'active_ingredients': ko.observable(true),
-    'brands': ko.observable(false)
-    //'brand_info': ko.observable(false)
-  };
-  self.showSpinner = ko.observable(false);
-  self.pest_name = ko.observable('');
-  self.ai_results = ko.observableArray([]);
-  self.activeAI = ko.observable();
-  self.activeBrands = ko.observableArray([]);
-  //self.activeBrand = ko.observableArray([]);
-  //self.listName = ko.observable("");
-  //self.activeList = ko.observableArray([]);
-  self.spinner = null;
-
-  self.initialize = function()
-  {
-    self.showSpinner(true);
-    var target = document.getElementById('spinner');
-    self.spinner = new Spinner(spinner_opts).spin(target);
-
-    //Get url parameters so we can see what the pest name is.
-    var pest_url = $.deparam.querystring();
-
-    self.pest_name(pest_url.pest_name);
-    url = 'http://sccoastalpesticides.org/pesticide_tool/get_ai_for_pest';
-    $.getJSON(url,
-      {
-        'pest': pest_url.pest_name
-      },
-      function(data) {
-        self.spinner.stop();
-        self.showSpinner(false);
-        self.ai_results(data.ai_list);
-        $('[data-toggle="popover"]').popover({
-          trigger: 'hover',
-          'placement': 'top'
-        });
-      }
-    );
-  };
-  self.hashchanged = function(event)
-  {
-    //Force the page to the top whenever we change pages since most are long lists of pics.
-    //If we don't do this, when using the back key the previous page will pick up where we left
-    //the currect page.
-    $('body').scrollTop(0);
-    self.check_url();
-  };
-  self.check_url = function()
-  {
-    var state = $.bbq.getState();
-  };
-  self.setVisible = function(pageName)
-  {
-    $.each(self.visibleTracker, function(ndx, page)
-    {
-      if(ndx === pageName)
-      {
-        page(true);
-      }
-      else
-      {
-        page(false);
-      }
-    });
-  };
-
-  self.getPanelClass = function(hazard_level)
-  {
-    var css = "panel panel-default";
-    if(hazard_level !== undefined)
-    {
-      var lc_level = hazard_level.toLowerCase();
-      if (lc_level == 'low') {
-        css = "panel panel-success";
-      }
-      else if (lc_level == 'moderate') {
-        css = "panel panel-warning";
-      }
-      else if (lc_level == 'likely') {
-        css = "panel panel-danger";
-      }
-    }
-    return(css);
-  };
-  self.showProducts = function(ai, event)
-  {
-    self.setVisible('brands');
-    self.activeAI(ai.display_name);
-    //Empty the curent brands.
-    self.activeBrands([]);
-    //ADd the brands from the selected AI.
-    if(ai.brands.length)
-    {
-      var sorted_brands = ai.brands.sort();
-      self.activeBrands(sorted_brands);
-    }
-    return(true);
-  };
-  self.showBrandInfo = function(brand, event)
-  {
-    var brand_page = '/pesticide_tool/brand?brand_name=' + encodeURIComponent(brand.name);
-    window.location.href = brand_page;
-  }
-
-};
-*/
 function pesticideSearchViewModel()
 {
   var self = this;
@@ -600,6 +414,19 @@ function brandViewModel(config)
 
   self.initialize = function()
   {
+  };
+  self.getPanelClass = function(restricted_use)
+  {
+    var css = "panel panel-default";
+;
+    if(use !== undefined)
+    {
+      if(use)
+      {
+        css = "panel panel-danger";
+      }
+    }
+    return(css);
   };
   self.getRestrictedUseText = function(use)
   {
