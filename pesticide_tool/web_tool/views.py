@@ -52,7 +52,7 @@ def brand_page(request, brand_name, template='brand_page.html'):
   brand_json = [];
   try:
     brand_info = Brand.objects.filter(name__iexact=search_term).all()[:1].get()
-    brand_json = simplejson.dumps(brand_info.toDict)
+    brand_json = brand_info.toDict;
   except Exception, e:
     if logger:
       logger.exception(e)
@@ -60,7 +60,7 @@ def brand_page(request, brand_name, template='brand_page.html'):
     logger.debug("End brand_page: %s" % (brand_json))
 
 
-  return render_to_response(template, {'brand_info': brand_json}, context_instance=RequestContext(request))
+  return render_to_response(template, {'brand_info': simplejson.dumps(brand_json)}, context_instance=RequestContext(request))
 
 
 """
