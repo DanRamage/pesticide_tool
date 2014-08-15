@@ -153,7 +153,6 @@ def ai_info_page(request, ai_name, template="ai_page.html"):
       .prefetch_related('pesticide_classes')
 
     ret_data = []
-    ai_json = ''
     for ai in ai_list:
       brand_data = []
       for brand in ai.brands.all():
@@ -170,14 +169,13 @@ def ai_info_page(request, ai_name, template="ai_page.html"):
         'brands': brand_data
       })
 
-    ai_json = simplejson.dumps(ret_data)
   except Exception, e:
     if logger:
       logger.exception(e)
 
   if logger:
     logger.debug("Finshied ai_info_page. Returning %d active ingredients" % (len(ret_data)))
-  return render_to_response(template, {'ai_list': ai_json}, context_instance=RequestContext(request))
+  return render_to_response(template, {'ai_list': simplejson.dumps(ret_data)}, context_instance=RequestContext(request))
 
 def get_ai_for_pest(request, pest_name, template="ai_page.html"):
   search_term = pest_name
