@@ -408,7 +408,7 @@ function brandViewModel(config)
 {
   var self = this;
 
-  self.activeBrand = ko.observableArray([config]);
+  self.activeBrand = ko.observableArray(config);
   self.listName = ko.observable('');
   self.activeList = ko.observableArray([]);
 
