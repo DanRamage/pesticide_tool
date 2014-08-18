@@ -46,7 +46,7 @@ def get_pestcide_ai_names(request):
 def brand_page(request, brand_name, template='brand_page.html'):
   search_term = unquote_url(brand_name)
   if logger:
-    logger.debug("Begin brand_page search: %s" % (search_term))
+    logger.debug("Begin brand_page search: %s(%s)" % (search_term,brand_name))
 
   brand_json = [];
   try:
