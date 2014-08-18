@@ -362,6 +362,11 @@ function pesticideSearchViewModel()
       //Double encode '#' otherwise Django url seems to stop processing url.
       brand_page = brand_page.replace('%23','%2523');
     }
+    if(brand_name.indexOf('%') != -1)
+    {
+      //Double encode '%' otherwise Django url seems to stop processing url.
+      brand_page = brand_page.replace('%25','%2525');
+    }
 
     window.location.href = brand_page;
   };
@@ -379,6 +384,12 @@ function pesticideSearchViewModel()
       //Double encode '#' otherwise Django url seems to stop processing url.
       brand_page = brand_page.replace('%23','%2523');
     }
+    if(brand.name.indexOf('%') != -1)
+    {
+      //Double encode '%' otherwise Django url seems to stop processing url.
+      brand_page = brand_page.replace('%25','%2525');
+    }
+
     window.location.href = brand_page;
   };
 
@@ -504,6 +515,12 @@ function aiViewModel(config) {
     {
       //Double encode '#' otherwise Django url seems to stop processing url.
       brand_page = brand_page.replace('%23','%2523');
+    }
+    var brand_page = '/pesticide_tool/brand_name/' + (encodeURIComponent(brand.name));
+    if(brand.name.indexOf('%') != -1)
+    {
+      //Double encode '%' otherwise Django url seems to stop processing url.
+      brand_page = brand_page.replace('%25','%2525');
     }
     window.location.href = brand_page;
   };
