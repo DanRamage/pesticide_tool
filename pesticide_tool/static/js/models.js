@@ -488,7 +488,7 @@ function aiViewModel(config) {
   };
   self.showBrandInfo = function(brand, event)
   {
-    var brand_page = '/pesticide_tool/brand_name/' + encodeURIComponent(brand.name);
+    var brand_page = '/pesticide_tool/brand_name/' + encodeURIComponent(encodeURIComponent(brand.name));
     window.location.href = brand_page;
   };
 
