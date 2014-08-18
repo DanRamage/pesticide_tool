@@ -19,9 +19,9 @@ def queryClemsonWebService(**kwargs):
 
   webService = clemsonWebService(kwargs['config_file'], 'pesticide_tool')
   if 'starting_ingredient' in kwargs and kwargs['starting_ingredient']:
-    query = ActiveIngredient.objects.exclude(relative_potential_ecosystem_hazard__exact='').filter(name__gte = kwargs['starting_ingredient']).all().order_by('name')
+    query = ActiveIngredient.objects.exclude(cumulative_score__isnull=True).filter(name__gte = kwargs['starting_ingredient']).all().order_by('name')
   else:
-    query = ActiveIngredient.objects.exclude(relative_potential_ecosystem_hazard__exact='').all().order_by('name')
+    query = ActiveIngredient.objects.exclude(cumulative_score__isnull=True).all().order_by('name')
   #for layer in Layer.objects.all().order_by('name'):
   for active_ingredient in query:
     if logger:
