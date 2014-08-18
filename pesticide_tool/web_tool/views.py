@@ -3,7 +3,7 @@
 
 from django.template import RequestContext
 from django.shortcuts import render_to_response
-from django.core import serializers
+from urllib import unquote as unquote_url
 
 from data_manager.models import *
 import simplejson
@@ -44,11 +44,8 @@ def get_pestcide_ai_names(request):
   return HttpResponse(simplejson.dumps(json))
 
 def brand_page(request, brand_name, template='brand_page.html'):
-  search_term = brand_name
-  if(len(search_term) == 0):
-    search_term = request.GET['brand_name']
-  if logger:
-    logger.debug("Begin brand_page: %s" % (search_term))
+  search_term = unquote_url(brand_name)
+
   brand_json = [];
   try:
     brand_info = Brand.objects.filter(name__iexact=search_term).all()[:1].get()
@@ -140,9 +137,7 @@ def get_pests_for_subcategory(request, sub_category):
 
 
 def ai_info_page(request, ai_name, template="ai_page.html"):
-  search_term = ai_name
-  if(len(search_term) == 0):
-    search_term = request.GET['ai_name']
+  search_term = unquote_url(ai_name)
   if logger:
     logger.debug("Begin ai_info_page: %s" % (search_term))
   try:
