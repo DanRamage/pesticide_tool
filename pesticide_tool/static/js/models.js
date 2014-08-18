@@ -498,6 +498,7 @@ function aiViewModel(config) {
   self.showProducts = function(ai, event)
   {
     self.setVisible('brands');
+    $('body').scrollTop(0);
     self.activeAI(ai.display_name);
     //Empty the curent brands.
     self.activeBrands([]);
