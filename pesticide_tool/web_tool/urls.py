@@ -6,7 +6,7 @@ urlpatterns = patterns('',
     (r'^start', start_page),
     (r'^pesticide_search', pesticide_search),
     (r'^brand/(?P<brand_name>[\w-]*)', brand_page),
-    (r'^brand_name/(?P<brand_name>[(A-Za-z0-9#]+)', brand_page),
+    (r'^brand_name/(?P<brand_name>[(A-Za-z0-9#)]+)', brand_page),
     (r'^active_ingredient/ai_name/(?P<ai_name>[^/]+)', ai_info_page),
     (r'^active_ingredient/pest_name/(?P<pest_name>[^/]+)', get_ai_for_pest),
 
