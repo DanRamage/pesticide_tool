@@ -161,7 +161,7 @@ class Pest(models.Model):
   row_id = models.IntegerField(primary_key=True)
   row_entry_date = models.DateTimeField(blank=True, null=True)
   row_update_date = models.DateTimeField(blank=True, null=True)
-  name = models.CharField(unique=True, max_length=128)
+  name = models.CharField(max_length=128)
 
   display_name = models.CharField(max_length=128)
 
