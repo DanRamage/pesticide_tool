@@ -150,6 +150,9 @@ def build_brand_model(prod, lookups, ndx, date, ai_for_brand):
   for rec in prod.application_areas:
     if rec in lookups['site_lookup']:
       app_areas.append(lookups['site_lookup'][rec])
+  pesticide_type = []
+  if prod.pesticide_type:
+    pesticide_type = [lookups['type_lookup'][prod.pesticide_type.lower()]]
   bm = {
     "pk": ndx,
     "model": "data_manager.Brand",
@@ -163,7 +166,7 @@ def build_brand_model(prod, lookups, ndx, date, ai_for_brand):
       "epa_registration_number": prod.epa_registration_number,
       "company_name" : [lookups['company_lookup'][prod.company_name]],
       "company_number": prod.company_number,
-      "pesticide_type": [lookups['type_lookup'][prod.pesticide_type.lower()]],
+      "pesticide_type": pesticide_type,
       "pests_treated":pests_treated ,
       "application_areas": app_areas,
       "active_ingredients": ai_for_brand
@@ -305,7 +308,7 @@ def createInitialData(**kwargs):
             type_ndx += 1
         else:
           if logger:
-            logger.error("Brand: %s has no pesticide type.")
+            logger.error("Brand: %s has no pesticide type." % (prod.name))
 
         if build_dict(lookups['brand_lookup'], prod.name, prod_ndx) == False:
           prod_ndx += 1
