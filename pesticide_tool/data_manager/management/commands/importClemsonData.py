@@ -299,10 +299,13 @@ def createInitialData(**kwargs):
             else:
               if logger:
                 logger.debug("Pest: %s already in database" % (pest.name))
-        if build_dict(lookups['type_lookup'], prod.pesticide_type.lower(), type_ndx) == False:
-          models['type_models'].append(build_pesticide_type_model(prod.pesticide_type, type_ndx, row_entry_date))
-          type_ndx += 1
-
+        if prod.pesticide_type:
+          if build_dict(lookups['type_lookup'], prod.pesticide_type.lower(), type_ndx) == False:
+            models['type_models'].append(build_pesticide_type_model(prod.pesticide_type, type_ndx, row_entry_date))
+            type_ndx += 1
+        else:
+          if logger:
+            logger.error("Brand: %s has no pesticide type.")
 
         if build_dict(lookups['brand_lookup'], prod.name, prod_ndx) == False:
           prod_ndx += 1
