@@ -347,7 +347,13 @@ def createInitialData(**kwargs):
             if ai['fields']['name'].lower() == ingr.active_ingredient.lower():
               if logger:
                 logger.debug("Adding brand: %s(%d) to AI: %s" % (brand_model['fields']['name'], brand_model['pk'], ai['fields']['name']))
-              ai['fields']['brands'].append(brand_model['pk'])
+              try:
+                ai['fields']['brands'].find(brand_model['pk'])
+              except Exception,e:
+                ai['fields']['brands'].append(brand_model['pk'])
+              else:
+                if logger:
+                  logger.debug("Brand: %s(%d) already in AI: %s" % (brand_model['fields']['name'], brand_model['pk'], ai['fields']['name']))
               break
         #Due to the incosistent naming of the active ingredients from the source data,
         #we need to make sure we add the brand ID to the active ingredient name we used.
