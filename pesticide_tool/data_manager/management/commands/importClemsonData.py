@@ -87,7 +87,7 @@ def build_pest_model(pest, ndx, date):
   })
 def build_company_model(prod, ndx, date):
   if logger:
-    logger.debug("Build Model: Company: %s Index: %d" % (prod, ndx))
+    logger.debug("Build Model: Company: %s Index: %d" % (prod.company_name, ndx))
   return({
     "pk": ndx,
     "model": "data_manager.Company",
