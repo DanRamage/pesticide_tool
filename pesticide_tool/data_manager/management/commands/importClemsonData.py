@@ -50,6 +50,8 @@ def build_dict(model_dict, value, ndx):
   return True
 
 def build_app_model(area, ndx, date):
+  if logger:
+    logger.debug("Build Model: App Area: %s Index: %d" % (area, ndx))
   return({
     "pk": ndx,
     "model": "data_manager.ApplicationArea",
@@ -59,6 +61,8 @@ def build_app_model(area, ndx, date):
     }
   })
 def build_pesticide_type_model(type, ndx, date):
+  if logger:
+    logger.debug("Build Model: Pesticide Type: %s Index: %d" % (type, ndx))
   return({
     "pk": ndx,
     "model": "data_manager.PesticideClass",
@@ -69,6 +73,8 @@ def build_pesticide_type_model(type, ndx, date):
   })
 
 def build_pest_model(pest, ndx, date):
+  if logger:
+    logger.debug("Build Model: Pest: %s Index: %d" % (pest, ndx))
   return({
     "pk": ndx,
     "model": "data_manager.Pest",
@@ -80,6 +86,8 @@ def build_pest_model(pest, ndx, date):
     }
   })
 def build_company_model(prod, ndx, date):
+  if logger:
+    logger.debug("Build Model: Company: %s Index: %d" % (prod, ndx))
   return({
     "pk": ndx,
     "model": "data_manager.Company",
@@ -90,6 +98,9 @@ def build_company_model(prod, ndx, date):
     }
   })
 def active_ingredient(ai_row, row_entry_date):
+  if logger:
+    logger.debug("Build Model: AI(full): %s Index: %d" % (ai_row.name, ai_row.row_id))
+
   ai = {
     "pk": ai_row.row_id,
     "model": "data_manager.ActiveIngredient",
@@ -116,6 +127,8 @@ def active_ingredient(ai_row, row_entry_date):
 
   return ai
 def build_active_ingredient(ingr, ndx, date):
+  if logger:
+    logger.debug("Build Model: AI: %s Index: %d" % (ingr, ndx))
 
   return({
     "pk": ndx,
@@ -131,6 +144,9 @@ def build_active_ingredient(ingr, ndx, date):
   })
 
 def build_formulation(ingr, brand_name, ndx, date, lookups):
+  if logger:
+    logger.debug("Build Model: Formulation: %s Index: %d" % (brand_name, ndx))
+
   return({
     "pk": ndx,
     "model": "data_manager.BrandFormulation",
@@ -142,6 +158,9 @@ def build_formulation(ingr, brand_name, ndx, date, lookups):
     }
   })
 def build_brand_model(prod, lookups, ndx, date, ai_for_brand):
+  if logger:
+    logger.debug("Build Model: Brand: %s Index: %d AI: %s" % (prod.name, ndx, ai_for_brand))
+
   pests_treated = []
   for rec in prod.pests_treated:
     if rec.name in lookups['pest_lookup']:
@@ -261,6 +280,9 @@ def createInitialData(**kwargs):
   type_ndx = 1
   if p_type_max_row_id['row_id__max']:
     type_ndx = p_type_max_row_id['row_id__max'] + 1
+
+  if logger:
+    logger.debug("Starting Indexes: AI %d Pest: %d Pesticide Type: %d" % (ingr_ndx, pest_ndx, type_ndx))
 
   for file in os.listdir(data_dir):
     if file.endswith(".json"):
