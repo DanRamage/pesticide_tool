@@ -128,7 +128,7 @@ def active_ingredient(ai_row, row_entry_date):
   return ai
 def build_active_ingredient(ingr, ndx, date):
   if logger:
-    logger.debug("Build Model: AI: %s Index: %d" % (ingr, ndx))
+    logger.debug("Build Model: AI: %s Index: %d" % (ingr.active_ingredient, ndx))
 
   return({
     "pk": ndx,
