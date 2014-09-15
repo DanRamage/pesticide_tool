@@ -88,12 +88,15 @@ def build_pest_model(pest, ndx, date):
 def build_company_model(prod, ndx, date):
   if logger:
     logger.debug("Build Model: Company: %s Index: %d" % (prod.company_name, ndx))
+  name = prod.company_name
+  if prod.company_name is None:
+    name = "Missing"
   return({
     "pk": ndx,
     "model": "data_manager.Company",
     "fields": {
       "row_entry_date": date,
-      "name": prod.company_name,
+      "name": name,
       "epa_id": prod.company_number
     }
   })
