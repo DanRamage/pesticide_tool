@@ -172,6 +172,19 @@ def build_brand_model(prod, lookups, ndx, date, ai_for_brand):
   pesticide_type = []
   if prod.pesticide_type:
     pesticide_type = [lookups['type_lookup'][prod.pesticide_type.lower()]]
+  if prod.special_local_need == "":
+    if logger:
+      logger.error("Brand: %s invalid special_local_need" % (prod.name))
+    prod.special_local_need = None
+  if prod.experimental_use == "":
+    if logger:
+      logger.error("Brand: %s invalid experimental_use" % (prod.name))
+    prod.experimental_use = None
+  if prod.restricted_use == "":
+    if logger:
+      logger.error("Brand: %s invalid restricted_use" % (prod.name))
+    prod.restricted_use = None
+
   bm = {
     "pk": ndx,
     "model": "data_manager.Brand",
