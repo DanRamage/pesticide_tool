@@ -74,7 +74,7 @@ def build_pesticide_type_model(type, ndx, date):
 
 def build_pest_model(pest, ndx, date):
   if logger:
-    logger.debug("Build Model: Pest: %s Index: %d" % (pest, ndx))
+    logger.debug("Build Model: Pest: %s Index: %d" % (pest.name, ndx))
   return({
     "pk": ndx,
     "model": "data_manager.Pest",
