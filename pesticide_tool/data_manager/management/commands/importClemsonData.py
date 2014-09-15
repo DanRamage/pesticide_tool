@@ -90,14 +90,21 @@ def build_company_model(prod, ndx, date):
     logger.debug("Build Model: Company: %s Index: %d" % (prod.company_name, ndx))
   name = prod.company_name
   if prod.company_name is None:
+    if logger:
+      logger.error("company_name mising: Index: %d" % (ndx))
     name = "Missing"
+  epa_id = prod.company_number
+  if prod.company_number is None:
+    if logger:
+      logger.error("epa_id mising: Index: %d" % (ndx))
+    epa_id = "Missing"
   return({
     "pk": ndx,
     "model": "data_manager.Company",
     "fields": {
       "row_entry_date": date,
       "name": name,
-      "epa_id": prod.company_number
+      "epa_id": epa_id
     }
   })
 def active_ingredient(ai_row, row_entry_date):
