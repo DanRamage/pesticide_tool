@@ -29,12 +29,15 @@ def pesticide_search(request, template='pesticide_search.html'):
   #Get the pesticde and active ingredient names for the typeahead fields.
   try:
     pesticides = Brand.objects.all().only('name').order_by('name')
-    pesticides_typeahead = [rec.name for rec in pesticides],
 
     #Get the active ingredients that have the cumulative ranking. The database contains
     #most of the AI's from the clemson db, however we only have a portion of them scored.
     ais = ActiveIngredient.objects.exclude(cumulative_score__isnull=True).only('display_name').order_by('display_name')
-    active_ingredients_typeahead = [rec.display_name for rec in ais]
+    context = {
+      'pesticides_typeahead': [rec.name for rec in pesticides],
+      'active_ingredients_typeahead': [rec.display_name for rec in ais]
+    }
+
     if logger:
       logger.debug("Pesticide names: %d AI names: %d." % (len(pesticides_typeahead), len(active_ingredients_typeahead)))
 
@@ -46,7 +49,7 @@ def pesticide_search(request, template='pesticide_search.html'):
     logger.debug("Finished pesticide_search page load")
   #context = {'themes': themes_with_links, 'domain': get_domain(8000), 'domain8010': get_domain()}
   #
-  return render_to_response(template, {'active_ingredients_typeahead': active_ingredients_typeahead, 'pesticides_typeahead': pesticides_typeahead} , context_instance=RequestContext(request))
+  return render_to_response(template, context, context_instance=RequestContext(request))
 
 def get_pestcide_ai_names(request):
   if logger:
