@@ -121,6 +121,7 @@ function categoriesViewModel(options)
     // Bind the url hash change event.
     $(window).bind('hashchange', self.hashchanged);
 
+    /*
     if( 'categories' in self.options)
     {
         $.each(self.options.categories, function(ndx, categoryNfo) {
@@ -138,7 +139,7 @@ function categoriesViewModel(options)
             $(this).find('.caption').slideUp(250); //.fadeOut(205)
           }
         });
-        /*
+
         $('#hover-col .thumbnail').hover(
           function()
           {
@@ -149,13 +150,13 @@ function categoriesViewModel(options)
             $(this).find('.caption').slideUp(250); //.fadeOut(205)
           }
         );
-        */
+
         self.check_url();
 
     }
-
+    */
     //Query the server for the category data.
-    /*
+
     var url = 'http://sccoastalpesticides.org/pesticide_tool/get_categories';
     $.getJSON(url,
         function(data)
@@ -185,7 +186,7 @@ function categoriesViewModel(options)
 
           self.check_url();
         });
-    */
+
   };
   self.findByName = function(name, searchArray)
   {
