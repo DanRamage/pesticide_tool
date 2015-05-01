@@ -143,7 +143,7 @@ def ai_info_page(request, ai_name, template="ai_page.html"):
   if logger:
     logger.debug("Begin ai_info_page: %s" % (search_term))
   try:
-    ai_list = ActiveIngredient.objects.filter(display_name__exact=search_term)\
+    ai_list = ActiveIngredient.objects.filter(display_name__iexact=search_term)\
       .all()\
       .prefetch_related('brands').only("brands__name")\
       .prefetch_related('warnings')\
