@@ -32,7 +32,7 @@ def pest_category(request, template='pest_category.html'):
 
   if logger:
     logger.debug("Finished pest_category page load.")
-  return render_to_response(template, {'categories': categories}, context_instance=RequestContext(request))
+  return render_to_response(template, {'categories': simplejson.dumps(categories)}, context_instance=RequestContext(request))
 
 def pesticide_search(request, template='pesticide_search.html'):
   if logger:
