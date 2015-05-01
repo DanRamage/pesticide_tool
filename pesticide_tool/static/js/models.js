@@ -130,7 +130,15 @@ function categoriesViewModel(options)
 
           self.categoryModels.push(catModel);
         });
-
+        $('#hover-col .thumbnail').bind({
+          mouseenter: function (e) {
+            $(this).find('.caption').slideDown(250);
+          },
+          mouseleave: function (e) {
+            $(this).find('.caption').slideUp(250); //.fadeOut(205)
+          }
+        });
+        /*
         $('#hover-col .thumbnail').hover(
           function()
           {
@@ -141,7 +149,7 @@ function categoriesViewModel(options)
             $(this).find('.caption').slideUp(250); //.fadeOut(205)
           }
         );
-
+        */
         self.check_url();
 
     }
