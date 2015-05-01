@@ -9,7 +9,7 @@
     {
       var self = this;
       //Django template variable.
-      var categories = {{ categories }}
+      var categories = {{ categories|safe }}
 
       self.catViewModel = null;
       self.configData = null;
