@@ -22,7 +22,27 @@ def pest_category(request, template='pest_category.html'):
   return render_to_response(template, context_instance=RequestContext(request))
 
 def pesticide_search(request, template='pesticide_search.html'):
+  if logger:
+    logger.debug("Begin pesticide_search page load")
   active_ingredients = []
+
+  #Get the pesticde and active ingredient names for the typeahead fields.
+  try:
+    pesticides = Brand.objects.all().only('name').order_by('name')
+    pesticides_typeahead = [rec.name for rec in pesticides],
+
+    #Get the active ingredients that have the cumulative ranking. The database contains
+    #most of the AI's from the clemson db, however we only have a portion of them scored.
+    ais = ActiveIngredient.objects.exclude(cumulative_score__isnull=True).only('display_name').order_by('display_name')
+    active_ingredients_typeahead = [rec.display_name for rec in ais]
+
+  except Exception, e:
+    if logger:
+      logger.exception(e)
+
+  if logger:
+    logger.debug("Finished pesticide_search page load")
+
   return render_to_response(template, context_instance=RequestContext(request))
 
 def get_pestcide_ai_names(request):

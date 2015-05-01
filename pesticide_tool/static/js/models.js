@@ -312,12 +312,16 @@ function pesticideSearchViewModel()
     self.spinner = new Spinner(spinner_opts).spin(target);
 
     //Server query to get the names we use in the typeahead.
+    $("#pesticide_names").typeahead({ source: pesticides_typeahead });
+    $("#ai_names").typeahead({ source: ai_typeahead });
+    /*
     $.getJSON('http://sccoastalpesticides.org/pesticide_tool/get_pestcide_ai_names',
       function(data) {
         $("#pesticide_names").typeahead({ source: data.pesticides });
         $("#ai_names").typeahead({ source: data.active_ingredients });
       }
     );
+    */
   };
   self.hashchanged = function(event)
   {
