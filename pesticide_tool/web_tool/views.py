@@ -149,6 +149,7 @@ def ai_info_page(request, ai_name, template="ai_page.html"):
       .prefetch_related('warnings')\
       .prefetch_related('pesticide_classes')
 
+
     ret_data = []
     for ai in ai_list:
       brand_data = []
