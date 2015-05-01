@@ -305,15 +305,21 @@ function pesticideSearchViewModel()
   self.activeAI = ko.observable();
   self.ai_results = ko.observableArray([]);
 
-  self.initialize = function()
+  self.initialize = function(options)
   {
     self.showSpinner(true);
     var target = document.getElementById('spinner');
     self.spinner = new Spinner(spinner_opts).spin(target);
 
     //Server query to get the names we use in the typeahead.
-    $("#pesticide_names").typeahead({ source: pesticides_typeahead });
-    $("#ai_names").typeahead({ source: ai_typeahead });
+    if('pesticides_typeahead' in options)
+    {
+      $("#pesticide_names").typeahead({ source: pesticides_typeahead });
+    }
+    if('ai_typeahead' in options)
+    {
+      $("#ai_names").typeahead({ source: ai_typeahead });
+    }
     /*
     $.getJSON('http://sccoastalpesticides.org/pesticide_tool/get_pestcide_ai_names',
       function(data) {
