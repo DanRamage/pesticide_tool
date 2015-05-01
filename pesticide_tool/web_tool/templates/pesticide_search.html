@@ -8,8 +8,8 @@
   <script type="text/javascript"  src="{{STATIC_URL}}js/models.js"></script>
   <script type="text/javascript">
     //These are variables from the Django view.
-    pesticides_typeahead = {{ pesticides_typeahead }};
-    ai_typeahead = {{ active_ingredients_typeahead }};
+    pesticides_typeahead = {{ pesticides_typeahead|safe }};
+    ai_typeahead = {{ active_ingredients_typeahead|safe }};
     function pesticide_search_page()
     {
       var self = this;
