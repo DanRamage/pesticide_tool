@@ -44,8 +44,9 @@ def pesticide_search(request, template='pesticide_search.html'):
 
   if logger:
     logger.debug("Finished pesticide_search page load")
-
-  return render_to_response(template, context_instance=RequestContext(request))
+  #context = {'themes': themes_with_links, 'domain': get_domain(8000), 'domain8010': get_domain()}
+  #
+  return render_to_response(template, {'active_ingredients_typeahead': active_ingredients_typeahead, 'pesticides_typeahead': pesticides_typeahead} , context_instance=RequestContext(request))
 
 def get_pestcide_ai_names(request):
   if logger:
