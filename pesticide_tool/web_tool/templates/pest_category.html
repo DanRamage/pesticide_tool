@@ -8,13 +8,15 @@
     function category_page()
     {
       var self = this;
+      //Django template variable.
+      var categories = {{ categories }}
 
       self.catViewModel = null;
       self.configData = null;
       self.initialize = function()
       {
         self.catViewModel = new categoriesViewModel();
-        self.catViewModel.initialize();
+        self.catViewModel.initialize({'categories': categories});
         ko.applyBindings(self.catViewModel);
 
       };

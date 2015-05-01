@@ -19,7 +19,20 @@ def start_page(request, template='entry_page.html'):
   return render_to_response(template, context_instance=RequestContext(request))
 
 def pest_category(request, template='pest_category.html'):
-  return render_to_response(template, context_instance=RequestContext(request))
+  if logger:
+    logger.debug("Begin pest_category page load.")
+  try:
+    categories = [category.toDict for category in Category.objects.all().order_by('name')]
+    if logger:
+      logger.debug("Categories %d." % (len(categories)))
+
+  except Exception, e:
+    if logger:
+      logger.exception(e)
+
+  if logger:
+    logger.debug("Finished pest_category page load.")
+  return render_to_response(template, {'categories': categories}, context_instance=RequestContext(request))
 
 def pesticide_search(request, template='pesticide_search.html'):
   if logger:

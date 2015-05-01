@@ -111,12 +111,40 @@ function categoriesViewModel()
   self.aisForPestPage = ko.observable('');
   self.currentUrl = ''
 
-  self.initialize = function()
+  self.initialize = function(options)
   {
     // Bind the url hash change event.
     $(window).bind('hashchange', self.hashchanged);
 
+    if( 'categories' in options)
+    {
+        $.each(options.categories, function(ndx, categoryNfo) {
+          //Construct the categoryModel.
+          var catModel = new categoryModel(categoryNfo['name'], categoryNfo);
+          catModel.buildSubCategories(categoryNfo['sub_categories']);
+
+          self.categoryModels.push(catModel);
+        });
+
+        //Setup hover event function for categories.
+        $("[rel='tooltip']").tooltip();
+
+        $('#hover-col .thumbnail').hover(
+          function()
+          {
+            $(this).find('.caption').slideDown(250); //.fadeIn(250)
+          },
+          function()
+          {
+            $(this).find('.caption').slideUp(250); //.fadeOut(205)
+          }
+        );
+
+        self.check_url();
+
+    }
     //Query the server for the category data.
+    /*
     var url = 'http://sccoastalpesticides.org/pesticide_tool/get_categories';
     $.getJSON(url,
         function(data)
@@ -145,6 +173,7 @@ function categoriesViewModel()
 
           self.check_url();
         });
+    */
   };
   self.findByName = function(name, searchArray)
   {
