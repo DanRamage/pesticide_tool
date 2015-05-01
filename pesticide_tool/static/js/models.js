@@ -113,9 +113,17 @@ function categoriesViewModel(options)
 
   $( document ).ready()
   {
-    if( 'categories' in options)
+
+  };
+
+  self.initialize = function()
+  {
+    // Bind the url hash change event.
+    $(window).bind('hashchange', self.hashchanged);
+
+    if( 'categories' in self.options)
     {
-        $.each(options.categories, function(ndx, categoryNfo) {
+        $.each(self.options.categories, function(ndx, categoryNfo) {
           //Construct the categoryModel.
           var catModel = new categoryModel(categoryNfo['name'], categoryNfo);
           catModel.buildSubCategories(categoryNfo['sub_categories']);
@@ -138,15 +146,8 @@ function categoriesViewModel(options)
         );
 
         self.check_url();
+
     }
-
-  };
-
-  self.initialize = function()
-  {
-    // Bind the url hash change event.
-    $(window).bind('hashchange', self.hashchanged);
-
     //Query the server for the category data.
     /*
     var url = 'http://sccoastalpesticides.org/pesticide_tool/get_categories';
