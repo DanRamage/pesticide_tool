@@ -15,8 +15,8 @@
       self.configData = null;
       self.initialize = function()
       {
-        self.catViewModel = new categoriesViewModel();
-        self.catViewModel.initialize({'categories': categories});
+        self.catViewModel = new categoriesViewModel({'categories': categories});
+        self.catViewModel.initialize();
         ko.applyBindings(self.catViewModel);
 
       };

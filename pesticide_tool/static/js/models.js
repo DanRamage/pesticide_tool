@@ -95,7 +95,7 @@ function subCategoryModel(name, config)
   };
 }
 
-function categoriesViewModel()
+function categoriesViewModel(options)
 {
   var self = this;
   //Array to track which parts should be visible.
@@ -104,7 +104,7 @@ function categoriesViewModel()
     'sub_category': ko.observable(false),
     'pest': ko.observable(false)
   };
-
+  self.options = options;
   self.categoryModels = ko.observableArray([]); //The major categories of pests.
   self.activeCategory = ko.observable(new categoryModel());
   self.activeSubCategory = ko.observable(new subCategoryModel());
@@ -113,27 +113,6 @@ function categoriesViewModel()
 
   $( document ).ready()
   {
-    //Setup hover event function for categories.
-    $("[rel='tooltip']").tooltip();
-
-    $('#hover-col .thumbnail').hover(
-      function()
-      {
-        $(this).find('.caption').slideDown(250); //.fadeIn(250)
-      },
-      function()
-      {
-        $(this).find('.caption').slideUp(250); //.fadeOut(205)
-      }
-    );
-
-  }
-
-  self.initialize = function(options)
-  {
-    // Bind the url hash change event.
-    $(window).bind('hashchange', self.hashchanged);
-
     if( 'categories' in options)
     {
         $.each(options.categories, function(ndx, categoryNfo) {
@@ -144,10 +123,30 @@ function categoriesViewModel()
           self.categoryModels.push(catModel);
         });
 
+        //Setup hover event function for categories.
+        $("[rel='tooltip']").tooltip();
+
+        $('#hover-col .thumbnail').hover(
+          function()
+          {
+            $(this).find('.caption').slideDown(250); //.fadeIn(250)
+          },
+          function()
+          {
+            $(this).find('.caption').slideUp(250); //.fadeOut(205)
+          }
+        );
 
         self.check_url();
-
     }
+
+  };
+
+  self.initialize = function()
+  {
+    // Bind the url hash change event.
+    $(window).bind('hashchange', self.hashchanged);
+
     //Query the server for the category data.
     /*
     var url = 'http://sccoastalpesticides.org/pesticide_tool/get_categories';
