@@ -155,7 +155,8 @@ function categoriesViewModel(options)
     $.getJSON(url,
         function(data)
         {
-          $.each(data.categories, function(ndx, categoryNfo) {
+          //$.each(data.categories, function(ndx, categoryNfo) {
+          $.each(self.options.categories, function(ndx, categoryNfo) {
             //Construct the categoryModel.
             var catModel = new categoryModel(categoryNfo['name'], categoryNfo);
             catModel.buildSubCategories(categoryNfo['sub_categories']);
