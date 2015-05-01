@@ -288,7 +288,7 @@ function categoriesViewModel(options)
     $.bbq.pushState(frag);
     if( subCategory.pests().length == 0)
     {
-      var url = 'http://sccoastalpesticides.org/pesticide_tool/get_pests_for_subcategory';
+      var url = '/pesticide_tool/get_pests_for_subcategory';
       $.getJSON(url,
         {'sub_category': subCategory.name()},
         function (data) {
