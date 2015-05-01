@@ -35,6 +35,8 @@ def pesticide_search(request, template='pesticide_search.html'):
     #most of the AI's from the clemson db, however we only have a portion of them scored.
     ais = ActiveIngredient.objects.exclude(cumulative_score__isnull=True).only('display_name').order_by('display_name')
     active_ingredients_typeahead = [rec.display_name for rec in ais]
+    if logger:
+      logger.debug("Pesticide names: %d AI names: %d." % (len(pesticides_typeahead), len(active_ingredients_typeahead)))
 
   except Exception, e:
     if logger:
