@@ -111,6 +111,24 @@ function categoriesViewModel()
   self.aisForPestPage = ko.observable('');
   self.currentUrl = ''
 
+  $( document ).ready()
+  {
+    //Setup hover event function for categories.
+    $("[rel='tooltip']").tooltip();
+
+    $('#hover-col .thumbnail').hover(
+      function()
+      {
+        $(this).find('.caption').slideDown(250); //.fadeIn(250)
+      },
+      function()
+      {
+        $(this).find('.caption').slideUp(250); //.fadeOut(205)
+      }
+    );
+
+  }
+
   self.initialize = function(options)
   {
     // Bind the url hash change event.
@@ -126,19 +144,6 @@ function categoriesViewModel()
           self.categoryModels.push(catModel);
         });
 
-        //Setup hover event function for categories.
-        $("[rel='tooltip']").tooltip();
-
-        $('#hover-col .thumbnail').hover(
-          function()
-          {
-            $(this).find('.caption').slideDown(250); //.fadeIn(250)
-          },
-          function()
-          {
-            $(this).find('.caption').slideUp(250); //.fadeOut(205)
-          }
-        );
 
         self.check_url();
 
