@@ -165,7 +165,7 @@ function categoriesViewModel(options)
           });
 
           //Setup hover event function for categories.
-          $("[rel='tooltip']").tooltip();
+          //$("[rel='tooltip']").tooltip();
 
           $('#hover-col .thumbnail').hover(
             function()
