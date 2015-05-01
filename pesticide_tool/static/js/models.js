@@ -121,7 +121,7 @@ function categoriesViewModel(options)
     // Bind the url hash change event.
     $(window).bind('hashchange', self.hashchanged);
 
-    /*
+
     if( 'categories' in self.options)
     {
         $.each(self.options.categories, function(ndx, categoryNfo) {
@@ -131,15 +131,16 @@ function categoriesViewModel(options)
 
           self.categoryModels.push(catModel);
         });
-        $('#hover-col .thumbnail').bind({
-          mouseenter: function (e) {
-            $(this).find('.caption').slideDown(250);
-          },
-          mouseleave: function (e) {
-            $(this).find('.caption').slideUp(250); //.fadeOut(205)
-          }
+        $(document).on('mouseenter', '#hover-col .thumbnail', function(e)
+        {
+          $(this).find('.caption').slideDown(250);
+        });
+        $(document).on('mouseleave', '#hover-col .thumbnail', function(e)
+        {
+          $(this).find('.caption').slideUp(250);
         });
 
+        /*
         $('#hover-col .thumbnail').hover(
           function()
           {
@@ -150,13 +151,13 @@ function categoriesViewModel(options)
             $(this).find('.caption').slideUp(250); //.fadeOut(205)
           }
         );
-
+        */
         self.check_url();
 
     }
-    */
-    //Query the server for the category data.
 
+    //Query the server for the category data.
+    /*
     var url = 'http://sccoastalpesticides.org/pesticide_tool/get_categories';
     $.getJSON(url,
         function(data)
@@ -186,7 +187,7 @@ function categoriesViewModel(options)
 
           self.check_url();
         });
-
+    */
   };
   self.findByName = function(name, searchArray)
   {
