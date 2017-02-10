@@ -409,25 +409,27 @@ function pesticideSearchViewModel()
   self.brandSearch = function(name, event)
   {
     var brand_name = $('#pesticide_names').val();
-    var brand_page = '/pesticide_tool/brand_name/' + (encodeURIComponent(brand_name));
-    if(brand_name.indexOf('#') != -1)
-    {
-      //Double encode '#' otherwise Django url seems to stop processing url.
-      brand_page = brand_page.replace('%23','%2523');
-    }
-    if(brand_name.indexOf('%') != -1)
-    {
-      //Double encode '%' otherwise Django url seems to stop processing url.
-      brand_page = brand_page.replace('%25','%2525');
-    }
+    if(brand_name > 0) {
+      var brand_page = '/pesticide_tool/brand_name/' + (encodeURIComponent(brand_name));
+      if (brand_name.indexOf('#') != -1) {
+        //Double encode '#' otherwise Django url seems to stop processing url.
+        brand_page = brand_page.replace('%23', '%2523');
+      }
+      if (brand_name.indexOf('%') != -1) {
+        //Double encode '%' otherwise Django url seems to stop processing url.
+        brand_page = brand_page.replace('%25', '%2525');
+      }
 
-    window.location.href = brand_page;
+      window.location.href = brand_page;
+    }
   };
   self.activeIngredientSearch = function(name, event)
   {
     var ai_name = $('#ai_names').val();
-    var ai_page = '/pesticide_tool/active_ingredient/ai_name/' + (encodeURIComponent(ai_name));
-    window.location.href = ai_page;
+    if(ai_name.length > 0) {
+      var ai_page = '/pesticide_tool/active_ingredient/ai_name/' + (encodeURIComponent(ai_name));
+      window.location.href = ai_page;
+    }
   };
   self.showBrandInfo = function(brand, event)
   {
