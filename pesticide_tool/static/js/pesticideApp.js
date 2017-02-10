@@ -52,9 +52,9 @@ function pesticideApp()
 
   self.initialize = function()
   {
-    self.pestDataQueryUrl = 'http://sccoastalpesticides.org/cgi-bin/new/pesticideWebReqHandler.py/safetyResults';
+    self.pestDataQueryUrl = 'http://scpesticides.org/cgi-bin/new/pesticideWebReqHandler.py/safetyResults';
     //self.pestDataQueryUrl = 'http://129.252.139.124/projects/pesticide/handlers/pesticideWebReqHandler.py/safetyResults';
-    var url = 'http://sccoastalpesticides.org/feeds/layout_config.json';
+    var url = 'http://scpesticides.org/feeds/layout_config.json';
     //var url = 'http://129.252.139.124/projects/pesticide/feeds/layout_config.json';
     $.getJSON(url,
       function(data)
